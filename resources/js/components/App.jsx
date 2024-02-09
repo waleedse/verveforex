@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Routes from './Routes'
+import Frontend from './Frontend';
 function App() {
     return (
         <div >
-            <Routes></Routes>
+           <Frontend></Frontend>
         </div>
     );
 }

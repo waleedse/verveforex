@@ -3,13 +3,47 @@ import React from 'react';
 const index = () => {
     return (
         <div>
-      <div className="boxed_wrapper home_3">
-
+   <div className="boxed_wrapper home_2">
+  {/* preloader */}
+  <div className="loader-wrap">
+    <div className="preloader">
+      <div className="preloader-close">x</div>
+      <div id="handle-preloader" className="handle-preloader">
+        <div className="animation-preloader">
+          <div className="spinner" />
+          <div className="txt-loading">
+            <span data-text-preloader="b" className="letters-loading">
+              b
+            </span>
+            <span data-text-preloader="u" className="letters-loading">
+              u
+            </span>
+            <span data-text-preloader="l" className="letters-loading">
+              l
+            </span>
+            <span data-text-preloader="l" className="letters-loading">
+              l
+            </span>
+            <span data-text-preloader="i" className="letters-loading">
+              i
+            </span>
+            <span data-text-preloader="o" className="letters-loading">
+              o
+            </span>
+            <span data-text-preloader="n" className="letters-loading">
+              n
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {/* preloader end */}
   {/*Search Popup*/}
   <div id="search-popup" className="search-popup">
     <div className="popup-inner">
       <div className="upper-box clearfix">
-        <figure className="logo-box pull-left"><a href="index.html"><img src="assets/images/logo-5.png" alt /></a></figure>
+        <figure className="logo-box pull-left"><a href="index.html"><img src="assets/images/logo-3.png" alt /></a></figure>
         <div className="close-search pull-right"><i className="fa-solid fa-xmark" /></div>
       </div>
       <div className="overlay-layer" />
@@ -28,55 +62,49 @@ const index = () => {
     </div>
   </div>
   {/* main header */}
-  <header className="main-header header-style-three">
+  <header className="main-header header-style-two">
     {/* header-top */}
     <div className="header-top">
-      <div className="auto-container">
-        <div className="top-inner">
-          <div className="support-box">
-            <div className="icon-box"><img src="assets/images/icons/icon-47.png" alt /></div>
-            <p><a href="tel:1222567890">+1 222 56 78 90</a> or Request for a <a href="tel:1222567890"><span>call back</span></a></p>
-          </div>
-          <div className="right-column">
-            <div className="language-box">
-              <div className="icon-box"><img src="assets/images/icons/icon-48.png" alt /></div>
-              <div className="select-box">
-                <select className="wide">
-                  <option data-display="English">English</option>
-                  <option value={1}>Chinese</option>
-                  <option value={2}>Hindi</option>
-                  <option value={3}>Spanish</option>
-                  <option value={4}>Turky</option>
-                </select>
-              </div>
+      <div className="outer-container">
+        <div className="left-column">
+          <div className="language-box">
+            <div className="icon-box"><img src="assets/images/icons/icon-29.png" alt /></div>
+            <div className="select-box">
+              <select className="wide">
+                <option data-display="English">English</option>
+                <option value={1}>Chinese</option>
+                <option value={2}>Hindi</option>
+                <option value={3}>Spanish</option>
+                <option value={4}>Turky</option>
+              </select>
             </div>
-            <ul className="registration-box clearfix">
-              <li>
-                <div className="icon"><img src="assets/images/icons/icon-49.png" alt /></div>
-                <a href="index-3.html">Login</a>
-              </li>
-              <li>
-                <div className="icon"><img src="assets/images/icons/icon-50.png" alt /></div>
-                <a href="index-3.html">Signup</a>
-              </li>
-            </ul>
-            <ul className="social-links clearfix">
-              <li><a href="index-3.html"><i className="fa-brands fa-instagram" /></a></li>
-              <li><a href="index-3.html"><i className="fa-brands fa-square-twitter" /></a></li>
-              <li><a href="index-3.html"><i className="fa-brands fa-facebook" /></a></li>
-            </ul>
           </div>
+          <ul className="links-list clearfix">
+            <li><a href="index-2.html">Faq’s</a></li>
+            <li><a href="index-2.html">Career</a></li>
+            <li><a href="index-2.html">News</a></li>
+          </ul>
+        </div>
+        <div className="right-column">
+          <div className="support-box">
+            <div className="icon-box"><img src="assets/images/icons/icon-30.png" alt /></div>
+            <a href="index-2.html">Help Center</a>
+          </div>
+          <ul className="social-links clearfix">
+            <li><a href="index-2.html"><i className="fa-brands fa-facebook" />3.2m Followers</a></li>
+            <li><a href="index-2.html"><i className="fa-brands fa-square-twitter" />1.5m Followers</a></li>
+          </ul>
         </div>
       </div>
     </div>
     {/* header-lower */}
     <div className="header-lower">
-      <div className="auto-container">
+      <div className="outer-container">
         <div className="outer-box">
-          <div className="logo-box">
-            <figure className="logo"><a href="index.html"><img src="assets/images/logo-5.png" alt /></a></figure>
-          </div>
           <div className="menu-area">
+            <div className="logo-box">
+              <figure className="logo"><a href="index.html"><img src="assets/images/logo-3.png" alt /></a></figure>
+            </div>
             {/*Mobile Navigation Toggler*/}
             <div className="mobile-nav-toggler">
               <i className="icon-bar" />
@@ -136,29 +164,37 @@ const index = () => {
                 </ul>
               </div>
             </nav>
-            <div className="menu-right-content">
-              <div className="search-box-outer search-toggler"><i className="flaticon-search" /></div>
-              <div className="btn-box"><a href="index.html" className="theme-btn btn-one"><span>Open an A/c</span></a></div>
+          </div>
+          <div className="menu-right-content">
+            <div className="search-box-outer search-toggler"><i className="flaticon-search" /></div>
+            <div className="clients-box">
+              <div className="icon-box"><img src="assets/images/icons/icon-31.png" alt /></div>
+              <a href="index.html">Client Portal<i className="flaticon-right-down" /></a>
             </div>
+            <div className="btn-box"><a href="index.html" className="theme-btn btn-one"><span>Open an A/c</span></a></div>
           </div>
         </div>
       </div>
     </div>
     {/*sticky Header*/}
     <div className="sticky-header">
-      <div className="auto-container">
+      <div className="outer-container">
         <div className="outer-box">
-          <div className="logo-box">
-            <figure className="logo"><a href="index.html"><img src="assets/images/logo-5.png" alt /></a></figure>
-          </div>
           <div className="menu-area">
+            <div className="logo-box">
+              <figure className="logo"><a href="index.html"><img src="assets/images/logo-4.png" alt /></a></figure>
+            </div>
             <nav className="main-menu clearfix">
               {/*Keep This Empty / Menu will come through Javascript*/}
             </nav>
-            <div className="menu-right-content">
-              <div className="search-box-outer search-toggler"><i className="flaticon-search" /></div>
-              <div className="btn-box"><a href="index.html" className="theme-btn btn-one"><span>Open an A/c</span></a></div>
+          </div>
+          <div className="menu-right-content">
+            <div className="search-box-outer search-toggler"><i className="flaticon-search" /></div>
+            <div className="clients-box">
+              <div className="icon-box"><img src="assets/images/icons/icon-31.png" alt /></div>
+              <a href="index.html">Client Portal<i className="flaticon-right-down" /></a>
             </div>
+            <div className="btn-box"><a href="index.html" className="theme-btn btn-one"><span>Open an A/c</span></a></div>
           </div>
         </div>
       </div>
@@ -170,7 +206,7 @@ const index = () => {
     <div className="menu-backdrop" />
     <div className="close-btn"><i className="fas fa-times" /></div>
     <nav className="menu-box">
-      <div className="nav-logo"><a href="index.html"><img src="assets/images/logo-6.png" alt title /></a></div>
+      <div className="nav-logo"><a href="index.html"><img src="assets/images/logo-4.png" alt title /></a></div>
       <div className="menu-outer">{/*Here Menu Will Come Automatically Via Javascript / Same Menu as in Header*/}</div>
       <div className="contact-info">
         <h4>Contact Info</h4>
@@ -191,93 +227,62 @@ const index = () => {
       </div>
     </nav>
   </div>{/* End Mobile Menu */}
-  {/* banner-style-three */}
-  <section className="banner-style-three centred">
-    <div className="pattern-layer">
-      <div className="pattern-1" style={{backgroundImage: 'url(assets/images/shape/shape-23.png)'}} />
-      <div className="pattern-2" style={{backgroundImage: 'url(assets/images/shape/shape-24.png)'}} />
-    </div>
-    <div className="image-layer">
-      <figure className="image-1"><img src="assets/images/banner/banner-img-1.png" alt /></figure>
-      <figure className="image-2 float-bob-y"><img src="assets/images/banner/banner-img-2.png" alt /></figure>
-      <figure className="image-3 float-bob-y"><img src="assets/images/banner/banner-img-3.png" alt /></figure>
-      <figure className="image-4 float-bob-x"><img src="assets/images/banner/banner-img-4.png" alt /></figure>
-    </div>
-    <div className="auto-container">
-      <div className="content-box">
-        <div className="inner-box">
-          <h5>Market Capitalisation</h5>
-          <h2>3.7 <span>B</span></h2>
-          <div className="graph-box"><img src="assets/images/icons/graph-5.png" alt /></div>
-        </div>
-        <div className="upper-box">
-          <h2><span>Leading</span> the way <br />in Online Forex <span>Trading</span></h2>
-          <p>Deaching of the great explorer of the truth builder <br />of human happiness.</p>
-          <a href="index-3.html" className="theme-btn"><span>Try Free Demo</span></a>
-        </div>
-        <div className="lower-box">
-          <div className="icon-box"><img src="assets/images/icons/icon-44.png" alt /></div>
-          <ul className="rating clearfix">
-            <li><i className="flaticon-star" /></li>
-            <li><i className="flaticon-star" /></li>
-            <li><i className="flaticon-star" /></li>
-            <li><i className="flaticon-star" /></li>
-            <li><i className="flaticon-star" /></li>
-          </ul>
-          <p>4.8 Rating Based on 2.5k Reviews. <a href="index-3.html"><span>Read Reviews</span></a></p>
+  {/* banner-style-two */}
+  <section className="banner-style-two">
+    <div className="pattern-layer" style={{backgroundImage: 'url(assets/images/shape/shape-8.png)'}} />
+    <div className="banner-carousel owl-theme owl-carousel owl-dots-none nav-style-one">
+      <div className="slide-item">
+        <div className="bg-layer" style={{backgroundImage: 'url(assets/images/banner/banner-5.jpg)'}} />
+        <div className="auto-container">
+          <div className="row clearfix">
+            <div className="col-xl-7 col-lg-12 col-md-12 content-column">
+              <div className="content-box">
+                <div className="video-btn">
+                  <a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&t=28s" className="lightbox-image" data-caption><i className="flaticon-play" />How to Trade</a>
+                </div>
+                <h2>Future of <br />Trading is Here</h2>
+                <p>Deaching of the great explorer of the truth the builder <br />of human happiness.</p>
+                <div className="btn-box">
+                  <a href="index-2.html" className="theme-btn btn-one"><span>Try Free Demo</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  {/* banner-style-three end */}
-  {/* feature-section */}
-  <section className="feature-section centred">
-    <div className="auto-container">
-      <div className="row clearfix">
-        <div className="col-lg-4 col-md-6 col-sm-12 feature-block">
-          <div className="feature-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-            <div className="inner-box">
-              <div className="icon-inner">
-                <div className="shape" style={{backgroundImage: 'url(assets/images/shape/shape-25.png)'}} />
-                <div className="icon-box"><img src="assets/images/icons/icon-51.png" alt /></div>
-              </div>
-              <h6>We Offer</h6>
-              <h3><a href="index-3.html">Technical Analysis</a></h3>
-              <p>Find fault with a man who chooses to annoying consequences.</p>
-              <div className="link-box">
-                <a href="index-3.html"><span>Read More</span></a>
+      <div className="slide-item">
+        <div className="bg-layer" style={{backgroundImage: 'url(assets/images/banner/banner-6.jpg)'}} />
+        <div className="auto-container">
+          <div className="row clearfix">
+            <div className="col-xl-7 col-lg-12 col-md-12 offset-xl-5 content-column">
+              <div className="content-box">
+                <div className="video-btn">
+                  <a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&t=28s" className="lightbox-image" data-caption><i className="flaticon-play" />How to Trade</a>
+                </div>
+                <h2>The Safest <br />Place to Trade</h2>
+                <p>Deaching of the great explorer of the truth the builder <br />of human happiness.</p>
+                <div className="btn-box">
+                  <a href="index-2.html" className="theme-btn btn-one"><span>Try Free Demo</span></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="col-lg-4 col-md-6 col-sm-12 feature-block">
-          <div className="feature-block-one wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms">
-            <div className="inner-box">
-              <div className="icon-inner">
-                <div className="shape" style={{backgroundImage: 'url(assets/images/shape/shape-25.png)'}} />
-                <div className="icon-box"><img src="assets/images/icons/icon-52.png" alt /></div>
-              </div>
-              <h6>We Offer</h6>
-              <h3><a href="index-3.html">Fundamental Analysis</a></h3>
-              <p>Great explorer of the truth the master builder human happiness.</p>
-              <div className="link-box">
-                <a href="index-3.html"><span>Read More</span></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-4 col-md-6 col-sm-12 feature-block">
-          <div className="feature-block-one wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
-            <div className="inner-box">
-              <div className="icon-inner">
-                <div className="shape" style={{backgroundImage: 'url(assets/images/shape/shape-25.png)'}} />
-                <div className="icon-box"><img src="assets/images/icons/icon-53.png" alt /></div>
-              </div>
-              <h6>We Offer</h6>
-              <h3><a href="index-3.html">Sentiment Analysis</a></h3>
-              <p>Tationally encount consequences that again is there anyone.</p>
-              <div className="link-box">
-                <a href="index-3.html"><span>Read More</span></a>
+      </div>
+      <div className="slide-item">
+        <div className="bg-layer" style={{backgroundImage: 'url(assets/images/banner/banner-7.jpg)'}} />
+        <div className="auto-container">
+          <div className="row clearfix">
+            <div className="col-xl-7 col-lg-12 col-md-12 content-column">
+              <div className="content-box">
+                <div className="video-btn">
+                  <a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&t=28s" className="lightbox-image" data-caption><i className="flaticon-play" />How to Trade</a>
+                </div>
+                <h2>Our Insights <br />Your Evolution</h2>
+                <p>Deaching of the great explorer of the truth the builder <br />of human happiness.</p>
+                <div className="btn-box">
+                  <a href="index-2.html" className="theme-btn btn-one"><span>Try Free Demo</span></a>
+                </div>
               </div>
             </div>
           </div>
@@ -285,202 +290,327 @@ const index = () => {
       </div>
     </div>
   </section>
-  {/* feature-section end */}
-  {/* pricing-style-three */}
-  <section className="pricing-style-three">
-    <div className="pattern-layer" style={{backgroundImage: 'url(assets/images/shape/shape-26.png)'}} />
+  {/* banner-style-two end */}
+  {/* funfact-section */}
+  <section className="funfact-section sec-pad centred">
     <div className="auto-container">
-      <div className="sec-title centred">
-        <span className="sub-title">Popular Pairs</span>
-        <h2>Top <span>Pricing List</span> in Market</h2>
+      <div className="sec-title">
+        <span className="sub-title">Interesting Numbers</span>
+        <h2><span>Achievements</span> of our Company</h2>
       </div>
-      <div className="row clearfix">
-        <div className="col-xl-12 col-lg-12 col-md-12 big-column">
-          <div className="row clearfix">
-            <div className="col-lg-4 col-md-6 col-sm-12 pricing-block">
-              <div className="pricing-block-two">
-                <div className="inner-box">
-                  <div className="link red"><a href="index-3.html"><i className="flaticon-right-down" /></a></div>
-                  <div className="currency-box">
-                    <ul className="list-item clearfix">
-                      <li>eur</li>
-                      <li><i className="flaticon-exchange" /></li>
-                      <li>usd</li>
-                    </ul>
-                    <span className="currency-rate red">-0.14%</span>
-                  </div>
-                  <p><span>$1.06199 USD</span><span>Sell at 1.06185</span></p>
-                </div>
+      <div className="inner-box">
+        <div className="funfact-block-one">
+          <div className="shape">
+            <div className="shape-1" style={{backgroundImage: 'url(assets/images/shape/shape-9.png)'}} />
+            <div className="shape-2" style={{backgroundImage: 'url(assets/images/shape/shape-10.png)'}} />
+            <div className="shape-3" style={{backgroundImage: 'url(assets/images/shape/shape-11.png)'}} />
+          </div>
+          <div className="count-outer count-box">
+            <span className="count-text" data-speed={1500} data-stop={49}>0</span><span className="small-text">M</span>
+          </div>
+          <p>Active Traders</p>
+          <div className="icon-box"><img src="assets/images/icons/icon-32.png" alt /></div>
+        </div>
+        <div className="funfact-block-one">
+          <div className="shape">
+            <div className="shape-1" style={{backgroundImage: 'url(assets/images/shape/shape-9.png)'}} />
+            <div className="shape-2" style={{backgroundImage: 'url(assets/images/shape/shape-10.png)'}} />
+            <div className="shape-3" style={{backgroundImage: 'url(assets/images/shape/shape-11.png)'}} />
+          </div>
+          <div className="count-outer count-box">
+            <span className="count-text" data-speed={1500} data-stop="3.7">0</span><span className="small-text">B</span>
+          </div>
+          <p>Market Capitalisation</p>
+          <div className="icon-box"><img src="assets/images/icons/icon-33.png" alt /></div>
+        </div>
+        <div className="funfact-block-one">
+          <div className="shape">
+            <div className="shape-1" style={{backgroundImage: 'url(assets/images/shape/shape-9.png)'}} />
+            <div className="shape-2" style={{backgroundImage: 'url(assets/images/shape/shape-10.png)'}} />
+            <div className="shape-3" style={{backgroundImage: 'url(assets/images/shape/shape-11.png)'}} />
+          </div>
+          <div className="count-outer count-box">
+            <span className="count-text" data-speed={1500} data-stop="73.4">0</span><span className="small-text">M</span>
+          </div>
+          <p>Total Revenue</p>
+          <div className="icon-box"><img src="assets/images/icons/icon-34.png" alt /></div>
+        </div>
+        <div className="funfact-block-one">
+          <div className="shape">
+            <div className="shape-1" style={{backgroundImage: 'url(assets/images/shape/shape-9.png)'}} />
+            <div className="shape-2" style={{backgroundImage: 'url(assets/images/shape/shape-10.png)'}} />
+            <div className="shape-3" style={{backgroundImage: 'url(assets/images/shape/shape-11.png)'}} />
+          </div>
+          <div className="count-outer count-box">
+            <span className="count-text" data-speed={1500}>0</span><span className="small-text">M</span>
+          </div>
+          <p>Awards Won</p>
+          <div className="icon-box"><img src="assets/images/icons/icon-35.png" alt /></div>
+        </div>
+        <div className="funfact-block-one">
+          <div className="shape">
+            <div className="shape-1" style={{backgroundImage: 'url(assets/images/shape/shape-9.png)'}} />
+            <div className="shape-2" style={{backgroundImage: 'url(assets/images/shape/shape-10.png)'}} />
+            <div className="shape-3" style={{backgroundImage: 'url(assets/images/shape/shape-11.png)'}} />
+          </div>
+          <div className="count-outer count-box">
+            <span className="count-text" data-speed={1500} data-stop={99}>0</span><span>+</span>
+          </div>
+          <p>Offices &amp; Branches</p>
+          <div className="icon-box"><img src="assets/images/icons/icon-36.png" alt /></div>
+        </div>
+      </div>
+      <div className="lower-box">
+        <ul className="author-box clearfix">
+          <li><img src="assets/images/resource/author-1.png" alt /></li>
+          <li><img src="assets/images/resource/author-2.png" alt /></li>
+          <li><img src="assets/images/resource/author-3.png" alt /></li>
+        </ul>
+        <h5>Average rating of 4.89/5 <br />on Trustpilot</h5>
+      </div>
+    </div>
+  </section>
+  {/* funfact-section end */}
+  {/* pricing-style-two */}
+  <section className="pricing-style-two bg-color-2 sec-pad">
+    <div className="pattern-layer" style={{backgroundImage: 'url(assets/images/shape/shape-12.png)'}} />
+    <div className="auto-container">
+      <div className="title-box">
+        <div className="sec-title light">
+          <span className="sub-title">Forex Trading</span>
+          <h2>Top <span>Pricing</span> List in Market</h2>
+        </div>
+        <div className="chat-box">
+          <figure className="thumb-box"><img src="assets/images/resource/chat-1.jpg" alt /></figure>
+          <div className="link-box"><a href="contact.html"><span>Live Chat With <br />Expert</span></a></div>
+        </div>
+      </div>
+      <div className="row  clearfix">
+        <div className="col-lg-3 col-md-6 col-sm-12 pricing-block">
+          <div className="pricing-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+            <div className="inner-box">
+              <div className="currency-box">
+                <ul className="list-item">
+                  <li><img src="assets/images/icons/flag-1.png" alt />eur</li>
+                  <li><img src="assets/images/icons/flag-2.png" alt />usd</li>
+                </ul>
               </div>
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-12 pricing-block">
-              <div className="pricing-block-two">
-                <div className="inner-box">
-                  <div className="link green"><a href="index-3.html"><i className="flaticon-right-down" /></a></div>
-                  <div className="currency-box">
-                    <ul className="list-item clearfix">
-                      <li>usd</li>
-                      <li><i className="flaticon-exchange" /></li>
-                      <li>jpy</li>
-                    </ul>
-                    <span className="currency-rate green">+0.04%</span>
-                  </div>
-                  <p><span>$1.22195 USD</span><span>Sell at 1.06199</span></p>
-                </div>
+              <div className="content-box">
+                <ul className="list-item clearfix">
+                  <li>Sell<span>Buy</span></li>
+                  <li className="red">$1.06199<span className="yellow">$1.06185</span></li>
+                  <li>Spread <br /><span className="green">-0.14</span><a href="index-2.html">Trade</a></li>
+                </ul>
               </div>
-            </div>
-            <div className="col-lg-4 col-md-12 col-sm-12 pricing-block">
-              <div className="pricing-block-two">
-                <div className="inner-box">
-                  <div className="link green"><a href="index-3.html"><i className="flaticon-right-down" /></a></div>
-                  <div className="currency-box">
-                    <ul className="list-item clearfix">
-                      <li>usd</li>
-                      <li><i className="flaticon-exchange" /></li>
-                      <li>jpy</li>
-                    </ul>
-                    <span className="currency-rate green">+0.04%</span>
-                  </div>
-                  <p><span>$1.22195 USD</span><span>Sell at 1.06199</span></p>
-                </div>
+              <div className="graph-box">
+                <div className="graph"><img src="assets/images/icons/graph-1.png" alt /></div>
               </div>
             </div>
           </div>
         </div>
-        <div className="col-xl-8 col-lg-12 col-md-12 big-column offset-xl-2">
-          <div className="row clearfix">
-            <div className="col-lg-6 col-md-6 col-sm-12 pricing-block">
-              <div className="pricing-block-two">
-                <div className="inner-box">
-                  <div className="link green"><a href="index-3.html"><i className="flaticon-right-down" /></a></div>
-                  <div className="currency-box">
-                    <ul className="list-item clearfix">
-                      <li>usd</li>
-                      <li><i className="flaticon-exchange" /></li>
-                      <li>jpy</li>
-                    </ul>
-                    <span className="currency-rate green">+0.04%</span>
-                  </div>
-                  <p><span>$1.22195 USD</span><span>Sell at 1.06199</span></p>
-                </div>
+        <div className="col-lg-3 col-md-6 col-sm-12 pricing-block">
+          <div className="pricing-block-one wow fadeInUp animated" data-wow-delay="200ms" data-wow-duration="1500ms">
+            <div className="inner-box">
+              <div className="currency-box">
+                <ul className="list-item">
+                  <li><img src="assets/images/icons/flag-2.png" alt />usd</li>
+                  <li><img src="assets/images/icons/flag-3.png" alt />jpy</li>
+                </ul>
+              </div>
+              <div className="content-box">
+                <ul className="list-item clearfix">
+                  <li>Sell<span>Buy</span></li>
+                  <li className="yellow">$1.22195<span className="red">$1.22199</span></li>
+                  <li>Spread <br /><span className="green">+0.04</span><a href="index-2.html">Trade</a></li>
+                </ul>
+              </div>
+              <div className="graph-box">
+                <div className="graph"><img src="assets/images/icons/graph-2.png" alt /></div>
               </div>
             </div>
-            <div className="col-lg-6 col-md-6 col-sm-12 pricing-block">
-              <div className="pricing-block-two">
-                <div className="inner-box">
-                  <div className="link red"><a href="index-3.html"><i className="flaticon-right-down" /></a></div>
-                  <div className="currency-box">
-                    <ul className="list-item clearfix">
-                      <li>eur</li>
-                      <li><i className="flaticon-exchange" /></li>
-                      <li>usd</li>
-                    </ul>
-                    <span className="currency-rate red">-0.14%</span>
-                  </div>
-                  <p><span>$1.06199 USD</span><span>Sell at 1.06185</span></p>
-                </div>
+          </div>
+        </div>
+        <div className="col-lg-3 col-md-6 col-sm-12 pricing-block">
+          <div className="pricing-block-one wow fadeInUp animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+            <div className="inner-box">
+              <div className="currency-box">
+                <ul className="list-item">
+                  <li><img src="assets/images/icons/flag-4.png" alt />gbp</li>
+                  <li><img src="assets/images/icons/flag-2.png" alt />usd</li>
+                </ul>
+              </div>
+              <div className="content-box">
+                <ul className="list-item clearfix">
+                  <li>Sell<span>Buy</span></li>
+                  <li className="yellow">$0.65982<span className="red">$0.65994</span></li>
+                  <li>Spread <br /><span className="green">+0.12</span><a href="index-2.html">Trade</a></li>
+                </ul>
+              </div>
+              <div className="graph-box">
+                <div className="graph"><img src="assets/images/icons/graph-3.png" alt /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-lg-3 col-md-6 col-sm-12 pricing-block">
+          <div className="pricing-block-one wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
+            <div className="inner-box">
+              <div className="currency-box">
+                <ul className="list-item">
+                  <li><img src="assets/images/icons/flag-5.png" alt />aud</li>
+                  <li><img src="assets/images/icons/flag-2.png" alt />cad</li>
+                </ul>
+              </div>
+              <div className="content-box">
+                <ul className="list-item clearfix">
+                  <li>Sell<span>Buy</span></li>
+                  <li className="red">$14.785<span className="yellow">$13.625</span></li>
+                  <li>Spread <br /><span className="green">-0.14</span><a href="index-2.html">Trade</a></li>
+                </ul>
+              </div>
+              <div className="graph-box">
+                <div className="graph"><img src="assets/images/icons/graph-4.png" alt /></div>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div className="link-box centred">
-        <a href="index-3.html"><span>See More Pairs</span></a>
+        <a href="index-2.html"><span>See More</span></a>
       </div>
     </div>
   </section>
-  {/* pricing-style-three end */}
-  {/* markets-section */}
-  <section className="markets-section sec-pad">
+  {/* pricing-style-two end */}
+  {/* account-style-two */}
+  <section className="account-style-two sec-pad">
     <div className="auto-container">
-      <div className="sec-title">
-        <span className="sub-title">Markets</span>
-        <h2>Wide Range of <span>Markets</span></h2>
+      <div className="sec-title centred">
+        <span className="sub-title">Account Types</span>
+        <h2>Bullion Trading <span>Accounts</span></h2>
       </div>
-      <div className="three-item-carousel owl-carousel owl-theme owl-dots-none nav-style-one">
-        <div className="markets-block-one">
-          <div className="inner-box">
-            <div className="image-box">
-              <figure className="image"><img src="assets/images/resource/market-1.jpg" alt /></figure>
-              <div className="shape" style={{backgroundImage: 'url(assets/images/shape/shape-27.png)'}} />
-            </div>
-            <div className="lower-content">
-              <h3><a href="market-details.html">Trade Forex</a></h3>
-              <p>To take a trivial example which of to some advantage.</p>
-              <div className="link-box">
-                <a href="market-details.html"><span>Read More</span></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="markets-block-one">
-          <div className="inner-box">
-            <div className="image-box">
-              <figure className="image"><img src="assets/images/resource/market-2.jpg" alt /></figure>
-              <div className="shape" style={{backgroundImage: 'url(assets/images/shape/shape-27.png)'}} />
-            </div>
-            <div className="lower-content">
-              <h3><a href="market-details.html">Trade Gold &amp; Silver</a></h3>
-              <p>Temporibus autem quibusdam et officiis debitis aut rerum.</p>
-              <div className="link-box">
-                <a href="market-details.html"><span>Read More</span></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="markets-block-one">
-          <div className="inner-box">
-            <div className="image-box">
-              <figure className="image"><img src="assets/images/resource/market-3.jpg" alt /></figure>
-              <div className="shape" style={{backgroundImage: 'url(assets/images/shape/shape-27.png)'}} />
-            </div>
-            <div className="lower-content">
-              <h3><a href="market-details.html">Trade Oil &amp; Gas</a></h3>
-              <p>Dignissimos ducimus qui blandiis praesentium voluptatum.</p>
-              <div className="link-box">
-                <a href="market-details.html"><span>Read More</span></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  {/* markets-section end */}
-  {/* ebook-section */}
-  <section className="ebook-section">
-    <div className="auto-container">
       <div className="row clearfix">
-        <div className="col-lg-6 col-md-12 col-sm-12 image-column">
-          <div className="image-box">
-            <div className="image-shape" style={{backgroundImage: 'url(assets/images/shape/shape-28.png)'}} />
-            <figure className="image"><img src="assets/images/resource/ipad-1.png" alt /></figure>
+        <div className="col-lg-4 col-md-6 col-sm-12 account-block">
+          <div className="account-block-two wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+            <div className="inner-box">
+              <div className="upper-box centred">
+                <div className="shape" style={{backgroundImage: 'url(assets/images/shape/shape-13.png)'}} />
+                <h3>Standard a/c</h3>
+                <p>Beguiled demoralized by charms non</p>
+                <div className="icon-box"><img src="assets/images/icons/icon-37.png" alt /></div>
+              </div>
+              <div className="content-box">
+                <ul className="list-item clearfix">
+                  <li>Initial Deposit <span>$100</span></li>
+                  <li>Leverage <span>Up to 1:3000</span></li>
+                  <li>Order Volume <span>0.01 - 500 lots</span></li>
+                  <li>Spread <span>Fixed from 3 pips</span></li>
+                </ul>
+              </div>
+              <div className="lower-box">
+                <div className="link-box"><a href="index-2.html"><span>Open Your Account</span></a></div>
+                <div className="more-link"><a href="index-2.html">More Info</a></div>
+              </div>
+            </div>
           </div>
         </div>
+        <div className="col-lg-4 col-md-6 col-sm-12 account-block">
+          <div className="account-block-two wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms">
+            <div className="recommended-box">
+              <h6>Most Recommended</h6>
+            </div>
+            <div className="inner-box">
+              <div className="upper-box centred">
+                <div className="shape" style={{backgroundImage: 'url(assets/images/shape/shape-13.png)'}} />
+                <h3>Commission a/c</h3>
+                <p>Case are perfectly simple free easy </p>
+                <div className="icon-box"><img src="assets/images/icons/icon-38.png" alt /></div>
+              </div>
+              <div className="content-box">
+                <ul className="list-item clearfix">
+                  <li>Initial Deposit <span>$100</span></li>
+                  <li>Leverage <span>Up to 1:3000</span></li>
+                  <li>Order Volume <span>0.01 - 500 lots</span></li>
+                  <li>Spread <span>Fixed from 3 pips</span></li>
+                </ul>
+              </div>
+              <div className="lower-box">
+                <div className="link-box"><a href="index-2.html"><span>Open Your Account</span></a></div>
+                <div className="more-link"><a href="index-2.html">More Info</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-lg-4 col-md-6 col-sm-12 account-block">
+          <div className="account-block-two wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
+            <div className="inner-box">
+              <div className="upper-box centred">
+                <div className="shape" style={{backgroundImage: 'url(assets/images/shape/shape-13.png)'}} />
+                <h3>Stp Pro a/c</h3>
+                <p>The claims off duty or the obligations</p>
+                <div className="icon-box"><img src="assets/images/icons/icon-39.png" alt /></div>
+              </div>
+              <div className="content-box">
+                <ul className="list-item clearfix">
+                  <li>Initial Deposit <span>$100</span></li>
+                  <li>Leverage <span>Up to 1:3000</span></li>
+                  <li>Order Volume <span>0.01 - 500 lots</span></li>
+                  <li>Spread <span>Fixed from 3 pips</span></li>
+                </ul>
+              </div>
+              <div className="lower-box">
+                <div className="link-box"><a href="index-2.html"><span>Open Your Account</span></a></div>
+                <div className="more-link"><a href="index-2.html">More Info</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {/* account-style-two end */}
+  {/* platform-section */}
+  <section className="platform-section sec-pad">
+    <div className="auto-container">
+      <div className="row align-items-center">
         <div className="col-lg-6 col-md-12 col-sm-12 content-column">
           <div className="content-box">
             <div className="sec-title">
-              <span className="sub-title">Ebook</span>
-              <h2>Ebook Series for <br />Forex Trading <span>Beginners</span></h2>
+              <span className="sub-title">MT4 Platform</span>
+              <h2>Use <span>MT4?</span> Get Exclusive Tools with Bullion</h2>
             </div>
             <div className="text-box">
               <p>Minus id quod maxime place at facere possimus, omnis voluptas assu- menda omnis dolors repellendus tempor.</p>
             </div>
-            <h6>Ebook Highlights</h6>
             <ul className="list-item clearfix">
-              <li><h4>Ultra fast trade execution <span>01</span></h4></li>
-              <li><h4>Trading from a smartphone or tablet <span>02</span></h4></li>
-              <li><h4>No dealing desk, no requotes <span>03</span></h4></li>
+              <li><h4>Ultra fast trade execution<span>01</span></h4></li>
+              <li><h4>Trading from a smartphone or tablet<span>02</span></h4></li>
+              <li><h4>No dealing desk, no requotes<span>03</span></h4></li>
             </ul>
-            <div className="btn-box">
-              <button type="button" className="theme-btn"><span>Download</span></button>
+            <div className="lower-box">
+              <div className="btn-box">
+                <a href="index-2.html" className="theme-btn"><span>Read More</span></a>
+              </div>
+              <ul className="download-apps clearfix">
+                <li><a href="index-2.html"><i className="fa-brands fa-windows" /></a></li>
+                <li><a href="index-2.html"><i className="fa-brands fa-apple" /></a></li>
+                <li><a href="index-2.html"><i className="fa-brands fa-android" /></a></li>
+              </ul>
             </div>
+          </div>
+        </div>
+        <div className="col-lg-6 col-md-12 col-sm-12 image-column">
+          <div className="image-box">
+            <div className="image-shape">
+              <div className="shape-1" />
+              <div className="shape-2 rotate-me" style={{backgroundImage: 'url(assets/images/shape/shape-14.png)'}} />
+            </div>
+            <figure className="image"><img src="assets/images/resource/mockup-1.png" alt /></figure>
           </div>
         </div>
       </div>
     </div>
   </section>
-  {/* ebook-section end */}
+  {/* platform-section end */}
   {/* chooseus-style-two */}
   <section className="chooseus-style-two sec-pad">
     <div className="pattern-layer" style={{backgroundImage: 'url(assets/images/shape/shape-20.png)'}} />
@@ -531,378 +661,423 @@ const index = () => {
     </div>
   </section>
   {/* chooseus-style-two end */}
-  {/* platform-style-two */}
-  <section className="platform-style-two">
+  {/* news-section */}
+  <section className="news-style-two sec-pad">
     <div className="auto-container">
-      <div className="upper-box">
-        <div className="row clearfix">
-          <div className="col-lg-6 col-md-12 col-sm-12 image-column">
-            <div className="image-box">
-              <div className="image-shape" style={{backgroundImage: 'url(assets/images/shape/shape-29.png)'}} />
-              <figure className="image"><img src="assets/images/resource/mac-1.png" alt /></figure>
+      <div className="sec-title">
+        <span className="sub-title">News &amp; Updates</span>
+        <h2>Recent Post From Our <span>Blog</span></h2>
+        <div className="link-box">
+          <a href="blog.html"><span>More News</span></a>
+        </div>
+      </div>
+      <div className="row clearfix">
+        <div className="col-lg-3 col-md-6 col-sm-12 news-block">
+          <div className="news-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+            <div className="inner-box">
+              <div className="image-box">
+                <figure className="image"><a href="blog-details.html"><img src="assets/images/news/news-4.jpg" alt /></a></figure>
+                <span className="post-date">24 Dec</span>
+              </div>
+              <div className="lower-content">
+                <h4><a href="blog-details.html">Best FTSE 250 shares to buy in Feb 2023</a></h4>
+                <p>Error sit voluptatem accusantium doloremque...</p>
+                <div className="author-box">
+                  <h6>Trade Ideas</h6>
+                  <ul className="post-info clearfix">
+                    <li><a href="blog-details.html">Justin Langer</a></li>
+                    <li><span>..</span></li>
+                    <li>2 Mins Read</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="col-lg-6 col-md-12 col-sm-12 content-column">
+        </div>
+        <div className="col-lg-3 col-md-6 col-sm-12 news-block">
+          <div className="news-block-one wow fadeInUp animated" data-wow-delay="200ms" data-wow-duration="1500ms">
+            <div className="inner-box">
+              <div className="image-box">
+                <figure className="image"><a href="blog-details.html"><img src="assets/images/news/news-5.jpg" alt /></a></figure>
+                <span className="post-date">16 Dec</span>
+              </div>
+              <div className="lower-content">
+                <h4><a href="blog-details.html">Fixed vs floatin exchange rates main differences</a></h4>
+                <p>Rerum facilis est et expedita distin ctio libero  Itaque earum...</p>
+                <div className="author-box">
+                  <h6>Economic</h6>
+                  <ul className="post-info clearfix">
+                    <li><a href="blog-details.html">Mylah Sophia</a></li>
+                    <li><span>..</span></li>
+                    <li>3 Mins Read</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-lg-3 col-md-6 col-sm-12 news-block">
+          <div className="news-block-one wow fadeInUp animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+            <div className="inner-box">
+              <div className="image-box">
+                <figure className="image"><a href="blog-details.html"><img src="assets/images/news/news-6.jpg" alt /></a></figure>
+                <span className="post-date">30 Nov</span>
+              </div>
+              <div className="lower-content">
+                <h4><a href="blog-details.html">Surprise move with widening of yield curve...</a></h4>
+                <p>Temporibus autem quibusdam et aut debitis tenetur...</p>
+                <div className="author-box">
+                  <h6>Updates</h6>
+                  <ul className="post-info clearfix">
+                    <li><a href="blog-details.html">Michael Rhys</a></li>
+                    <li><span>..</span></li>
+                    <li>2 Mins Read</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-lg-3 col-md-6 col-sm-12 news-block">
+          <div className="news-block-one wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
+            <div className="inner-box">
+              <div className="image-box">
+                <figure className="image"><a href="blog-details.html"><img src="assets/images/news/news-7.jpg" alt /></a></figure>
+                <span className="post-date">09 Nov</span>
+              </div>
+              <div className="lower-content">
+                <h4><a href="blog-details.html">World Finance and Bullion Trader on Market</a></h4>
+                <p>Recusandae itaque earum rerum hic tenetur a sapiente...</p>
+                <div className="author-box">
+                  <h6>Trade Ideas</h6>
+                  <ul className="post-info clearfix">
+                    <li><a href="blog-details.html">Haris Gulati</a></li>
+                    <li><span>..</span></li>
+                    <li>5 Mins Read</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {/* news-section end */}
+  {/* testimonial-section */}
+  <section className="testimonial-section">
+    <div className="auto-container">
+      <div className="sec-title centred">
+        <span className="sub-title">Testimonials</span>
+        <h2>Traders <span>Words</span> About Us</h2>
+      </div>
+      <div className="inner-container">
+        <div className="testimonial-block">
+          <figure className="image-box"><img src="assets/images/resource/testimonial-1.png" alt /></figure>
+          <div className="content-box">
+            <h3><img src="assets/images/icons/icon-44.png" alt />Awesome!...</h3>
+            <p>Dignissimos ducimus qui blanditiis pra esentium voluptatum deleniti at corrupt isint occaecati cupiditate.</p>
+            <ul className="rating clearfix">
+              <li><i className="flaticon-star" /></li>
+              <li><i className="flaticon-star" /></li>
+              <li><i className="flaticon-star" /></li>
+              <li><i className="flaticon-star" /></li>
+              <li><i className="flaticon-star" /></li>
+              <li><span>(5 out of 5)</span></li>
+            </ul>
+            <span className="date">Dec 14, 2022</span>
+          </div>
+          <div className="author-box">
+            <figure className="author-thumb"><img src="assets/images/resource/testimonial-2.png" alt /></figure>
+            <h4>Nathan Felix</h4>
+            <span className="designation">California</span>
+          </div>
+        </div>
+        <div className="testimonial-block">
+          <figure className="image-box"><img src="assets/images/resource/testimonial-4.png" alt /></figure>
+          <div className="content-box">
+            <h3><img src="assets/images/icons/icon-44.png" alt />It’s been fantastic!...</h3>
+            <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet voluptates.</p>
+            <ul className="rating clearfix">
+              <li><i className="flaticon-star" /></li>
+              <li><i className="flaticon-star" /></li>
+              <li><i className="flaticon-star" /></li>
+              <li><i className="flaticon-star" /></li>
+              <li><i className="flaticon-star" /></li>
+              <li><span>(4.5 out of 5)</span></li>
+            </ul>
+            <span className="date">Dec 14, 2022</span>
+          </div>
+          <div className="author-box">
+            <figure className="author-thumb"><img src="assets/images/resource/testimonial-3.png" alt /></figure>
+            <h4>Nora Penelope</h4>
+            <span className="designation">San Fransisco</span>
+          </div>
+        </div>
+      </div>
+      <div className="link-box centred">
+        <a href="index-2.html"><span>More Reviews</span></a>
+      </div>
+    </div>
+  </section>
+  {/* testimonial-section end */}
+  {/* location-section */}
+  <section className="location-section sec-pad">
+    <div className="auto-container">
+      <div className="upper-box">
+        <div className="row align-items-center">
+          <div className="col-lg-4 col-md-12 col-sm-12 content-column">
             <div className="content-box">
               <div className="sec-title">
-                <span className="sub-title">Platform</span>
-                <h2>Trade Forex from your <span>Desktop</span></h2>
+                <span className="sub-title">Get in Touch</span>
+                <h2>Support in <br />Multi <span>Language</span></h2>
               </div>
               <div className="text-box">
-                <p>Laborious physical exercise, except to obtain some advantage from it but who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences.</p>
+                <p>We can assure you high-quality certified translations of your brokerage documents in over 100 languages!</p>
+                <a href="index-2.html" className="theme-btn"><span>Read More</span></a>
               </div>
-              <ul className="download-list clearfix">
-                <li>
-                  <div className="icon-box"><i className="fa-brands fa-apple" /></div>
-                  <div className="link-box"><a href="index-3.html"><span>Download App For IOS</span></a></div>
-                </li>
-                <li>
-                  <div className="icon-box"><i className="fa-brands fa-windows" /></div>
-                  <div className="link-box"><a href="index-3.html"><span>Download App For Windows</span></a></div>
-                </li>
-              </ul>
+            </div>
+          </div>
+          <div className="col-lg-8 col-md-12 col-sm-12 location-column">
+            <div className="location-inner">
+              <div className="map" style={{backgroundImage: 'url(assets/images/icons/map-1.png)'}} />
+              <div className="location-box">
+                <div className="single-location"><a href="https://www.google.com/maps" target="_blank"><img src="assets/images/icons/location-1.png" alt /></a></div>
+                <div className="single-location"><a href="https://www.google.com/maps" target="_blank"><img src="assets/images/icons/location-1.png" alt /></a></div>
+                <div className="single-location"><a href="https://www.google.com/maps" target="_blank"><img src="assets/images/icons/location-1.png" alt /></a></div>
+                <div className="single-location"><a href="https://www.google.com/maps" target="_blank"><img src="assets/images/icons/location-1.png" alt /></a></div>
+                <div className="single-location"><a href="https://www.google.com/maps" target="_blank"><img src="assets/images/icons/location-1.png" alt /></a></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div className="lower-box">
-        <div className="shape" style={{backgroundImage: 'url(assets/images/shape/shape-30.png)'}} />
         <div className="row clearfix">
-          <div className="col-lg-4 col-md-6 col-sm-12 single-column">
-            <div className="single-item">
-              <div className="static-content">
-                <h4><img src="assets/images/icons/icon-54.png" alt />Multiple Order Types <span>01</span></h4>
-              </div>
-              <div className="overlay-content">
-                <p>Beatae vitae dicta sun explicabo nemo enim ipsam voluptatem volupta.</p>
-              </div>
+          <div className="col-lg-6 col-md-6 col-sm-12 form-column">
+            <div className="form-inner">
+              <form action="https://azim.hostlin.com/Bullion/contact.html" method="post">
+                <div className="form-group">
+                  <div className="icon"><img src="assets/images/icons/icon-45.png" alt /></div>
+                  <input type="email" name="email" placeholder="customercare@bullion.com" required />
+                  <button type="submit"><i className="flaticon-right-down" /></button>
+                </div>
+              </form>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6 col-sm-12 single-column">
-            <div className="single-item">
-              <div className="static-content">
-                <h4><img src="assets/images/icons/icon-54.png" alt />Multiple Charting <span>02</span></h4>
-              </div>
-              <div className="overlay-content">
-                <p>Beatae vitae dicta sun explicabo nemo enim ipsam voluptatem volupta.</p>
-              </div>
+          <div className="col-lg-2 col-md-6 col-sm-12 link-column">
+            <div className="single-link">
+              <button>Make a Call</button>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6 col-sm-12 single-column">
-            <div className="single-item">
-              <div className="static-content">
-                <h4><img src="assets/images/icons/icon-54.png" alt />Newsfeeds  <span>03</span></h4>
-              </div>
-              <div className="overlay-content">
-                <p>Beatae vitae dicta sun explicabo nemo enim ipsam voluptatem volupta.</p>
-              </div>
+          <div className="col-lg-2 col-md-6 col-sm-12 link-column">
+            <div className="single-link">
+              <button>Live Chat</button>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6 col-sm-12 single-column">
-            <div className="single-item">
-              <div className="static-content">
-                <h4><img src="assets/images/icons/icon-54.png" alt />Technical Indicators <span>04</span></h4>
-              </div>
-              <div className="overlay-content">
-                <p>Beatae vitae dicta sun explicabo nemo enim ipsam voluptatem volupta.</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6 col-sm-12 single-column">
-            <div className="single-item">
-              <div className="static-content">
-                <h4><img src="assets/images/icons/icon-54.png" alt />Stop Loss Facilities <span>05</span></h4>
-              </div>
-              <div className="overlay-content">
-                <p>Beatae vitae dicta sun explicabo nemo enim ipsam voluptatem volupta.</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6 col-sm-12 single-column">
-            <div className="single-item">
-              <div className="static-content">
-                <h4><img src="assets/images/icons/icon-54.png" alt />Multilingual Support <span>06</span></h4>
-              </div>
-              <div className="overlay-content">
-                <p>Beatae vitae dicta sun explicabo nemo enim ipsam voluptatem volupta.</p>
-              </div>
+          <div className="col-lg-2 col-md-6 col-sm-12 link-column">
+            <div className="single-link">
+              <a href="faq.html">Faq’s</a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  {/* platform-style-two end */}
-  {/* benefits-section */}
-  <section className="benefits-section">
-    <div className="bg-layer" style={{backgroundImage: 'url(assets/images/background/benefits-bg.jpg)'}} />
-    <div className="pattern-layer" style={{backgroundImage: 'url(assets/images/shape/shape-32.png)'}} />
+  {/* location-section end */}
+  {/* clients-style-two */}
+  <section className="clients-style-two centred">
     <div className="auto-container">
-      <div className="row clearfix">
-        <div className="col-xl-6 col-lg-12 col-md-12 content-column">
-          <div className="single-item-carousel owl-carousel owl-theme owl-dots-none nav-style-one">
-            <div className="content-box">
-              <div className="shape" style={{backgroundImage: 'url(assets/images/shape/shape-31.png)'}} />
-              <div className="sec-title">
-                <h2>Open an Account &amp; Get <span>Benefits</span></h2>
-              </div>
-              <h3>Standard Account<span>01</span></h3>
-              <ul className="list-item clearfix">
-                <li>Maxime placefacere possimus menda omni tempor.</li>
-                <li>Right to find fault with a man.</li>
-                <li>Avoids a pain that produces no resultant. </li>
-              </ul>
-              <div className="btn-box">
-                <a href="index-3.html" className="theme-btn"><span>Open Your A/c</span></a>
-              </div>
-            </div>
-            <div className="content-box">
-              <div className="shape" style={{backgroundImage: 'url(assets/images/shape/shape-31.png)'}} />
-              <div className="sec-title">
-                <h2>Open an Account &amp; Get <span>Benefits</span></h2>
-              </div>
-              <h3>Standard Account<span>01</span></h3>
-              <ul className="list-item clearfix">
-                <li>Maxime placefacere possimus menda omni tempor.</li>
-                <li>Right to find fault with a man.</li>
-                <li>Avoids a pain that produces no resultant. </li>
-              </ul>
-              <div className="btn-box">
-                <a href="index-3.html" className="theme-btn"><span>Open Your A/c</span></a>
-              </div>
-            </div>
-            <div className="content-box">
-              <div className="shape" style={{backgroundImage: 'url(assets/images/shape/shape-31.png)'}} />
-              <div className="sec-title">
-                <h2>Open an Account &amp; Get <span>Benefits</span></h2>
-              </div>
-              <h3>Standard Account<span>01</span></h3>
-              <ul className="list-item clearfix">
-                <li>Maxime placefacere possimus menda omni tempor.</li>
-                <li>Right to find fault with a man.</li>
-                <li>Avoids a pain that produces no resultant. </li>
-              </ul>
-              <div className="btn-box">
-                <a href="index-3.html" className="theme-btn"><span>Open Your A/c</span></a>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="sec-title">
+        <span className="sub-title">Our Partners</span>
+        <h2><span>Partners</span> Around the World </h2>
+      </div>
+      <ul className="clients-logo-list clearfix">
+        <li><figure className="clients-box"><a href="index-2.html"><img src="assets/images/clients/clients-6.png" alt /></a></figure></li>
+        <li><figure className="clients-box"><a href="index-2.html"><img src="assets/images/clients/clients-7.png" alt /></a></figure></li>
+        <li><figure className="clients-box"><a href="index-2.html"><img src="assets/images/clients/clients-8.png" alt /></a></figure></li>
+        <li><figure className="clients-box"><a href="index-2.html"><img src="assets/images/clients/clients-9.png" alt /></a></figure></li>
+        <li><figure className="clients-box"><a href="index-2.html"><img src="assets/images/clients/clients-10.png" alt /></a></figure></li>
+        <li><figure className="clients-box"><a href="index-2.html"><img src="assets/images/clients/clients-11.png" alt /></a></figure></li>
+        <li><figure className="clients-box"><a href="index-2.html"><img src="assets/images/clients/clients-12.png" alt /></a></figure></li>
+        <li><figure className="clients-box"><a href="index-2.html"><img src="assets/images/clients/clients-13.png" alt /></a></figure></li>
+      </ul>
+      <div className="link-box centred">
+        <a href="index-2.html"><span>See More</span></a>
       </div>
     </div>
   </section>
-  {/* benefits-section end */}
-  {/* news-style-three */}
-  <section className="news-style-three">
+  {/* clients-style-two end */}
+  {/* awards-section */}
+  <section className="awards-section">
     <div className="auto-container">
-      <div className="row clearfix">
-        <div className="col-lg-4 col-md-12 col-sm-12 left-column">
-          <div className="left-content">
-            <div className="sec-title">
-              <span className="sub-title">News &amp; Updates</span>
-              <h2>Read Recent Post From <span>Blog</span></h2>
-              <p>Error sit voluptatem accusantium doloremque quia dolor sit amet, consectetu...</p>
-              <div className="link-box">
-                <a href="blog-3.html"><span>More News</span></a>
-              </div>
-            </div>
-            <div className="subscribe-box">
-              <h3>Subscribe Us</h3>
-              <p>Receive news &amp; updates to your inbox.</p>
-              <div className="form-inner">
-                <form action="https://azim.hostlin.com/Bullion/contact.html" method="post">
-                  <div className="form-group">
-                    <div className="icon"><i className="far fa-envelope-open" /></div>
-                    <input type="email" name="email" placeholder="Email address..." required />
-                  </div>
-                  <div className="form-group">
-                    <button type="submit" className="theme-btn"><span>Subscribe</span></button>
-                  </div>
-                </form>
-              </div>
-            </div>
+      <div className="title-inner">
+        <div className="sec-title mr-0">
+          <span className="sub-title">Awards &amp; Achivements</span>
+          <h2>We're Proud of Our <span>Awards</span></h2>
+        </div>
+        <div className="text-box">
+          <p>Place at facere possimus omnis volupta assum <br />enda est omnis dolor repellendus.</p>
+        </div>
+      </div>
+      <div className="three-item-carousel owl-carousel owl-theme">
+        <div className="awards-block-one">
+          <div className="inner-box">
+            <div className="shape" style={{backgroundImage: 'url(assets/images/shape/shape-21.png)'}} />
+            <div className="icon-box"><img src="assets/images/icons/icon-46.png" alt /></div>
+            <h3>Global Forex <br />Broker of the Year</h3>
+            <p>Global Forex Awards <br />Mar, 2021</p>
           </div>
         </div>
-        <div className="col-lg-8 col-md-12 col-sm-12 right-column">
-          <div className="right-content">
-            <div className="news-block-one">
-              <div className="inner-box">
-                <div className="image-box">
-                  <figure className="image"><a href="blog-details.html"><img src="assets/images/news/news-8.jpg" alt /></a></figure>
-                  <span className="post-date">24 Dec</span>
-                </div>
-                <div className="lower-content">
-                  <h3><a href="blog-details.html">Best FTSE 250 shares to buy in February 2023</a></h3>
-                  <p>Error sit voluptatem accusantium doloremque quia dolor sit amet, consectetu...</p>
-                  <div className="author-box">
-                    <figure className="author-thumb"><img src="assets/images/news/author-1.jpg" alt /></figure>
-                    <h6>Trade Ideas</h6>
-                    <ul className="post-info clearfix">
-                      <li><span>By</span> <a href="blog-details.html">Justin Langer</a></li>
-                      <li><span className="dots">..</span></li>
-                      <li>2 Mins Read</li>
-                    </ul>
-                  </div>
-                  <div className="link-box">
-                    <a href="blog-details.html"><span>Read More</span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="news-block-one">
-              <div className="inner-box">
-                <div className="image-box">
-                  <figure className="image"><a href="blog-details.html"><img src="assets/images/news/news-9.jpg" alt /></a></figure>
-                  <span className="post-date">16 Dec</span>
-                </div>
-                <div className="lower-content">
-                  <h3><a href="blog-details.html">Fixed vs floating exchange rates main differences</a></h3>
-                  <p>Rerum facilis est et expedita distinctio libero magnam aliquam quaerat...</p>
-                  <div className="author-box">
-                    <figure className="author-thumb"><img src="assets/images/news/author-2.jpg" alt /></figure>
-                    <h6>Economic</h6>
-                    <ul className="post-info clearfix">
-                      <li><span>By</span> <a href="blog-details.html">Mylah Sophia</a></li>
-                      <li><span className="dots">..</span></li>
-                      <li>3 Mins Read</li>
-                    </ul>
-                  </div>
-                  <div className="link-box">
-                    <a href="blog-details.html"><span>Read More</span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div className="awards-block-one">
+          <div className="inner-box">
+            <div className="shape" style={{backgroundImage: 'url(assets/images/shape/shape-21.png)'}} />
+            <div className="icon-box"><img src="assets/images/icons/icon-46.png" alt /></div>
+            <h3>Most Transparent <br />FX Broker</h3>
+            <p>The Forex Expo USA <br />Dec, 2018</p>
+          </div>
+        </div>
+        <div className="awards-block-one">
+          <div className="inner-box">
+            <div className="shape" style={{backgroundImage: 'url(assets/images/shape/shape-21.png)'}} />
+            <div className="icon-box"><img src="assets/images/icons/icon-46.png" alt /></div>
+            <h3>Best Forex Rewards <br />Program</h3>
+            <p>Global Forex Awards <br />Jun, 2016</p>
+          </div>
+        </div>
+        <div className="awards-block-one">
+          <div className="inner-box">
+            <div className="shape" style={{backgroundImage: 'url(assets/images/shape/shape-21.png)'}} />
+            <div className="icon-box"><img src="assets/images/icons/icon-46.png" alt /></div>
+            <h3>Global Forex <br />Broker of the Year</h3>
+            <p>Global Forex Awards <br />Mar, 2021</p>
+          </div>
+        </div>
+        <div className="awards-block-one">
+          <div className="inner-box">
+            <div className="shape" style={{backgroundImage: 'url(assets/images/shape/shape-21.png)'}} />
+            <div className="icon-box"><img src="assets/images/icons/icon-46.png" alt /></div>
+            <h3>Most Transparent <br />FX Broker</h3>
+            <p>The Forex Expo USA <br />Dec, 2018</p>
+          </div>
+        </div>
+        <div className="awards-block-one">
+          <div className="inner-box">
+            <div className="shape" style={{backgroundImage: 'url(assets/images/shape/shape-21.png)'}} />
+            <div className="icon-box"><img src="assets/images/icons/icon-46.png" alt /></div>
+            <h3>Best Forex Rewards <br />Program</h3>
+            <p>Global Forex Awards <br />Jun, 2016</p>
+          </div>
+        </div>
+        <div className="awards-block-one">
+          <div className="inner-box">
+            <div className="shape" style={{backgroundImage: 'url(assets/images/shape/shape-21.png)'}} />
+            <div className="icon-box"><img src="assets/images/icons/icon-46.png" alt /></div>
+            <h3>Global Forex <br />Broker of the Year</h3>
+            <p>Global Forex Awards <br />Mar, 2021</p>
+          </div>
+        </div>
+        <div className="awards-block-one">
+          <div className="inner-box">
+            <div className="shape" style={{backgroundImage: 'url(assets/images/shape/shape-21.png)'}} />
+            <div className="icon-box"><img src="assets/images/icons/icon-46.png" alt /></div>
+            <h3>Most Transparent <br />FX Broker</h3>
+            <p>The Forex Expo USA <br />Dec, 2018</p>
+          </div>
+        </div>
+        <div className="awards-block-one">
+          <div className="inner-box">
+            <div className="shape" style={{backgroundImage: 'url(assets/images/shape/shape-21.png)'}} />
+            <div className="icon-box"><img src="assets/images/icons/icon-46.png" alt /></div>
+            <h3>Best Forex Rewards <br />Program</h3>
+            <p>Global Forex Awards <br />Jun, 2016</p>
           </div>
         </div>
       </div>
     </div>
   </section>
-  {/* news-style-three end */}
-  {/* contact-section */}
-  <section className="contact-section sec-pad centred">
-    <div className="pattern-layer" style={{backgroundImage: 'url(assets/images/shape/shape-33.png)'}} />
+  {/* awards-section end */}
+  {/* cta-section */}
+  <section className="cta-section centred">
+    <div className="pattern-layer" style={{backgroundImage: 'url(assets/images/shape/shape-22.png)'}} />
+    <span className="big-text">bullion</span>
     <div className="auto-container">
-      <div className="sec-title light">
-        <span className="sub-title">Drop a Line</span>
-        <h2>Send Your <span>Message</span> to us</h2>
+      <div className="inner-box">
+        <h2>A 360 Trading Experience</h2>
+        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate <br />velit esse quam nihil.</p>
+        <a href="index-2.html" className="theme-btn"><span>Read More</span></a>
       </div>
-      <form method="post" action="https://azim.hostlin.com/Bullion/sendemail.php" id="contact-form">
-        <div className="row clearfix">
-          <div className="col-lg-6 col-md-6 col-sm-12 left-column">
-            <div className="left-content">
-              <div className="form-group">
-                <input type="text" name="username" placeholder="Your Name" required />
-              </div>
-              <div className="form-group">
-                <input type="email" name="email" placeholder="Email Address" required />
-              </div>
-              <div className="form-group">
-                <input type="text" name="phone" placeholder="Phone" required />
-                <div className="language-picker js-language-picker">
-                  <label htmlFor="language-picker-select" />
-                  <select id="language-picker-select">
-                    <option lang="de" value="deutsch">de</option>
-                    <option lang="en" value="english" selected>en</option>
-                    <option lang="fr" value="francais">fr</option>
-                    <option lang="it" value="italiano">it</option>
-                  </select>
-                </div>
-              </div>
-              <div className="form-group">
-                <input type="text" name="subject" placeholder="Subject" required />
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-6 col-md-6 col-sm-12 right-column">
-            <div className="right-content">
-              <div className="form-group">
-                <textarea name="message" placeholder="Write Your Message Here..." defaultValue={""} />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="check-box">
-          <input className="check" type="checkbox" id="checkbox1" />
-          <label htmlFor="checkbox1">Agree to our private policies &amp; Conditions.</label>
-        </div>
-        <div className="message-btn">
-          <button type="submit" className="theme-btn" name="submit-form"><span>Send Now</span></button>
-        </div>
-      </form>
     </div>
   </section>
-  {/* contact-section end */}
-  {/* footer-style-three */}
-  <footer className="footer-style-three">
-    <div className="pattern-layer" style={{backgroundImage: 'url(assets/images/shape/shape-34.png)'}} />
+  {/* cta-section end */}
+  {/* footer-style-two */}
+  <footer className="footer-style-two">
     <div className="widget-section">
       <div className="auto-container">
         <div className="row clearfix">
-          <div className="col-lg-3 col-md-6 col-sm-12 footer-column">
+          <div className="col-lg-4 col-md-6 col-sm-12 footer-column">
             <div className="footer-widget logo-widget">
-              <figure className="footer-logo"><a href="index-3.html"><img src="assets/images/logo-5.png" alt /></a></figure>
+              <figure className="footer-logo"><a href="index-2.html"><img src="assets/images/logo-4.png" alt /></a></figure>
               <div className="widget-content">
-                <h3>Have queries?</h3>
-                <p><a href="mailto:supportyou@example.com">supportyou@example.com</a> <br /> <a href="tel:0884567890">+088 45 678 90</a></p>
-                <ul className="social-links clearfix">
-                  <li><a href="index-3.html"><i className="fa-brands fa-facebook" /></a></li>
-                  <li><a href="index-3.html"><i className="fa-brands fa-square-twitter" /></a></li>
-                  <li><a href="index-3.html"><i className="fa-brands fa-instagram" /></a></li>
-                  <li><a href="index-3.html"><i className="fa-brands fa-square-pinterest" /></a></li>
-                </ul>
+                <div className="year-box">
+                  <h4>Since</h4>
+                  <h2>2012</h2>
+                  <div className="link-box">
+                    <a href="index-2.html"><span>More In Timeline</span></a>
+                  </div>
+                </div>
+                <div className="text-box">
+                  <p>Impedit quo minus id quod maxime place at facere possimus, omnis voluptas assumenda omnis dolors.</p>
+                </div>
               </div>
             </div>
           </div>
           <div className="col-lg-3 col-md-6 col-sm-12 footer-column">
-            <div className="footer-widget links-widget">
+            <div className="footer-widget links-widget ml_60">
               <div className="widget-title">
                 <h3>Company</h3>
               </div>
               <div className="widget-content">
                 <ul className="links-list clearfix">
-                  <li><a href="index-3.html">About Us</a></li>
-                  <li><a href="index-3.html">Careers</a></li>
-                  <li><a href="index-3.html">Meet Our Team</a></li>
-                  <li><a href="index-3.html">Process</a></li>
-                  <li><a href="index-3.html">Mission &amp; Vision</a></li>
-                  <li><a href="index-3.html">Faq’s</a></li>
+                  <li><a href="index-2.html">About Us</a></li>
+                  <li><a href="index-2.html">Careers</a></li>
+                  <li><a href="index-2.html">Meet Our Team</a></li>
+                  <li><a href="index-2.html">Process</a></li>
+                  <li><a href="index-2.html">Mission &amp; Vision</a></li>
+                  <li><a href="index-2.html">Faq’s</a></li>
                 </ul>
               </div>
             </div>
           </div>
-          <div className="col-lg-3 col-md-6 col-sm-12 footer-column">
-            <div className="footer-widget links-widget">
+          <div className="col-lg-2 col-md-6 col-sm-12 footer-column">
+            <div className="footer-widget links-widget ml_15">
               <div className="widget-title">
-                <h3>Useful Links</h3>
+                <h3>Education</h3>
               </div>
               <div className="widget-content">
                 <ul className="links-list clearfix">
-                  <li><a href="index-3.html">Trading Tools</a></li>
-                  <li><a href="index-3.html">Pricing List</a></li>
-                  <li><a href="index-3.html">Account Types</a></li>
-                  <li><a href="index-3.html">MT4 Platform</a></li>
-                  <li><a href="index-3.html">Mobile App</a></li>
-                  <li><a href="index-3.html">Policies</a></li>
+                  <li><a href="index-2.html">Courses</a></li>
+                  <li><a href="index-2.html">Lessons</a></li>
+                  <li><a href="index-2.html">Seminars</a></li>
+                  <li><a href="index-2.html">Platform Tutorials</a></li>
+                  <li><a href="index-2.html">ebooks</a></li>
                 </ul>
               </div>
             </div>
           </div>
           <div className="col-lg-3 col-md-6 col-sm-12 footer-column">
-            <div className="footer-widget apps-widget">
+            <div className="footer-widget links-widget ml_80">
               <div className="widget-title">
-                <h3>Our App</h3>
+                <h3>Useful links</h3>
               </div>
               <div className="widget-content">
-                <p>Download our app &amp; keep track the markets.</p>
-                <ul className="list-item clearfix">
-                  <li>Smart alert notifications</li>
-                  <li>Instant currency exchange</li>
-                </ul>
-                <ul className="download-apps clearfix">
-                  <li><a href="index-2.html"><i className="fa-brands fa-windows" /></a></li>
-                  <li><a href="index-2.html"><i className="fa-brands fa-apple" /></a></li>
-                  <li><a href="index-2.html"><i className="fa-brands fa-android" /></a></li>
+                <ul className="links-list clearfix">
+                  <li><a href="index-2.html">Trading Tools</a></li>
+                  <li><a href="index-2.html">Pricing List</a></li>
+                  <li><a href="index-2.html">Account Types</a></li>
+                  <li><a href="index-2.html">MT4 Platform</a></li>
+                  <li><a href="index-2.html">Mobile App</a></li>
+                  <li><a href="index-2.html">Policies</a></li>
                 </ul>
               </div>
             </div>
@@ -910,20 +1085,33 @@ const index = () => {
         </div>
       </div>
     </div>
-    <div className="footer-bottom-three centred">
+    <div className="footer-bottom-two">
       <div className="auto-container">
-        <div className="copyright">
-          <p>© 2023 Bullion. All Rights Reserved. <a href="index-3.html">Policies,</a> <a href="index-3.html">Terms &amp; Conditions.</a></p>
+        <div className="bottom-inner">
+          <div className="guide-box">
+            <h5><a href="index-2.html"><i className="flaticon-download" />Free <br />Trading Guides</a></h5>
+          </div>
+          <div className="copyright-box">
+            <p>© <span>2023 <a href="index-2.html">Bullion</a>.</span> All Rights Reserved.</p>
+            <ul className="footer-nav clearfix">
+              <li><a href="index-2.html">Legal Notice</a></li>
+              <li><a href="index-2.html">Privacy Policy</a></li>
+              <li><a href="index-2.html">Terms &amp; Conditions</a></li>
+            </ul>
+          </div>
+          <ul className="social-links clearfix">
+            <li><a href="index-2.html"><i className="fa-brands fa-facebook" /></a></li>
+            <li><a href="index-2.html"><i className="fa-brands fa-instagram" /></a></li>
+            <li><a href="index-2.html"><i className="fa-brands fa-square-pinterest" /></a></li>
+            <li className="scroll-to-target" data-target="html"><i className="flaticon-up-arrow" /></li>
+          </ul>
         </div>
       </div>
     </div>
   </footer>
-  {/* footer-style-three end */}
-  {/* scroll to top */}
-  <button className="scroll-top scroll-to-target" data-target="html">
-    <i className="flaticon-up-arrow" />
-  </button>
+  {/* footer-style-two end */}
 </div>
+
 
 
 
