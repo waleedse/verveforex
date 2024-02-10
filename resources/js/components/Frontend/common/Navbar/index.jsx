@@ -117,7 +117,7 @@ function Navbar(props) {
                                                 <ul>
                                                     <li>
                                                         <a href="index.html">
-                                                           Why Verve Forex
+                                                            Why Verve Forex
                                                         </a>
                                                     </li>
 
@@ -131,22 +131,22 @@ function Navbar(props) {
                                                 <ul>
                                                     <li>
                                                         <a href="/">
-                                                        Cash Back Promotion
+                                                            Cash Back Promotion
                                                         </a>
                                                     </li>
                                                     <li>
                                                         <a href="/">
-                                                        Dubai Offer
+                                                            Dubai Offer
                                                         </a>
                                                     </li>
                                                     <li>
                                                         <a href="/">
-                                                        Bike Offer
+                                                            Bike Offer
                                                         </a>
                                                     </li>
                                                     <li>
                                                         <a href="/">
-                                                        Other Gifts
+                                                            Other Gifts
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -156,12 +156,12 @@ function Navbar(props) {
                                                 <ul>
                                                     <li>
                                                         <a href="/">
-                                                        Become an Introducing Broker
+                                                            Become an Introducing Broker
                                                         </a>
                                                     </li>
                                                     <li>
                                                         <a href="/">
-                                                        IB Promotions
+                                                            IB Promotions
                                                         </a>
                                                     </li>
 
@@ -178,12 +178,12 @@ function Navbar(props) {
                                                 <ul>
                                                     <li>
                                                         <a href="/">
-                                                        News
+                                                            News
                                                         </a>
                                                     </li>
                                                     <li>
                                                         <a href="/">
-                                                        Technical Analysis
+                                                            Technical Analysis
                                                         </a>
                                                     </li>
 
@@ -210,40 +210,106 @@ function Navbar(props) {
                     </div>
                 </div>
                 {/*sticky Header*/}
+
                 <div className="sticky-header">
-                    <div className="auto-container">
+                    <div className="outer-container">
                         <div className="outer-box">
-                            <div className="logo-box">
-                                <figure className="logo">
-                                    <a href="index.html">
-                                        <img
-                                            src="assets/images/logo-5.png"
-                                            alt
-                                        />
-                                    </a>
-                                </figure>
-                            </div>
                             <div className="menu-area">
-                                <nav className="main-menu clearfix">
-                                    {/*Keep This Empty / Menu will come through Javascript*/}
-                                </nav>
-                                <div className="menu-right-content">
-                                    <div className="search-box-outer search-toggler">
-                                        <i className="flaticon-search" />
-                                    </div>
-                                    <div className="btn-box">
-                                        <a
-                                            href="index.html"
-                                            className="theme-btn btn-one"
-                                        >
-                                            <span>Open an A/c</span>
-                                        </a>
+                                <div className="logo-box">
+                                    <figure className="logo"><a href="index.html"><img src="assets/images/logo-5.png" alt /></a></figure>
+                                </div>
+                                {/* sticky nav */}
+                                <div className="sticky-header">
+                                    <div className="outer-container">
+                                        <div className="outer-box">
+                                            <div className="menu-area">
+                                                <div className="logo-box">
+                                                    <figure className="logo"><a href="index.html"><img src="assets/images/logo-4.png" alt /></a></figure>
+                                                </div>
+                                                <nav className="main-menu clearfix">
+                                                    {/*Keep This Empty / Menu will come through Javascript*/}
+                                                    <div className="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                                                        <ul className="navigation clearfix">
+                                                            <li className="current dropdown"><a href="index.html">Home</a>
+                                                                <ul>
+                                                                    <li><a href="index.html">Home One</a></li>
+                                                                    <li><a href="index-2.html">Home Two</a></li>
+                                                                    <li><a href="index-3.html">Home Three</a></li>
+                                                                </ul>
+                                                                <div className="dropdown-btn"><span className="fas fa-angle-down" /></div></li>
+                                                            <li className="dropdown"><a href="index.html">Markets</a>
+                                                                <ul>
+                                                                    <li><a href="markets.html">Markets</a></li>
+                                                                    <li><a href="market-details.html">Details Page</a></li>
+                                                                </ul>
+                                                                <div className="dropdown-btn"><span className="fas fa-angle-down" /></div></li>
+                                                            <li className="dropdown"><a href="index.html">Trading</a>
+                                                                <ul>
+                                                                    <li><a href="platform.html">Platform</a></li>
+                                                                    <li><a href="account.html">Our Accounts</a></li>
+                                                                    <li><a href="account-details.html">Standard Account</a></li>
+                                                                    <li><a href="account-details-2.html">Commision Account</a></li>
+                                                                    <li><a href="account-details-3.html">STP Pro Account</a></li>
+                                                                </ul>
+                                                                <div className="dropdown-btn"><span className="fas fa-angle-down" /></div></li>
+                                                            <li className="dropdown"><a href="index.html">Education</a>
+                                                                <ul>
+                                                                    <li><a href="education.html">Education</a></li>
+                                                                    <li><a href="education-details.html">Detail Page</a></li>
+                                                                </ul>
+                                                                <div className="dropdown-btn"><span className="fas fa-angle-down" /></div></li>
+                                                            <li className="dropdown"><a href="index.html">About</a>
+                                                                <ul>
+                                                                    <li><a href="about.html">Company</a></li>
+                                                                    <li><a href="history.html">History</a></li>
+                                                                    <li><a href="team.html">Team</a></li>
+                                                                    <li className="dropdown"><a href="index.html">Blog</a>
+                                                                        <ul>
+                                                                            <li><a href="blog.html">3 Columns</a></li>
+                                                                            <li><a href="blog-2.html">3 Columns Sidebar</a></li>
+                                                                            <li><a href="blog-3.html">List View 01</a></li>
+                                                                            <li><a href="blog-4.html">List View 02</a></li>
+                                                                            <li><a href="blog-details.html">Single Post</a></li>
+                                                                        </ul>
+                                                                        <div className="dropdown-btn"><span className="fas fa-angle-down" /></div></li>
+                                                                    <li><a href="contact.html">Contact</a></li>
+                                                                    <li><a href="faq.html">Faq’s</a></li>
+                                                                    <li><a href="error.html">404</a></li>
+                                                                </ul>
+                                                                <div className="dropdown-btn"><span className="fas fa-angle-down" /></div></li>
+                                                        </ul>
+                                                    </div>
+                                                </nav>
+                                            </div>
+                                            <div className="menu-right-content">
+                                                <div className="search-box-outer search-toggler"><i className="flaticon-search" /></div>
+                                                <div className="clients-box">
+                                                    <div className="icon-box"><img src="assets/images/icons/icon-31.png" alt /></div>
+                                                    <a href="index.html">Client Portal<i className="flaticon-right-down" /></a>
+                                                </div>
+                                                <div className="btn-box"><a href="index.html" className="theme-btn btn-one"><span>Open an A/c</span></a></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+
+                                {/* sticky nav */}
+
+
+                            </div>
+                            <div className="menu-right-content">
+                                <div className="search-box-outer search-toggler"><i className="flaticon-search" /></div>
+                                <div className="clients-box">
+                                    <div className="icon-box"><img src="assets/images/icons/icon-31.png" alt /></div>
+                                    <a href="index.html">Client Portal<i className="flaticon-right-down" /></a>
+                                </div>
+                                <div className="btn-box"><a href="index.html" className="theme-btn btn-one"><span>Open an A/c</span></a></div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
             </header>
             {/* main-header end */}
             {/* Mobile Menu  */}

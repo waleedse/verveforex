@@ -9,7 +9,7 @@ function OurPartners() {
                         <h2><span>Partners</span> Around the World </h2>
                     </div>
                     <ul className="clients-logo-list clearfix">
-                        <li><figure className="clients-box"><a href="index-2.html"><img src="assets/images/clients/clients-6.png" alt /></a></figure></li>
+                        <li><figure className="clients-box"><a href="index-2.html"><img src="assets/images/clients/exness_logo.png" alt /></a></figure></li>
                         <li><figure className="clients-box"><a href="index-2.html"><img src="assets/images/clients/clients-7.png" alt /></a></figure></li>
                         <li><figure className="clients-box"><a href="index-2.html"><img src="assets/images/clients/clients-8.png" alt /></a></figure></li>
                         <li><figure className="clients-box"><a href="index-2.html"><img src="assets/images/clients/clients-9.png" alt /></a></figure></li>

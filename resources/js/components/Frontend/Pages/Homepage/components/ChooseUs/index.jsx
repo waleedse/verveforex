@@ -17,13 +17,13 @@ function ChooseUs() {
                                 <div className="icon-box">
                                     <div className="icon"><img src="assets/images/icons/icon-40.png" alt /></div>
                                 </div>
-                                <div className="title-text"><h3>Friendly &amp; Expert<span>01</span></h3></div>
-                                <p>Beatae vitae dicta sun explicabo enim ipsam voluptatem volupta.</p>
+                                <div className="title-text"><h3>Best Promotions in Market<span>01</span></h3></div>
+                                <p>Your one-stop shop for the best trading promotions in the market. Explore and compare promotins by top-tier brokers conveniently under one roof.</p>
                             </div>
                             <div className="single-item">
                                 <div className="shape" style={{ backgroundImage: 'url(assets/images/shape/shape-17.png)' }} />
-                                <div className="title-text"><h3>Demo account<span>03</span></h3></div>
-                                <p>Omnis iste natus error sit volup minima accusantium doloremque.</p>
+                                <div className="title-text"><h3>Arbitration Facility<span>03</span></h3></div>
+                                <p>Ensuring a swift resolution to any trading issue, we offer a mutually beneficial solutions, which is impartial, efficient and allows our clients to focus on their trading activities.</p>
                                 <div className="icon-box">
                                     <div className="icon"><img src="assets/images/icons/icon-41.png" alt /></div>
                                 </div>
@@ -36,12 +36,12 @@ function ChooseUs() {
                                     <div className="icon"><img src="assets/images/icons/icon-40.png" alt /></div>
                                 </div>
                                 <div className="title-text"><h3>24/7 Support<span>02</span></h3></div>
-                                <p>Dolore magnam aliquam quaer autem enim ad minima veniam.</p>
+                                <p>Dedicated customer support team working 24/7 to assist youvia various customer touch points.</p>
                             </div>
                             <div className="single-item">
                                 <div className="shape" style={{ backgroundImage: 'url(assets/images/shape/shape-19.png)' }} />
-                                <div className="title-text"><h3>Award winner<span>04</span></h3></div>
-                                <p>Beguiled demoralized charms nonsed pleasure of the moment.</p>
+                                <div className="title-text"><h3>Education<span>04</span></h3></div>
+                                <p>Our comprehensive education program aims to provide forex traderswith regular updates, tips and tricks and learning materialto enhance their trading strategies.</p>
                                 <div className="icon-box">
                                     <div className="icon"><img src="assets/images/icons/icon-41.png" alt /></div>
                                 </div>
