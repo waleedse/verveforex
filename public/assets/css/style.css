@@ -6199,7 +6199,7 @@ div#mCSB_1_container{
   position: relative;
   display: block;
   padding-bottom: 21px;
-  margin-bottom: 23px;
+  /* margin-bottom: 23px; */
 }
 
 .footer-style-two .logo-widget .year-box:before{
@@ -6239,9 +6239,12 @@ div#mCSB_1_container{
 }
 
 .footer-style-two .logo-widget .year-box .link-box{
-  position: absolute;
-  right: 0px;
-  bottom: 17px;
+  /* position: absolute; */
+  display: flex;
+  gap: 15px;
+  
+  /* right: 0px;
+  bottom: 17px; */
 }
 
 .footer-style-two .logo-widget .year-box .link-box a{
