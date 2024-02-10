@@ -1,12 +1,14 @@
 import React from 'react';
 import FrontRoutes from '../Routes/FrontRoutes';
 import Navbar from './common/Navbar';
+import Footer from './common/Footer';
 
 function Frontend() {
   return (
     <React.Fragment>
         <Navbar></Navbar>
         <FrontRoutes></FrontRoutes>
+        <Footer></Footer>
     </ React.Fragment>
   );
 }
