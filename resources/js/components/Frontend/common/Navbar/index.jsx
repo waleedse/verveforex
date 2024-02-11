@@ -10,7 +10,7 @@ function Navbar(props) {
                         <div className="top-inner">
                             <div className="support-box">
                                 <div className="icon-box"><img src="assets/images/icons/icon-48.png" alt /></div>
-                                <p><a href="mailto:support@verveforex.com">support@verveforex.com</a> or Request for a <a href="tel:1222567890"><span>call back</span></a></p>
+                                <p><a href="mailto:support@verveforex.com">support@verveforex.com</a></p>
                             </div>
                             <div className="right-column">
                                 {/* <div className="language-box">
