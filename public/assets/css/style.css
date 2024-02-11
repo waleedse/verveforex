@@ -112,7 +112,7 @@ body {
 
 .auto-container{
   position:static;
-  max-width:1200px;
+  max-width:1300px;
   padding:0px 15px;
   margin:0 auto;
 }
@@ -915,6 +915,8 @@ img {
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .main-header .logo-box{
