@@ -1,0 +1,32 @@
+{
+  "node_modules/react-multi-carousel/lib/revicons.eot": {
+    "file": "assets/revicons-TSCngFAj.eot",
+    "src": "node_modules/react-multi-carousel/lib/revicons.eot"
+  },
+  "node_modules/react-multi-carousel/lib/revicons.ttf": {
+    "file": "assets/revicons-gasWZ3sP.ttf",
+    "src": "node_modules/react-multi-carousel/lib/revicons.ttf"
+  },
+  "node_modules/react-multi-carousel/lib/revicons.woff": {
+    "file": "assets/revicons-207Xk7wD.woff",
+    "src": "node_modules/react-multi-carousel/lib/revicons.woff"
+  },
+  "resources/js/app.js": {
+    "assets": [
+      "assets/revicons-207Xk7wD.woff",
+      "assets/revicons-gasWZ3sP.ttf",
+      "assets/revicons-TSCngFAj.eot"
+    ],
+    "css": [
+      "assets/app-kUDj7756.css"
+    ],
+    "file": "assets/app-eDP7WXH7.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  },
+  "resources/sass/app.scss": {
+    "file": "assets/app-lhA9k1qk.css",
+    "isEntry": true,
+    "src": "resources/sass/app.scss"
+  }
+}

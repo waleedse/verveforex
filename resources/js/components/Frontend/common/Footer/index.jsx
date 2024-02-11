@@ -10,13 +10,13 @@ function Footer(props) {
                             {/* Brand  */}
                             <div className="col-lg-4 col-md-6 col-sm-12 footer-column">
                                 <div className="footer-widget logo-widget">
-                                    <figure className="footer-logo"><a href="index-2.html"><img src="assets/images/logo-4.png" alt /></a></figure>
+                                    <figure className="footer-logo"><a href="/"><img src="assets/images/logo-4.png" alt /></a></figure>
                                     <div className="widget-content">
                                         <div className="year-box">
                                             {/* <h4>Since</h4>
                                             <h2>2012</h2> */}
                                             <div className="link-box">
-                                                <a href="index-2.html"><span>Have Queries? Support@verveforex.com</span></a>
+                                                <a href="/"><span>Have Queries? Support@verveforex.com</span></a>
                                             </div>
                                         </div>
                                         <div className="text-box">
@@ -33,10 +33,10 @@ function Footer(props) {
                                     </div>
                                     <div className="widget-content">
                                         <ul className="links-list clearfix">
-                                            <li><a href="index-2.html">About Us</a></li>
-                                            <li><a href="index-2.html">Contact Us</a></li>
-                                            <li><a href="index-2.html">Introducing Brokers</a></li>
-                                            <li><a href="index-2.html">FAQs</a></li>
+                                            <li><a href="/">About Us</a></li>
+                                            <li><a href="/">Contact Us</a></li>
+                                            <li><a href="/">Introducing Brokers</a></li>
+                                            <li><a href="/">FAQs</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -49,11 +49,11 @@ function Footer(props) {
                                     </div>
                                     <div className="widget-content">
                                         <ul className="links-list clearfix">
-                                            <li><a href="index-2.html">Privacy Policy</a></li>
-                                            <li><a href="index-2.html">Terms & Conditions</a></li>
-                                            <li><a href="index-2.html">Legal Notice</a></li>
-                                            {/* <li><a href="index-2.html">Platform Tutorials</a></li>
-                                            <li><a href="index-2.html">ebooks</a></li> */}
+                                            <li><a href="/">Privacy Policy</a></li>
+                                            <li><a href="/">Terms & Conditions</a></li>
+                                            <li><a href="/">Legal Notice</a></li>
+                                            {/* <li><a href="/">Platform Tutorials</a></li>
+                                            <li><a href="/">ebooks</a></li> */}
                                         </ul>
                                     </div>
                                 </div>
@@ -66,12 +66,12 @@ function Footer(props) {
                                     </div>
                                     <div className="widget-content">
                                         <ul className="links-list clearfix">
-                                            <li><a href="index-2.html">Trading Tools</a></li>
-                                            <li><a href="index-2.html">Pricing List</a></li>
-                                            <li><a href="index-2.html">Account Types</a></li>
-                                            <li><a href="index-2.html">MT4 Platform</a></li>
-                                            <li><a href="index-2.html">Mobile App</a></li>
-                                            <li><a href="index-2.html">Policies</a></li>
+                                            <li><a href="/">Trading Tools</a></li>
+                                            <li><a href="/">Pricing List</a></li>
+                                            <li><a href="/">Account Types</a></li>
+                                            <li><a href="/">MT4 Platform</a></li>
+                                            <li><a href="/">Mobile App</a></li>
+                                            <li><a href="/">Policies</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -81,24 +81,24 @@ function Footer(props) {
                 </div>
                 <div className="footer-bottom-two">
                     <div className="auto-container">
-                        <div className="bottom-inner">
-                            <div className="guide-box">
-                                <h5><a href="index-2.html"><i className="flaticon-download" />Free <br />Trading Guides</a></h5>
+                        <div className="bottom-inner text-center">
+                            {/* <div className="guide-box">
+                                <h5><a href="/"><i className="flaticon-download" />Free <br />Trading Guides</a></h5>
+                            </div> */}
+                            <div className="copyright-box ">
+                                <p className="text-center"> Copyright Verve Forex 2024. All rights reserved.</p>
+                                {/* <ul className="footer-nav clearfix">
+                                    <li><a href="/">Legal Notice</a></li>
+                                    <li><a href="/">Privacy Policy</a></li>
+                                    <li><a href="/">Terms &amp; Conditions</a></li>
+                                </ul> */}
                             </div>
-                            <div className="copyright-box">
-                                <p>© <span>2023 <a href="index-2.html">Bullion</a>.</span> All Rights Reserved.</p>
-                                <ul className="footer-nav clearfix">
-                                    <li><a href="index-2.html">Legal Notice</a></li>
-                                    <li><a href="index-2.html">Privacy Policy</a></li>
-                                    <li><a href="index-2.html">Terms &amp; Conditions</a></li>
-                                </ul>
-                            </div>
-                            <ul className="social-links clearfix">
-                                <li><a href="index-2.html"><i className="fa-brands fa-facebook" /></a></li>
-                                <li><a href="index-2.html"><i className="fa-brands fa-instagram" /></a></li>
-                                <li><a href="index-2.html"><i className="fa-brands fa-square-pinterest" /></a></li>
+                            {/* <ul className="social-links clearfix">
+                                <li><a href="/"><i className="fa-brands fa-facebook" /></a></li>
+                                <li><a href="/"><i className="fa-brands fa-instagram" /></a></li>
+                                <li><a href="/"><i className="fa-brands fa-square-pinterest" /></a></li>
                                 <li className="scroll-to-target" data-target="html"><i className="flaticon-up-arrow" /></li>
-                            </ul>
+                            </ul> */}
                         </div>
                     </div>
                 </div>
