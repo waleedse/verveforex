@@ -61,13 +61,13 @@ function Navbar(props) {
                                 <nav className="main-menu navbar-expand-md navbar-light">
                                     <div className="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                         <ul className="navigation clearfix">
-                                            <li className="current dropdown"><a href="index.html">Home</a>
+                                            <li className="current dropdown"><a href="Homepage">Home</a>
                                                 <ul>
                                                     <li><a href="index.html">Why Verve Forex</a></li>
                                                 </ul>
                                                 <div className="dropdown-btn"><span className="fas fa-angle-down" /></div>
                                             </li>
-                                            <li className="dropdown"><a href="index.html">About Us</a>
+                                            <li className="dropdown"><a href="Aboutus">About Us</a>
                                             </li>
                                             <li className="dropdown"><a href="index.html">Promotions</a>
                                                 <ul>
@@ -118,13 +118,13 @@ function Navbar(props) {
                                 <nav className="main-menu navbar-expand-md navbar-light">
                                     <div className="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                         <ul className="navigation clearfix">
-                                            <li className="current dropdown"><a href="index.html">Home</a>
+                                            <li className="current dropdown"><a href="Homepage">Home</a>
                                                 <ul>
                                                     <li><a href="index.html">Why Verve Forex</a></li>
                                                 </ul>
                                                 <div className="dropdown-btn"><span className="fas fa-angle-down" /></div>
                                             </li>
-                                            <li className="dropdown"><a href="index.html">About Us</a>
+                                            <li className="dropdown"><a href="Aboutus">About Us</a>
                                             </li>
                                             <li className="dropdown"><a href="index.html">Promotions</a>
                                                 <ul>

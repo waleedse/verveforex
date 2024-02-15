@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Homepage from '../../Frontend/Pages/Homepage';
+import Aboutus from '../../Frontend/Pages/Aboutus';
 
 
 function FrontRoutes(props) {
@@ -8,8 +9,8 @@ function FrontRoutes(props) {
         <div>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" Component={Homepage}></Route>
-                    {/* <Route path="/home" Component={home}></Route> */}
+                    <Route path="/Homepage" Component={Homepage}></Route>
+                    <Route path="/Aboutus" Component={Aboutus}></Route>
                 </Routes>
             </BrowserRouter>
         </div>
