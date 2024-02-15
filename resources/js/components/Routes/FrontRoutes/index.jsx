@@ -9,8 +9,8 @@ function FrontRoutes(props) {
         <div>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/Homepage" Component={Homepage}></Route>
-                    <Route path="/Aboutus" Component={Aboutus}></Route>
+                    <Route path="/" Component={Homepage}></Route>
+                    <Route path="/about-us" Component={Aboutus}></Route>
                 </Routes>
             </BrowserRouter>
         </div>
