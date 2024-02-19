@@ -923,6 +923,7 @@ img {
   position: relative;
   padding: 26px 0px;
   margin-right: 80px;
+  width: 58px;
 }
 
 .main-header .menu-right-content{
@@ -993,6 +994,7 @@ img {
   font-size: 20px;
   color: var(--text-color);
   transition: all 500ms ease;
+  width: 158px;
 }
 
 .main-header .menu-right-content .clients-box a:hover,
@@ -5942,6 +5944,7 @@ div#mCSB_1_container{
   max-width: 100%;
   margin: 0 auto;
   transition: all 500ms ease;
+  width: 158px;
 }
 
 .clients-style-two .clients-logo-list li .clients-box img:hover{
@@ -6195,6 +6198,7 @@ div#mCSB_1_container{
 
 .footer-style-two .logo-widget .footer-logo{
   margin-bottom: 27px;
+  width: 58px;
 }
 
 .footer-style-two .logo-widget .year-box{
