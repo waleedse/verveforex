@@ -14,13 +14,13 @@ function Leading_plateform() {
                                     <span className="sub-title">About Bullion</span>
                                     <h2>Proud to be the <br />World's Leading <span>Forex Trading</span> Platform</h2>
                                 </div>
-                                <p>Optio cumque nihil impedit quo minus id quod maxime place at facere possimus, omnis voluptas assumenda omnis dolors repellendus tempori bus autem quibusdam dolorem eum fugiat quo voluptas.</p>
+                                <p>Welcome to Verve Forex – your ultimate trading portal for exclusive promotions from top brokers worldwide. Our mission is to simplify your trading journey by providing a single hub for accessing the latest and best forex trading opportunities. Discover a curated selection of promotions and offers from reputable brokers, ensuring you stay informed and capitalize on diverse trading opportunities.</p>
                                 <div className="inner-box">
                                     <h4>Since</h4>
                                     <h2>2012</h2>
                                     <div className="link-box"><a href="about.html"><span>More In Timeline</span></a></div>
                                 </div>
-                                <p>Impedit quo minus id quod maxime place at facere possimus, omnis voluptas assumenda omnis dolors.</p>
+                                <p>Verve Forex: Exclusive promotions, top brokers, streamlined trading.</p>
                                 <div className="btn-box">
                                     <a href="about.html" className="theme-btn btn-three"><span>Why Bullion</span></a>
                                 </div>
