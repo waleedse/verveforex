@@ -1,5 +1,8 @@
-import React, { Fragment } from "react";
-function Our_mission({}) {
+import React, { Fragment, useState } from "react";
+import Mission from './components/ourMission'
+function OurMission({}) {
+    const [active, setActive] = useState("mission")
+
     return (
         <Fragment>
             <section className="statements-section">
@@ -22,6 +25,18 @@ function Our_mission({}) {
                             </ul>
                         </div>
                         <div className="tabs-content">
+                            {
+                                active == "mission" && 
+                                <Mission></Mission>
+                            }
+                            {
+                                active == "mission" && 
+                                <Mission></Mission>
+                            }
+                            {
+                                active == "mission" && 
+                                <Mission></Mission>
+                            }
                         </div>
                     </div>
                 </div>
