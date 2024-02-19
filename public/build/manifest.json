@@ -18,15 +18,10 @@
       "assets/revicons-TSCngFAj.eot"
     ],
     "css": [
-      "assets/app-kUDj7756.css"
+      "assets/app-g_jqDkOl.css"
     ],
-    "file": "assets/app-ZS9l2ZAZ.js",
+    "file": "assets/app-8xlRTWHt.js",
     "isEntry": true,
     "src": "resources/js/app.js"
-  },
-  "resources/sass/app.scss": {
-    "file": "assets/app-lhA9k1qk.css",
-    "isEntry": true,
-    "src": "resources/sass/app.scss"
   }
 }
