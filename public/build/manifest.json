@@ -20,8 +20,19 @@
     "css": [
       "assets/app-g_jqDkOl.css"
     ],
-    "file": "assets/app-CQE2hKSH.js",
+    "dynamicImports": [
+      "resources/js/components/AdminPanel/index.jsx"
+    ],
+    "file": "assets/app-RXCM4uLi.js",
     "isEntry": true,
     "src": "resources/js/app.js"
+  },
+  "resources/js/components/AdminPanel/index.jsx": {
+    "file": "assets/index-pcNNgaW1.js",
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/components/AdminPanel/index.jsx"
   }
 }
