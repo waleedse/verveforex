@@ -18,17 +18,17 @@
       "assets/revicons-TSCngFAj.eot"
     ],
     "css": [
-      "assets/app-g_jqDkOl.css"
+      "assets/app-S30vMO61.css"
     ],
     "dynamicImports": [
       "resources/js/components/AdminPanel/index.jsx"
     ],
-    "file": "assets/app-p_QGcIAe.js",
+    "file": "assets/app-UkGbtaPz.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
   "resources/js/components/AdminPanel/index.jsx": {
-    "file": "assets/index-4guVBL4s.js",
+    "file": "assets/index-oOrxdAHp.js",
     "imports": [
       "resources/js/app.js"
     ],
