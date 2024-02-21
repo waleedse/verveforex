@@ -47,13 +47,14 @@ const AdminLogin = () => {
             <span>Admin Login</span>
           </div>
           <h4 className="text-center f-w-500 mb-3">Login with your email</h4>
+          <form onSubmit={handleSubmit}>
           <div className="form-group mb-3">
-            <input type="email" name='email' onChange={handleChange} className="form-control" id="floatingInput" placeholder="Email Address" />
-            {errors.email && touched.email && <p>{errors.email}</p>}
+            <input type="email" name='email' onChange={handleChange} className={`form-control ${errors.email && touched.email && 'is-invalid'}` } id="floatingInput" placeholder="Email Address" />
+            {errors.email && touched.email && <p className='invalid-feedback'>{errors.email}</p>}
           </div>
           <div className="form-group mb-3">
-            <input type="password" onChange={handleChange} name='password' className="form-control" id="floatingInput1" placeholder="Password" />
-            {errors.password && touched.password && <p>{errors.password}</p>}
+            <input type="password" onChange={handleChange} name='password' className={`form-control ${errors.email && touched.email && 'is-invalid'}` } id="floatingInput1" placeholder="Password" />
+            {errors.password && touched.password && <p className='invalid-feedback'> {errors.password}</p>}
           </div>
           <div className="d-flex mt-1 justify-content-between align-items-center">
             <div className="form-check">
@@ -65,6 +66,7 @@ const AdminLogin = () => {
           <div className="d-grid mt-4">
             <button type="submit" onClick={handleSubmit} className="btn btn-primary">Login</button>
           </div>
+          </form>
           {/* <div className="d-flex justify-content-between align-items-end mt-4">
             <h6 className="f-w-500 mb-0">Don't have an Account?</h6>
             <a href="#" className="link-primary">Create Account</a>

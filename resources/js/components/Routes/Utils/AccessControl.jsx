@@ -15,13 +15,13 @@ const AccessControl = () => {
             'Authorization': `Bearer ${localStorage.getItem('token')}`
           }}).then(res=>{
                 dispatch(SET_USER(res))
-            setIsLoading(false)
+                setIsLoading(false)
           }).catch(e => {
-            navigate('/admin-login')
-            toast.error(e.response.data.message)
+                navigate('/admin-login')
+                toast.error(e.response.data.message)
           })
 
-    })
+    }, [])
     return (
         <div >
             {

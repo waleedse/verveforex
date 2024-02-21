@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {Helmet} from 'react-helmet';
+import { Link } from 'react-router-dom';
 
 function Nabar(props) {
     const [activeTab , setActiveTab] = useState('')
@@ -72,7 +73,7 @@ function Nabar(props) {
             <label>Manage Website</label>
           </li>
           <li className="pc-item pc-hasmenu">
-            <a href="#!" className="pc-link">
+            <Link to="/adminpanel" className="pc-link">
               <span className="pc-micon">
                 <svg className="pc-icon">
                   <use xlinkHref="#custom-status-up" />
@@ -81,7 +82,7 @@ function Nabar(props) {
               <span className="pc-mtext">Dashboard</span>
               {/* <span className="pc-arrow"><i data-feather="chevron-right" /></span> */}
               {/* <span className="pc-badge">2</span> */}
-            </a>
+            </Link>
 
           </li>
           <li onClick={()=>{handleActiveTab('promotions')}} className={`pc-item pc-hasmenu ${activeTab == 'promotions' && 'pc-trigger'}`}>
@@ -95,7 +96,7 @@ function Nabar(props) {
               <span className="pc-arrow"><i className="fas fa-chevron-right" /></span>
             </a>
             <ul className="pc-submenu">
-              <li className="pc-item"><a className="pc-link" href="../demo/layout-vertical.html">Add promotion</a></li>
+              <li className="pc-item"><Link className="pc-link" to="/adminpanel/add-promotion">Add promotion</Link></li>
               <li className="pc-item"><a className="pc-link" href="../demo/layout-horizontal.html">Manage Promotion</a></li>
             </ul>
           </li>

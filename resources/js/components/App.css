@@ -1,3 +1,7 @@
 .control-dots {
     display: none !important;
 }
+
+.active{
+    display: block !important;
+}

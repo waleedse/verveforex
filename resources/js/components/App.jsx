@@ -15,11 +15,11 @@ function App() {
         <div >
             <BrowserRouter>
                 <Routes>
-                        <Route path="/*" Component={Frontend}></Route>
-                        <Route path='/adminpanel/*' Component={AccessControl}>
+                        <Route Component={AccessControl}>
                             <Route path="/adminpanel/*" Component={AdminPanel}></Route>
                         </Route>
                         <Route path="/admin-login" Component={AdminLogin}></Route>
+                        <Route path="/*" Component={Frontend}></Route>
                 </Routes>
             </BrowserRouter>
             <Toaster></Toaster>

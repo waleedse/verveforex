@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/adminpanel', function () {return view('admin');});
+Route::get('/adminpanel/{path?}', function () {return view('admin');})->where('path' , '.*');
 Route::get('/admin-login', function () {return view('admin');});
 
 Route::view('/{path?}', 'welcome');
