@@ -23,12 +23,12 @@
     "dynamicImports": [
       "resources/js/components/AdminPanel/index.jsx"
     ],
-    "file": "assets/app-UkGbtaPz.js",
+    "file": "assets/app-pQGBRTNw.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
   "resources/js/components/AdminPanel/index.jsx": {
-    "file": "assets/index-oOrxdAHp.js",
+    "file": "assets/index-yLPE6jMK.js",
     "imports": [
       "resources/js/app.js"
     ],
