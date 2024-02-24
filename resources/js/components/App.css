@@ -1,3 +1,14 @@
 .control-dots {
     display: none !important;
 }
+
+.active{
+    display: block !important;
+}
+.invalid-feedback {
+    margin-bottom: 0px;
+}
+
+.form-select .search-wrapper{
+    border: none !important;
+}

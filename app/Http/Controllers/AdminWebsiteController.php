@@ -2,12 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Promotion;
+use App\Models\Country;
+use App\Models\Promotion;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
 class AdminWebsiteController extends Controller
 {
+
+    public function get_countries(){
+        $countries = Country::all();
+        return $countries;
+    }
+
     public function add_promotion(Request $request){
         $validator = Validator::make($request->all(), [
             'title' => 'required',
@@ -16,7 +23,7 @@ class AdminWebsiteController extends Controller
             'status' => 'required',
         ]);
         if($validator->fails()){
-            $response = ['status' => 219 , 'msg' => $validator->errors()->first(),'errors' => $validator->errors()];
+            $response = ['status' => 422 , 'msg' => $validator->errors()->first(),'errors' => $validator->errors()];
             return $response;
         }
         $promotion = new Promotion();
@@ -25,7 +32,7 @@ class AdminWebsiteController extends Controller
         $promotion->type = $request->type;
         $promotion->status = $request->status;
         if($promotion->type == 2){
-            $promotion->countries = json_encode($request->selected_countries);
+            $promotion->countries = json_encode($request->selectedCountries);
         }
 
         $promotion->save();

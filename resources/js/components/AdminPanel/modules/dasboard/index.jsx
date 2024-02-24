@@ -3,8 +3,7 @@ import React from 'react';
 const Dashboard = () => {
     return (
         <div>
-              <div className="pc-container">
-    <div className="pc-content">
+
       {/* [ breadcrumb ] start */}
       <div className="page-header">
         <div className="page-block">
@@ -767,8 +766,7 @@ const Dashboard = () => {
       </div>
       {/* [ Main Content ] end */}
     </div>
-  </div>
-        </div>
+
     );
 };
 

@@ -18,7 +18,7 @@
       "assets/revicons-TSCngFAj.eot"
     ],
     "css": [
-      "assets/app-g_jqDkOl.css"
+      "assets/app-S30vMO61.css"
     ],
 <<<<<<< HEAD
     "file": "assets/app-pnZdtisC.js",
@@ -26,13 +26,12 @@
     "dynamicImports": [
       "resources/js/components/AdminPanel/index.jsx"
     ],
-    "file": "assets/app-p_QGcIAe.js",
->>>>>>> refs/remotes/origin/master
+    "file": "assets/app-pQGBRTNw.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
   "resources/js/components/AdminPanel/index.jsx": {
-    "file": "assets/index-4guVBL4s.js",
+    "file": "assets/index-yLPE6jMK.js",
     "imports": [
       "resources/js/app.js"
     ],
