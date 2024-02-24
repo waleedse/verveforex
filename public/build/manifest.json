@@ -18,15 +18,25 @@
       "assets/revicons-TSCngFAj.eot"
     ],
     "css": [
-      "assets/app-kUDj7756.css"
+      "assets/app-g_jqDkOl.css"
     ],
+<<<<<<< HEAD
     "file": "assets/app-pnZdtisC.js",
+=======
+    "dynamicImports": [
+      "resources/js/components/AdminPanel/index.jsx"
+    ],
+    "file": "assets/app-p_QGcIAe.js",
+>>>>>>> refs/remotes/origin/master
     "isEntry": true,
     "src": "resources/js/app.js"
   },
-  "resources/sass/app.scss": {
-    "file": "assets/app-lhA9k1qk.css",
-    "isEntry": true,
-    "src": "resources/sass/app.scss"
+  "resources/js/components/AdminPanel/index.jsx": {
+    "file": "assets/index-4guVBL4s.js",
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/components/AdminPanel/index.jsx"
   }
 }

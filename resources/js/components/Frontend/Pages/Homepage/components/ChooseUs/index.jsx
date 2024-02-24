@@ -7,8 +7,8 @@ function ChooseUs() {
                 <figure className="image-layer"><img src="assets/images/resource/chooseus-1.png" alt /></figure>
                 <div className="auto-container">
                     <div className="sec-title centred light">
-                        <span className="sub-title">Why Bullion</span>
-                        <h2>Reason For <span>Choose Bullion</span></h2>
+                        <span className="sub-title">Why Choose Us</span>
+                        <h2>Reason For <span>Choose Verve Forex</span></h2>
                     </div>
                     <div className="inner-box">
                         <div className="left-column">

@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/adminpanel', function () {return view('admin');});
+Route::get('/admin-login', function () {return view('admin');});
+
 Route::view('/{path?}', 'welcome');
 Route::get('{reactRoutes}', function () {
     return view('welcome');

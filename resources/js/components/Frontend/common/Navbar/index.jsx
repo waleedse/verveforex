@@ -49,7 +49,7 @@ function Navbar(props) {
                 <div className="auto-container">
                         <div className="outer-box">
                             <div className="logo-box">
-                                <figure className="logo"><a href="index.html"><img src="assets/images/verveforexdark.png" alt /></a></figure>
+                                <figure className="logo"><a href="/"><img src="assets/images/logo.png" alt /></a></figure>
                             </div>
                             <div className="menu-area">
                                 {/*Mobile Navigation Toggler*/}
@@ -97,67 +97,11 @@ function Navbar(props) {
                                     <div className="btn-box"><a href="index.html" className="theme-btn btn-one"><span>Open an A/c</span></a></div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
                 {/*sticky Header*/}
-                <div className="sticky-header">
-                    <div className="auto-container">
-                        <div className="outer-box">
-                            <div className="logo-box">
-                                <figure className="logo"><a href="index.html"><img src="assets/images/verveforexdark.png" alt /></a></figure>
-                            </div>
-                            <div className="menu-area">
-                                {/*Mobile Navigation Toggler*/}
-                                <div className="mobile-nav-toggler">
-                                    <i className="icon-bar" />
-                                    <i className="icon-bar" />
-                                    <i className="icon-bar" />
-                                </div>
-                                <nav className="main-menu navbar-expand-md navbar-light">
-                                    <div className="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-                                        <ul className="navigation clearfix">
-                                            <li className="current dropdown"><a href="/">Home</a>
-                                                <ul>
-                                                    <li><a href="index.html">Why Verve Forex</a></li>
-                                                </ul>
-                                                <div className="dropdown-btn"><span className="fas fa-angle-down" /></div>
-                                            </li>
-                                            <li className="dropdown"><a href="/about-us">About Us</a>
-                                            </li>
-                                            <li className="dropdown"><a href="index.html">Promotions</a>
-                                                <ul>
-                                                    <li><a href="platform.html">Cash Back</a></li>
-                                                    <li><a href="account.html">Dubai Offer</a></li>
-                                                    <li><a href="account-details.html">Bike Offer</a></li>
-                                                    <li><a href="account-details-2.html">Other Gifts</a></li>
-                                                    {/* <li><a href="account-details-3.html">STP Pro Account</a></li> */}
-                                                </ul>
-                                                <div className="dropdown-btn"><span className="fas fa-angle-down" /></div></li>
-                                            <li className="dropdown"><a href="index.html">Introducing Broker</a>
-                                                <ul>
-                                                    <li><a href="education.html">Become an IB</a></li>
-                                                    <li><a href="education-details.html">IB Promotions</a></li>
-                                                </ul>
-                                                <div className="dropdown-btn"><span className="fas fa-angle-down" /></div></li>
-                                            <li className="dropdown"><a href="index.html">Market Analysis</a>
-                                                <ul>
-                                                    <li><a href="about.html">News</a></li>
-                                                    <li><a href="history.html">Technical Analysis</a></li>
-                                                </ul>
-                                                <div className="dropdown-btn"><span className="fas fa-angle-down" /></div></li>
-                                        </ul>
-                                    </div>
-                                </nav>
-                                <div className="menu-right-content">
-                                    {/* <div className="search-box-outer search-toggler"><i className="flaticon-search" /></div> */}
-                                    <div className="btn-box"><a href="index.html" className="theme-btn btn-one"><span>Open an A/c</span></a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </header>
 
         </Fragment>

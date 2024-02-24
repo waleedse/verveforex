@@ -41,7 +41,7 @@ function Promotions() {
                                 </div>
                                 <div className="lower-content">
                                     <div className="text-box">
-                                        <p>Promotion Description. (Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam doloremque est, ullam nam, illo quidem nulla)</p>
+                                        <p>Promotion Description. (Lorem ipsum dolor sit amet, consectetur adipisicing elit. )</p>
                                     </div>
                                     <div className="link-box">
                                         <a href="account-details.html"><span>Bonuses</span></a>

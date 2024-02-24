@@ -3,7 +3,7 @@ function Banner() {
     return (
         <Fragment>
             <section className="page-title centred">
-                <div className="bg-layer" style={{ backgroundImage: 'url(assets/images/background/page-title.jpg)' }} />
+                <div className="bg-layer" style={{ backgroundImage: 'url(assets/images/banner/about-us-banner.jpg)' }} />
                 <div className="line-box">
                     <div className="line-1" />
                     <div className="line-2" />
