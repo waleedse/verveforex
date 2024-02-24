@@ -19,6 +19,7 @@
     "dependencies": {
         "@reduxjs/toolkit": "^2.2.1",
         "formik": "^2.4.5",
+        "multiselect-react-dropdown": "^2.0.25",
         "react-helmet": "^6.1.0",
         "react-helmet-async": "^2.0.4",
         "react-hot-toast": "^2.4.1",
