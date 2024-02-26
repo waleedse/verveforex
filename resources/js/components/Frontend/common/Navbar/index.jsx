@@ -29,7 +29,7 @@ function Navbar(props) {
                                                     {/* <li><a href="account-details-3.html">STP Pro Account</a></li> */}
                                                 </ul>
                                                 <div className="dropdown-btn"><span className="fas fa-angle-down" /></div></li>
-                                            <li className="dropdown"><a href="index.html">Introducing Broker</a>
+                                            <li className="dropdown"><a href="/broker">Introducing Broker</a>
                                                 <ul>
                                                     <li><a href="education.html">Become an IB</a></li>
                                                     <li><a href="education-details.html">IB Promotions</a></li>
@@ -115,9 +115,6 @@ function Navbar(props) {
                     </div>
                 </div>
                 {/*sticky Header*/}
-<<<<<<< HEAD
-                
-=======
                 <div className="sticky-header">
                     <div className="auto-container">
                         <div className="outer-box">
@@ -143,7 +140,6 @@ function Navbar(props) {
                         </div>
                     </div>
                 </div>
->>>>>>> refs/remotes/origin/master
             </header>
 {/* Mobile Menu  */}
 <div className="mobile-menu">
