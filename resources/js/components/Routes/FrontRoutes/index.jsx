@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Homepage from '../../frontend/Pages/Homepage';
-import Aboutus from '../../frontend/Pages/Aboutus';
-import Broker from '../../Frontend/Pages/Broker';
 
+const Broker = lazy(() => import('../../Frontend/Pages/Broker'))
+const Aboutus = lazy(() => import('../../frontend/Pages/Aboutus'))
+const Homepage = lazy(() => import('../../frontend/Pages/Homepage'))
 
 function FrontRoutes(props) {
     return (

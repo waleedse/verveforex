@@ -1,8 +1,8 @@
-import React from "react";
-import FrontRoutes from "../routes/FrontRoutes";
-import Navbar from "./common/Navbar";
+import React, { lazy } from "react";
+
 import AdminRoutes from "../routes/AdminRoutes";
 
+const Navbar = lazy(() => import("./common/Navbar"))
 function AdminPanel() {
     return (
         <React.Fragment>

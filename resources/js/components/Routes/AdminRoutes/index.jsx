@@ -1,9 +1,8 @@
-import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Dashboard from '../../adminPanel/modules/dasboard';
-import AddPromotion from '../../adminPanel/modules/promotions/AddPromotion';
-import ManagePromotion from '../../adminPanel/modules/promotions/managePromotion';
-
+import React, { lazy } from 'react';
+import { Route, Routes } from 'react-router-dom';
+const AddPromotion = lazy(() => import("../../AdminPanel/modules/promotions/AddPromotion"))
+const ManagePromotion = lazy(() => import("../../adminPanel/modules/promotions/managePromotion"))
+const Dashboard = lazy(() => import("../../adminPanel/modules/dasboard"))
 
 function AdminRoutes(props) {
     return (
