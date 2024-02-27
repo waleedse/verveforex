@@ -14,7 +14,7 @@ function HomeSlider() {
         },
     ];
     return (
-        <div className="" style={{ height: "600px", marginTop: "140px" }}>
+        <div className="home-slider" style={{ height: "600px", marginTop: "140px" }}>
             <Carousel showThumbs={false}>
                 {slides.map((slide, index) => {
                     return <img style={{ width: "100%" }} src={slide.image} />;

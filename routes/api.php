@@ -29,11 +29,11 @@ Route::middleware('auth:sanctum')->group(function () {
 
     // Pomrotions
     Route::post('/add-promotion', [AdminWebsiteController::class  , 'add_promotion']);
-    Route::get('/get-promotions', [AdminWebsiteController::class  , 'get_promotions']);
+    Route::get('/get-promotions', [AdminWebsiteController::class  , 'get_all_promotions']);
     Route::post('/update-promotion', [AdminWebsiteController::class , 'update_promotion']);
-    Route::post('/get-promotion-by-id', [AdminWebsiteController::class , 'get_promotion_by_id']);
-    Route::post('/get-all-promotions', [AdminWebsiteController::class , 'get_all_promotions']);
-    Route::post('/delete-promotion', [AdminWebsiteController::class , 'delete_promotion']);
+    Route::get('/get-promotion-by-id/{id}', [AdminWebsiteController::class , 'get_promotion_by_id']);
+    Route::get('/get-all-promotions/{status?}', [AdminWebsiteController::class , 'get_all_promotions']);
+    Route::delete('/delete-promotion/{id}', [AdminWebsiteController::class , 'delete_promotion']);
 });
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {

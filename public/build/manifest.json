@@ -18,24 +18,21 @@
       "assets/revicons-TSCngFAj.eot"
     ],
     "css": [
-      "assets/app-S30vMO61.css"
+      "assets/app-I-cJYQk7.css"
     ],
-<<<<<<< HEAD
-    "file": "assets/app-pnZdtisC.js",
-=======
     "dynamicImports": [
-      "resources/js/components/AdminPanel/index.jsx"
+      "resources/js/components/adminPanel/index.jsx"
     ],
-    "file": "assets/app-pQGBRTNw.js",
+    "file": "assets/app-uycrDy9J.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
-  "resources/js/components/AdminPanel/index.jsx": {
-    "file": "assets/index-yLPE6jMK.js",
+  "resources/js/components/adminPanel/index.jsx": {
+    "file": "assets/index-Z5Jvf1pE.js",
     "imports": [
       "resources/js/app.js"
     ],
     "isDynamicEntry": true,
-    "src": "resources/js/components/AdminPanel/index.jsx"
+    "src": "resources/js/components/adminPanel/index.jsx"
   }
 }

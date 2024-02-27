@@ -1,4 +1,4 @@
-.control-dots {
+.home-slider .control-dots {
     display: none !important;
 }
 
@@ -11,4 +11,12 @@
 
 .form-select .search-wrapper{
     border: none !important;
+}
+
+.center-slide-items{
+    justify-content: center !important;
+}
+
+.promtion-slide img {
+    height: 330px !important;
 }

@@ -5,14 +5,17 @@ import BrokerReview from './Components/BrokerReview'
 import Reason from './Components/ReasonChoose'
 
 function Broker() {
-  return (
-    <Fragment>
-        <Banner></Banner>
-        <Sidebar></Sidebar>
-        <BrokerReview></BrokerReview>
-        <Reason></Reason>
-    </Fragment>
-  )
+    return (
+        <div className='account-details'>
+            <Banner></Banner>
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <BrokerReview></BrokerReview>
+                </div>
+            </div>
+            {/* <Reason></Reason> */}
+        </div>
+    )
 }
 
 export default Broker

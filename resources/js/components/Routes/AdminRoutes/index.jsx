@@ -10,6 +10,7 @@ function AdminRoutes(props) {
         <Routes>
             <Route path="/" Component={Dashboard}></Route>
             <Route path="add-promotion" Component={AddPromotion}></Route>
+            <Route path="edit-promotion/:id" Component={AddPromotion}></Route>
             <Route path="manage-promotion" Component={ManagePromotion}></Route>
         </Routes>
     );
