@@ -1,21 +1,24 @@
 {
-  "_commonService-UDcw4eab.js": {
-    "file": "assets/commonService-UDcw4eab.js",
+  "_commonService-zrHzkWdL.js": {
+    "file": "assets/commonService-zrHzkWdL.js",
     "imports": [
-      "_useAxios-VqIv-ZZV.js"
+      "_useAxios-K8SguwJ8.js"
     ]
   },
-  "_index-4WeRDdGO.js": {
-    "file": "assets/index-4WeRDdGO.js",
+  "_index-Jk9AbLMN.js": {
+    "file": "assets/index-Jk9AbLMN.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "_index-XhRVs4Hi.js": {
-    "file": "assets/index-XhRVs4Hi.js"
+  "_index-oqsAgWgC.js": {
+    "file": "assets/index-oqsAgWgC.js",
+    "imports": [
+      "resources/js/app.js"
+    ]
   },
-  "_useAxios-VqIv-ZZV.js": {
-    "file": "assets/useAxios-VqIv-ZZV.js",
+  "_useAxios-K8SguwJ8.js": {
+    "file": "assets/useAxios-K8SguwJ8.js",
     "imports": [
       "resources/js/app.js"
     ]
@@ -42,15 +45,15 @@
       "resources/js/components/frontend/Pages/Homepage/index.jsx",
       "resources/js/components/adminPanel/index.jsx"
     ],
-    "file": "assets/app-tSR9-uzQ.js",
+    "file": "assets/app-CJ0yBeH4.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
   "resources/js/components/adminPanel/common/Navbar/index.jsx": {
-    "file": "assets/index-9DY5GWy5.js",
+    "file": "assets/index-0UQfbSel.js",
     "imports": [
       "resources/js/app.js",
-      "_index-XhRVs4Hi.js"
+      "_index-oqsAgWgC.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/adminPanel/common/Navbar/index.jsx"
@@ -62,7 +65,7 @@
       "resources/js/components/adminPanel/modules/dasboard/index.jsx",
       "resources/js/components/adminPanel/common/Navbar/index.jsx"
     ],
-    "file": "assets/index-6P1R7Xhq.js",
+    "file": "assets/index-Yvkz4EBr.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -70,7 +73,7 @@
     "src": "resources/js/components/adminPanel/index.jsx"
   },
   "resources/js/components/adminPanel/modules/dasboard/index.jsx": {
-    "file": "assets/index-__DMUgnt.js",
+    "file": "assets/index-N6mGJwte.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -78,36 +81,36 @@
     "src": "resources/js/components/adminPanel/modules/dasboard/index.jsx"
   },
   "resources/js/components/adminPanel/modules/promotions/addPromotion/index.jsx": {
-    "file": "assets/index-pwJeD0E9.js",
+    "file": "assets/index-FA-Z1Vkw.js",
     "imports": [
       "resources/js/app.js",
-      "_commonService-UDcw4eab.js",
-      "_useAxios-VqIv-ZZV.js"
+      "_commonService-zrHzkWdL.js",
+      "_useAxios-K8SguwJ8.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/adminPanel/modules/promotions/addPromotion/index.jsx"
   },
   "resources/js/components/adminPanel/modules/promotions/managePromotion/index.jsx": {
-    "file": "assets/index-XlyV-1LG.js",
+    "file": "assets/index-whKYK_BX.js",
     "imports": [
       "resources/js/app.js",
-      "_commonService-UDcw4eab.js",
-      "_useAxios-VqIv-ZZV.js"
+      "_commonService-zrHzkWdL.js",
+      "_useAxios-K8SguwJ8.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/adminPanel/modules/promotions/managePromotion/index.jsx"
   },
   "resources/js/components/frontend/Pages/Aboutus/index.jsx": {
-    "file": "assets/index-wDk4STHf.js",
+    "file": "assets/index-X4fNkeym.js",
     "imports": [
       "resources/js/app.js",
-      "_index-4WeRDdGO.js"
+      "_index-Jk9AbLMN.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/frontend/Pages/Aboutus/index.jsx"
   },
   "resources/js/components/frontend/Pages/Broker/index.jsx": {
-    "file": "assets/index-71kNkAH1.js",
+    "file": "assets/index-4ErWNBCK.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -123,12 +126,12 @@
     "css": [
       "assets/index-kUDj7756.css"
     ],
-    "file": "assets/index-5S6jFWjO.js",
+    "file": "assets/index-vkzumxnY.js",
     "imports": [
       "resources/js/app.js",
-      "_index-XhRVs4Hi.js",
-      "_useAxios-VqIv-ZZV.js",
-      "_index-4WeRDdGO.js"
+      "_index-oqsAgWgC.js",
+      "_useAxios-K8SguwJ8.js",
+      "_index-Jk9AbLMN.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/frontend/Pages/Homepage/index.jsx"
