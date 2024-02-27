@@ -1,0 +1,7 @@
+import{r as s,_ as n,j as e,R as r,a as t,b as a}from"./app-tSR9-uzQ.js";const o=s.lazy(()=>n(()=>import("./index-pwJeD0E9.js"),__vite__mapDeps([0,1,2,3,4]))),i=s.lazy(()=>n(()=>import("./index-XlyV-1LG.js"),__vite__mapDeps([5,1,2,3,4]))),d=s.lazy(()=>n(()=>import("./index-__DMUgnt.js"),__vite__mapDeps([6,1,2])));function c(_){return e.jsxs(r,{children:[e.jsx(t,{path:"/",element:e.jsx(s.Suspense,{children:e.jsx(d,{})})}),e.jsx(t,{path:"add-promotion",element:e.jsxs(s.Suspense,{children:[" ",e.jsx(o,{})," "]})}),e.jsx(t,{path:"edit-promotion/:id",element:e.jsxs(s.Suspense,{children:[" ",e.jsx(o,{})," "]})}),e.jsx(t,{path:"manage-promotion",element:e.jsxs(s.Suspense,{children:[" ",e.jsx(i,{})," "]})})]})}const p=s.lazy(()=>n(()=>import("./index-9DY5GWy5.js"),__vite__mapDeps([7,1,2,8])));function x(){return e.jsxs(a.Fragment,{children:[e.jsx(p,{}),e.jsx("section",{className:"pc-container",children:e.jsx("div",{className:"pc-content",children:e.jsx(c,{})})})]})}export{x as default};
+function __vite__mapDeps(indexes) {
+  if (!__vite__mapDeps.viteFileDeps) {
+    __vite__mapDeps.viteFileDeps = ["assets/index-pwJeD0E9.js","assets/app-tSR9-uzQ.js","assets/app-humMNl8t.css","assets/commonService-UDcw4eab.js","assets/useAxios-VqIv-ZZV.js","assets/index-XlyV-1LG.js","assets/index-__DMUgnt.js","assets/index-9DY5GWy5.js","assets/index-XhRVs4Hi.js"]
+  }
+  return indexes.map((i) => __vite__mapDeps.viteFileDeps[i])
+}

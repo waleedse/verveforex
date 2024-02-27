@@ -31,7 +31,7 @@ Route::middleware('auth:sanctum')->group(function () {
     // Pomrotions
     Route::post('/add-promotion', [AdminWebsiteController::class  , 'add_promotion']);
     Route::post('/update-promotion', [AdminWebsiteController::class , 'update_promotion']);
-    Route::get('/get-promotion-by-id/{id}', [AdminWebsiteController::class , 'get_promotion_by_id']);
+    Route::get('/get-promotion-by-id/{id}', [AdminWebsiteController::class , 'get_promotion_    by_id']);
     Route::get('/get-all-promotions/{status?}', [AdminWebsiteController::class , 'get_all_promotions']);
     Route::delete('/delete-promotion/{id}', [AdminWebsiteController::class , 'delete_promotion']);
 });
