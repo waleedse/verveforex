@@ -20,3 +20,8 @@
 .promtion-slide img {
     height: 330px !important;
 }
+
+.content-reasons .icon img {
+    width: 50px !important;
+    margin-bottom: 12px;
+}

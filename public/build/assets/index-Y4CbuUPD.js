@@ -1,0 +1,7 @@
+import{r as e,_ as n,j as s,R as r,a as t,S as a,b as i}from"./app-D6EkqDFR.js";const o=e.lazy(()=>n(()=>import("./index-3GlTcKAN.js"),__vite__mapDeps([0,1,2,3,4]))),l=e.lazy(()=>n(()=>import("./index-uSLKwKcW.js"),__vite__mapDeps([5,1,2,3,4]))),c=e.lazy(()=>n(()=>import("./index-NyaAFamN.js"),__vite__mapDeps([6,1,2])));function x(j){return s.jsxs(r,{children:[s.jsx(t,{path:"/",element:s.jsx(e.Suspense,{fallback:s.jsx(a,{}),children:s.jsx(c,{})})}),s.jsx(t,{path:"add-promotion",element:s.jsxs(e.Suspense,{fallback:s.jsx(a,{}),children:["  ",s.jsx(o,{})," "]})}),s.jsx(t,{path:"edit-promotion/:id",element:s.jsxs(e.Suspense,{fallback:s.jsx(a,{}),children:[" ",s.jsx(o,{})," "]})}),s.jsx(t,{path:"manage-promotion",element:s.jsxs(e.Suspense,{fallback:s.jsx(a,{}),children:[" ",s.jsx(l,{})," "]})})]})}const d=e.lazy(()=>n(()=>import("./index-cJO7LInn.js"),__vite__mapDeps([7,1,2,8])));function _(){return s.jsxs(i.Fragment,{children:[s.jsx(d,{}),s.jsx("section",{className:"pc-container",children:s.jsx("div",{className:"pc-content",children:s.jsx(x,{})})})]})}export{_ as default};
+function __vite__mapDeps(indexes) {
+  if (!__vite__mapDeps.viteFileDeps) {
+    __vite__mapDeps.viteFileDeps = ["assets/index-3GlTcKAN.js","assets/app-D6EkqDFR.js","assets/app-kCc-d3Yq.css","assets/commonService-QThHC8Yd.js","assets/useAxios-oWb2u3QZ.js","assets/index-uSLKwKcW.js","assets/index-NyaAFamN.js","assets/index-cJO7LInn.js","assets/index-Px1yKryW.js"]
+  }
+  return indexes.map((i) => __vite__mapDeps.viteFileDeps[i])
+}

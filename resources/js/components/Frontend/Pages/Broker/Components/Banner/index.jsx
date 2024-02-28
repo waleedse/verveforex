@@ -3,7 +3,7 @@ import React from 'react'
 function Banner() {
     return (
         <div>
-            <section className="page-title centred">
+            <section className="page-title centred " style={{ marginTop: "140px" }}>
                 <div className="bg-layer" style={{ backgroundImage: 'url(assets/images/background/page-title.jpg)' }} />
                 <div className="line-box">
                     <div className="line-1" />

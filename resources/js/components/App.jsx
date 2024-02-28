@@ -8,7 +8,7 @@ import AdminLogin from './AdminPanel/modules/Auth/AdminLogin';
 import { Toaster } from 'react-hot-toast';
 import { store } from './redux/store/index'
 import { Provider } from 'react-redux'
-import AccessControl from './Utils/Interceptors/AccessControl';
+import AccessControl from './utils/Interceptors/AccessControl';
 const AdminPanel = lazy(() => import("./AdminPanel"))
 function App() {
     return (

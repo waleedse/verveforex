@@ -4,6 +4,7 @@ import toast from "react-hot-toast";
 import { useDispatch } from "react-redux";
 import { Outlet, useNavigate } from "react-router-dom";
 import { SET_USER } from "../../redux/reducers/admin";
+import Spinner from "../../global/spinner";
 
 const AccessControl = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -27,15 +28,7 @@ const AccessControl = () => {
     return (
         <div>
             {isLoading ? (
-                <div className="text-center" style={{ alignContent: "center" }}>
-                    <div
-                        class="spinner-border"
-                        style={{ marginTop: "30%" }}
-                        role="status"
-                    >
-                        <span class="sr-only">Loading...</span>
-                    </div>
-                </div>
+                <Spinner></Spinner>
             ) : (
                 <Outlet></Outlet>
             )}
