@@ -18,8 +18,8 @@ function BrokerTabs() {
                         <div className="widget-content">
                             <ul className="category-list clearfix">
                                 <li onClick={() => { setActiveTab('broker') }}><Link className={`${activeTab == 'broker' && 'current'}`} href="account-details.html"><h5>Cabana Capital</h5></Link></li>
-                                <li onClick={() => { setActiveTab('commission') }}><Link className={`${activeTab == 'commission' && 'current'}`} href="account-details-2.html"><h5>Commision Account</h5></Link></li>
-                                <li onClick={() => { setActiveTab('deposit') }}><Link className={`${activeTab == 'deposit' && 'current'}`} href="account-details-3.html" ><h5>STP Pro Account</h5></Link></li>
+                                <li onClick={() => { setActiveTab('commission') }}><Link className={`${activeTab == 'commission' && 'current'}`} href="account-details-2.html"><h5>Account Types</h5></Link></li>
+                                <li onClick={() => { setActiveTab('deposit') }}><Link className={`${activeTab == 'deposit' && 'current'}`} href="account-details-3.html" ><h5>Desposit and Withdrawl</h5></Link></li>
                             </ul>
                         </div>
                     </div>
