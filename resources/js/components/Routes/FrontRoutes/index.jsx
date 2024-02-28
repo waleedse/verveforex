@@ -11,8 +11,8 @@ function FrontRoutes(props) {
         <div>
             <Routes>
                 <Route path="/" element={<Suspense fallback={<Spinner />}> <Homepage /> </Suspense>}></Route>
-                <Route path="/about-us" Component={<Suspense fallback={<Spinner />}> <Aboutus /> </Suspense>}></Route>
-                <Route path="/broker" Component={<Suspense fallback={<Spinner />}> <Broker /> </Suspense>}></Route>
+                <Route path="/about-us" element={<Suspense fallback={<Spinner />}> <Aboutus /> </Suspense>}></Route>
+                <Route path="/broker" element={<Suspense fallback={<Spinner />}> <Broker /> </Suspense>}></Route>
             </Routes>
         </div>
     );

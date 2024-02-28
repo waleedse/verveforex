@@ -1,48 +1,49 @@
 import React, { Fragment, useState } from "react";
+import { Link } from "react-router-dom";
 
 
 function Navbar(props) {
-    const [showMobileNav , setShowMobileNav] = useState(false)
-    const [activeNavItem , setActiveNavItem] = useState('')
+    const [showMobileNav, setShowMobileNav] = useState(false)
+    const [activeNavItem, setActiveNavItem] = useState('')
 
     const handleActiveNavItem = (item) => {
         setActiveNavItem(item != activeNavItem ? item : '')
     }
-    const nav =  () => {
-        return(
-                                    <div className="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-                                    <ul className="navigation clearfix">
-                                            <li  className="current dropdown"><a href="/">Home</a>
-                                                <ul className={activeNavItem == 'home' && `active` }>
-                                                    <li><a href="index.html">Why Verve Forex</a></li>
-                                                </ul>
-                                                <div onClick={()=>{handleActiveNavItem('home')}} className="dropdown-btn"><span className="fas fa-angle-down" /></div>
-                                            </li>
-                                            <li className={`dropdown`}><a href="/about-us">About Us</a>
-                                            </li>
-                                            <li className="dropdown"><a href="index.html">Promotions</a>
-                                                <ul>
-                                                    <li><a href="platform.html">Cash Back</a></li>
-                                                    <li><a href="account.html">Dubai Offer</a></li>
-                                                    <li><a href="account-details.html">Bike Offer</a></li>
-                                                    <li><a href="account-details-2.html">Other Gifts</a></li>
-                                                    {/* <li><a href="account-details-3.html">STP Pro Account</a></li> */}
-                                                </ul>
-                                                <div className="dropdown-btn"><span className="fas fa-angle-down" /></div></li>
-                                            <li className="dropdown"><a href="/broker">Introducing Broker</a>
-                                                <ul>
-                                                    <li><a href="education.html">Become an IB</a></li>
-                                                    <li><a href="education-details.html">IB Promotions</a></li>
-                                                </ul>
-                                                <div className="dropdown-btn"><span className="fas fa-angle-down" /></div></li>
-                                            <li className="dropdown"><a href="index.html">Market Analysis</a>
-                                                <ul>
-                                                    <li><a href="about.html">News</a></li>
-                                                    <li><a href="history.html">Technical Analysis</a></li>
-                                                </ul>
-                                                <div className="dropdown-btn"><span className="fas fa-angle-down" /></div></li>
-                                        </ul>
-                                    </div>
+    const nav = () => {
+        return (
+            <div className="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                <ul className="navigation clearfix">
+                    <li className="current dropdown"><Link to="/">Home</Link>
+                        <ul className={activeNavItem == 'home' && `active`}>
+                            <li><a href="index.html">Why Verve Forex</a></li>
+                        </ul>
+                        <div onClick={() => { handleActiveNavItem('home') }} className="dropdown-btn"><span className="fas fa-angle-down" /></div>
+                    </li>
+                    <li className={`dropdown`}><Link to="/about-us">About Us</Link>
+                    </li>
+                    <li className="dropdown"><a href="index.html">Promotions</a>
+                        <ul>
+                            <li><a href="platform.html">Cash Back</a></li>
+                            <li><a href="account.html">Dubai Offer</a></li>
+                            <li><a href="account-details.html">Bike Offer</a></li>
+                            <li><a href="account-details-2.html">Other Gifts</a></li>
+                            {/* <li><a href="account-details-3.html">STP Pro Account</a></li> */}
+                        </ul>
+                        <div className="dropdown-btn"><span className="fas fa-angle-down" /></div></li>
+                    <li className="dropdown"><a href="/broker">Introducing Broker</a>
+                        <ul>
+                            <li><a href="education.html">Become an IB</a></li>
+                            <li><a href="education-details.html">IB Promotions</a></li>
+                        </ul>
+                        <div className="dropdown-btn"><span className="fas fa-angle-down" /></div></li>
+                    <li className="dropdown"><a href="index.html">Market Analysis</a>
+                        <ul>
+                            <li><a href="about.html">News</a></li>
+                            <li><a href="history.html">Technical Analysis</a></li>
+                        </ul>
+                        <div className="dropdown-btn"><span className="fas fa-angle-down" /></div></li>
+                </ul>
+            </div>
         )
     }
     return (
@@ -91,21 +92,21 @@ function Navbar(props) {
                 </div>
                 {/* header-lower */}
                 <div className="header-lower">
-                <div className="auto-container">
+                    <div className="auto-container">
                         <div className="outer-box">
                             <div className="logo-box">
                                 <figure className="logo"><a href="/"><img src="assets/images/logo.png" alt /></a></figure>
                             </div>
                             <div className="menu-area">
                                 {/*Mobile Navigation Toggler*/}
-                                <div onClick={()=>{setShowMobileNav(!showMobileNav)}} className="mobile-nav-toggler">
+                                <div onClick={() => { setShowMobileNav(!showMobileNav) }} className="mobile-nav-toggler">
                                     <i className="icon-bar" />
                                     <i className="icon-bar" />
                                     <i className="icon-bar" />
                                 </div>
                                 <nav className="main-menu navbar-expand-md navbar-light">
 
-                                {nav()}
+                                    {nav()}
                                 </nav>
                                 <div className="menu-right-content">
                                     <div className="btn-box"><a href="index.html" className="theme-btn btn-one"><span>Open an A/c</span></a></div>
@@ -130,7 +131,7 @@ function Navbar(props) {
                                 </div>
                                 <nav className="main-menu navbar-expand-md navbar-light">
 
-                                {nav()}
+                                    {nav()}
                                 </nav>
                                 <div className="menu-right-content">
                                     {/* <div className="search-box-outer search-toggler"><i className="flaticon-search" /></div> */}
@@ -141,34 +142,34 @@ function Navbar(props) {
                     </div>
                 </div>
             </header>
-{/* Mobile Menu  */}
-<div className="mobile-menu">
-  <div className="menu-backdrop" />
-  <div onClick={()=>{setShowMobileNav(false)}} className="close-btn"><i className="fas fa-times" /></div>
-  <nav className="menu-box">
-    <div className="nav-logo"><a href="index.html"><img src="assets/images/logo-6.png" alt title /></a></div>
-    <div className="menu-outer">
-   {nav()}
-    </div>
-    <div className="contact-info">
-      <h4>Contact Info</h4>
-      <ul>
-        <li>Chicago 12, Melborne City, USA</li>
-        <li><a href="tel:+8801682648101">+88 01682648101</a></li>
-        <li><a href="mailto:info@example.com">info@example.com</a></li>
-      </ul>
-    </div>
-    <div className="social-links">
-      <ul className="clearfix">
-        <li><a href="index.html"><span className="fab fa-twitter" /></a></li>
-        <li><a href="index.html"><span className="fab fa-facebook-square" /></a></li>
-        <li><a href="index.html"><span className="fab fa-pinterest-p" /></a></li>
-        <li><a href="index.html"><span className="fab fa-instagram" /></a></li>
-        <li><a href="index.html"><span className="fab fa-youtube" /></a></li>
-      </ul>
-    </div>
-  </nav>
-</div>{/* End Mobile Menu */}
+            {/* Mobile Menu  */}
+            <div className="mobile-menu">
+                <div className="menu-backdrop" />
+                <div onClick={() => { setShowMobileNav(false) }} className="close-btn"><i className="fas fa-times" /></div>
+                <nav className="menu-box">
+                    <div className="nav-logo"><a href="index.html"><img src="assets/images/logo-6.png" alt title /></a></div>
+                    <div className="menu-outer">
+                        {nav()}
+                    </div>
+                    <div className="contact-info">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li>Chicago 12, Melborne City, USA</li>
+                            <li><a href="tel:+8801682648101">+88 01682648101</a></li>
+                            <li><a href="mailto:info@example.com">info@example.com</a></li>
+                        </ul>
+                    </div>
+                    <div className="social-links">
+                        <ul className="clearfix">
+                            <li><a href="index.html"><span className="fab fa-twitter" /></a></li>
+                            <li><a href="index.html"><span className="fab fa-facebook-square" /></a></li>
+                            <li><a href="index.html"><span className="fab fa-pinterest-p" /></a></li>
+                            <li><a href="index.html"><span className="fab fa-instagram" /></a></li>
+                            <li><a href="index.html"><span className="fab fa-youtube" /></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>{/* End Mobile Menu */}
 
 
         </div>
