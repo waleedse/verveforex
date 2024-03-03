@@ -1,32 +1,30 @@
 {
-  "_index-6B0XmBmw.js": {
-    "file": "assets/index-6B0XmBmw.js",
+  "_commonService-WAK7YRQ6.js": {
+    "file": "assets/commonService-WAK7YRQ6.js",
+    "imports": [
+      "_useAxios-IiBqvLRa.js"
+    ]
+  },
+  "_index-MA_ANpsc.js": {
+    "file": "assets/index-MA_ANpsc.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "_index-LA6CdRSw.js": {
-    "dynamicImports": [
-      "resources/js/components/adminPanel/modules/promotions/addPromotion/index.jsx",
-      "resources/js/components/adminPanel/modules/promotions/managePromotion/index.jsx",
-      "resources/js/components/adminPanel/modules/dasboard/index.jsx",
-      "resources/js/components/adminPanel/common/Navbar/index.jsx"
-    ],
-    "file": "assets/index-LA6CdRSw.js",
-    "imports": [
-      "resources/js/app.js",
-      "_useAxios-oYG0CXbH.js"
-    ],
-    "isDynamicEntry": true
-  },
-  "_index-rpy9GSdr.js": {
-    "file": "assets/index-rpy9GSdr.js",
+  "_index-wmDhMI8B.js": {
+    "file": "assets/index-wmDhMI8B.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "_useAxios-oYG0CXbH.js": {
-    "file": "assets/useAxios-oYG0CXbH.js",
+  "_sass.default-4yqJDlBj.js": {
+    "file": "assets/sass.default-4yqJDlBj.js",
+    "imports": [
+      "resources/js/app.js"
+    ]
+  },
+  "_useAxios-IiBqvLRa.js": {
+    "file": "assets/useAxios-IiBqvLRa.js",
     "imports": [
       "resources/js/app.js"
     ]
@@ -51,23 +49,39 @@
       "resources/js/components/frontend/Pages/Broker/index.jsx",
       "resources/js/components/frontend/Pages/Aboutus/index.jsx",
       "resources/js/components/frontend/Pages/Homepage/index.jsx",
-      "_index-LA6CdRSw.js"
+      "resources/js/components/adminPanel/index.jsx"
     ],
-    "file": "assets/app-VHMWu37E.js",
+    "file": "assets/app-sDxIxHR6.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
   "resources/js/components/adminPanel/common/Navbar/index.jsx": {
-    "file": "assets/index-yCMGAj9E.js",
+    "file": "assets/index-fc24rKNm.js",
     "imports": [
       "resources/js/app.js",
-      "_index-6B0XmBmw.js"
+      "_index-MA_ANpsc.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/adminPanel/common/Navbar/index.jsx"
   },
+  "resources/js/components/adminPanel/index.jsx": {
+    "dynamicImports": [
+      "resources/js/components/adminPanel/modules/promotions/addPromotion/index.jsx",
+      "resources/js/components/adminPanel/modules/sliders/manageSliders/index.jsx",
+      "resources/js/components/adminPanel/modules/sliders/addSlider/index.jsx",
+      "resources/js/components/adminPanel/modules/promotions/managePromotion/index.jsx",
+      "resources/js/components/adminPanel/modules/dasboard/index.jsx",
+      "resources/js/components/adminPanel/common/Navbar/index.jsx"
+    ],
+    "file": "assets/index-Dm4Z_c3R.js",
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/components/adminPanel/index.jsx"
+  },
   "resources/js/components/adminPanel/modules/dasboard/index.jsx": {
-    "file": "assets/index-HutbIvvd.js",
+    "file": "assets/index-yCXKsbKt.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -75,36 +89,58 @@
     "src": "resources/js/components/adminPanel/modules/dasboard/index.jsx"
   },
   "resources/js/components/adminPanel/modules/promotions/addPromotion/index.jsx": {
-    "file": "assets/index-z1i76Mr3.js",
+    "file": "assets/index-aUujDsQk.js",
     "imports": [
       "resources/js/app.js",
-      "_index-LA6CdRSw.js",
-      "_useAxios-oYG0CXbH.js"
+      "_sass.default-4yqJDlBj.js",
+      "_commonService-WAK7YRQ6.js",
+      "_useAxios-IiBqvLRa.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/adminPanel/modules/promotions/addPromotion/index.jsx"
   },
   "resources/js/components/adminPanel/modules/promotions/managePromotion/index.jsx": {
-    "file": "assets/index-oCZjWI-h.js",
+    "file": "assets/index-dRZqVs7U.js",
     "imports": [
       "resources/js/app.js",
-      "_index-LA6CdRSw.js",
-      "_useAxios-oYG0CXbH.js"
+      "_commonService-WAK7YRQ6.js",
+      "_useAxios-IiBqvLRa.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/adminPanel/modules/promotions/managePromotion/index.jsx"
   },
-  "resources/js/components/frontend/Pages/Aboutus/index.jsx": {
-    "file": "assets/index-SQITCG00.js",
+  "resources/js/components/adminPanel/modules/sliders/addSlider/index.jsx": {
+    "file": "assets/index-NWooQFdU.js",
     "imports": [
       "resources/js/app.js",
-      "_index-rpy9GSdr.js"
+      "_sass.default-4yqJDlBj.js",
+      "_commonService-WAK7YRQ6.js",
+      "_useAxios-IiBqvLRa.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/components/adminPanel/modules/sliders/addSlider/index.jsx"
+  },
+  "resources/js/components/adminPanel/modules/sliders/manageSliders/index.jsx": {
+    "file": "assets/index-cHYK9PPr.js",
+    "imports": [
+      "resources/js/app.js",
+      "_commonService-WAK7YRQ6.js",
+      "_useAxios-IiBqvLRa.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/components/adminPanel/modules/sliders/manageSliders/index.jsx"
+  },
+  "resources/js/components/frontend/Pages/Aboutus/index.jsx": {
+    "file": "assets/index-D3UXgh9m.js",
+    "imports": [
+      "resources/js/app.js",
+      "_index-wmDhMI8B.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/frontend/Pages/Aboutus/index.jsx"
   },
   "resources/js/components/frontend/Pages/Broker/index.jsx": {
-    "file": "assets/index-XvBwI0hW.js",
+    "file": "assets/index-zEFJJ_Bd.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -120,12 +156,12 @@
     "css": [
       "assets/index-kUDj7756.css"
     ],
-    "file": "assets/index-Qshr5fh9.js",
+    "file": "assets/index-dn8z6V6Z.js",
     "imports": [
       "resources/js/app.js",
-      "_index-6B0XmBmw.js",
-      "_useAxios-oYG0CXbH.js",
-      "_index-rpy9GSdr.js"
+      "_index-MA_ANpsc.js",
+      "_useAxios-IiBqvLRa.js",
+      "_index-wmDhMI8B.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/frontend/Pages/Homepage/index.jsx"

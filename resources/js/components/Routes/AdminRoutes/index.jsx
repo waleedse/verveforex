@@ -1,9 +1,10 @@
 import React, { Suspense, lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Spinner from '../../global/spinner';
-import AddSlider from '../../adminPanel/modules/sliders/addSlider';
-import ManageSlider from '../../adminPanel/modules/sliders/manageSliders';
+
 const AddPromotion = lazy(() => import("../../AdminPanel/modules/promotions/AddPromotion"))
+const ManageSlider = lazy(() => import("../../adminPanel/modules/sliders/manageSliders"))
+const AddSlider = lazy(() => import("../../adminPanel/modules/sliders/addSlider"))
 const ManagePromotion = lazy(() => import("../../adminPanel/modules/promotions/managePromotion"))
 const Dashboard = lazy(() => import("../../adminPanel/modules/dasboard"))
 
