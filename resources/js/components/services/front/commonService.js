@@ -18,5 +18,12 @@ export const getPromotions = async () => {
       return response.data;
     } catch (error) { return null;}
 };
+export const getHomeSLiders = async () => {
+  const axiosInstance = useAxios()
+    try {
+      const response = await axiosInstance.get(`get-home-slider`,);
+      return response.data;
+    } catch (error) { return null;}
+};
 
 

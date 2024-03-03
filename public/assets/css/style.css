@@ -4386,9 +4386,9 @@ div#mCSB_1_container{
 }
 
 .banner-style-two .banner-carousel .slide-item{
-  border-radius: 30px 30px 0px 0px;
+  /* border-radius: 30px 30px 0px 0px; */
   overflow: hidden;
-  padding: 260px 0px 210px 0px;
+  padding: 150px 0px 150px 0px;
 }
 
 .banner-style-two .banner-carousel .slide-item:before{

@@ -9,7 +9,6 @@ const ManagePromotion = () => {
 
     const getAllPromotions = async () => {
         let res = await getPromotions();
-        console.log(res)
         setPromotions(res);
     }
 

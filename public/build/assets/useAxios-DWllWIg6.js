@@ -1,1 +1,0 @@
-import{l as t}from"./app-HbpMvjx6.js";const a="https://verve.campusportal.pk/api/",s="https://verve.campusportal.pk/uploads/",n=()=>t.create({baseURL:a,headers:{"Content-Type":"application/json",Authorization:`Bearer ${localStorage.getItem("token")}`},timeout:1e4});export{s as I,n as u};

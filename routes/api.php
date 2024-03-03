@@ -34,6 +34,14 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/get-promotion-by-id/{id}', [AdminWebsiteController::class , 'get_promotion_by_id']);
     Route::get('/get-all-promotions/{status?}', [AdminWebsiteController::class , 'get_all_promotions']);
     Route::delete('/delete-promotion/{id}', [AdminWebsiteController::class , 'delete_promotion']);
+
+    Route::post('/add-slider', [AdminWebsiteController::class, 'add_slider']);
+    Route::post('/update-slider', [AdminWebsiteController::class, 'update_slider']);
+    Route::get('/get-all-sliders', [AdminWebsiteController::class, 'get_all_sliders']);
+    Route::get('/get-slider-by-id/{id}', [AdminWebsiteController::class, 'get_slider_by_id']);
+    Route::delete('/delete-slider/{id}', [AdminWebsiteController::class, 'delete_slider']);
+    Route::get('/get-home-slider', [AdminWebsiteController::class, 'get_home_sliders']);
+
 });
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {

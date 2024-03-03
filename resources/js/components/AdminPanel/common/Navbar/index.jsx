@@ -101,7 +101,7 @@ function Nabar(props) {
                                     </ul>
                                 </li>
                                 <li onClick={() => { handleActiveTab('sliders') }} className={`pc-item pc-hasmenu ${activeTab == 'sliders' && 'pc-trigger'}`}>
-                                    <a href="#!" className="pc-link">
+                                    <a className="pc-link">
                                         <span className="pc-micon">
                                             <svg className="pc-icon">
                                                 <use xlinkHref="#custom-document" />
@@ -111,8 +111,8 @@ function Nabar(props) {
                                         <span className="pc-arrow"><i className="fas fa-chevron-right" /></span>
                                     </a>
                                     <ul className="pc-submenu">
-                                        <li className="pc-item"><a className="pc-link" href="../demo/layout-vertical.html">Add sliders</a></li>
-                                        <li className="pc-item"><a className="pc-link" href="../demo/layout-horizontal.html">Manage sliders</a></li>
+                                        <li className="pc-item"><Link className="pc-link" to="/adminpanel/add-slider">Add sliders</Link></li>
+                                        <li className="pc-item"><Link className="pc-link" to="/adminpanel/manage-sliders">Manage sliders</Link></li>
                                     </ul>
                                 </li>
                                 <li onClick={() => { handleActiveTab('news') }} className={`pc-item pc-hasmenu ${activeTab == 'news' && 'pc-trigger'}`}>

@@ -25,3 +25,7 @@
     width: 50px !important;
     margin-bottom: 12px;
 }
+
+.carousel .slide {
+    text-align: left !important;
+}

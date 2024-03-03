@@ -7,3 +7,8 @@ export const addPromotion = Yup.object().shape({
   image: Yup.string().required('Image is required'),
   shortDescription: Yup.string().required('Short description is required')
 });
+export const sliderSchema = Yup.object().shape({
+  title: Yup.string().required('Required'),
+  index: Yup.string().required('Required'),
+  image: Yup.string().required('Image is required'),
+});
