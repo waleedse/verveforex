@@ -21,6 +21,7 @@ Route::post('/login', [UserController::class, 'login']);
 Route::post('/register', [UserController::class, 'register']);
 Route::get('/get-countries', [AdminWebsiteController::class, 'get_countries']);
 Route::get('/get-promotions', [AdminWebsiteController::class  , 'get_all_promotions']);
+Route::get('/get-home-slider', [AdminWebsiteController::class, 'get_home_sliders']);
 
 Route::middleware('auth:sanctum')->get('/check-auth', [UserController::class, 'checkToken']);
 
@@ -40,7 +41,6 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/get-all-sliders', [AdminWebsiteController::class, 'get_all_sliders']);
     Route::get('/get-slider-by-id/{id}', [AdminWebsiteController::class, 'get_slider_by_id']);
     Route::delete('/delete-slider/{id}', [AdminWebsiteController::class, 'delete_slider']);
-    Route::get('/get-home-slider', [AdminWebsiteController::class, 'get_home_sliders']);
 
 });
 
