@@ -126,8 +126,8 @@ function Nabar(props) {
                                         <span className="pc-arrow"><i className="fas fa-chevron-right" /></span>
                                     </a>
                                     <ul className="pc-submenu">
-                                        <li className="pc-item"><a className="pc-link" href="../demo/layout-vertical.html">Add news</a></li>
-                                        <li className="pc-item"><a className="pc-link" href="../demo/layout-horizontal.html">Manage news</a></li>
+                                        <li className="pc-item"><Link className="pc-link" to="/adminpanel/add-news">Add news</Link></li>
+                                        <li className="pc-item"><Link className="pc-link" to="/adminpanel/manage-news">Manage news</Link></li>
                                     </ul>
                                 </li>
 

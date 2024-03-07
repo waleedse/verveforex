@@ -1,6 +1,7 @@
 <?php
 
-use App\Http\Controllers\AdminWebsiteController;
+use App\Http\Controllers\Admin\AdminWebsiteController;
+use App\Http\Controllers\Admin\NewsController;
 use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -22,6 +23,9 @@ Route::post('/register', [UserController::class, 'register']);
 Route::get('/get-countries', [AdminWebsiteController::class, 'get_countries']);
 Route::get('/get-promotions', [AdminWebsiteController::class  , 'get_all_promotions']);
 Route::get('/get-home-slider', [AdminWebsiteController::class, 'get_home_sliders']);
+Route::get('get-news',[NewsController::class , 'get_posts']);
+Route::get('get-news-by-slug/{slug}',[NewsController::class , 'get_post_by_slug']);
+Route::get('get-feature-news',[NewsController::class , 'get_feature_posts']);
 
 Route::middleware('auth:sanctum')->get('/check-auth', [UserController::class, 'checkToken']);
 
@@ -41,6 +45,13 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/get-all-sliders', [AdminWebsiteController::class, 'get_all_sliders']);
     Route::get('/get-slider-by-id/{id}', [AdminWebsiteController::class, 'get_slider_by_id']);
     Route::delete('/delete-slider/{id}', [AdminWebsiteController::class, 'delete_slider']);
+
+    // Posts Controller
+    Route::post('add-news',[NewsController::class , 'addnewpost']);
+    Route::get('get-all-news',[NewsController::class , 'get_allposts']);
+    Route::delete('delete-news/{id}',[NewsController::class , 'delete_post']);
+    Route::get('get-news-by-id/{id}',[NewsController::class , 'get_post_by_id']);
+    Route::post('update-news',[NewsController::class , 'update_post']);
 
 });
 

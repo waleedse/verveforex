@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Models\Country;
 use App\Models\Promotion;
@@ -8,6 +8,7 @@ use App\Models\Slider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
+use App\Http\Controllers\Controller;
 
 class AdminWebsiteController extends Controller
 {
@@ -100,7 +101,7 @@ class AdminWebsiteController extends Controller
         $promotion->type = $request->type;
         $promotion->status = $request->status;
         $promotion->short_description = $request->shortDescription;
-        $promotion->exclude = $request->excludeCheck == false ? 0 : 1;
+        $promotion->exclude = $request->excludeCheck == 'false' ? 0 : 1;
 
         if($promotion->type == 2){
             $promotion->countries = json_encode($request->selectedCountries);
@@ -135,7 +136,7 @@ class AdminWebsiteController extends Controller
         $promotion->type = $request->type;
         $promotion->status = $request->status;
         $promotion->short_description = $request->shortDescription;
-        $promotion->exclude = $request->excludeCheck == false ? 0 : 1;
+        $promotion->exclude = $request->excludeCheck == 'false' ? 0 : 1;
         if($promotion->type == 2){
             $promotion->countries = json_encode($request->selectedCountries);
         }
@@ -186,7 +187,7 @@ class AdminWebsiteController extends Controller
         $slider = new Slider();
         $slider->title = $request->title;
         $slider->type = $request->type;
-        $slider->excluded = $request->excluded == false ? 0 : 1;
+        $slider->excluded = $request->excluded == 'false' ? 0 : 1;
         $slider->index = $request->index;
         $slider->content = $request->content;
 
@@ -223,7 +224,7 @@ class AdminWebsiteController extends Controller
         $slider = Slider::where('id',$request->id)->first();
         $slider->title = $request->title;
         $slider->type = $request->type;
-        $slider->excluded = $request->excluded == false ? 0 : 1;
+        $slider->excluded = $request->excluded == 'false' ? 0 : 1;
         $slider->content = $request->content;
         $slider->index = $request->index;
         $slider->status = $request->status;
@@ -272,78 +273,6 @@ class AdminWebsiteController extends Controller
         return $slider;
     }
 
-    // public function get_home_sliders(Request $request){
-    //     $position = $this->get_client_location($request);
-
-    //     if($position['geoplugin_countryName']){
-    //         $sliders = [];
-    //         $country = Country::where('name',$position['geoplugin_countryName'])->first();
-    //         $all_countries_sliders = Slider::where('type',1)->where('status',1)->orderBy('index' , 'asc')->get();
-    //         $specific_sliders = Slider::where('type',2)->where('status',1)->get();
-
-    //         if(sizeof($specific_sliders) > 0){
-    //             foreach($specific_sliders as $sp){
-    //                 $sp_countries = json_decode($sp->countries);
-    //                 if($sp_countries){
-    //                     if($sp->excluded == 1){
-    //                         $check = 0;
-    //                         foreach($sp_countries as $spc){
-    //                             if($spc->id == $country->id){
-    //                                $check = 1;
-    //                             }
-    //                         }
-    //                         if($check == 0){
-    //                             array_push($sliders,$sp);
-    //                         }
-    //                     }else{
-    //                         foreach($sp_countries as $spc){
-    //                             if($spc->id == $country->id){
-    //                                 array_push($sliders,$sp);
-    //                             }
-    //                         }
-    //                     }
-
-    //                 }
-    //             }
-    //         }
-    //         if(sizeof($all_countries_sliders) > 0){
-    //             foreach($all_countries_sliders as $ac){
-    //                 array_push($sliders,$ac);
-    //             }
-    //         }
-    //         foreach($sliders as $i => $s){
-    //             foreach($sliders as $j => $s1){
-    //                 if($s1->index > $s->index){
-
-    //                     $temp = $sliders[$i];
-    //                     $sliders[$i] = $sliders[$j];
-    //                     $sliders[$j] = $temp;
-    //                 }
-    //             }
-    //        }
-    //         $response = ['status' => 200 , 'sliders' => $sliders];
-    //         return $response;
-
-    //     }else{
-    //         $sliders = Slider::where('type',1)->where('status',1)->orderBy('index' , 'asc')->get();
-    //         foreach($sliders as $i => $s){
-    //             foreach($sliders as $j => $s1){
-    //                 if($s1->index > $s->index){
-
-    //                     $temp = $sliders[$i];
-    //                     $sliders[$i] = $sliders[$j];
-    //                     $sliders[$j] = $temp;
-    //                 }
-    //             }
-    //        }
-
-
-    //         $response = ['status' => 200 , 'sliders' => $sliders];
-    //         return $response;
-    //     }
-
-    // }
-
     public function get_home_sliders(Request $request)
 {
     $position = $this->get_client_location($request);
@@ -375,6 +304,9 @@ class AdminWebsiteController extends Controller
     $response = ['status' => 200, 'sliders' => $sliders];
     return $response;
 }
+
+
+
 
 
 }

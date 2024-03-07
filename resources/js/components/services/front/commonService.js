@@ -25,5 +25,26 @@ export const getHomeSLiders = async () => {
       return response.data;
     } catch (error) { return null;}
 };
+export const getFeatureNews = async () => {
+  const axiosInstance = useAxios()
+    try {
+      const response = await axiosInstance.get(`get-feature-news`,);
+      return response.data;
+    } catch (error) { return null;}
+};
+export const getSingleNewsBySlug = async (slug) => {
+  const axiosInstance = useAxios()
+    try {
+      const response = await axiosInstance.get(`get-news-by-slug/${slug}`,);
+      return response.data;
+    } catch (error) { return null;}
+};
+export const getAllNews = async (slug) => {
+  const axiosInstance = useAxios()
+    try {
+      const response = await axiosInstance.get(`get-news`,);
+      return response.data;
+    } catch (error) { return null;}
+};
 
 

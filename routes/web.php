@@ -17,6 +17,7 @@ Route::get('/adminpanel/{path?}', function () {return view('admin');})->where('p
 Route::get('/admin-login', function () {return view('admin');});
 
 Route::view('/{path?}', 'welcome');
+Route::get('/{path?}', function () {return view('welcome');})->where('path' , '.*');
 Route::get('{reactRoutes}', function () {
     return view('welcome');
 });

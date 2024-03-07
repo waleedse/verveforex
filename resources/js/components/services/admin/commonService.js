@@ -119,3 +119,58 @@ export const deleteSliderById = async (id) => {
     } catch (error) { return null;}
 };
 
+
+// News
+export const addNews = async (payload) => {
+  const axiosInstance = useAxios()
+    try {
+      const response = await axiosInstance.post(`add-news`,payload , {
+
+        headers: {
+            'content-type': false,
+            'mime-type': "multipart/form-data",
+            'Authorization': `Bearer ${localStorage.getItem('token')}`
+        }
+      });
+      return response.data;
+    } catch (error) { return null;}
+};
+
+export const updateNews = async (payload) => {
+  const axiosInstance = useAxios()
+    try {
+      const response = await axiosInstance.post(`update-news`,payload , {
+
+        headers: {
+            'content-type': false,
+            'mime-type': "multipart/form-data",
+            'Authorization': `Bearer ${localStorage.getItem('token')}`
+        }
+      });
+      return response.data;
+    } catch (error) { return null;}
+};
+
+export const getNews = async () => {
+  const axiosInstance = useAxios()
+    try {
+      const response = await axiosInstance.get(`get-all-news`,);
+      return response.data;
+    } catch (error) { return null;}
+};
+
+export const getNewsById = async (id) => {
+  const axiosInstance = useAxios()
+    try {
+      const response = await axiosInstance.get(`get-news-by-id/${id}`);
+      return response.data;
+    } catch (error) { return null;}
+};
+export const deleteNewsById = async (id) => {
+  const axiosInstance = useAxios()
+    try {
+      const response = await axiosInstance.delete(`delete-news/${id}`);
+      return response.data;
+    } catch (error) { return null;}
+};
+

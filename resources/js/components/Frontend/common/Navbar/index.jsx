@@ -55,7 +55,7 @@ function Navbar(props) {
                     <div className="auto-container">
                         <div className="top-inner">
                             <div className="support-box">
-                                <div className="icon-box"><img src="assets/images/icons/icon-48.png" alt /></div>
+                                <div className="icon-box"><img src="/assets/images/icons/icon-48.png" alt /></div>
                                 <p><a href="mailto:support@verveforex.com">support@verveforex.com</a></p>
                             </div>
                             <div className="right-column">
@@ -95,7 +95,7 @@ function Navbar(props) {
                     <div className="auto-container">
                         <div className="outer-box">
                             <div className="logo-box">
-                                <figure className="logo"><a href="/"><img src="assets/images/logo.png" alt /></a></figure>
+                                <figure className="logo"><a href="/"><img src="/assets/images/logo.png" alt /></a></figure>
                             </div>
                             <div className="menu-area">
                                 {/*Mobile Navigation Toggler*/}
@@ -120,7 +120,7 @@ function Navbar(props) {
                     <div className="auto-container">
                         <div className="outer-box">
                             <div className="logo-box">
-                                <figure className="logo"><a href="index.html"><img src="assets/images/logo.png" alt /></a></figure>
+                                <figure className="logo"><a href="index.html"><img src="/assets/images/logo.png" alt /></a></figure>
                             </div>
                             <div className="menu-area">
                                 {/*Mobile Navigation Toggler*/}
@@ -147,7 +147,7 @@ function Navbar(props) {
                 <div className="menu-backdrop" />
                 <div onClick={() => { setShowMobileNav(false) }} className="close-btn"><i className="fas fa-times" /></div>
                 <nav className="menu-box">
-                    <div className="nav-logo"><a href="index.html"><img src="assets/images/logo-6.png" alt title /></a></div>
+                    <div className="nav-logo"><a href="index.html"><img src="/assets/images/logo-6.png" alt title /></a></div>
                     <div className="menu-outer">
                         {nav()}
                     </div>

@@ -12,3 +12,8 @@ export const sliderSchema = Yup.object().shape({
   index: Yup.string().required('Required'),
   image: Yup.string().required('Image is required'),
 });
+export const newsSchema = Yup.object().shape({
+  title: Yup.string().required('Required'),
+  body: Yup.string().required('Required'),
+  image: Yup.string().required('Image is required'),
+});
