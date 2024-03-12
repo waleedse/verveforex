@@ -1,21 +1,18 @@
 {
-  "_commonService-Petjnc5L.js": {
-    "file": "assets/commonService-Petjnc5L.js",
-    "imports": [
-      "_useAxios-ESFQUA61.js"
-    ]
-  },
   "_index-!~{007}~.js": {
     "file": "assets/index-_ofskOub.css",
     "src": "_index-!~{007}~.js"
   },
-  "_index-Q_5iuSH0.js": {
-    "file": "assets/index-Q_5iuSH0.js",
+  "_index-6ipbhIAj.js": {
+    "file": "assets/index-6ipbhIAj.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "_index-d97KmoEJ.js": {
+  "_index-XhRVs4Hi.js": {
+    "file": "assets/index-XhRVs4Hi.js"
+  },
+  "_index-nYMKZnSD.js": {
     "css": [
       "assets/index-_ofskOub.css"
     ],
@@ -27,24 +24,11 @@
       "resources/js/components/adminPanel/modules/dasboard/index.jsx",
       "resources/js/components/adminPanel/common/Navbar/index.jsx"
     ],
-    "file": "assets/index-d97KmoEJ.js",
+    "file": "assets/index-nYMKZnSD.js",
     "imports": [
-      "resources/js/app.js",
-      "_useAxios-ESFQUA61.js"
+      "resources/js/app.js"
     ],
     "isDynamicEntry": true
-  },
-  "_index-okcU5J6w.js": {
-    "file": "assets/index-okcU5J6w.js",
-    "imports": [
-      "resources/js/app.js"
-    ]
-  },
-  "_useAxios-ESFQUA61.js": {
-    "file": "assets/useAxios-ESFQUA61.js",
-    "imports": [
-      "resources/js/app.js"
-    ]
   },
   "node_modules/react-multi-carousel/lib/revicons.eot": {
     "file": "assets/revicons-TSCngFAj.eot",
@@ -68,23 +52,23 @@
       "resources/js/components/frontend/Pages/Homepage/index.jsx",
       "resources/js/components/frontend/Pages/SingleNews/index.jsx",
       "resources/js/components/frontend/Pages/News/index.jsx",
-      "_index-d97KmoEJ.js"
+      "_index-nYMKZnSD.js"
     ],
-    "file": "assets/app-Q2pmJbPb.js",
+    "file": "assets/app-T60HL-1M.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
   "resources/js/components/adminPanel/common/Navbar/index.jsx": {
-    "file": "assets/index-dlUTrxvC.js",
+    "file": "assets/index-w389vj6j.js",
     "imports": [
       "resources/js/app.js",
-      "_index-okcU5J6w.js"
+      "_index-XhRVs4Hi.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/adminPanel/common/Navbar/index.jsx"
   },
   "resources/js/components/adminPanel/modules/dasboard/index.jsx": {
-    "file": "assets/index-hhgaXFPe.js",
+    "file": "assets/index-y5vmlft_.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -92,56 +76,52 @@
     "src": "resources/js/components/adminPanel/modules/dasboard/index.jsx"
   },
   "resources/js/components/adminPanel/modules/promotions/addPromotion/index.jsx": {
-    "file": "assets/index-hhtwrj1j.js",
+    "file": "assets/index-pcDmPmOV.js",
     "imports": [
       "resources/js/app.js",
-      "_index-d97KmoEJ.js",
-      "_useAxios-ESFQUA61.js"
+      "_index-nYMKZnSD.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/adminPanel/modules/promotions/addPromotion/index.jsx"
   },
   "resources/js/components/adminPanel/modules/promotions/managePromotion/index.jsx": {
-    "file": "assets/index-1H7Ofsk4.js",
+    "file": "assets/index-xgcjBaoP.js",
     "imports": [
       "resources/js/app.js",
-      "_index-d97KmoEJ.js",
-      "_useAxios-ESFQUA61.js"
+      "_index-nYMKZnSD.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/adminPanel/modules/promotions/managePromotion/index.jsx"
   },
   "resources/js/components/adminPanel/modules/sliders/addSlider/index.jsx": {
-    "file": "assets/index-uDLX5TNM.js",
+    "file": "assets/index-uvx27183.js",
     "imports": [
       "resources/js/app.js",
-      "_index-d97KmoEJ.js",
-      "_useAxios-ESFQUA61.js"
+      "_index-nYMKZnSD.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/adminPanel/modules/sliders/addSlider/index.jsx"
   },
   "resources/js/components/adminPanel/modules/sliders/manageSliders/index.jsx": {
-    "file": "assets/index-GYrjDTsK.js",
+    "file": "assets/index-vDTQFvtj.js",
     "imports": [
       "resources/js/app.js",
-      "_index-d97KmoEJ.js",
-      "_useAxios-ESFQUA61.js"
+      "_index-nYMKZnSD.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/adminPanel/modules/sliders/manageSliders/index.jsx"
   },
   "resources/js/components/frontend/Pages/Aboutus/index.jsx": {
-    "file": "assets/index-4izMXo4k.js",
+    "file": "assets/index-mKWjRxkl.js",
     "imports": [
       "resources/js/app.js",
-      "_index-Q_5iuSH0.js"
+      "_index-6ipbhIAj.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/frontend/Pages/Aboutus/index.jsx"
   },
   "resources/js/components/frontend/Pages/Broker/index.jsx": {
-    "file": "assets/index-voZbbeD-.js",
+    "file": "assets/index-XuRu4oIP.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -157,33 +137,27 @@
     "css": [
       "assets/index-kUDj7756.css"
     ],
-    "file": "assets/index-KsOyvT_G.js",
+    "file": "assets/index-6q0ioxUH.js",
     "imports": [
       "resources/js/app.js",
-      "_index-okcU5J6w.js",
-      "_commonService-Petjnc5L.js",
-      "_useAxios-ESFQUA61.js",
-      "_index-Q_5iuSH0.js"
+      "_index-XhRVs4Hi.js",
+      "_index-6ipbhIAj.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/frontend/Pages/Homepage/index.jsx"
   },
   "resources/js/components/frontend/Pages/News/index.jsx": {
-    "file": "assets/index-bFY4kgyW.js",
+    "file": "assets/index-PBcUozOu.js",
     "imports": [
-      "resources/js/app.js",
-      "_commonService-Petjnc5L.js",
-      "_useAxios-ESFQUA61.js"
+      "resources/js/app.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/frontend/Pages/News/index.jsx"
   },
   "resources/js/components/frontend/Pages/SingleNews/index.jsx": {
-    "file": "assets/index-gZH1WNcr.js",
+    "file": "assets/index-l-CqLIkB.js",
     "imports": [
-      "resources/js/app.js",
-      "_commonService-Petjnc5L.js",
-      "_useAxios-ESFQUA61.js"
+      "resources/js/app.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/frontend/Pages/SingleNews/index.jsx"

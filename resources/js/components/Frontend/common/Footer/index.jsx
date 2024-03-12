@@ -10,7 +10,7 @@ function Footer(props) {
                             {/* Brand  */}
                             <div className="col-lg-4 col-md-6 col-sm-12 footer-column">
                                 <div className="footer-widget logo-widget">
-                                    <figure className="footer-logo"><a href="/"><img src="/assets/images/logo.png" alt /></a></figure>
+                                    <figure className="footer-logo"><a href="/"><img src="/assets/images/logolight.png" alt /></a></figure>
                                     <div className="widget-content">
                                         <div className="year-box">
                                             {/* <h4>Since</h4>

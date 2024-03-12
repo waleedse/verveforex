@@ -1,11 +1,15 @@
-import React, { Fragment, useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, { Fragment, useEffect, useState } from 'react'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import BrokerReview from '../BrokerReview'
 import AccountTypes from '../AccountTypes'
 import Deposit from '../Desposit'
-
-function BrokerTabs() {
+function BrokerTabs({ brokerProp }) {
     const [activeTab, setActiveTab] = useState('broker')
+    const [broker, setBroker] = useState(brokerProp)
+
+    useEffect(() => {
+        setBroker(brokerProp)
+    }, [brokerProp])
 
     return (
         <Fragment>
@@ -17,7 +21,7 @@ function BrokerTabs() {
                         </div>
                         <div className="widget-content">
                             <ul className="category-list clearfix">
-                                <li onClick={() => { setActiveTab('broker') }}><Link className={`${activeTab == 'broker' && 'current'}`} href="account-details.html"><h5>Cabana Capital</h5></Link></li>
+                                <li onClick={() => { setActiveTab('broker') }}><Link className={`${activeTab == 'broker' && 'current'}`} href="account-details.html"><h5>{broker?.about.name}</h5></Link></li>
                                 <li onClick={() => { setActiveTab('commission') }}><Link className={`${activeTab == 'commission' && 'current'}`} href="account-details-2.html"><h5>Account Types</h5></Link></li>
                                 <li onClick={() => { setActiveTab('deposit') }}><Link className={`${activeTab == 'deposit' && 'current'}`} href="account-details-3.html" ><h5>Desposit and Withdrawl</h5></Link></li>
                             </ul>
@@ -28,16 +32,16 @@ function BrokerTabs() {
             <div className="col-lg-8 col-md-12 col-sm-12 content-side">
                 <div className="account-details-content">
                     {
-                        activeTab == 'broker' &&
-                        <BrokerReview></BrokerReview>
+                        activeTab == 'broker' && broker &&
+                        <BrokerReview broker={broker.about}></BrokerReview>
                     }
                     {
-                        activeTab == 'commission' &&
-                        <AccountTypes></AccountTypes>
+                        activeTab == 'commission' && broker &&
+                        <AccountTypes account={broker?.account}></AccountTypes>
                     }
                     {
-                        activeTab == 'deposit' &&
-                        <Deposit></Deposit>
+                        activeTab == 'deposit' && broker &&
+                        <Deposit deposit={broker?.deposit}></Deposit>
                     }
                 </div>
             </div>

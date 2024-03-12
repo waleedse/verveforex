@@ -1,5 +1,6 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { getPromotions } from "../../../services/front/commonService";
 
 
 function Navbar(props) {
@@ -9,27 +10,63 @@ function Navbar(props) {
     const handleActiveNavItem = (item) => {
         setActiveNavItem(item != activeNavItem ? item : '')
     }
+    const brokers = [
+        { name: 'Cabana Capitals', link: '/broker/cabana-capitals' },
+        { name: 'OctaFx', link: '/broker/octafx' },
+        { name: 'Naga', link: '/broker/naga' },
+        { name: 'Ic Markets', link: '/broker/ic-markets' },
+        { name: 'Multibank Group', link: '/broker/multibank-group' },
+        { name: 'Exness', link: '/broker/exness' },
+        { name: 'GTC', link: '/broker/gtc' },
+        { name: 'Equiti', link: '/broker/equiti' },
+        { name: 'FBS Forex', link: '/broker/fbs' },
+
+    ]
     const nav = () => {
+        const [promtoions, setPromotions] = useState([])
+
+        const getAllPromotions = async () => {
+            let res = await getPromotions();
+            setPromotions(res)
+
+            console.log(res)
+        }
+
+        useEffect(() => {
+            getAllPromotions();
+        }, [])
+
         return (
             <div className="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                 <ul className="navigation clearfix">
-                    <li className="current dropdown"><Link to="/">Home</Link>
-                        <ul className={activeNavItem == 'home' && `active`}>
-                            <li><a href="index.html">Why Verve Forex</a></li>
-                        </ul>
-                        <div onClick={() => { handleActiveNavItem('home') }} className="dropdown-btn"><span className="fas fa-angle-down" /></div>
-                    </li>
                     <li className={`dropdown`}><Link to="/about-us">About Us</Link>
                     </li>
                     <li className="dropdown"><a href="index.html">Promotions</a>
                         <ul>
-                            <li><a href="platform.html">Cash Back</a></li>
+                            {
+                                promtoions && promtoions?.map((promotion, index) => (
+                                    <li><a href="/">{promotion?.title}</a></li>
+
+                                ))
+                            }
+                            {/* <li><a href="platform.html">Cash Back</a></li>
                             <li><a href="account.html">Dubai Offer</a></li>
                             <li><a href="account-details.html">Bike Offer</a></li>
-                            <li><a href="account-details-2.html">Other Gifts</a></li>
+                            <li><a href="account-details-2.html">Other Gifts</a></li> */}
                             {/* <li><a href="account-details-3.html">STP Pro Account</a></li> */}
                         </ul>
                         <div className="dropdown-btn"><span className="fas fa-angle-down" /></div></li>
+                    <li className="current dropdown"><Link to="/">Brokers</Link>
+                        <ul className={activeNavItem == 'home' && `active`}>
+                            {
+                                brokers.map(broker => (
+                                    <li><Link to={broker.link}>{broker.name}</Link></li>
+
+                                ))
+                            }
+                        </ul>
+                        <div onClick={() => { handleActiveNavItem('home') }} className="dropdown-btn"><span className="fas fa-angle-down" /></div>
+                    </li>
                     <li className="dropdown"><a href="/broker">Introducing Broker</a>
                         <ul>
                             <li><a href="education.html">Become an IB</a></li>
@@ -73,11 +110,11 @@ function Navbar(props) {
                                 </div> */}
                                 <ul className="registration-box clearfix">
                                     <li>
-                                        <div className="icon"><img src="assets/images/icons/icon-49.png" alt /></div>
+                                        <div className="icon"><img src="/assets/images/icons/icon-49.png" alt /></div>
                                         <a href="index-3.html">Login</a>
                                     </li>
                                     <li>
-                                        <div className="icon"><img src="assets/images/icons/icon-50.png" alt /></div>
+                                        <div className="icon"><img src="/assets/images/icons/icon-50.png" alt /></div>
                                         <a href="index-3.html">Signup</a>
                                     </li>
                                 </ul>
