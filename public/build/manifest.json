@@ -3,16 +3,7 @@
     "file": "assets/index-_ofskOub.css",
     "src": "_index-!~{007}~.js"
   },
-  "_index-6ipbhIAj.js": {
-    "file": "assets/index-6ipbhIAj.js",
-    "imports": [
-      "resources/js/app.js"
-    ]
-  },
-  "_index-XhRVs4Hi.js": {
-    "file": "assets/index-XhRVs4Hi.js"
-  },
-  "_index-nYMKZnSD.js": {
+  "_index-DhFRji1K.js": {
     "css": [
       "assets/index-_ofskOub.css"
     ],
@@ -24,11 +15,23 @@
       "resources/js/components/adminPanel/modules/dasboard/index.jsx",
       "resources/js/components/adminPanel/common/Navbar/index.jsx"
     ],
-    "file": "assets/index-nYMKZnSD.js",
+    "file": "assets/index-DhFRji1K.js",
     "imports": [
       "resources/js/app.js"
     ],
     "isDynamicEntry": true
+  },
+  "_index-cDr8nBgI.js": {
+    "file": "assets/index-cDr8nBgI.js",
+    "imports": [
+      "resources/js/app.js"
+    ]
+  },
+  "_index-uvjk9c4Z.js": {
+    "file": "assets/index-uvjk9c4Z.js",
+    "imports": [
+      "resources/js/app.js"
+    ]
   },
   "node_modules/react-multi-carousel/lib/revicons.eot": {
     "file": "assets/revicons-TSCngFAj.eot",
@@ -44,7 +47,7 @@
   },
   "resources/js/app.js": {
     "css": [
-      "assets/app-P5giTJN4.css"
+      "assets/app-k3Ee5MWo.css"
     ],
     "dynamicImports": [
       "resources/js/components/frontend/Pages/Broker/index.jsx",
@@ -52,23 +55,23 @@
       "resources/js/components/frontend/Pages/Homepage/index.jsx",
       "resources/js/components/frontend/Pages/SingleNews/index.jsx",
       "resources/js/components/frontend/Pages/News/index.jsx",
-      "_index-nYMKZnSD.js"
+      "_index-DhFRji1K.js"
     ],
-    "file": "assets/app-T60HL-1M.js",
+    "file": "assets/app-4z1yUGGI.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
   "resources/js/components/adminPanel/common/Navbar/index.jsx": {
-    "file": "assets/index-w389vj6j.js",
+    "file": "assets/index-z_I5DUNw.js",
     "imports": [
       "resources/js/app.js",
-      "_index-XhRVs4Hi.js"
+      "_index-cDr8nBgI.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/adminPanel/common/Navbar/index.jsx"
   },
   "resources/js/components/adminPanel/modules/dasboard/index.jsx": {
-    "file": "assets/index-y5vmlft_.js",
+    "file": "assets/index-jYrtJqBw.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -76,52 +79,52 @@
     "src": "resources/js/components/adminPanel/modules/dasboard/index.jsx"
   },
   "resources/js/components/adminPanel/modules/promotions/addPromotion/index.jsx": {
-    "file": "assets/index-pcDmPmOV.js",
+    "file": "assets/index-AZ2JQi8m.js",
     "imports": [
       "resources/js/app.js",
-      "_index-nYMKZnSD.js"
+      "_index-DhFRji1K.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/adminPanel/modules/promotions/addPromotion/index.jsx"
   },
   "resources/js/components/adminPanel/modules/promotions/managePromotion/index.jsx": {
-    "file": "assets/index-xgcjBaoP.js",
+    "file": "assets/index-fNvGGpSF.js",
     "imports": [
       "resources/js/app.js",
-      "_index-nYMKZnSD.js"
+      "_index-DhFRji1K.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/adminPanel/modules/promotions/managePromotion/index.jsx"
   },
   "resources/js/components/adminPanel/modules/sliders/addSlider/index.jsx": {
-    "file": "assets/index-uvx27183.js",
+    "file": "assets/index-1zpJDXLw.js",
     "imports": [
       "resources/js/app.js",
-      "_index-nYMKZnSD.js"
+      "_index-DhFRji1K.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/adminPanel/modules/sliders/addSlider/index.jsx"
   },
   "resources/js/components/adminPanel/modules/sliders/manageSliders/index.jsx": {
-    "file": "assets/index-vDTQFvtj.js",
+    "file": "assets/index-vfQe-ini.js",
     "imports": [
       "resources/js/app.js",
-      "_index-nYMKZnSD.js"
+      "_index-DhFRji1K.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/adminPanel/modules/sliders/manageSliders/index.jsx"
   },
   "resources/js/components/frontend/Pages/Aboutus/index.jsx": {
-    "file": "assets/index-mKWjRxkl.js",
+    "file": "assets/index-0pCQMxDp.js",
     "imports": [
       "resources/js/app.js",
-      "_index-6ipbhIAj.js"
+      "_index-uvjk9c4Z.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/frontend/Pages/Aboutus/index.jsx"
   },
   "resources/js/components/frontend/Pages/Broker/index.jsx": {
-    "file": "assets/index-XuRu4oIP.js",
+    "file": "assets/index-UGggm89v.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -137,17 +140,17 @@
     "css": [
       "assets/index-kUDj7756.css"
     ],
-    "file": "assets/index-6q0ioxUH.js",
+    "file": "assets/index-i8GlnoFn.js",
     "imports": [
       "resources/js/app.js",
-      "_index-XhRVs4Hi.js",
-      "_index-6ipbhIAj.js"
+      "_index-cDr8nBgI.js",
+      "_index-uvjk9c4Z.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/frontend/Pages/Homepage/index.jsx"
   },
   "resources/js/components/frontend/Pages/News/index.jsx": {
-    "file": "assets/index-PBcUozOu.js",
+    "file": "assets/index-ybD4MEvX.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -155,7 +158,7 @@
     "src": "resources/js/components/frontend/Pages/News/index.jsx"
   },
   "resources/js/components/frontend/Pages/SingleNews/index.jsx": {
-    "file": "assets/index-l-CqLIkB.js",
+    "file": "assets/index-DbaRoRkN.js",
     "imports": [
       "resources/js/app.js"
     ],
