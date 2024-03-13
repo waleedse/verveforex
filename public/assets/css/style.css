@@ -9100,9 +9100,9 @@ div#mCSB_1_container{
 }
 
 .account-details-content .accordion .acc-content .list-item li{
-  position: relative;
-  display: block;
-  padding-left: 40px;
+  /* position: relative; */
+  /* display: block; */
+  padding-left: 10px;
   margin-bottom: 8px;
 }
 
@@ -9110,7 +9110,7 @@ div#mCSB_1_container{
   margin-bottom: 0px;
 }
 
-.account-details-content .accordion .acc-content .list-item li:before{
+/* .account-details-content .accordion .acc-content .list-item li:before{
   position: absolute;
   content: '';
   background: #dce0df;
@@ -9118,7 +9118,7 @@ div#mCSB_1_container{
   height: 1px;
   left: 0px;
   top: 14px;
-}
+} */
 
 .account-details-content h3{
   position: relative;

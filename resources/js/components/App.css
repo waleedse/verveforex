@@ -52,3 +52,15 @@
 .react-multi-carousel-list{
     height: 550px;
 }
+.acc-content ul li {
+    list-style: circle !important;
+}
+
+.text-box{
+    text-align: justify !important;
+}
+
+p {
+    text-align: justify !important;
+
+}
