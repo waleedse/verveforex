@@ -17,13 +17,13 @@ function BrokerTabs({ brokerProp }) {
                 <div className="account-sidebar">
                     <div className="sidebar-widget category-widget">
                         <div className="widget-title">
-                            <h3>Account Types</h3>
+                            <h3>{broker?.about?.name}</h3>
                         </div>
                         <div className="widget-content">
                             <ul className="category-list clearfix">
-                                <li onClick={() => { setActiveTab('broker') }}><Link className={`${activeTab == 'broker' && 'current'}`} href="account-details.html"><h5>{broker?.about.name}</h5></Link></li>
+                                <li onClick={() => { setActiveTab('broker') }}><Link className={`${activeTab == 'broker' && 'current'}`} href="account-details.html"><h5>Key Facts</h5></Link></li>
                                 <li onClick={() => { setActiveTab('commission') }}><Link className={`${activeTab == 'commission' && 'current'}`} href="account-details-2.html"><h5>Account Types</h5></Link></li>
-                                <li onClick={() => { setActiveTab('deposit') }}><Link className={`${activeTab == 'deposit' && 'current'}`} href="account-details-3.html" ><h5>Desposit and Withdrawl</h5></Link></li>
+                                <li onClick={() => { setActiveTab('deposit') }}><Link className={`${activeTab == 'deposit' && 'current'}`} href="account-details-3.html" ><h5>Desposit and Withdrawal</h5></Link></li>
                             </ul>
                         </div>
                     </div>

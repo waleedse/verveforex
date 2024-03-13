@@ -6,21 +6,21 @@ function BrokerReview({ broker }) {
 
 
         <div>
-            <div className="text-box">
+            <div className="text-box text-justify">
                 <h2>{broker?.name}</h2>
                 <p dangerouslySetInnerHTML={{ __html: broker?.description }}></p>
             </div>
 
             <div className="content-one">
                 <div className="row clearfix">
-                    {
+                    {/* {
                         broker?.image &&
-                        <div className="col-lg-6 col-md-6 col-sm-12 image-column">
+                        <div className="col-lg-12 col-md-12 col-sm-12 image-column">
                             <figure className="image-box">
                                 <img src={`${broker?.image}`} alt="" />
                             </figure>
                         </div>
-                    }
+                    } */}
 
                     <div className="col-lg-6 col-md-6 col-sm-12 content-column">
                         <ul className="accordion-box">
@@ -29,19 +29,25 @@ function BrokerReview({ broker }) {
                                     <h3>Pros</h3>
                                 </div>
                                 <div className="acc-content current">
-                                    <ul className="list-item clearfix">
+                                    <ul className="list-item text-justify clearfix">
                                         {broker?.pros.map((pro, index) => (
                                             <li key={index}>{pro}</li>
                                         ))}
                                     </ul>
                                 </div>
                             </li>
+
+                        </ul>
+                    </div>
+                    <div className="col-lg-6 col-md-6 col-sm-12 content-column">
+                        <ul className="accordion-box">
+
                             <li className="accordion block">
                                 <div className="acc-btn">
                                     <h3>Cons</h3>
                                 </div>
                                 <div className="acc-content current">
-                                    <ul className="list-item clearfix">
+                                    <ul className="list-item text-justify clearfix">
                                         {broker?.cons.map((con, index) => (
                                             <li key={index}>{con}</li>
                                         ))}
@@ -59,18 +65,21 @@ function BrokerReview({ broker }) {
                     <p key={index}>{regulation}</p>
                 ))}
             </div>
-
+            <br />
             <div className='text-box'>
                 <h3>Leverage</h3>
                 <p>{broker?.leverage?.description}</p>
                 <p>{broker?.leverage?.risk_warning}</p>
             </div>
 
+            <br />
+
             <div className='text-box'>
                 <h3>Spread</h3>
                 <p>{broker?.spread}</p>
 
             </div>
+            <br />
             {
                 broker?.educational_material &&
                 <div className='text-box'>
@@ -78,14 +87,14 @@ function BrokerReview({ broker }) {
                     <p>{broker?.educational_material}</p>
                 </div>
             }
-
+            <br />
             {
                 broker?.copy_trading &&
                 <div className='text-box'>
                     <h3>Copy Trading</h3>
                     <p>{broker?.copy_trading}</p>
                 </div>
-            }
+            } <br />
             {
                 broker?.trading_platforms &&
                 <div className='text-box'>
@@ -93,7 +102,7 @@ function BrokerReview({ broker }) {
                     <p>{broker?.trading_platforms}</p>
                 </div>
             }
-
+            <br />
             {
                 broker?.currencies &&
                 <div className='text-box'>
@@ -101,7 +110,7 @@ function BrokerReview({ broker }) {
                     <p>{broker?.currencies}</p>
 
                 </div>
-            }
+            } <br />
             {
                 broker?.customer_support &&
                 <div className='text-box'>
@@ -109,7 +118,7 @@ function BrokerReview({ broker }) {
                     <p>{broker?.customer_support?.description}</p>
                     <p>{broker?.customer_support?.additional_information}</p>
                 </div>
-            }
+            } <br />
             {broker?.reasons_to_choose &&
                 <div className="content-three content-reasons">
                     <div className="text-box">
