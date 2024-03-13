@@ -49,3 +49,6 @@
     line-height: 1.3;
     max-height: 87px !important;
 }
+.react-multi-carousel-list{
+    height: 550px;
+}
