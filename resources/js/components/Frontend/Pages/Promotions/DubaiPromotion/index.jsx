@@ -1,8 +1,10 @@
 import React from 'react'
 import '../promotions.css'
+import PromotionRules from './components/PromotionRules'
 
 
 function DubaiPromotion() {
+<<<<<<< HEAD
   return (
     <section className='promotion-wrapper'>
       <div className='top-banner'>
@@ -137,9 +139,34 @@ function DubaiPromotion() {
         </div>
       </div>
       
+=======
+    return (
+        <section className='promotion-wrapper'>
+            <div className='top-banner'>
+                <figure>
+                    <img src="/assets/images/banner/TopBanner.jpg" />
+                </figure>
+            </div>
+            <div className="promotion-heading">
+                <h3>Dubai Trip Offer</h3>
+                <p>Embark on an extraordinary journey to Dubai</p>
+            </div>
+            <div className="promotion-banner">
+                <figure>
+                    <img src="/assets/images/banner/TripDetails.png" />
+                </figure>
+                <figure>
+                    <img src="/assets/images/banner/HowtoParticipate.png" />
+                </figure>
+                <figure>
+                    <img src="/assets/images/banner/OfferDetails.png" />
+                </figure>
+            </div>
+>>>>>>> refs/remotes/origin/master
 
-    </section>
-  )
+            <PromotionRules />
+        </section>
+    )
 }
 
 export default DubaiPromotion
