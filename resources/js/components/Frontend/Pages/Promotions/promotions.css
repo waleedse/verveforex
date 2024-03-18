@@ -15,11 +15,11 @@
 }
 .promotion-heading h3{
     color: black;
-    font: 700 40px/40px "raleway" !important;
+    font: 700 40px/40px sans-serif !important;
 }
 .promotion-heading p{
     color: black;
-    font: 400 20px/40px "raleway";
+    font: 400 20px/40px sans-serif;
 }
 .promotion-banner{
     gap: 70px;
@@ -39,11 +39,11 @@
     width: 50%;
 }
 .trip-description h4{
-    font: 500 30px/55px "raleway";
+    font: 500 30px/55px sans-serif;
     color: black;
 }
 .trip-description p{
-    font: 400 20px/28px "raleway";
+    font: 400 20px/28px sans-serif;
     color: black;
 }
 .trip-description ul{
@@ -63,7 +63,7 @@
     margin: 0;
 }
 li{
-    font: 400 15px/28px "raleway";
+    font: 400 15px/28px sans-serif;
     color: black;
 }
 .promotion-details{
