@@ -41,7 +41,7 @@ function Navbar(props) {
                 <ul className="navigation clearfix">
                     <li className={`dropdown`}><Link to="/about-us">About Us</Link>
                     </li>
-                    <li className="dropdown"><a href="index.html">Promotions</a>
+                    <li className="dropdown"><a href="/">Promotions</a>
                         <ul>
                             {
                                 promtoions && promtoions?.map((promotion, index) => (
@@ -157,7 +157,7 @@ function Navbar(props) {
                     <div className="auto-container">
                         <div className="outer-box">
                             <div className="logo-box">
-                                <figure className="logo"><a href="index.html"><img src="/assets/images/logo.png" alt /></a></figure>
+                                <figure className="logo"><a href="/"><img src="/assets/images/logo.png" alt /></a></figure>
                             </div>
                             <div className="menu-area">
                                 {/*Mobile Navigation Toggler*/}
