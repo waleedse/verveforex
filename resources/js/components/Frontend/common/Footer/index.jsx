@@ -49,7 +49,7 @@ function Footer(props) {
                                     </div>
                                     <div className="widget-content">
                                         <ul className="links-list clearfix">
-                                            <li><a href="/">Privacy Policy</a></li>
+                                            <li><a href="./PrivacyPolicy">Privacy Policy</a></li>
                                             <li><a href="/">Terms & Conditions</a></li>
                                             <li><a href="/">Legal Notice</a></li>
                                             {/* <li><a href="/">Platform Tutorials</a></li>
