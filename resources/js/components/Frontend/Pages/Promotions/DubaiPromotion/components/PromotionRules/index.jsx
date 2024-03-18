@@ -2,10 +2,9 @@ import React, { Fragment } from 'react';
 
 const PromotionRules = () => {
     return (
-        <div>
-            <Fragment>
-                <h2>Promotion Terms & Conditions</h2>
-                <ul>
+        <div className='container'>
+                <h2 className='promotion-terms'>Promotion Rules</h2>
+                <ul className='promotion-rules'>
                     <li>
                         <h3>Promotion Period</h3>
                         <p>The promotion period commences on 15th March 2024 and concludes on 14th Jun 2024. All eligible deposits and trading activities must occur within this specified timeframe.</p>
@@ -84,7 +83,6 @@ const PromotionRules = () => {
                     </li>
                 </ul>
 
-            </Fragment>
         </div>
     );
 };

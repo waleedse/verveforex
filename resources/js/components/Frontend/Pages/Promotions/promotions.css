@@ -69,3 +69,10 @@ li{
 .promotion-details{
     padding-top: 20px;
 }
+.promotion-terms{
+    text-align: center;
+}
+.promotion-rules li h3{
+    font-size: 18px;
+    font-weight: 500;
+}

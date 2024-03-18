@@ -1,37 +1,41 @@
 {
-  "_index-!~{007}~.js": {
+  "_index-!~{00b}~.js": {
     "file": "assets/index-_ofskOub.css",
-    "src": "_index-!~{007}~.js"
+    "src": "_index-!~{00b}~.js"
   },
-  "_index-SYkb_Kfy.js": {
-    "file": "assets/index-SYkb_Kfy.js",
+  "_index-PcKhfmQG.js": {
+    "file": "assets/index-PcKhfmQG.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "_index-fXhet77s.js": {
+  "_index-dM7WjcaE.js": {
+    "file": "assets/index-dM7WjcaE.js",
+    "imports": [
+      "resources/js/app.js"
+    ]
+  },
+  "_index-gDz0cKiN.js": {
     "css": [
       "assets/index-_ofskOub.css"
     ],
     "dynamicImports": [
-      "resources/js/components/adminPanel/modules/promotions/addPromotion/index.jsx",
-      "resources/js/components/adminPanel/modules/sliders/manageSliders/index.jsx",
-      "resources/js/components/adminPanel/modules/sliders/addSlider/index.jsx",
-      "resources/js/components/adminPanel/modules/promotions/managePromotion/index.jsx",
-      "resources/js/components/adminPanel/modules/dasboard/index.jsx",
-      "resources/js/components/adminPanel/common/Navbar/index.jsx"
+      "resources/js/components/AdminPanel/modules/promotions/addPromotion/index.jsx",
+      "resources/js/components/AdminPanel/modules/sliders/manageSliders/index.jsx",
+      "resources/js/components/AdminPanel/modules/sliders/addSlider/index.jsx",
+      "resources/js/components/AdminPanel/modules/promotions/managePromotion/index.jsx",
+      "resources/js/components/AdminPanel/modules/dasboard/index.jsx",
+      "resources/js/components/AdminPanel/common/Navbar/index.jsx"
     ],
-    "file": "assets/index-fXhet77s.js",
+    "file": "assets/index-gDz0cKiN.js",
     "imports": [
       "resources/js/app.js"
     ],
     "isDynamicEntry": true
   },
-  "_index-qNmo5bte.js": {
-    "file": "assets/index-qNmo5bte.js",
-    "imports": [
-      "resources/js/app.js"
-    ]
+  "_static-!~{00k}~.js": {
+    "file": "assets/static-3k8Uq2ty.css",
+    "src": "_static-!~{00k}~.js"
   },
   "node_modules/react-multi-carousel/lib/revicons.eot": {
     "file": "assets/revicons-TSCngFAj.eot",
@@ -50,119 +54,167 @@
       "assets/app-k3Ee5MWo.css"
     ],
     "dynamicImports": [
-      "resources/js/components/frontend/Pages/Broker/index.jsx",
-      "resources/js/components/frontend/Pages/Aboutus/index.jsx",
-      "resources/js/components/frontend/Pages/Homepage/index.jsx",
-      "resources/js/components/frontend/Pages/SingleNews/index.jsx",
-      "resources/js/components/frontend/Pages/News/index.jsx",
-      "_index-fXhet77s.js"
+      "resources/js/components/Frontend/Pages/Broker/index.jsx",
+      "resources/js/components/Frontend/Pages/Aboutus/index.jsx",
+      "resources/js/components/Frontend/Pages/Homepage/index.jsx",
+      "resources/js/components/Frontend/Pages/SingleNews/index.jsx",
+      "resources/js/components/Frontend/Pages/News/index.jsx",
+      "resources/js/components/Frontend/Pages/static/PrivacyPolicy/index.jsx",
+      "resources/js/components/Frontend/Pages/Promotions/DubaiPromotion/index.jsx",
+      "resources/js/components/Frontend/Pages/static/Legal/index.jsx",
+      "resources/js/components/Frontend/Pages/static/terms/index.jsx",
+      "_index-gDz0cKiN.js"
     ],
-    "file": "assets/app-qVeauiLL.js",
+    "file": "assets/app-4G2Z38t-.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
-  "resources/js/components/adminPanel/common/Navbar/index.jsx": {
-    "file": "assets/index-2GFgk3dh.js",
+  "resources/js/components/AdminPanel/common/Navbar/index.jsx": {
+    "file": "assets/index-SPz0U0u9.js",
     "imports": [
       "resources/js/app.js",
-      "_index-qNmo5bte.js"
+      "_index-PcKhfmQG.js"
     ],
     "isDynamicEntry": true,
-    "src": "resources/js/components/adminPanel/common/Navbar/index.jsx"
+    "src": "resources/js/components/AdminPanel/common/Navbar/index.jsx"
   },
-  "resources/js/components/adminPanel/modules/dasboard/index.jsx": {
-    "file": "assets/index-Oaa5M9Xe.js",
+  "resources/js/components/AdminPanel/modules/dasboard/index.jsx": {
+    "file": "assets/index-rjED3aP4.js",
     "imports": [
       "resources/js/app.js"
     ],
     "isDynamicEntry": true,
-    "src": "resources/js/components/adminPanel/modules/dasboard/index.jsx"
+    "src": "resources/js/components/AdminPanel/modules/dasboard/index.jsx"
   },
-  "resources/js/components/adminPanel/modules/promotions/addPromotion/index.jsx": {
-    "file": "assets/index-UHq96wTi.js",
+  "resources/js/components/AdminPanel/modules/promotions/addPromotion/index.jsx": {
+    "file": "assets/index-XBAkbHBk.js",
     "imports": [
       "resources/js/app.js",
-      "_index-fXhet77s.js"
+      "_index-gDz0cKiN.js"
     ],
     "isDynamicEntry": true,
-    "src": "resources/js/components/adminPanel/modules/promotions/addPromotion/index.jsx"
+    "src": "resources/js/components/AdminPanel/modules/promotions/addPromotion/index.jsx"
   },
-  "resources/js/components/adminPanel/modules/promotions/managePromotion/index.jsx": {
-    "file": "assets/index-krQRFg6O.js",
+  "resources/js/components/AdminPanel/modules/promotions/managePromotion/index.jsx": {
+    "file": "assets/index-C69PFj0C.js",
     "imports": [
       "resources/js/app.js",
-      "_index-fXhet77s.js"
+      "_index-gDz0cKiN.js"
     ],
     "isDynamicEntry": true,
-    "src": "resources/js/components/adminPanel/modules/promotions/managePromotion/index.jsx"
+    "src": "resources/js/components/AdminPanel/modules/promotions/managePromotion/index.jsx"
   },
-  "resources/js/components/adminPanel/modules/sliders/addSlider/index.jsx": {
-    "file": "assets/index-H9zCuulk.js",
+  "resources/js/components/AdminPanel/modules/sliders/addSlider/index.jsx": {
+    "file": "assets/index-MdqlSBJX.js",
     "imports": [
       "resources/js/app.js",
-      "_index-fXhet77s.js"
+      "_index-gDz0cKiN.js"
     ],
     "isDynamicEntry": true,
-    "src": "resources/js/components/adminPanel/modules/sliders/addSlider/index.jsx"
+    "src": "resources/js/components/AdminPanel/modules/sliders/addSlider/index.jsx"
   },
-  "resources/js/components/adminPanel/modules/sliders/manageSliders/index.jsx": {
-    "file": "assets/index-XyzPAc1I.js",
+  "resources/js/components/AdminPanel/modules/sliders/manageSliders/index.jsx": {
+    "file": "assets/index-gwP59cSt.js",
     "imports": [
       "resources/js/app.js",
-      "_index-fXhet77s.js"
+      "_index-gDz0cKiN.js"
     ],
     "isDynamicEntry": true,
-    "src": "resources/js/components/adminPanel/modules/sliders/manageSliders/index.jsx"
+    "src": "resources/js/components/AdminPanel/modules/sliders/manageSliders/index.jsx"
   },
-  "resources/js/components/frontend/Pages/Aboutus/index.jsx": {
-    "file": "assets/index-dTOl7qu-.js",
+  "resources/js/components/Frontend/Pages/Aboutus/index.jsx": {
+    "file": "assets/index-ZHWB-Qwj.js",
     "imports": [
       "resources/js/app.js",
-      "_index-SYkb_Kfy.js"
+      "_index-dM7WjcaE.js"
     ],
     "isDynamicEntry": true,
-    "src": "resources/js/components/frontend/Pages/Aboutus/index.jsx"
+    "src": "resources/js/components/Frontend/Pages/Aboutus/index.jsx"
   },
-  "resources/js/components/frontend/Pages/Broker/index.jsx": {
-    "file": "assets/index-4yQCE7L0.js",
+  "resources/js/components/Frontend/Pages/Broker/index.jsx": {
+    "file": "assets/index-47jTPoea.js",
     "imports": [
       "resources/js/app.js"
     ],
     "isDynamicEntry": true,
-    "src": "resources/js/components/frontend/Pages/Broker/index.jsx"
+    "src": "resources/js/components/Frontend/Pages/Broker/index.jsx"
   },
-  "resources/js/components/frontend/Pages/Homepage/index.jsx": {
+  "resources/js/components/Frontend/Pages/Homepage/index.jsx": {
     "assets": [
       "assets/revicons-207Xk7wD.woff",
       "assets/revicons-gasWZ3sP.ttf",
       "assets/revicons-TSCngFAj.eot"
     ],
     "css": [
-      "assets/index-kUDj7756.css"
+      "assets/index-ZcmgW96M.css"
     ],
-    "file": "assets/index-Gojf6ICL.js",
+    "file": "assets/index-Vgsoh7R1.js",
     "imports": [
       "resources/js/app.js",
-      "_index-qNmo5bte.js",
-      "_index-SYkb_Kfy.js"
+      "_index-PcKhfmQG.js",
+      "_index-dM7WjcaE.js"
     ],
     "isDynamicEntry": true,
-    "src": "resources/js/components/frontend/Pages/Homepage/index.jsx"
+    "src": "resources/js/components/Frontend/Pages/Homepage/index.jsx"
   },
-  "resources/js/components/frontend/Pages/News/index.jsx": {
-    "file": "assets/index-b9yWSEt0.js",
+  "resources/js/components/Frontend/Pages/News/index.jsx": {
+    "file": "assets/index-orEjuG__.js",
     "imports": [
       "resources/js/app.js"
     ],
     "isDynamicEntry": true,
-    "src": "resources/js/components/frontend/Pages/News/index.jsx"
+    "src": "resources/js/components/Frontend/Pages/News/index.jsx"
   },
-  "resources/js/components/frontend/Pages/SingleNews/index.jsx": {
-    "file": "assets/index-qktY_ktx.js",
+  "resources/js/components/Frontend/Pages/Promotions/DubaiPromotion/index.jsx": {
+    "css": [
+      "assets/index-AjKmF_ZI.css"
+    ],
+    "file": "assets/index-nahVcMRe.js",
     "imports": [
       "resources/js/app.js"
     ],
     "isDynamicEntry": true,
-    "src": "resources/js/components/frontend/Pages/SingleNews/index.jsx"
+    "src": "resources/js/components/Frontend/Pages/Promotions/DubaiPromotion/index.jsx"
+  },
+  "resources/js/components/Frontend/Pages/SingleNews/index.jsx": {
+    "file": "assets/index-STeYYXwQ.js",
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/components/Frontend/Pages/SingleNews/index.jsx"
+  },
+  "resources/js/components/Frontend/Pages/static/Legal/index.jsx": {
+    "css": [
+      "assets/static-3k8Uq2ty.css"
+    ],
+    "file": "assets/index-DdjrvkkA.js",
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/components/Frontend/Pages/static/Legal/index.jsx"
+  },
+  "resources/js/components/Frontend/Pages/static/PrivacyPolicy/index.jsx": {
+    "css": [
+      "assets/static-3k8Uq2ty.css"
+    ],
+    "file": "assets/index-Cy2N9zIY.js",
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/components/Frontend/Pages/static/PrivacyPolicy/index.jsx"
+  },
+  "resources/js/components/Frontend/Pages/static/terms/index.jsx": {
+    "css": [
+      "assets/static-3k8Uq2ty.css"
+    ],
+    "file": "assets/index-kNkf6bP7.js",
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/components/Frontend/Pages/static/terms/index.jsx"
   }
 }
