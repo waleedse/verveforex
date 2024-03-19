@@ -8,7 +8,7 @@ function DubaiPromotion() {
         <section className='promotion-wrapper'>
             <div className='top-banner'>
                 <figure>
-                    <img src="/assets/images/banner/TopBanner.jpg" />
+                    <img src="/assets/images/banner/tobanner-image.jpg" />
                 </figure>
             </div>
             <div className="container">
@@ -37,56 +37,90 @@ function DubaiPromotion() {
                     With the perfect blend of luxury and opportunity, our trip to Dubai offer promises an unforgettable experience that will leave you inspired and empowered to seize new trading opportunities in one of the world's most dynamic markets.
                 </p>
             </div>
-            <div className='trip-details row'>
-                <div className='trip-description col-md-6'>
-                    <h4>Trip Details</h4>
-                    <p>
-                        By taking part in this exclusive promotion, you have the opportunity to
-                        win a truly luxurioustrip to Dubai, featuring:
-                    </p>
-                    <ul>
-                        <li>
-                            A Lavish 5 Days/4 Nights Luxury trip in Dubai for the lucky winner
-                        </li>
-                        <li>
-                            Enjoy round-trip economy class airline tickets to the vibrant city of Dubai
-                        </li>
-                        <li>
-                            Indulge in a lavish stay at a top-tier hotel for a specified number of nights
-                        </li>
-                        <li>
-                            Visa processing fees for your visit to the United Arab Emirates are included
-                        </li>
-                        <li>
-                            Explore Dubai's most sought-after attractions during your stay including a
-                            visit to Burj Khalifa, Dessert Safari with Dinner and Entertainment, Dubai
-                            City tour, Marina Dhow Cruise Dinner and more!
-                        </li>
-                        <li>
-                            Daily Breakfast in the hotel
-                        </li>
-                        <li>
-                            Airport pick up and drop off
-                        </li>
-                        <li>
-                            Verve Forex will not cover additional expenses such as meals, personal
-                            expenses, travel insurance, or any other cost not explicitly mentioned above
-                        </li>
-                    </ul>
+            <div className='trip-details '>
+                <div className='row '>
+                    <div className='trip-description col-md-6 px-5  '>
+                        <h4>Trip Details</h4>
+                        <p>
+                            By taking part in this exclusive promotion, you have the opportunity to
+                            win a truly luxurioustrip to Dubai, featuring:
+                        </p>
+                        <ul>
+                            <li>
+                                A Lavish 5 Days/4 Nights Luxury trip in Dubai for the lucky winner
+                            </li>
+                            <li>
+                                Enjoy round-trip economy class airline tickets to the vibrant city of Dubai
+                            </li>
+                            <li>
+                                Indulge in a lavish stay at a top-tier hotel for a specified number of nights
+                            </li>
+                            <li>
+                                Visa processing fees for your visit to the United Arab Emirates are included
+                            </li>
+                            <li>
+                                Explore Dubai's most sought-after attractions during your stay including a
+                                visit to Burj Khalifa, Dessert Safari with Dinner and Entertainment, Dubai
+                                City tour, Marina Dhow Cruise Dinner and more!
+                            </li>
+                            <li>
+                                Daily Breakfast in the hotel
+                            </li>
+                            <li>
+                                Airport pick up and drop off
+                            </li>
+                            <li>
+                                Verve Forex will not cover additional expenses such as meals, personal
+                                expenses, travel insurance, or any other cost not explicitly mentioned above
+                            </li>
+                        </ul>
+                    </div>
+                    <figure className='col-md-6'>
+                        <img src="/assets/images/banner/Slide1.png" />
+                    </figure>
                 </div>
-                <figure className='col-md-6'>
-                    <img src="/assets/images/banner/Slide1.png" />
-                </figure>
             </div>
-            <div className="promotion-heading">
+            <div className="promotion-heading px-3">
                 <h3>How to participate in this offer?</h3>
-                <p>This is Exclusive offer for Verve Forex client’s and is valid for clients trading with the following Brokers:</p>
+                <p className='text-center'>This is Exclusive offer for Verve Forex client’s and is valid for clients trading with the following Brokers:</p>
+                <div className="promotion-brokers">
+                    <figure>
+                        <img src="/assets/images/clients/client-7.png" />
+                    </figure>
+                    <figure>
+                        <img src="/assets/images/clients/client-14.png" />
+                    </figure>
+                    <figure>
+                        <img src="/assets/images/clients/client-13.png" />
+                    </figure>
+                    <figure>
+                        <img src="/assets/images/clients/client-11.png" />
+                    </figure>
+                </div>
+                <p className='text-center'>To participate in this offer, the client needs to follow the steps below:</p>
+
+            </div>
+            <div className='container'>
+                <div className='row'>
+                    <div className='col-md-4 promotion-steps' style={{ display: 'flex', gap: '10px' }}>
+                        <h4>1</h4>
+                        <h5>Register with Verve Forex</h5>
+                    </div>
+                    <div className='col-md-4 promotion-steps' style={{ display: 'flex', gap: '10px' }}>
+                        <h4>2</h4>
+                        <h5>Login to your account on www.verveforex.com</h5>
+                    </div>
+                    <div className='col-md-4 promotion-steps' style={{ display: 'flex', gap: '10px' }}>
+                        <h4>3</h4>
+                        <h5>Then select Dubai Luxury Trip Promotion in the offer and click on Sign Up for this offer. </h5>
+                    </div>
+                </div>
             </div>
             <div className='trip-details row'>
                 <figure className='col-md-6'>
                     <img src="/assets/images/banner/Slide2.png" />
                 </figure>
-                <div className='trip-description col-6'>
+                <div className='trip-description col-md-6'>
                     <h4>Offer Details</h4>
                     <p>
                         By taking part in this exclusive promotion, you have the opportunity to

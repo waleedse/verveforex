@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Spinner from '../../global/spinner';
+import TurkeyPromotion from '../../frontend/Pages/Promotions/TurkeyPromotion';
 
 
 const Broker = lazy(() => import('../../frontend/Pages/Broker'))
@@ -26,6 +27,7 @@ function FrontRoutes(props) {
                 <Route path="/legal-notice" element={<Suspense fallback={<Spinner />}> <Legal /> </Suspense>}></Route>
                 <Route path="/terms-conditions" element={<Suspense fallback={<Spinner />}> <Terms /> </Suspense>}></Route>
                 <Route path="/dubai-promotion" element={<Suspense fallback={<Spinner />}> <DubaiPromotion /> </Suspense>}></Route>
+                <Route path="/turkey-promotion" element={<Suspense fallback={<Spinner />}> <TurkeyPromotion /> </Suspense>}></Route>
             </Routes>
         </div>
     );

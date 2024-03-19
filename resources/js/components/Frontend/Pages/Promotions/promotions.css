@@ -28,15 +28,25 @@
 .promotion-banner figure img{
     width: 350px;
 }
-.trip-details{
-    width: 100%;
+
+.promotion-brokers{
+    gap: 60px;
     display: flex;
+}
+
+.promotion-brokers figure img{
+    width: 160px;
+}
+.trip-details{
+    /* width: 100%; */
+    /* display: flex; */
     background-color: #f8f8ef;
-    align-items: center;
-    justify-content: center;
+
 }
 .trip-description{
-    width: 50%;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
 }
 .trip-description h4{
     font: 500 30px/55px sans-serif;
@@ -48,13 +58,15 @@
 }
 .trip-description ul{
     margin: 25px 0 0 0;
-    padding: 0 20px;
+    padding: 30px;
+    padding-top: 20px;
 }
 .trip-description li{
     list-style-type: disc;
 }
 .trip-details figure{
-    width: 50%;
+    /* width: 50%; */
+    /* padding: 30px; */
 }
 .parent-list{
     list-style-type: decimal-leading-zero;
@@ -75,4 +87,21 @@ li{
 .promotion-rules li h3{
     font-size: 18px;
     font-weight: 500;
+}
+.promotion-steps h4{
+    background-color:rgba(141, 4, 4, 0.924) ;
+    border-radius: 50%;
+    width: 40px;
+    height: 33px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    min-width: 40px;
+}
+
+@media screen and (max-width:480px){
+    .promotion-brokers{
+        gap: 30px;
+        display: flex;
+    }
 }

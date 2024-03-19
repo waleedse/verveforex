@@ -4,7 +4,7 @@
         "slug": "cabana-capitals",
         "banner": "8.jpg",
         "about":   {
-         "image": "/assets/images/clients/client-14.png",
+         "image": "/assets/images/brokers/banners/CabanaCapitals.jpg",
           "name": "Cabana Capital",
           "description": "Cabana Capital operates as a forex licensed broker. Since its inception, it has furnished traders with a dependable and effective platform for forex, commodities, indices, and cryptocurrency trading. Through its extensive array of trading instruments, traders can diversify their portfolios and capitalize on market opportunities. <br/><br/> A notable aspect of Cabana Capital is its provision of high leverage, reaching up to 1:500. Nonetheless, the broker offers favourable trading conditions to enable traders to execute their strategies proficiently.<br/><br/>Cabana Capital presents four distinct types of trading accounts: Cent, Standard, Ultra and Elite accounts. Each account category boasts unique features and prerequisites, empowering traders to select the account that aligns with their trading preferences. For instance, the Cent account caters to beginners seeking to initiate trading with a modest capital, while the Standard and Ultra accounts cater to seasoned traders willing to engage with larger capital amounts.<br/><br/> Moreover, Cabana Capital facilitates demo accounts for traders keen on honing their strategies and financial risk. Additionally, Islamic accounts are available for traders adhering to Sharia law.<br/><br/>The broker's dedicated support team operates 24/5, ensuring prompt assistance for clients with any queries or concerns. Furthermore, the trading platform is accessible in multiple languages, enhancing accessibility for traders across the globe.",
           "pros": [
@@ -292,7 +292,7 @@
         "banner": "6.jpg",
         "about":   {
             "name": "OctaFX",
-            "image": "/assets/images/brokers/octa.jpg",
+            "image": "/assets/images/brokers/banners/OctaFX.jpg",
             "description": "OctaFX operates as a forex licensed broker. Since its inception in 2011, they have been trading in more than 180 countries. OctaFX offers a 50% bonus on deposit at least 50 USD using any payment method, and activate the bonus. All trading accounts offered by Octa are swap-free, aligning fully with Islamic principles. Consequently, there is no necessity to open a specific Islamic trading account. OctaFx provides Valuable tools for traders include an economic calendar, trading ideas and strategies, Forex news updates, and various other resources to enhance trading performance. OctaFX imposes no trading commissions and imposes no fees for deposits, withdrawals, or inactivity.<br/><br/>A diverse selection of trading instruments is accessible, encompassing 28 currency pairs, 2 metals, 2 energies, and 10 indices.<br/><br/>Competitive spreads, commencing from as minimal as 0.3 pips, accompanied by no commission charges.<br/><br/>Convenient and viable payment methods are offered, devoid of any additional fees levied by the company.<br/><br/>Provides both MT4 and MT5 platforms.<br/><br/>Multilingual 24/7 Chat Support.<br/><br/>Regulated by CYSEC, guaranteeing a high standard of safety and security for clients' funds.<br/><br/>The website is straightforward and comprehensive, facilitating easy navigation and access to essential information for clients.<br/><br/>OctaFX provides tight spreads and rapid execution thanks to its Market Making model.",
             "pros": [
               "A diverse selection of trading instruments accessible",
@@ -431,7 +431,7 @@
         "banner": "4.jpg",
         "about":   {
             "name": "Exness",
-            "image": "/assets/images/brokers/Excness.jpg",
+            "image": "/assets/images/brokers/banners/Exness.jpg",
             "description": "Exness is a widely acknowledged forex broker and is in the market from 2008, with a global presence spanning over 170 countries. It provides traders access to a diverse array of tradable assets, encompassing currencies, commodities, and cryptocurrencies. Exness execute trades swiftly in milliseconds across both MetaTrader platforms and proprietary Exness Terminals, Also extend your market participation with a 0% margin level stop out on all accounts, allowing you to stay in trades for longer durations. Furthermore Exness Retain overnight positions without incurring charges on all FX majors, most FX minors, gold, and cryptocurrencies, as well as stocks and indices.",
             "pros": [
               "Benefit from a unique protection feature engineered to reduce stop outs by 30%, offering a buffer to delay or prevent stop outs altogether.",
@@ -601,7 +601,7 @@
         "banner": "3.jpg",
         "about":   {
             "name": "GTC",
-            "image": "/assets/images/brokers/GTC.jpg",
+            "image": "/assets/images/brokers/banners/FXGTC.jpg",
             "description": "GTC, a trading name of GTC Global Trade Capital Limited, is a global finance forex brokerage company registered in the United Arab Emirates. It is regulated by the Securities and Commodities Authority (SCA), offshore regulated by Vanuatu Financial Services Commission (VFSC), and generally registered by National Futures Association (NFA).",
             "pros": [
               "GTC offers a diverse range of trading instruments, providing traders with opportunities for diversification and potential profit across various markets.",
@@ -675,7 +675,7 @@
         "banner": "7.jpg",
         "about":   {
             "name": "FBS",
-            "image": "/assets/images/brokers/FBS.jpg",
+            "image": "/assets/images/brokers/banners/FBS.jpg",
             "description": "Registered in Marshall Islands, FBS is a forex broker providing access to a massive financial market, Forex, Shares, Cryptocurrencies, Indices. With FBS, investors can get access to six trading accounts: Cent, Micro, Standard, Zero-Spread, ECN and Crypto, with the minimum deposit to invest with this broker starting at $1. FBS is the trading name operated by Mitsui Markets Ltd, and this broker is not subject to any regulation, please be aware of the risk.",
             "pros": [
               "Years of experience: FBS has been operating for over a decade, demonstrating stability and reliability in the forex and CFD trading industry.",
@@ -777,7 +777,7 @@
         "banner": "5.jpg",
         "about":   {
             "name": "NAGA",
-            "image": "/assets/images/brokers/naga.jpg",
+            "image": "/assets/images/brokers/banners/NAGA.jpg",
             "description": "NAGA (‘NAGA’) is a trademark of The NAGA Group AG which was founded in 2015. Naga Group AG is a German FinTech company publicly listed on the Frankfurt Stock Exchange. The company implements modern technologies and innovative solutions in order to compete with traditional financial institutions represented by banks and brokers in the investment market. Over 1 million active traders and passive investors currently use NAGA's Group brokerage services.",
             "pros": [
               "Wide range of trading instruments.",
@@ -999,7 +999,7 @@
         "banner": "",
         "about":   {
             "name": "Equiti",
-            "image": "/assets/images/brokers/Equiti.jpg",
+            "image": "/assets/images/brokers/banners/Equiti.jpg",
             "description": "Equiti Group is a fintech (financial technology) company and an online platform for trading assets in the currency and financial markets. It has offices in Europe, North and South America, the Middle East, Africa, and the Asia-Pacific region. The broker's operation is regulated by six reputable international commissions. Equiti Capital provides clients with access to individual, professional, and institutional brokerage services through a network of branches and subsidiaries.",
             "pros": [
               "Processing of trades using ECN (electronic communication network) technology without the involvement of a dealing center.",
@@ -1117,7 +1117,7 @@
         "banner": "multibank.jpg",
         "about":   {
             "name": "MultiBank Group",
-            "image": "/assets/images/brokers/multibanktwo.jpg",
+            "image": "/assets/images/brokers/banners/MultiBank.jpg",
             "description": "MultiBank Group was established in California, USA, in 2005. It offers online trading services in forex, metals, shares, indices, commodities, and cryptocurrencies. MultiBank Group claims to have a strong presence in the Asia-Pacific region, with offices in China, the Philippines, and Malaysia, among others. The broker also emphasizes its commitment to providing clients with competitive pricing, advanced trading tools, and a high level of customer support.",
             "pros": [
               "Regulated by multiple reputable authorities",

@@ -13,14 +13,14 @@ function BrokerReview({ broker }) {
 
             <div className="content-one">
                 <div className="row clearfix">
-                    {/* {
+                    {
                         broker?.image &&
                         <div className="col-lg-12 col-md-12 col-sm-12 image-column">
                             <figure className="image-box">
                                 <img src={`${broker?.image}`} alt="" />
                             </figure>
                         </div>
-                    } */}
+                    }
 
                     <div className="col-lg-6 col-md-6 col-sm-12 content-column">
                         <ul className="accordion-box">
