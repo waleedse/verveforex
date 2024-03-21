@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Spinner from '../../global/spinner';
 import TurkeyPromotion from '../../frontend/Pages/Promotions/TurkeyPromotion';
+import CashBackPromotion from '../../frontend/Pages/Promotions/CashBackPromotion';
 
 
 const Broker = lazy(() => import('../../frontend/Pages/Broker'))
@@ -28,6 +29,7 @@ function FrontRoutes(props) {
                 <Route path="/terms-conditions" element={<Suspense fallback={<Spinner />}> <Terms /> </Suspense>}></Route>
                 <Route path="/dubai-promotion" element={<Suspense fallback={<Spinner />}> <DubaiPromotion /> </Suspense>}></Route>
                 <Route path="/turkey-promotion" element={<Suspense fallback={<Spinner />}> <TurkeyPromotion /> </Suspense>}></Route>
+                <Route path="/cashback-promotion" element={<Suspense fallback={<Spinner />}> <CashBackPromotion /> </Suspense>}></Route>
             </Routes>
         </div>
     );

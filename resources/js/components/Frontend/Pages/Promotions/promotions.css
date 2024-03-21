@@ -58,8 +58,8 @@
 }
 .trip-description ul{
     margin: 25px 0 0 0;
-    padding: 30px;
-    padding-top: 20px;
+    /* padding: 30px; */
+    /* padding-top: 20px; */
 }
 .trip-description li{
     list-style-type: disc;
@@ -67,6 +67,9 @@
 .trip-details figure{
     /* width: 50%; */
     /* padding: 30px; */
+}
+.list-style-none li{
+    list-style-type: none;
 }
 .parent-list{
     list-style-type: decimal-leading-zero;
@@ -99,6 +102,26 @@ li{
     min-width: 40px;
 }
 
+.howitworks{
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #353e65;
+}
+.howitworks h4{
+    font-weight: 600;
+    font-size: 34px;
+ }
+.cashback .trip-description ul{
+    margin-top: 6px;
+    /* padding: 0px */
+}
+.cashback .trip-description ul li{
+    padding-left: 20px;
+}
+.li-decicaml{
+    list-style-type: decimal !important;
+}
 @media screen and (max-width:480px){
     .promotion-brokers{
         gap: 30px;
