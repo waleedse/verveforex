@@ -28,7 +28,7 @@ function CashBackPromotion() {
             <div className='trip-details '>
                 <div className='row '>
                     <div className='howitworks text-light col-md-6  '>
-                        <h4 style={{ fontSize: '34px', fontWeight: '600' }}>HOW IT WORKS:</h4>
+                        <h4 style={{ fontSize: '34px', fontWeight: '600', color: 'white' }}>HOW IT WORKS:</h4>
                         <div className='row mt-5'>
                             <div className='col-md-2'>
                                 <img src='/assets/images/promotions/cashback/1.png'></img>

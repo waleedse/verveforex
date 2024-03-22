@@ -3,6 +3,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { getPromotions } from "../../../../../services/front/commonService";
 import { IMAGE_BASE_URL } from "../../../../../config/constants";
+import { Link } from "react-router-dom";
 const responsive = {
     superLargeDesktop: {
         // the naming can be any, depends on you.
@@ -42,7 +43,7 @@ function Promotions() {
 
     return (
         <Fragment>
-            <section className="account-section bg-color-1">
+            <section className="account-section bg-color-1 " style={{ marginTop: '-25px' }}>
                 <div className="auto-container">
                     <div className="sec-title centred">
                         {/* <span className="sub-title">Promotions</span> */}
@@ -59,7 +60,7 @@ function Promotions() {
                             {promtoions.map((item, index) => {
                                 return (
                                     <div className="account-block-one promtion-slide">
-                                        <div className="inner-box">
+                                        <Link to={item?.link}>  <div className="inner-box">
                                             <div className="image-box">
                                                 <figure className="image"><img src={IMAGE_BASE_URL + item.image} alt /></figure>
                                                 <div className="title-text">
@@ -75,7 +76,7 @@ function Promotions() {
                                                     <a href="account-details.html"><span>Open your account</span></a>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> </Link>
                                     </div>
                                 )
                             })}

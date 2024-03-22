@@ -45,7 +45,7 @@ function Navbar(props) {
                         <ul>
                             {
                                 promtoions && promtoions?.map((promotion, index) => (
-                                    <li><a href="/">{promotion?.title}</a></li>
+                                    <li><Link to={promotion?.link}>{promotion?.title}</Link></li>
 
                                 ))
                             }
