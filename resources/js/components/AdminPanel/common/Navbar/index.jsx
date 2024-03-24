@@ -70,6 +70,37 @@ function Nabar(props) {
                             </div>
                             <ul className="pc-navbar">
                                 <li className="pc-item pc-caption">
+                                    <label>Clients & Brokers</label>
+                                </li>
+                                <li className="pc-item pc-hasmenu">
+                                    <Link to="/adminpanel/manage-clients" className="pc-link">
+                                        <span className="pc-micon">
+                                            <svg className="pc-icon">
+                                                <use xlinkHref="#custom-status-up" />
+                                            </svg>
+                                        </span>
+                                        <span className="pc-mtext">Clients</span>
+                                        {/* <span className="pc-arrow"><i data-feather="chevron-right" /></span> */}
+                                        {/* <span className="pc-badge">2</span> */}
+                                    </Link>
+
+                                </li>
+                                <li className={`pc-item pc-hasmenu ${activeTab == 'brokers' && 'pc-trigger active'}`}>
+                                    <a onClick={() => { handleActiveTab('brokers') }} className="pc-link">
+                                        <span className="pc-micon">
+                                            <svg className="pc-icon">
+                                                <use xlinkHref="#custom-document" />
+                                            </svg>
+                                        </span>
+                                        <span className="pc-mtext">Manage brokers</span>
+                                        <span className="pc-arrow"><i className="fas fa-chevron-right" /></span>
+                                    </a>
+                                    <ul className="pc-submenu">
+                                        <li className="pc-item"><Link className="pc-link" to="/adminpanel/add-broker">Add Broker</Link></li>
+                                        <li className="pc-item"><Link className="pc-link" to="/adminpanel/manage-broker">Manage Brokers</Link></li>
+                                    </ul>
+                                </li>
+                                <li className="pc-item pc-caption">
                                     <label>Manage Website</label>
                                 </li>
                                 <li className="pc-item pc-hasmenu">

@@ -11,6 +11,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
 
 
@@ -67,20 +68,47 @@ class UserController extends BaseController
      */
     public function register(Request $request)
     {
-        $request->validate([
-            'name' => 'required|string',
+        $validator = Validator::make($request->all(), [
+            'firstName' => 'required|string',
+            'lastName' => 'required|string',
             'email' => 'required|email|unique:users,email',
             'password' => 'required|string|min:6',
+            'country' => 'required|string',
+            'phone' => 'required|string',
         ]);
+
+        if($validator->fails()){
+            $response = ['status' => 422 , 'message' => $validator->errors()->first(),'errors' => $validator->errors()];
+            return $response;
+        }
 
         $user = User::create([
-            'name' => $request->name,
+            'first_name' => $request->firstName,
+            'last_name' => $request->lastName,
             'email' => $request->email,
+            'country' => $request->country,
             'password' => Hash::make($request->password),
+            'phone' => $request->phone,
         ]);
 
-        $token = $user->createToken('auth_token')->plainTextToken;
-        return response()->json(['token' => $token], 201);
+        $user->assignRole('client');
+        $user->sendEmailVerificationNotification();
+        // $token = $user->createToken('auth_token')->plainTextToken;
+        return response()->json(['status' => 200 , "message" => "User Signed up successfully. please verify your email to login."], 201);
+    }
+
+    public function verifyEmail($id , $hash){
+        $user = User::find($id);
+        if($user && !$user->email_verified_at){
+            $user->markEmailAsVerified();
+            $user->status = 'active';
+            $user->save();
+            $response = ['status' => 200 , 'message' => "Email verified successfully"];
+            return $response;
+        }else{
+            $response = ['status' => 422 , 'message' => "Invalid Link or Expired Link"];
+            return $response;
+        }
     }
 
     /**

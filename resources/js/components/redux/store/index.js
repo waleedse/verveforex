@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit'
-import admin from '../reducers/admin'
+import user from '../reducers/user'
 
 export const store = configureStore({
   reducer: {
-    admin: admin
+    user: user
   },
 })

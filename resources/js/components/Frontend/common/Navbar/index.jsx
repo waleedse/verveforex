@@ -111,11 +111,11 @@ function Navbar(props) {
                                 <ul className="registration-box clearfix">
                                     <li>
                                         <div className="icon"><img src="/assets/images/icons/icon-49.png" alt /></div>
-                                        <a href="index-3.html">Login</a>
+                                        <a href="/login">Login</a>
                                     </li>
                                     <li>
                                         <div className="icon"><img src="/assets/images/icons/icon-50.png" alt /></div>
-                                        <a href="index-3.html">Signup</a>
+                                        <a href="/signup">Signup</a>
                                     </li>
                                 </ul>
                                 <ul className="social-links clearfix">
@@ -146,7 +146,7 @@ function Navbar(props) {
                                     {nav()}
                                 </nav>
                                 <div className="menu-right-content">
-                                    <div className="btn-box"><a href="index.html" className="theme-btn btn-one"><span>Open an A/c</span></a></div>
+                                    <div className="btn-box"><a href="/signup" className="theme-btn btn-one"><span>Open an A/c</span></a></div>
                                 </div>
                             </div>
                         </div>
@@ -172,7 +172,7 @@ function Navbar(props) {
                                 </nav>
                                 <div className="menu-right-content">
                                     {/* <div className="search-box-outer search-toggler"><i className="flaticon-search" /></div> */}
-                                    <div className="btn-box"><a href="index.html" className="theme-btn btn-one"><span>Open an A/c</span></a></div>
+                                    <div className="btn-box"><a href="/signup" className="theme-btn btn-one"><span>Open an A/c</span></a></div>
                                 </div>
                             </div>
                         </div>

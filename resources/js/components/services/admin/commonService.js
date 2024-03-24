@@ -166,10 +166,20 @@ export const getNewsById = async (id) => {
       return response.data;
     } catch (error) { return null;}
 };
+
+
 export const deleteNewsById = async (id) => {
   const axiosInstance = useAxios()
     try {
       const response = await axiosInstance.delete(`delete-news/${id}`);
+      return response.data;
+    } catch (error) { return null;}
+};
+
+export const getAllClients = async (id) => {
+  const axiosInstance = useAxios()
+    try {
+      const response = await axiosInstance.get(`get-clients`);
       return response.data;
     } catch (error) { return null;}
 };

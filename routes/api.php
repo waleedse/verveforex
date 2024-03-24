@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\AdminWebsiteController;
+use App\Http\Controllers\Admin\ClientController;
 use App\Http\Controllers\Admin\NewsController;
 use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
@@ -20,6 +21,8 @@ use League\CommonMark\Extension\FrontMatter\FrontMatterParser;
 
 Route::post('/login', [UserController::class, 'login']);
 Route::post('/register', [UserController::class, 'register']);
+Route::get('/verify-email/{id}/{hash}', [UserController::class, 'verifyEmail']);
+
 Route::get('/get-countries', [AdminWebsiteController::class, 'get_countries']);
 Route::get('/get-promotions', [AdminWebsiteController::class  , 'get_all_promotions']);
 Route::get('/get-home-slider', [AdminWebsiteController::class, 'get_home_sliders']);
@@ -52,6 +55,10 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::delete('delete-news/{id}',[NewsController::class , 'delete_post']);
     Route::get('get-news-by-id/{id}',[NewsController::class , 'get_post_by_id']);
     Route::post('update-news',[NewsController::class , 'update_post']);
+
+
+    // Clients Controller
+    Route::get('get-clients',[ClientController::class , 'getClients']);
 
 });
 

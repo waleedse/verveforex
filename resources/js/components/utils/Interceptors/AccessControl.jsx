@@ -3,10 +3,10 @@ import React, { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { useDispatch } from "react-redux";
 import { Outlet, useNavigate } from "react-router-dom";
-import { SET_USER } from "../../redux/reducers/admin";
+import { SET_USER } from "../../redux/reducers/user";
 import Spinner from "../../global/spinner";
 
-const AccessControl = () => {
+const AccessControl = ({ redirectLink }) => {
     const [isLoading, setIsLoading] = useState(true);
     const navigate = useNavigate();
     const dispatch = useDispatch();
@@ -17,10 +17,10 @@ const AccessControl = () => {
                 Authorization: `Bearer ${localStorage.getItem("token")}`,
             },
         }).then((res) => {
-            dispatch(SET_USER(res));
+            dispatch(SET_USER(res.data?.user));
             setIsLoading(false);
         }).catch((e) => {
-            navigate("/admin-login");
+            navigate(redirectLink);
             toast.error(e.response.data.message);
         });
     }, []);

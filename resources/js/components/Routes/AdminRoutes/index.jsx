@@ -9,8 +9,9 @@ const ManageSlider = lazy(() => import("../../adminPanel/modules/sliders/manageS
 const AddSlider = lazy(() => import("../../adminPanel/modules/sliders/addSlider"))
 const ManagePromotion = lazy(() => import("../../adminPanel/modules/promotions/managePromotion"))
 const Dashboard = lazy(() => import("../../adminPanel/modules/dasboard"))
+const ManageClients = lazy(() => import("../../adminPanel/modules/clients"))
 
-function AdminRoutes(props) {
+function ClientRoutes(props) {
     return (
         <Routes>
             <Route path="/" element={<Suspense fallback={<Spinner></Spinner>}><Dashboard /></Suspense>}></Route>
@@ -28,8 +29,9 @@ function AdminRoutes(props) {
             <Route path="edit-news/:id" element={<Suspense fallback={<Spinner></Spinner>}> <AddNews></AddNews> </Suspense>}></Route>
             <Route path="manage-news" element={<Suspense fallback={<Spinner></Spinner>}> <ManageNews></ManageNews> </Suspense>}></Route>
 
+            <Route path="manage-clients" element={<Suspense fallback={<Spinner></Spinner>}> <ManageClients></ManageClients> </Suspense>}></Route>
         </Routes>
     );
 }
 
-export default AdminRoutes;
+export default ClientRoutes;
