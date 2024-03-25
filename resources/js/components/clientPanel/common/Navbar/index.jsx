@@ -1,15 +1,21 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Nabar(props) {
     const [activeTab, setActiveTab] = useState('')
     const user = useSelector(state => state.user.user);
+    const navigate = useNavigate();
 
     const handleActiveTab = (tab) => {
         let handleTab = tab == activeTab ? '' : tab;
         setActiveTab(handleTab)
+    }
+
+    const logout = () => {
+        localStorage.removeItem("token");
+        navigate("/login")
     }
 
     return (
@@ -63,7 +69,7 @@ function Nabar(props) {
                                                 <i className="ti ti-lock" />
                                                 <span>Lock Screen</span>
                                             </a>
-                                            <a href="#!">
+                                            <a style={{ cursor: "pointer" }} className='cursor-pointer' onClick={() => { logout() }}>
                                                 <i className="ti ti-power" />
                                                 <span>Logout</span>
                                             </a>

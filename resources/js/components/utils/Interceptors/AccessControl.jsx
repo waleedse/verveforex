@@ -20,6 +20,7 @@ const AccessControl = ({ redirectLink }) => {
             dispatch(SET_USER(res.data?.user));
             setIsLoading(false);
         }).catch((e) => {
+            localStorage.removeItem("token")
             navigate(redirectLink);
             toast.error(e.response.data.message);
         });

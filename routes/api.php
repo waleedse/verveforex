@@ -20,8 +20,12 @@ use League\CommonMark\Extension\FrontMatter\FrontMatterParser;
 */
 
 Route::post('/login', [UserController::class, 'login']);
+Route::post('/client-login', [UserController::class, 'Clientlogin']);
+Route::post('/resend-verification-email/{email}', [UserController::class, 'resendVerificationEmail']);
 Route::post('/register', [UserController::class, 'register']);
 Route::get('/verify-email/{id}/{hash}', [UserController::class, 'verifyEmail']);
+Route::post('password/email', [UserController::class, 'sendResetLinkEmail']);
+Route::post('/reset-password', [UserController::class, 'reset']);
 
 Route::get('/get-countries', [AdminWebsiteController::class, 'get_countries']);
 Route::get('/get-promotions', [AdminWebsiteController::class  , 'get_all_promotions']);

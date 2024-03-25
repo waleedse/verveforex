@@ -14,3 +14,8 @@ export const SignUpSchema = Yup.object().shape({
     country: Yup.string().required('Country is required'),
     phone: Yup.string().required('Phone number is required'),
 });
+export const ResetPasswordSchema = Yup.object().shape({
+
+    password: Yup.string().required('Password is required'),
+    confirmPassword: Yup.string().oneOf([Yup.ref('password'), null], 'Passwords must match'),
+});

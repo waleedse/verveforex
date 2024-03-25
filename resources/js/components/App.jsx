@@ -14,6 +14,8 @@ import ClientLogin from './clientPanel/modules/Auth/ClientLogin';
 import Spinner from './global/spinner';
 import VerifyEmail from './clientPanel/modules/Auth/VerifyEmail';
 import ClientPanel from './clientPanel';
+import EmailVerification from './clientPanel/modules/Auth/EmailVerification';
+import ResetPassword from './clientPanel/modules/Auth/ResetPassword';
 const AdminPanel = lazy(() => import("./AdminPanel"))
 function App() {
     return (
@@ -28,6 +30,8 @@ function App() {
                     </Route>
                     <Route path="/admin-login" Component={AdminLogin}></Route>
                     <Route path="/login" Component={ClientLogin}></Route>
+                    <Route path="/verify-email" Component={EmailVerification}></Route>
+                    <Route path="/password/reset/:token" Component={ResetPassword}></Route>
                     <Route path="/signup" Component={Signup}></Route>
                     <Route path="/email/verify/:id/:hash" Component={VerifyEmail}></Route>
                     <Route path="/*" Component={Frontend}></Route>

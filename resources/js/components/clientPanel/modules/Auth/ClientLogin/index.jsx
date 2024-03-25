@@ -1,11 +1,12 @@
 import { useFormik } from 'formik';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { loginSchema } from '../../../../schemas/Admin/Auth';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
 import { useDispatch } from 'react-redux';
 import { SET_USER } from '../../../../redux/reducers/user';
+import { resetPasswordSendEmail } from '../../../../services/client/commonService';
 
 const ClientLogin = () => {
     const navigate = useNavigate()
@@ -22,17 +23,44 @@ const ClientLogin = () => {
                 email: values.email,
                 password: values.password
             }
-            axios.post('/api/login', payload).then(res => {
-                console.log(res.data)
-                localStorage.setItem("token", res.data.token)
-                dispatch(SET_USER(res.data?.user))
-                navigate('/client')
-
+            axios.post('/api/client-login', payload).then(res => {
+                if (res.data?.status == 200) {
+                    localStorage.setItem("token", res.data.token)
+                    dispatch(SET_USER(res.data?.user))
+                    navigate('/client')
+                } else if (res.data?.status == 402) {
+                    navigate('/verify-email', { state: { email: values.email } })
+                }
+                else {
+                    toast.error(res?.data?.message)
+                }
             }).catch(e => {
                 toast.error(e.response.data.message)
             })
         },
     });
+
+    useEffect(() => {
+        if (localStorage.getItem("token")) {
+            navigate("/client")
+        }
+    }, [])
+
+    const handleForgotPassword = async () => {
+        if (!errors.email) {
+            toast.loading("Sending reset password email...")
+            let res = await resetPasswordSendEmail({ email: values.email });
+            toast.dismiss()
+            console.log(res)
+            if (res.status == 200) {
+                toast.success("Reset password email sent. Please check your email")
+            } else {
+                toast.error(res.response.data?.message)
+            }
+        } else {
+            toast.error("Enter email so, we'll send the reset password link to your email if it registered.")
+        }
+    }
     return (
         <div>
             <div className="auth-main">
@@ -61,7 +89,7 @@ const ClientLogin = () => {
                                             <input className="form-check-input input-primary" type="checkbox" id="customCheckc1" defaultChecked />
                                             <label className="form-check-label text-muted" htmlFor="customCheckc1">Remember me?</label>
                                         </div>
-                                        <h6 className="text-secondary f-w-400 mb-0">Forgot Password?</h6>
+                                        <h6 style={{ cursor: 'pointer' }} onClick={handleForgotPassword} className="text-secondary f-w-400 mb-0">Forgot Password?</h6>
                                     </div>
                                     <div className="d-grid mt-4">
                                         <button type="submit" onClick={handleSubmit} className="btn btn-primary">Login</button>

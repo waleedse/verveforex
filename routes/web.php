@@ -31,11 +31,16 @@ Route::post('/email/verification-notification', function (Request $request) {
     return back()->with('message', 'Verification link sent!');
 })->middleware(['auth', 'throttle:6,1'])->name('verification.send');
 
+Route::get('/password/reset/{token}', function () {return view('client');})->name('password.reset');
+
+
 Route::get('/adminpanel/{path?}', function () {return view('admin');})->where('path' , '.*');
 Route::get('/admin-login', function () {return view('admin');});
 Route::get('/login', function () {return view('client');});
 Route::get('/signup', function () {return view('client');});
-Route::get('/client/{path?}', function () {return view('admin');})->where('path' , '.*');
+Route::get('/verify-email', function () {return view('client');});
+
+Route::get('/client/{path?}', function () {return view('client');})->where('path' , '.*');
 Route::get('/email/verify/{id}/{hash}', function () {return view('client');})->name('verification.verify');
 
 Route::view('/{path?}', 'welcome');
