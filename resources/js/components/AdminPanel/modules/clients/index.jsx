@@ -74,15 +74,15 @@ const ManageClients = () => {
                                                         <ul className="list-inline me-auto mb-0">
 
                                                             <li className="list-inline-item align-bottom" data-bs-toggle="tooltip" title="Edit">
-                                                                <Link to={`/adminpanel/edit-promotion/${item.id}`} className="avtar avtar-xs btn-link-success btn-pc-default">
-                                                                    <i className="ti ti-edit-circle f-18" />
+                                                                <Link to={`/adminpanel/client-detail/${item.id}`} className="avtar avtar-xs btn-link-success btn-pc-default">
+                                                                    <i className="ti ti-eye f-18" />
                                                                 </Link>
                                                             </li>
-                                                            <li onClick={() => { deleteCurrentPromotion(item) }} className="list-inline-item align-bottom" data-bs-toggle="tooltip" title="Delete">
+                                                            {/* <li onClick={() => { deleteCurrentPromotion(item) }} className="list-inline-item align-bottom" data-bs-toggle="tooltip" title="Delete">
                                                                 <a className="avtar avtar-xs btn-link-danger btn-pc-default">
                                                                     <i className="ti ti-trash f-18" />
                                                                 </a>
-                                                            </li>
+                                                            </li> */}
                                                         </ul>
                                                     </td>
                                                 </tr>

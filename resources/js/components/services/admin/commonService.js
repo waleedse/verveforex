@@ -166,6 +166,13 @@ export const getNewsById = async (id) => {
       return response.data;
     } catch (error) { return null;}
 };
+export const getUserById = async (id) => {
+  const axiosInstance = useAxios()
+    try {
+      const response = await axiosInstance.get(`get-user/${id}`);
+      return response.data;
+    } catch (error) { return null;}
+};
 
 
 export const deleteNewsById = async (id) => {

@@ -40,6 +40,7 @@ Route::middleware('auth:sanctum')->get('/check-auth', [UserController::class, 'c
 Route::middleware('auth:sanctum')->group(function () {
     Route::post('/update-profile', [UserController::class, 'update']);
 
+    Route::get('/get-user/{id}', [UserController::class, 'getUserById']);
     // Pomrotions
     Route::post('/add-promotion', [AdminWebsiteController::class  , 'add_promotion']);
     Route::post('/update-promotion', [AdminWebsiteController::class , 'update_promotion']);

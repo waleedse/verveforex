@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Spinner from '../../global/spinner';
 import AddNews from '../../adminPanel/modules/news/addNews';
 import ManageNews from '../../adminPanel/modules/news/manageNews';
+import ClientDetail from '../../adminPanel/modules/clients/components/clientDetail';
 
 const AddPromotion = lazy(() => import("../../AdminPanel/modules/promotions/AddPromotion"))
 const ManageSlider = lazy(() => import("../../adminPanel/modules/sliders/manageSliders"))
@@ -30,6 +31,7 @@ function ClientRoutes(props) {
             <Route path="manage-news" element={<Suspense fallback={<Spinner></Spinner>}> <ManageNews></ManageNews> </Suspense>}></Route>
 
             <Route path="manage-clients" element={<Suspense fallback={<Spinner></Spinner>}> <ManageClients></ManageClients> </Suspense>}></Route>
+            <Route path="client-detail/:id" element={<Suspense fallback={<Spinner></Spinner>}> <ClientDetail></ClientDetail> </Suspense>}></Route>
         </Routes>
     );
 }

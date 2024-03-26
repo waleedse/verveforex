@@ -219,5 +219,9 @@ class UserController extends BaseController
         return response()->json(['message' => 'User updated successfully']);
     }
 
+    public function getUserById ($id){
+        $user =  User::whereId($id)->with("country")->first();
+        return ['data' => $user];
+    }
 
 }
