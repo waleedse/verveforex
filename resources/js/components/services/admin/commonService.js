@@ -63,6 +63,58 @@ export const deletePromotionById = async (id) => {
       return response.data;
     } catch (error) { return null;}
 };
+export const addWebsiteBroker = async (payload) => {
+  const axiosInstance = useAxios()
+    try {
+      const response = await axiosInstance.post(`add-broker`,payload , {
+
+        headers: {
+            'content-type': false,
+            'mime-type': "multipart/form-data",
+            'Authorization': `Bearer ${localStorage.getItem('token')}`
+        }
+      });
+      return response.data;
+    } catch (error) { return null;}
+};
+
+export const upateWebsiteBroker = async (payload) => {
+  const axiosInstance = useAxios()
+    try {
+      const response = await axiosInstance.post(`update-broker`,payload , {
+
+        headers: {
+            'content-type': false,
+            'mime-type': "multipart/form-data",
+            'Authorization': `Bearer ${localStorage.getItem('token')}`
+        }
+      });
+      return response.data;
+    } catch (error) { return null;}
+};
+
+export const getBroker = async (status = 'all') => {
+  const axiosInstance = useAxios()
+    try {
+      const response = await axiosInstance.get(`get-all-brokers/${status}`,);
+      return response.data;
+    } catch (error) { return null;}
+};
+
+export const getBrokerById = async (id) => {
+  const axiosInstance = useAxios()
+    try {
+      const response = await axiosInstance.get(`get-broker-by-id/${id}`);
+      return response.data;
+    } catch (error) { return null;}
+};
+export const deleteBrokerById = async (id) => {
+  const axiosInstance = useAxios()
+    try {
+      const response = await axiosInstance.delete(`delete-broker/${id}`);
+      return response.data;
+    } catch (error) { return null;}
+};
 
 
 // Sliders

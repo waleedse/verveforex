@@ -97,7 +97,7 @@ function Nabar(props) {
                                     </a>
                                     <ul className="pc-submenu">
                                         <li className="pc-item"><Link className="pc-link" to="/adminpanel/add-broker">Add Broker</Link></li>
-                                        <li className="pc-item"><Link className="pc-link" to="/adminpanel/manage-broker">Manage Brokers</Link></li>
+                                        <li className="pc-item"><Link className="pc-link" to="/adminpanel/manage-brokers">Manage Brokers</Link></li>
                                     </ul>
                                 </li>
                                 <li className="pc-item pc-caption">

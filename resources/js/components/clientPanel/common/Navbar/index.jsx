@@ -79,7 +79,7 @@ function Nabar(props) {
                             </div>
                             <ul className="pc-navbar">
                                 <li className="pc-item pc-caption">
-                                    <label>Manage Website</label>
+                                    <label>Navigation</label>
                                 </li>
                                 <li className="pc-item pc-hasmenu">
                                     <Link to="/client" className="pc-link">
@@ -94,51 +94,46 @@ function Nabar(props) {
                                     </Link>
 
                                 </li>
-                                <li className={`pc-item pc-hasmenu ${activeTab == 'promotions' && 'pc-trigger active'}`}>
-                                    <a onClick={() => { handleActiveTab('promotions') }} className="pc-link">
+                                <li className="pc-item pc-hasmenu">
+                                    <Link to="/client/brokers" className="pc-link">
                                         <span className="pc-micon">
                                             <svg className="pc-icon">
-                                                <use xlinkHref="#custom-document" />
+                                                <use xlinkHref="#custom-status-up" />
                                             </svg>
                                         </span>
-                                        <span className="pc-mtext">Manage Promotions</span>
-                                        <span className="pc-arrow"><i className="fas fa-chevron-right" /></span>
-                                    </a>
-                                    <ul className="pc-submenu">
-                                        <li className="pc-item"><Link className="pc-link" to="/client/add-promotion">Add promotion</Link></li>
-                                        <li className="pc-item"><Link className="pc-link" to="/client/manage-promotion">Manage Promotion</Link></li>
-                                    </ul>
+                                        <span className="pc-mtext">Brokers</span>
+                                        {/* <span className="pc-arrow"><i data-feather="chevron-right" /></span> */}
+                                        {/* <span className="pc-badge">2</span> */}
+                                    </Link>
+
                                 </li>
-                                <li onClick={() => { handleActiveTab('sliders') }} className={`pc-item pc-hasmenu ${activeTab == 'sliders' && 'pc-trigger'}`}>
-                                    <a className="pc-link">
+                                <li className="pc-item pc-hasmenu">
+                                    <Link to="/client/promotions" className="pc-link">
                                         <span className="pc-micon">
                                             <svg className="pc-icon">
-                                                <use xlinkHref="#custom-document" />
+                                                <use xlinkHref="#custom-status-up" />
                                             </svg>
                                         </span>
-                                        <span className="pc-mtext">Manage sliders</span>
-                                        <span className="pc-arrow"><i className="fas fa-chevron-right" /></span>
-                                    </a>
-                                    <ul className="pc-submenu">
-                                        <li className="pc-item"><Link className="pc-link" to="/client/add-slider">Add sliders</Link></li>
-                                        <li className="pc-item"><Link className="pc-link" to="/client/manage-sliders">Manage sliders</Link></li>
-                                    </ul>
+                                        <span className="pc-mtext">Promotions</span>
+                                        {/* <span className="pc-arrow"><i data-feather="chevron-right" /></span> */}
+                                        {/* <span className="pc-badge">2</span> */}
+                                    </Link>
+
                                 </li>
-                                <li onClick={() => { handleActiveTab('news') }} className={`pc-item pc-hasmenu ${activeTab == 'news' && 'pc-trigger'}`}>
-                                    <a href="#!" className="pc-link">
+                                <li className="pc-item pc-hasmenu">
+                                    <Link to="/client/introducing-broker" className="pc-link">
                                         <span className="pc-micon">
                                             <svg className="pc-icon">
-                                                <use xlinkHref="#custom-document" />
+                                                <use xlinkHref="#custom-status-up" />
                                             </svg>
                                         </span>
-                                        <span className="pc-mtext">Manage News</span>
-                                        <span className="pc-arrow"><i className="fas fa-chevron-right" /></span>
-                                    </a>
-                                    <ul className="pc-submenu">
-                                        <li className="pc-item"><Link className="pc-link" to="/client/add-news">Add news</Link></li>
-                                        <li className="pc-item"><Link className="pc-link" to="/client/manage-news">Manage news</Link></li>
-                                    </ul>
+                                        <span className="pc-mtext">Introducing Broker</span>
+                                        {/* <span className="pc-arrow"><i data-feather="chevron-right" /></span> */}
+                                        {/* <span className="pc-badge">2</span> */}
+                                    </Link>
+
                                 </li>
+
 
                                 {/* <li className="pc-item">
             <a href="../widget/w_chart.html" className="pc-link">

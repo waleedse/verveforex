@@ -28,7 +28,7 @@ Route::post('password/email', [UserController::class, 'sendResetLinkEmail']);
 Route::post('/reset-password', [UserController::class, 'reset']);
 
 Route::get('/get-countries', [AdminWebsiteController::class, 'get_countries']);
-Route::get('/get-promotions', [AdminWebsiteController::class  , 'get_all_promotions']);
+Route::get('/get-promotions', [AdminWebsiteController::class  , 'get_promotions']);
 Route::get('/get-home-slider', [AdminWebsiteController::class, 'get_home_sliders']);
 Route::get('get-news',[NewsController::class , 'get_posts']);
 Route::get('get-news-by-slug/{slug}',[NewsController::class , 'get_post_by_slug']);
@@ -47,6 +47,13 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/get-promotion-by-id/{id}', [AdminWebsiteController::class , 'get_promotion_by_id']);
     Route::get('/get-all-promotions/{status?}', [AdminWebsiteController::class , 'get_all_promotions']);
     Route::delete('/delete-promotion/{id}', [AdminWebsiteController::class , 'delete_promotion']);
+
+    // brokers
+    Route::post('/add-broker', [AdminWebsiteController::class  , 'add_broker']);
+    Route::post('/update-broker', [AdminWebsiteController::class , 'update_broker']);
+    Route::get('/get-broker-by-id/{id}', [AdminWebsiteController::class , 'get_broker_by_id']);
+    Route::get('/get-all-brokers/{status?}', [AdminWebsiteController::class , 'get_all_brokers']);
+    Route::delete('/delete-broker/{id}', [AdminWebsiteController::class , 'delete_broker']);
 
     Route::post('/add-slider', [AdminWebsiteController::class, 'add_slider']);
     Route::post('/update-slider', [AdminWebsiteController::class, 'update_slider']);

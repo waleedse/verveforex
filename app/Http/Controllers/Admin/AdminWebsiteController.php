@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
 use App\Http\Controllers\Controller;
+use App\Models\Broker;
 
 class AdminWebsiteController extends Controller
 {
@@ -169,6 +170,82 @@ class AdminWebsiteController extends Controller
     public function delete_promotion($id){
         $promotion = Promotion::where('id',$id)->delete();
         return $promotion;
+    }
+    public function add_broker(Request $request){
+        $validator = Validator::make($request->all(), [
+            'title' => 'required',
+            'link' => 'required',
+            'status' => 'required',
+        ]);
+        if($validator->fails()){
+            $response = ['status' => 422 , 'msg' => $validator->errors()->first(),'errors' => $validator->errors()];
+            return $response;
+        }
+        $broker = new Broker();
+        $broker->title = $request->title;
+        $broker->link = $request->link;
+        $broker->status = $request->status;
+        $broker->short_description = $request->shortDescription;
+
+
+
+        $file = $request->image;
+        $filename = $file->getClientOriginalName();
+        $image = date('His') . str_replace(' ','-',$filename);
+        $destination_path = public_path().'/uploads';
+        $file->move($destination_path, $image);
+        $url = $image;
+
+        $broker->image =$image;
+        $broker->save();
+        $response = ['status' => 200 ];
+        return $response;
+    }
+    public function update_broker(Request $request){
+        $validator = Validator::make($request->all(), [
+            'title' => 'required',
+            'link' => 'required',
+            'status' => 'required',
+        ]);
+        if($validator->fails()){
+            $response = ['status' => 219 , 'msg' => $validator->errors()->first(),'errors' => $validator->errors()];
+            return $response;
+        }
+        $broker = Broker::where('id',$request->id)->first();
+        $broker->title = $request->title;
+        $broker->link = $request->link;
+        $broker->status = $request->status;
+        $broker->short_description = $request->shortDescription;
+
+        if($broker->image != $request->image){
+            $file = $request->image;
+            $filename = $file->getClientOriginalName();
+            $image = date('His') . str_replace(' ','-',$filename);
+            $destination_path = public_path().'/uploads';
+            $file->move($destination_path, $image);
+            $url = $image;
+
+            $broker->image =$image;
+        }
+        $broker->save();
+        $response = ['status' => 200 ];
+        return $response;
+    }
+    public function get_broker_by_id($id){
+        $broker = Broker::where('id',$id)->first();
+        return $broker;
+    }
+    public function get_all_brokers($status = 'all'){
+        $broker = Broker::
+        when($status != 'all' , function($query) use ($status){
+            $query->where('status' , $status);
+        })
+        ->get();
+        return $broker;
+    }
+    public function delete_broker($id){
+        $broker = Broker::where('id',$id)->delete();
+        return $broker;
     }
 
 

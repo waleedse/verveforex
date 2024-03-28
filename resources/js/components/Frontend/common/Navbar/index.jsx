@@ -1,11 +1,16 @@
 import React, { Fragment, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { getPromotions } from "../../../services/front/commonService";
+import { SET_PROMOTIONS, SET_RESPONSE } from "../../../redux/reducers/promotions";
+import { useDispatch, useSelector } from "react-redux";
 
 
 function Navbar(props) {
     const [showMobileNav, setShowMobileNav] = useState(false)
     const [activeNavItem, setActiveNavItem] = useState('')
+    const dispatch = useDispatch();
+    const promotions = useSelector((state) => state.promotions)
+    const [promtoions, setPromotions] = useState([])
 
     const handleActiveNavItem = (item) => {
         setActiveNavItem(item != activeNavItem ? item : '')
@@ -22,19 +27,20 @@ function Navbar(props) {
         { name: 'FBS Forex', link: '/broker/fbs' },
 
     ]
+
+    const getAllPromotions = async () => {
+        let res = await getPromotions();
+        // setPromotions(res)
+        dispatch(SET_PROMOTIONS(res?.promotion))
+        dispatch(SET_RESPONSE(res))
+        console.log(res)
+    }
+
+    useEffect(() => {
+        getAllPromotions();
+    }, [])
     const nav = () => {
-        const [promtoions, setPromotions] = useState([])
 
-        const getAllPromotions = async () => {
-            let res = await getPromotions();
-            setPromotions(res)
-
-            console.log(res)
-        }
-
-        useEffect(() => {
-            getAllPromotions();
-        }, [])
 
         return (
             <div className="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
@@ -44,10 +50,15 @@ function Navbar(props) {
                     <li className="dropdown"><a href="/">Promotions</a>
                         <ul>
                             {
-                                promtoions && promtoions?.map((promotion, index) => (
+                                promotions?.promotions && promotions.promotions?.map((promotion, index) => (
                                     <li><Link to={promotion?.link}>{promotion?.title}</Link></li>
 
                                 ))
+                            }
+                            {
+                                !promotions &&
+                                <li>No Promotions</li>
+
                             }
                             {/* <li><a href="platform.html">Cash Back</a></li>
                             <li><a href="account.html">Dubai Offer</a></li>

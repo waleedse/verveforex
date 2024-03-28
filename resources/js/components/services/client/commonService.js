@@ -28,6 +28,14 @@ export const ResendVerificationEmail = async (email) => {
     }
 };
 
+export const getClientPromotions = async () => {
+    const axiosInstance = useAxios()
+      try {
+        const response = await axiosInstance.get(`get-promotions`,);
+        return response.data;
+      } catch (error) { return null;}
+  };
+
 
 
 

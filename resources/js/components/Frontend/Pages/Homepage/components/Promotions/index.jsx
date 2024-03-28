@@ -4,6 +4,7 @@ import "react-multi-carousel/lib/styles.css";
 import { getPromotions } from "../../../../../services/front/commonService";
 import { IMAGE_BASE_URL } from "../../../../../config/constants";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 const responsive = {
     superLargeDesktop: {
         // the naming can be any, depends on you.
@@ -28,18 +29,19 @@ const responsive = {
 
 function Promotions() {
 
-    const [promtoions, setPromotions] = useState([])
+    const promotions = useSelector((state) => state.promotions?.promotions)
+    // const [promtoions, setPromotions] = useState([])
 
-    const getAllPromotions = async () => {
-        let res = await getPromotions();
-        setPromotions(res)
+    // const getAllPromotions = async () => {
+    //     let res = await getPromotions();
+    //     setPromotions(res)
 
-        console.log(res)
-    }
+    //     console.log(res)
+    // }
 
-    useEffect(() => {
-        getAllPromotions();
-    }, [])
+    // useEffect(() => {
+    //     getAllPromotions();
+    // }, [])
 
     return (
         <Fragment>
@@ -50,14 +52,14 @@ function Promotions() {
                         <h2>Best Promotions in the <span>Market</span></h2>
                     </div>
                     {
-                        promtoions &&
+                        promotions &&
                         <Carousel
                             autoPlaySpeed={1000}
                             showDots={true}
                             responsive={responsive}
-                            className={`${promtoions.length == 1 && 'center-slide-items'}`}
+                            className={`${promotions.length == 1 && 'center-slide-items'}`}
                         >
-                            {promtoions.map((item, index) => {
+                            {promotions?.map((item, index) => {
                                 return (
                                     <div className="account-block-one promtion-slide">
                                         <Link to={item?.link}>  <div className="inner-box">
