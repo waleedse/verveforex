@@ -12,7 +12,7 @@ const AccessControl = ({ redirectLink }) => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        axios.get("/api/check-auth", {
+        axios.get(`/api/check-auth/${redirectLink == '/login' ? 'client' : 'admin'}`, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`,
             },

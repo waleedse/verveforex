@@ -8,7 +8,7 @@ export const loginSchema = Yup.object().shape({
 export const SignUpSchema = Yup.object().shape({
     firstName: Yup.string().required('First name is required'),
     lastName: Yup.string().required('Last name is required'),
-    email: Yup.string().email('Invalid emailaa').required('Email is required'),
+    email: Yup.string().email('Invalid email').required('Email is required'),
     password: Yup.string().required('Password is required'),
     confirmPassword: Yup.string().oneOf([Yup.ref('password'), null], 'Passwords must match'),
     country: Yup.string().required('Country is required'),
@@ -18,4 +18,14 @@ export const ResetPasswordSchema = Yup.object().shape({
 
     password: Yup.string().required('Password is required'),
     confirmPassword: Yup.string().oneOf([Yup.ref('password'), null], 'Passwords must match'),
+});
+
+export const MyAccountSchema = Yup.object().shape({
+    firstName: Yup.string().required('First name is required'),
+    lastName: Yup.string().required('Last name is required'),
+    email: Yup.string().email('Invalid email').required('Email is required'),
+    country: Yup.string().required('Password is required'),
+    zipCode: Yup.string().required("Zipcode is required"),
+    address: Yup.string().required('Address is required'),
+    phone: Yup.string().required('Phone number is required'),
 });

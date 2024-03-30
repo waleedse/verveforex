@@ -80,13 +80,17 @@ class UserController extends BaseController
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\JsonResponse
      */
-    public function checkToken(Request $request)
+    public function checkToken($role)
     {
-        $user = $request->user();
+        $user = Auth::user();
 
         if ($user) {
-            $role = $user->getRoleNames()->first();
-            return response()->json(['user' => $user, 'role' => $role]);
+            $userRole = $user->getRoleNames()->first();
+            if($role == $userRole){
+                return response()->json(['user' => $user, 'role' => $userRole]);
+            }else{
+                return response()->json(['message' => 'Unauthorized'], 401);
+            }
         }
 
         return response()->json(['message' => 'Unauthorized'], 401);
@@ -204,17 +208,37 @@ class UserController extends BaseController
     {
         $user = Auth::user();
 
-        $request->validate([
-            'name' => 'required|string',
-            'email' => 'required|email|unique:users,email,'.$user->id,
-            'password' => 'nullable|string|min:6',
+        $validator = Validator::make($request->all(), [
+            'firstName' => 'required|string',
+            'lastName' => 'required|string',
+            'email' => 'required|email',
+            'country' => 'required|string',
+            'phone' => 'required|string',
+            'address' => 'required|string',
+            'zipcode' => 'required|string',
         ]);
 
-        $user->update([
-            'name' => $request->name,
-            'email' => $request->email,
-            'password' => isset($request->password) ? Hash::make($request->password) : $user->password,
-        ]);
+        if($validator->fails()){
+            $response = ['status' => 422 , 'message' => $validator->errors()->first(),'errors' => $validator->errors()];
+            return $response;
+        }
+
+        $user->first_name = $request->firstName;
+        $user->last_name = $request->lastName;
+        $user->email = $request->email;
+        $user->country = $request->country;
+        $user->address = $request->address;
+        $user->zipcode = $request->zipcode;
+        if($user->image != $request->image){
+            $file = $request->image;
+            $filename = $file->getClientOriginalName();
+            $image = date('His') . str_replace(' ','-',$filename);
+            $destination_path = public_path().'/uploads';
+            $file->move($destination_path, $image);
+            $url = $image;
+            $user->image = $image;
+        }
+        $user->save();
 
         return response()->json(['message' => 'User updated successfully']);
     }

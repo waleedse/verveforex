@@ -1,16 +1,19 @@
 {
-  "_Helmet-gjPDagMi.js": {
-    "file": "assets/Helmet-gjPDagMi.js",
+  "_Helmet-mm2MkEw1.js": {
+    "file": "assets/Helmet-mm2MkEw1.js",
     "imports": [
-      "resources/js/app.js",
-      "_index-XhRVs4Hi.js"
+      "_index-pTwkZwMY.js",
+      "resources/js/app.js"
     ]
   },
-  "_index-XhRVs4Hi.js": {
-    "file": "assets/index-XhRVs4Hi.js"
+  "_index-LtR38yPo.js": {
+    "file": "assets/index-LtR38yPo.js",
+    "imports": [
+      "resources/js/app.js"
+    ]
   },
-  "_index-tWFYvQG1.js": {
-    "file": "assets/index-tWFYvQG1.js",
+  "_index-pTwkZwMY.js": {
+    "file": "assets/index-pTwkZwMY.js",
     "imports": [
       "resources/js/app.js"
     ]
@@ -48,16 +51,16 @@
       "resources/js/components/clientPanel/common/Navbar/index.jsx",
       "resources/js/components/adminPanel/index.jsx"
     ],
-    "file": "assets/app-BKQlfjbh.js",
+    "file": "assets/app-kPhBOPlx.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
   "resources/js/components/adminPanel/common/Navbar/index.jsx": {
-    "file": "assets/index-IXwERgIs.js",
+    "file": "assets/index-MoZLuxZQ.js",
     "imports": [
       "resources/js/app.js",
-      "_Helmet-gjPDagMi.js",
-      "_index-XhRVs4Hi.js"
+      "_Helmet-mm2MkEw1.js",
+      "_index-pTwkZwMY.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/adminPanel/common/Navbar/index.jsx"
@@ -72,7 +75,7 @@
       "resources/js/components/adminPanel/modules/clients/index.jsx",
       "resources/js/components/adminPanel/common/Navbar/index.jsx"
     ],
-    "file": "assets/index--HDZYCaM.js",
+    "file": "assets/index-AwfcLIyy.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -80,7 +83,7 @@
     "src": "resources/js/components/adminPanel/index.jsx"
   },
   "resources/js/components/adminPanel/modules/clients/index.jsx": {
-    "file": "assets/index-_UUV6HA_.js",
+    "file": "assets/index-EH3gLMuX.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -88,7 +91,7 @@
     "src": "resources/js/components/adminPanel/modules/clients/index.jsx"
   },
   "resources/js/components/adminPanel/modules/dasboard/index.jsx": {
-    "file": "assets/index-faVK60p3.js",
+    "file": "assets/index-xqiDNq1j.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -96,7 +99,7 @@
     "src": "resources/js/components/adminPanel/modules/dasboard/index.jsx"
   },
   "resources/js/components/adminPanel/modules/promotions/addPromotion/index.jsx": {
-    "file": "assets/index-B7usPDTI.js",
+    "file": "assets/index-y-vVW6pW.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -104,7 +107,7 @@
     "src": "resources/js/components/adminPanel/modules/promotions/addPromotion/index.jsx"
   },
   "resources/js/components/adminPanel/modules/promotions/managePromotion/index.jsx": {
-    "file": "assets/index-sy1kuB8V.js",
+    "file": "assets/index-4s6Zqx_r.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -112,7 +115,7 @@
     "src": "resources/js/components/adminPanel/modules/promotions/managePromotion/index.jsx"
   },
   "resources/js/components/adminPanel/modules/sliders/addSlider/index.jsx": {
-    "file": "assets/index-OEi9kp8u.js",
+    "file": "assets/index--WGSim_u.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -120,7 +123,7 @@
     "src": "resources/js/components/adminPanel/modules/sliders/addSlider/index.jsx"
   },
   "resources/js/components/adminPanel/modules/sliders/manageSliders/index.jsx": {
-    "file": "assets/index-TwbG8zYS.js",
+    "file": "assets/index-RhF8sm-W.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -128,26 +131,26 @@
     "src": "resources/js/components/adminPanel/modules/sliders/manageSliders/index.jsx"
   },
   "resources/js/components/clientPanel/common/Navbar/index.jsx": {
-    "file": "assets/index-AFRUOYw5.js",
+    "file": "assets/index-K4ok4XJy.js",
     "imports": [
       "resources/js/app.js",
-      "_Helmet-gjPDagMi.js",
-      "_index-XhRVs4Hi.js"
+      "_Helmet-mm2MkEw1.js",
+      "_index-pTwkZwMY.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/clientPanel/common/Navbar/index.jsx"
   },
   "resources/js/components/frontend/Pages/Aboutus/index.jsx": {
-    "file": "assets/index-x03Ig019.js",
+    "file": "assets/index-Lu32D0E4.js",
     "imports": [
       "resources/js/app.js",
-      "_index-tWFYvQG1.js"
+      "_index-LtR38yPo.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/frontend/Pages/Aboutus/index.jsx"
   },
   "resources/js/components/frontend/Pages/Broker/index.jsx": {
-    "file": "assets/index-WoQivlUD.js",
+    "file": "assets/index-OJY4BcpQ.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -163,17 +166,17 @@
     "css": [
       "assets/index-kUDj7756.css"
     ],
-    "file": "assets/index-nd5Dpcjb.js",
+    "file": "assets/index-N0hbICFD.js",
     "imports": [
       "resources/js/app.js",
-      "_index-XhRVs4Hi.js",
-      "_index-tWFYvQG1.js"
+      "_index-pTwkZwMY.js",
+      "_index-LtR38yPo.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/frontend/Pages/Homepage/index.jsx"
   },
   "resources/js/components/frontend/Pages/News/index.jsx": {
-    "file": "assets/index-Byhr18Yz.js",
+    "file": "assets/index-l6ZpVCMK.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -181,7 +184,7 @@
     "src": "resources/js/components/frontend/Pages/News/index.jsx"
   },
   "resources/js/components/frontend/Pages/Promotions/DubaiPromotion/index.jsx": {
-    "file": "assets/index-wE0kEKmB.js",
+    "file": "assets/index-KETqdRHE.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -189,7 +192,7 @@
     "src": "resources/js/components/frontend/Pages/Promotions/DubaiPromotion/index.jsx"
   },
   "resources/js/components/frontend/Pages/SingleNews/index.jsx": {
-    "file": "assets/index-_CUwVjss.js",
+    "file": "assets/index-8UU4r8Eu.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -200,7 +203,7 @@
     "css": [
       "assets/static-3k8Uq2ty.css"
     ],
-    "file": "assets/index-Zs65DpeB.js",
+    "file": "assets/index-0R-zjSMv.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -211,7 +214,7 @@
     "css": [
       "assets/static-3k8Uq2ty.css"
     ],
-    "file": "assets/index-fhjeix6H.js",
+    "file": "assets/index-j-60CmhP.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -222,7 +225,7 @@
     "css": [
       "assets/static-3k8Uq2ty.css"
     ],
-    "file": "assets/index-U21PVWMB.js",
+    "file": "assets/index-GKiMh4Fg.js",
     "imports": [
       "resources/js/app.js"
     ],

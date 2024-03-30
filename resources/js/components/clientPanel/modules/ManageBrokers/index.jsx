@@ -1,26 +1,23 @@
 import React, { useEffect, useState } from 'react';
-import { deletePromotionById, getPromotions } from '../../../services/admin/commonService';
+// import { deletePromotionById, getPromotions } from '../../../services/admin/commonService';
 import { Link } from 'react-router-dom';
 import toast from 'react-hot-toast';
 import { IMAGE_BASE_URL } from '../../../config/constants';
+import { getClientBrokers, getClientPromotions } from '../../../services/client/commonService';
 
 const ManageBrokers = () => {
-    const [promotions, setPromotions] = useState([]);
+    const [brokers, setBrokers] = useState([]);
 
-    const getAllPromotions = async () => {
-        let res = await getPromotions();
-        setPromotions(res);
+    const getAllBrokers = async () => {
+        let res = await getClientBrokers();
+        setBrokers(res);
     }
 
     useEffect(() => {
-        getAllPromotions();
+        getAllBrokers();
     }, [])
 
-    const deleteCurrentPromotion = async (item) => {
-        let res = deletePromotionById(item?.id)
-        getAllPromotions();
-        toast.success('Promotion deleted')
-    }
+
 
 
     return (
@@ -28,14 +25,32 @@ const ManageBrokers = () => {
             {/* [ sample-page ] start */}
             <div className="col-sm-12">
                 <div class="page-header-title">
-                    <h2 class="mb-5">Manage Promotions</h2>
+                    <h2 class="mb-5">Manage Brokers</h2>
                 </div>
-                <div className="card table-card">
+                <div className="card    ">
                     <div className="card-body">
-                        <div className="text-end p-4 pb-sm-2">
-                            <Link to="/adminpanel/add-promotion" className="btn btn-primary">
-                                <i className="ti ti-plus f-18" /> Add Promotion
-                            </Link>
+                        <div className='row p-4'>
+                            {
+                                brokers && brokers?.map((item, index) => (
+                                    <a href={item?.link} target='_blank' className='col-md-3 px-2'>
+                                        <div className='card '>
+                                            <div className='card-body p-1'>
+                                                <img className='rounder-broder' style={{ width: '100%', borderRadius: '7px' }} src={IMAGE_BASE_URL + item?.image}></img>
+                                                <h3 className='pt-2'>{item?.title}</h3>
+                                                <p className='content-body'>{item?.short_description}</p>
+                                                <div className="row">
+                                                    <div className='col-md-6'>
+                                                        <button className="btn btn-light-warning col-md-12" type="button">Details</button>
+                                                    </div>
+                                                    <div className='col-md-6 text-right' style={{ textAlign: 'right' }}>
+                                                        <button className="btn btn-light-success col-md-12" type="button">Sign Up</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                ))
+                            }
                         </div>
 
                     </div>

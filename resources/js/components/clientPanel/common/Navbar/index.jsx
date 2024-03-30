@@ -57,10 +57,10 @@ function Nabar(props) {
                                     </div>
                                     <div className="collapse pc-user-links" id="pc_sidebar_userlink">
                                         <div className="pt-3">
-                                            <a href="#!">
+                                            <Link to="/client/my-account">
                                                 <i className="ti ti-user" />
                                                 <span>My Account</span>
-                                            </a>
+                                            </Link>
                                             <a href="#!">
                                                 <i className="ti ti-settings" />
                                                 <span>Settings</span>

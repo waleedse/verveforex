@@ -34,7 +34,7 @@ Route::get('get-news',[NewsController::class , 'get_posts']);
 Route::get('get-news-by-slug/{slug}',[NewsController::class , 'get_post_by_slug']);
 Route::get('get-feature-news',[NewsController::class , 'get_feature_posts']);
 
-Route::middleware('auth:sanctum')->get('/check-auth', [UserController::class, 'checkToken']);
+Route::middleware('auth:sanctum')->get('/check-auth/{role}', [UserController::class, 'checkToken']);
 
 // Protected routes (require authentication)
 Route::middleware('auth:sanctum')->group(function () {
