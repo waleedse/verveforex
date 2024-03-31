@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { Link } from "react-router-dom";
 
 function Footer(props) {
     return (
@@ -34,7 +35,7 @@ function Footer(props) {
                                     <div className="widget-content">
                                         <ul className="links-list clearfix">
                                             <li><a href="/">About Us</a></li>
-                                            <li><a href="/">Contact Us</a></li>
+                                            <li><Link to="/contact-us">Contact Us</Link></li>
                                             <li><a href="/">Introducing Brokers</a></li>
                                             <li><a href="/">FAQs</a></li>
                                         </ul>
