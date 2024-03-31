@@ -60,3 +60,19 @@ export const getClientBrokers = async () => {
         return response.data;
       } catch (error) { return null;}
   };
+
+  export const addNote = async (payload) => {
+    const axiosInstance = useAxios()
+      try {
+        const response = await axiosInstance.post(`add-note`, payload);
+        return response.data;
+      } catch (error) { return null;}
+  };
+
+  export const getNotes = async (client) => {
+    const axiosInstance = useAxios()
+      try {
+        const response = await axiosInstance.get(`get-notes/${client}`);
+        return response.data;
+      } catch (error) { return null;}
+  };

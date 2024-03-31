@@ -52,14 +52,7 @@ function Nabar(props) {
                                                 <i className="ti ti-user" />
                                                 <span>My Account</span>
                                             </a>
-                                            <a href="#!">
-                                                <i className="ti ti-settings" />
-                                                <span>Settings</span>
-                                            </a>
-                                            <a href="#!">
-                                                <i className="ti ti-lock" />
-                                                <span>Lock Screen</span>
-                                            </a>
+
                                             <a href="#!">
                                                 <i className="ti ti-power" />
                                                 <span>Logout</span>
@@ -69,6 +62,19 @@ function Nabar(props) {
                                 </div>
                             </div>
                             <ul className="pc-navbar">
+                                <li className="pc-item pc-hasmenu">
+                                    <Link to="/adminpanel" className="pc-link">
+                                        <span className="pc-micon">
+                                            <svg className="pc-icon">
+                                                <use xlinkHref="#custom-status-up" />
+                                            </svg>
+                                        </span>
+                                        <span className="pc-mtext">Dashboard</span>
+                                        {/* <span className="pc-arrow"><i data-feather="chevron-right" /></span> */}
+                                        {/* <span className="pc-badge">2</span> */}
+                                    </Link>
+
+                                </li>
                                 <li className="pc-item pc-caption">
                                     <label>Clients & Brokers</label>
                                 </li>
@@ -103,19 +109,7 @@ function Nabar(props) {
                                 <li className="pc-item pc-caption">
                                     <label>Manage Website</label>
                                 </li>
-                                <li className="pc-item pc-hasmenu">
-                                    <Link to="/adminpanel" className="pc-link">
-                                        <span className="pc-micon">
-                                            <svg className="pc-icon">
-                                                <use xlinkHref="#custom-status-up" />
-                                            </svg>
-                                        </span>
-                                        <span className="pc-mtext">Dashboard</span>
-                                        {/* <span className="pc-arrow"><i data-feather="chevron-right" /></span> */}
-                                        {/* <span className="pc-badge">2</span> */}
-                                    </Link>
 
-                                </li>
                                 <li className={`pc-item pc-hasmenu ${activeTab == 'promotions' && 'pc-trigger active'}`}>
                                     <a onClick={() => { handleActiveTab('promotions') }} className="pc-link">
                                         <span className="pc-micon">

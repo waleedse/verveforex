@@ -23,14 +23,12 @@ const IntroducingBroker = () => {
             {/* [ sample-page ] start */}
             <div className="col-sm-12">
                 <div class="page-header-title">
-                    <h2 class="mb-5">Manage Promotions</h2>
+                    <h2 class="mb-5">Introducing Brokers</h2>
                 </div>
                 <div className="card table-card">
                     <div className="card-body">
                         <div className="text-end p-4 pb-sm-2">
-                            <Link to="/adminpanel/add-promotion" className="btn btn-primary">
-                                <i className="ti ti-plus f-18" /> Add Promotion
-                            </Link>
+
                         </div>
 
                     </div>

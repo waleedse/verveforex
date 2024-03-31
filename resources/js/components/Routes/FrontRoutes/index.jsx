@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Spinner from '../../global/spinner';
 import TurkeyPromotion from '../../frontend/Pages/Promotions/TurkeyPromotion';
 import CashBackPromotion from '../../frontend/Pages/Promotions/CashBackPromotion';
+import Contact from '../../frontend/Pages/Contact';
 
 
 const Broker = lazy(() => import('../../frontend/Pages/Broker'))
@@ -30,6 +31,7 @@ function FrontRoutes(props) {
                 <Route path="/dubai-promotion" element={<Suspense fallback={<Spinner />}> <DubaiPromotion /> </Suspense>}></Route>
                 <Route path="/turkey-promotion" element={<Suspense fallback={<Spinner />}> <TurkeyPromotion /> </Suspense>}></Route>
                 <Route path="/cashback-promotion" element={<Suspense fallback={<Spinner />}> <CashBackPromotion /> </Suspense>}></Route>
+                <Route path="/contact-us" element={<Suspense fallback={<Spinner />}> <Contact /> </Suspense>}></Route>
             </Routes>
         </div>
     );

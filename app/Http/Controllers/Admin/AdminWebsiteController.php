@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
 use App\Http\Controllers\Controller;
 use App\Models\Broker;
+use App\Models\Note;
+use Illuminate\Support\Facades\Auth;
 
 class AdminWebsiteController extends Controller
 {
@@ -381,6 +383,26 @@ class AdminWebsiteController extends Controller
     $response = ['status' => 200, 'sliders' => $sliders];
     return $response;
 }
+
+    public function addNote (Request $request){
+        $note = new Note();
+        $note->author_id = Auth::user()->id;
+        $note->client_id = $request->client_id;
+        $note->note = $request->note;
+        $note->save();
+
+        $notes = Note::where('client_id' , $request->client_id)->with('author')->get();
+
+        return ['notes' => $notes , 'status' => 200];
+    }
+
+    public function getNotes ($client){
+
+        $notes = Note::where('client_id' , $client)->with('author')->get();
+
+        return ['notes' => $notes , 'status' => 200];
+    }
+
 
 
 

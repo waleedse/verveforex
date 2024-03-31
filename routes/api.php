@@ -48,6 +48,9 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/get-all-promotions/{status?}', [AdminWebsiteController::class , 'get_all_promotions']);
     Route::delete('/delete-promotion/{id}', [AdminWebsiteController::class , 'delete_promotion']);
 
+    Route::post('/add-note', [AdminWebsiteController::class , 'addNote']);
+    Route::get('/get-notes/{client}', [AdminWebsiteController::class , 'getNotes']);
+
     // brokers
     Route::post('/add-broker', [AdminWebsiteController::class  , 'add_broker']);
     Route::post('/update-broker', [AdminWebsiteController::class , 'update_broker']);
