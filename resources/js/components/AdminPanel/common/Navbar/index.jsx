@@ -106,6 +106,21 @@ function Nabar(props) {
                                         <li className="pc-item"><Link className="pc-link" to="/adminpanel/manage-brokers">Manage Brokers</Link></li>
                                     </ul>
                                 </li>
+                                <li className={`pc-item pc-hasmenu ${activeTab == 'ib' && 'pc-trigger active'}`}>
+                                    <a onClick={() => { handleActiveTab('ib') }} className="pc-link">
+                                        <span className="pc-micon">
+                                            <svg className="pc-icon">
+                                                <use xlinkHref="#custom-document" />
+                                            </svg>
+                                        </span>
+                                        <span className="pc-mtext">Introducing Brokers</span>
+                                        <span className="pc-arrow"><i className="fas fa-chevron-right" /></span>
+                                    </a>
+                                    <ul className="pc-submenu">
+                                        <li className="pc-item"><Link className="pc-link" to="/adminpanel/introducing-broker-requests">IB Requests</Link></li>
+                                        <li className="pc-item"><Link className="pc-link" to="/adminpanel/introducing-brokers">Introducing Brokers</Link></li>
+                                    </ul>
+                                </li>
                                 <li className="pc-item pc-caption">
                                     <label>Manage Website</label>
                                 </li>

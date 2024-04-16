@@ -33,6 +33,7 @@ Route::get('/get-home-slider', [AdminWebsiteController::class, 'get_home_sliders
 Route::get('get-news',[NewsController::class , 'get_posts']);
 Route::get('get-news-by-slug/{slug}',[NewsController::class , 'get_post_by_slug']);
 Route::get('get-feature-news',[NewsController::class , 'get_feature_posts']);
+Route::get('/get-all-brokers/{status?}', [AdminWebsiteController::class , 'get_all_brokers']);
 
 Route::middleware('auth:sanctum')->get('/check-auth/{role}', [UserController::class, 'checkToken']);
 
@@ -55,8 +56,10 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('/add-broker', [AdminWebsiteController::class  , 'add_broker']);
     Route::post('/update-broker', [AdminWebsiteController::class , 'update_broker']);
     Route::get('/get-broker-by-id/{id}', [AdminWebsiteController::class , 'get_broker_by_id']);
-    Route::get('/get-all-brokers/{status?}', [AdminWebsiteController::class , 'get_all_brokers']);
     Route::delete('/delete-broker/{id}', [AdminWebsiteController::class , 'delete_broker']);
+    Route::get('/get-ib-requests', [AdminWebsiteController::class , 'getIntroducingBrokerRequets']);
+    Route::get('/approve-request/{id}', [AdminWebsiteController::class , 'ApproveIntroducingBroker']);
+    Route::get('/decline-request/{id}', [AdminWebsiteController::class , 'DeclineIntroducingBroker']);
 
     Route::post('/add-slider', [AdminWebsiteController::class, 'add_slider']);
     Route::post('/update-slider', [AdminWebsiteController::class, 'update_slider']);
@@ -74,6 +77,7 @@ Route::middleware('auth:sanctum')->group(function () {
 
     // Clients Controller
     Route::get('get-clients',[ClientController::class , 'getClients']);
+    Route::post('create-ib',[ClientController::class , 'createIntroducingBroker']);
 
 });
 

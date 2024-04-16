@@ -913,7 +913,7 @@ img {
 
 .main-header .menu-area{
   position: relative;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: space-between;
   gap: 40px;
@@ -3446,6 +3446,19 @@ div#mCSB_1_container{
   opacity: 0.2;
   transform: scale(1.05);
 }
+
+.brokers .news-block-one .inner-box .image-box .image:before{
+    position: absolute;
+    content: '';
+    background: none !important;
+    width: 70px;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    opacity: 0.95;
+    z-index: 1;
+    transition: all 500ms ease;
+  }
 
 .news-block-one .inner-box .image-box .image:before{
   position: absolute;

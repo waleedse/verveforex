@@ -87,7 +87,12 @@ class UserController extends BaseController
         if ($user) {
             $userRole = $user->getRoleNames()->first();
             if($role == $userRole){
-                return response()->json(['user' => $user, 'role' => $userRole]);
+                return response()->json(
+                    [
+                        'user' => $user,
+                        'introducing_broker' =>  $userRole == 'client' ? $user->introducing_broker : null,
+                        'role' => $userRole
+                    ]);
             }else{
                 return response()->json(['message' => 'Unauthorized'], 401);
             }

@@ -9,9 +9,13 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
 use App\Http\Controllers\Controller;
+use App\Mail\ApproveBroker;
+use App\Mail\DeclineIntroducingBroker;
 use App\Models\Broker;
+use App\Models\IntroducingBroker;
 use App\Models\Note;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 
 class AdminWebsiteController extends Controller
 {
@@ -404,8 +408,32 @@ class AdminWebsiteController extends Controller
     }
 
 
+    public function getIntroducingBrokerRequets (){
+        $requests = IntroducingBroker::with('client')->whereStatus('pending')->get();
+        return $requests;
+    }
 
-
+    public function ApproveIntroducingBroker ($id){
+        $ib = IntroducingBroker::whereId($id)->with('client')->first();
+        if($ib){
+            Mail::to($ib->client?->email)->send(new ApproveBroker($ib));
+            $ib->status = 'active';
+            $ib->save();
+            return ['status' => 200 , 'ib' => $ib];
+        }else{
+            return ['status' => 403 , 'ib' => $ib];
+        }
+    }
+    public function DeclineIntroducingBroker ($id){
+        $ib = IntroducingBroker::whereId($id)->with('client')->first();
+        if($ib){
+            Mail::to($ib->client?->email)->send(new DeclineIntroducingBroker($ib));
+            $ib->delete();
+            return ['status' => 200 , 'ib' => $ib];
+        }else{
+            return ['status' => 403 , 'ib' => $ib];
+        }
+    }
 
 
 }

@@ -67,7 +67,7 @@ function Navbar(props) {
                             {/* <li><a href="account-details-3.html">STP Pro Account</a></li> */}
                         </ul>
                         <div className="dropdown-btn"><span className="fas fa-angle-down" /></div></li>
-                    <li className="current dropdown"><Link to="/">Brokers</Link>
+                    <li className="current dropdown"><Link to="/brokers">Brokers</Link>
                         <ul className={activeNavItem == 'home' && `active`}>
                             {
                                 brokers.map(broker => (
@@ -157,7 +157,7 @@ function Navbar(props) {
                                     {nav()}
                                 </nav>
                                 <div className="menu-right-content">
-                                    <div className="btn-box"><a href="/signup" className="theme-btn btn-one"><span>Open an A/c</span></a></div>
+                                    <div className="btn-box"><a href="/signup" className="theme-btn btn-one mt-3"><span>Open an A/c</span></a></div>
                                 </div>
                             </div>
                         </div>
@@ -183,7 +183,7 @@ function Navbar(props) {
                                 </nav>
                                 <div className="menu-right-content">
                                     {/* <div className="search-box-outer search-toggler"><i className="flaticon-search" /></div> */}
-                                    <div className="btn-box"><a href="/signup" className="theme-btn btn-one"><span>Open an A/c</span></a></div>
+                                    <div className="btn-box"><a href="/signup" className="theme-btn btn-one mt-3"><span>Open an A/c</span></a></div>
                                 </div>
                             </div>
                         </div>

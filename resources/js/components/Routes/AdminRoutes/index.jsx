@@ -6,6 +6,8 @@ import ManageNews from '../../adminPanel/modules/news/manageNews';
 import ClientDetail from '../../adminPanel/modules/clients/components/clientDetail';
 import AddBroker from '../../adminPanel/modules/brokers/addBroker';
 import ManageBrokers from '../../adminPanel/modules/brokers/manageBroker';
+import IntroducingBrokerRequests from '../../adminPanel/modules/IntroducingBrokers/IntroducingBrokerRequests';
+import IntroducingBrokers from '../../adminPanel/modules/IntroducingBrokers/IntroducingBrokers';
 
 const AddPromotion = lazy(() => import("../../AdminPanel/modules/promotions/AddPromotion"))
 const ManageSlider = lazy(() => import("../../adminPanel/modules/sliders/manageSliders"))
@@ -26,6 +28,11 @@ function ClientRoutes(props) {
             <Route path="add-broker" element={<Suspense fallback={<Spinner></Spinner>}>  <AddBroker></AddBroker> </Suspense>}></Route>
             <Route path="edit-broker/:id" element={<Suspense fallback={<Spinner></Spinner>}> <AddBroker></AddBroker> </Suspense>}></Route>
             <Route path="manage-brokers" element={<Suspense fallback={<Spinner></Spinner>}> <ManageBrokers></ManageBrokers> </Suspense>}></Route>
+
+            {/* Introducing Brokers */}
+            <Route path="introducing-broker-requests" element={<Suspense fallback={<Spinner></Spinner>}> <IntroducingBrokerRequests /> </Suspense>}></Route>
+            <Route path="introducing-brokers" element={<Suspense fallback={<Spinner></Spinner>}> <IntroducingBrokers /> </Suspense>}></Route>
+
             {/* Sliders */}
             <Route path="add-slider" element={<Suspense fallback={<Spinner></Spinner>}>  <AddSlider></AddSlider> </Suspense>}></Route>
             <Route path="edit-slider/:id" element={<Suspense fallback={<Spinner></Spinner>}> <AddSlider></AddSlider> </Suspense>}></Route>

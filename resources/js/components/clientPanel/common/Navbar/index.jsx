@@ -61,14 +61,7 @@ function Nabar(props) {
                                                 <i className="ti ti-user" />
                                                 <span>My Account</span>
                                             </Link>
-                                            <a href="#!">
-                                                <i className="ti ti-settings" />
-                                                <span>Settings</span>
-                                            </a>
-                                            <a href="#!">
-                                                <i className="ti ti-lock" />
-                                                <span>Lock Screen</span>
-                                            </a>
+
                                             <a style={{ cursor: "pointer" }} className='cursor-pointer' onClick={() => { logout() }}>
                                                 <i className="ti ti-power" />
                                                 <span>Logout</span>

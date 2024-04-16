@@ -51,4 +51,7 @@ class User extends Authenticatable
     public function country(){
         return $this->belongsTo(Country::class , "country" , "id");
     }
+    public function introducing_broker(){
+        return $this->belongsTo(IntroducingBroker::class , "id" , "client_id");
+    }
 }
