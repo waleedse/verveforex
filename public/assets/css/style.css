@@ -4407,7 +4407,8 @@ div#mCSB_1_container{
 .banner-style-two .banner-carousel .slide-item:before{
   width: 100%;
   opacity: 1;
-  background: -webkit-linear-gradient(90deg, rgba(27,29,36,1) 10%, rgba(27,29,36,0.40) 100%);
+  /* background: -webkit-linear-gradient(90deg, rgba(27,29,36,1) 10%, rgba(27,29,36,0.40) 100%); */
+  background: none;
 }
 
 .banner-style-two .banner-carousel .content-box{
@@ -5575,7 +5576,7 @@ div#mCSB_1_container{
 .testimonial-section{
   position: relative;
   background: #f5f8f7;
-  padding: 112px 0px;
+  padding: 30px 0px;
 }
 
 .testimonial-section .testimonial-block{
@@ -6353,7 +6354,7 @@ div#mCSB_1_container{
 
 .footer-bottom-two .bottom-inner{
   position: relative;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: space-between;
 }

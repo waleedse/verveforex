@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { Link } from "react-router-dom";
 function OurPartners() {
     return (
         <Fragment>
@@ -18,9 +19,9 @@ function OurPartners() {
                         <li><figure className="clients-box"><a href="index-2.html"><img src="/assets/images/clients/client-13.png" alt /></a></figure></li>
                         <li><figure className="clients-box"><a href="index-2.html"><img src="/assets/images/clients/client-8.png" alt /></a></figure></li>
                     </ul>
-                    {/* <div className="link-box centred">
-                        <a href="index-2.html"><span>See More</span></a>
-                    </div> */}
+                    <div className="link-box centred">
+                        <Link to="/brokers"><span>See More</span></Link>
+                    </div>
                 </div>
             </section>
         </Fragment>

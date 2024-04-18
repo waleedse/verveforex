@@ -27,7 +27,7 @@ function HomeSlider() {
     }, [])
     return (
         <div className="home-slider banner-style-two" style={{ marginTop: "140px" }}>
-            <Carousel showArrows showIndicators showThumbs={false} className="banner-carousel">
+            <Carousel showArrows showIndicators autoPlay infiniteLoop={true} interval={3000} showThumbs={false} className="banner-carousel">
                 {/* {slides.map((slide, index) => {
                     return <img style={{ width: "100%" }} src={slide.image} />;
                 })} */}

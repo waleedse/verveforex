@@ -10,12 +10,12 @@ function Banner() {
                 </div>
                 <div className="auto-container">
                     <div className="content-box">
-                        <h1>Company</h1>
-                        <p>Deaching of the great explorer of the truth the builder</p>
+                        <h1>About Us</h1>
+                        {/* <p>Deaching of the great explorer of the truth the builder</p>   */}
                         <ul className="bread-crumb clearfix">
                             <li><a href="index.html">Home</a></li>
                             <li>About</li>
-                            <li>Company</li>
+                            {/* <li>Company</li> */}
                         </ul>
                     </div>
                 </div>

@@ -21,7 +21,7 @@ function Footer(props) {
                                             </div>
                                         </div>
                                         <div className="text-box">
-                                            <p>Impedit quo minus id quod maxime place at facere possimus, omnis voluptas assumenda omnis dolors.</p>
+                                            {/* <p>Impedit quo minus id quod maxime place at facere possimus, omnis voluptas assumenda omnis dolors.</p> */}
                                         </div>
                                     </div>
                                 </div>
