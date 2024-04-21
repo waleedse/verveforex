@@ -91,6 +91,9 @@ li{
     font-size: 18px;
     /* font-weight: 400;     */
 }
+.promotion-rules li p {
+    color: black;
+}
 .promotion-steps h4{
     background-color:rgba(141, 4, 4, 0.924) ;
     border-radius: 50%;

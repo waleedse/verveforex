@@ -5,6 +5,7 @@ import TurkeyPromotion from '../../frontend/Pages/Promotions/TurkeyPromotion';
 import CashBackPromotion from '../../frontend/Pages/Promotions/CashBackPromotion';
 import Contact from '../../frontend/Pages/Contact';
 import Brokers from '../../frontend/Pages/brokers';
+import MauritiusPromotion from '../../frontend/Pages/Promotions/MauritiusPromotion';
 
 
 const Broker = lazy(() => import('../../frontend/Pages/Broker'))
@@ -34,6 +35,7 @@ function FrontRoutes(props) {
                 <Route path="/cashback-promotion" element={<Suspense fallback={<Spinner />}> <CashBackPromotion /> </Suspense>}></Route>
                 <Route path="/contact-us" element={<Suspense fallback={<Spinner />}> <Contact /> </Suspense>}></Route>
                 <Route path="/brokers" element={<Suspense fallback={<Spinner />}> <Brokers /> </Suspense>}></Route>
+                <Route path="/mauritius-promotion" element={<Suspense fallback={<Spinner />}> <MauritiusPromotion /> </Suspense>}></Route>
             </Routes>
         </div>
     );
