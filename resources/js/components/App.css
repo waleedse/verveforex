@@ -65,5 +65,10 @@ p {
 
 }
 
+.childRow {
+    padding-left: 5px;
+    border-left-color: chocolate;
+    background-color: rgb(220, 220, 220);
+}
 
 

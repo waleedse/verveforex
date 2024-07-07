@@ -2,7 +2,7 @@ import { useFormik } from 'formik';
 import React, { useEffect, useState } from 'react';
 import { loginSchema } from '../../../../schemas/Admin/Auth';
 import axios from 'axios';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate, useSearchParams } from 'react-router-dom';
 import toast from 'react-hot-toast';
 import { useDispatch } from 'react-redux';
 import { SET_USER } from '../../../../redux/reducers/user';
@@ -14,7 +14,9 @@ const Signup = () => {
     const navigate = useNavigate()
     const dispatch = useDispatch()
     const [countries, setCountries] = useState(null);
-
+    const [isLoading, setIsLoading] = useState(false);
+    const location = useLocation()
+    const searchParams = new URLSearchParams(location.search)
 
     const { formik, setFieldValue, values, handleChange, touched, errors, handleSubmit } = useFormik({
         initialValues: {
@@ -25,10 +27,13 @@ const Signup = () => {
             confirmPassword: '',
             phone: '',
             country: '',
+            refferal: searchParams.get("refferal")
         },
         validationSchema: SignUpSchema,
         onSubmit: async values => {
+            setIsLoading(true)
             let res = await createUser(values);
+            setIsLoading(false)
             if (res.status == 200) {
                 toast.success("You signed up scueecfully. We have sent you an email please verify.")
                 navigate("/login")
@@ -44,6 +49,8 @@ const Signup = () => {
     }
 
     useEffect(() => {
+        // let searchParams = new URLSearchParams(location.search)
+        // console.log("searchParams", searchParams.get("refferal"))
         getAllCountries();
     }, [])
 
@@ -112,7 +119,14 @@ const Signup = () => {
                                         </div>
                                     </div>
                                     <div className="d-grid mt-4">
-                                        <button type="submit" onClick={handleSubmit} className="btn btn-primary">Signup</button>
+                                        <button disabled={isLoading} type="submit" onClick={handleSubmit} className="btn btn-primary">
+                                            {
+                                                isLoading ?
+                                                    <div class="d-flex justify-content-center"><div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div></div>
+                                                    :
+                                                    <>Signup</>
+                                            }
+                                        </button>
                                     </div>
                                 </form>
                                 <div className="d-flex justify-content-between align-items-end mt-4">

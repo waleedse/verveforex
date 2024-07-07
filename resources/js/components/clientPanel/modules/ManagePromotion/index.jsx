@@ -25,7 +25,7 @@ const ManagePromotion = () => {
             {/* [ sample-page ] start */}
             <div className="col-sm-12">
                 <div class="page-header-title">
-                    <h2 class="mb-5">Manage Promotions</h2>
+                    <h2 class="mb-5">Promotions</h2>
                 </div>
                 <div className="card    ">
                     <div className="card-body">

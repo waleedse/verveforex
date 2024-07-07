@@ -257,6 +257,13 @@ export const approveIbRequests = async (id) => {
         return response.data;
     } catch (error) { return null; }
 };
+export const getAllIntroducingBroker = async (id) => {
+    const axiosInstance = useAxios()
+    try {
+        const response = await axiosInstance.get(`get-introducing-brokers`);
+        return response.data;
+    } catch (error) { return null; }
+};
 export const declineIbRequests = async (id) => {
     const axiosInstance = useAxios()
     try {

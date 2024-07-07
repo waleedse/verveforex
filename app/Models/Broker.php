@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Broker extends Model
 {
     use HasFactory;
+
+    public function clientBroker(){
+        return $this->belongsTo(Clientbroker::class , "id" , "broker_id");
+    }
 }

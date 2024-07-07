@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 import { getUserById } from '../../../../../../../services/admin/commonService';
 import { IMAGE_BASE_URL } from '../../../../../../../config/constants';
+import toast from 'react-hot-toast';
 
 const ClientProfile = () => {
     const params = useParams();
     const [client, setClient] = useState(null);
+
     useEffect(() => {
         getClient()
     }, [])
@@ -63,8 +65,12 @@ const ClientProfile = () => {
                                 </div>
                                 <div className="d-inline-flex align-items-center justify-content-start w-100">
                                     <i className="ti ti-link me-2" />
-                                    <a href="#" className="link-primary">
-                                        <p className="mb-0">https://anshan.dh.url</p>
+                                    <a
+                                        onClick={() => { navigator.clipboard.writeText(window.location?.origin + '/signup?refferal=' + client?.introducing_broker?.refferal_link), toast.dismiss(), toast.success("Copied.") }}
+                                        className="link-primary cursor-pointer"
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <p className="mb-0">{window.location?.origin + '/signup?refferal=' + client?.introducing_broker?.refferal_link}</p>
                                     </a>
                                 </div>
                             </div>
@@ -112,13 +118,13 @@ const ClientProfile = () => {
                                         </div>
                                         <div className="col-md-6">
                                             <p className="mb-1 text-muted">Zip Code</p>
-                                            <p className="mb-0">956 754</p>
+                                            <p className="mb-0">{client?.zipcode}</p>
                                         </div>
                                     </div>
                                 </li>
                                 <li className="list-group-item px-0 pb-0">
                                     <p className="mb-1 text-muted">Address</p>
-                                    <p className="mb-0">Street 110-B Kalians Bag, Dewan, M.P. New York</p>
+                                    <p className="mb-0">{client?.address}</p>
                                 </li>
                             </ul>
                         </div>

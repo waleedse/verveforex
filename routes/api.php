@@ -40,6 +40,9 @@ Route::middleware('auth:sanctum')->get('/check-auth/{role}', [UserController::cl
 // Protected routes (require authentication)
 Route::middleware('auth:sanctum')->group(function () {
     Route::post('/update-profile', [UserController::class, 'update']);
+    Route::get('/get-client-brokers', [ClientController::class , 'get_client_brokers']);
+    Route::get('/get-client-broker-links/{id?}', [ClientController::class , 'get_client_broker_links']);
+    Route::post('/update-client-broker-links', [ClientController::class , 'update_client_broker_link']);
 
     Route::get('/get-user/{id}', [UserController::class, 'getUserById']);
     // Pomrotions
@@ -78,6 +81,8 @@ Route::middleware('auth:sanctum')->group(function () {
     // Clients Controller
     Route::get('get-clients',[ClientController::class , 'getClients']);
     Route::post('create-ib',[ClientController::class , 'createIntroducingBroker']);
+    Route::get('get-introducing-brokers',[ClientController::class , 'getIntroducingBrokers']);
+    Route::get('get-ib-with-refferals/{id}',[ClientController::class , 'getIbWithRefferals']);
 
 });
 

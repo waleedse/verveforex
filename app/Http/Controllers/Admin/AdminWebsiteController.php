@@ -181,6 +181,7 @@ class AdminWebsiteController extends Controller
         $validator = Validator::make($request->all(), [
             'title' => 'required',
             'link' => 'required',
+            'signup_link' => 'required',
             'status' => 'required',
         ]);
         if($validator->fails()){
@@ -190,6 +191,7 @@ class AdminWebsiteController extends Controller
         $broker = new Broker();
         $broker->title = $request->title;
         $broker->link = $request->link;
+        $broker->signup_link = $request->link;
         $broker->status = $request->status;
         $broker->short_description = $request->shortDescription;
 

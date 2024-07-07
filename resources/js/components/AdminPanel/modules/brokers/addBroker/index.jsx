@@ -25,6 +25,7 @@ const AddBroker = () => {
     const initialValues = {
         title: "",
         websiteLink: "",
+        signupLink: "",
         status: 0,
         image: null,
         shortDescription: ''
@@ -51,6 +52,7 @@ const AddBroker = () => {
             var formData = new FormData();
             formData.append("title", values.title);
             formData.append("link", values.websiteLink);
+            formData.append("signup_link", values.signupLink);
             formData.append("status", values.status);
             formData.append("id", params.id);
             formData.append("image", values.image);
@@ -87,6 +89,7 @@ const AddBroker = () => {
         if (res) {
             setFieldValue("title", res.title)
             setFieldValue("websiteLink", res.link)
+            setFieldValue("signupLink", res.signup_link)
             setFieldValue("status", res.status)
             setFieldValue("image", res.image)
             setFieldValue("shortDescription", res.short_description)
@@ -172,6 +175,21 @@ const AddBroker = () => {
                                         <option value={1}>Active</option>
                                         <option value={0}>Draft</option>
                                     </select>
+                                </div>
+                                <div className="form-group col-md-6">
+                                    <label className="form-label" htmlFor="inputPassword4">
+                                        Signup Link
+                                    </label>
+                                    <input
+                                        name="signupLink"
+                                        onChange={handleChange}
+                                        type="text"
+                                        className={`form-control ${errors.signupLink && touched.signupLink && 'is-invalid'}`}
+                                        id="inputPassword4"
+                                        placeholder="Signup promotion link"
+                                        value={values.signupLink}
+                                    />
+                                    {errors.signupLink && touched.signupLink && <p className='invalid-feedback'>{errors.signupLink}</p>}
                                 </div>
                             </div>
 

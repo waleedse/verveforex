@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import toast from 'react-hot-toast';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { ResendVerificationEmail } from '../../../../services/client/commonService';
 
 const EmailVerification = () => {
@@ -52,8 +52,8 @@ const EmailVerification = () => {
                                     <input type="number" className="form-control text-center" placeholder={0} />
                                 </div>
                             </div> */}
-                            <div className="d-grid mt-4">
-                                <button type="button" className="btn btn-primary">Login</button>
+                            <div className="d-grid mt-4 col-md-12">
+                                <Link><button type="button" className="btn btn-primary">Login</button></Link>
                             </div>
                             <div className="d-flex justify-content-start align-items-end mt-3">
                                 <p className="mb-0">Did not receive the email?</p>

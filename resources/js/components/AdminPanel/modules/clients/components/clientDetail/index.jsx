@@ -1,6 +1,7 @@
 import React from 'react';
 import ClientProfile from './components/Profile';
 import ClientNotes from './components/ClientNotes';
+import ManageClientBrokers from './components/Brokers';
 
 const ClientDetail = () => {
     return (
@@ -53,7 +54,7 @@ const ClientDetail = () => {
                     <div className="tab-content">
                         <ClientProfile></ClientProfile>
                         <div className="tab-pane" id="profile-2" role="tabpanel" aria-labelledby="profile-tab-2">
-                            <h1>Brokers will show here</h1>
+                            <ManageClientBrokers></ManageClientBrokers>
                         </div>
                         <div className="tab-pane" id="profile-3" role="tabpanel" aria-labelledby="profile-tab-3">
                             <h1>Promotions will show here</h1>

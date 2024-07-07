@@ -54,4 +54,14 @@ export const getAllBrokers = async () => {
     } catch (error) { return null; }
 };
 
+export const getIbWithRefferals = async (id) => {
+    const axiosInstance = useAxios()
+    try {
+        const response = await axiosInstance.get(`get-ib-with-refferals/${id}`,);
+        return response.data;
+    } catch (error) { return null; }
+};
+
+
+
 

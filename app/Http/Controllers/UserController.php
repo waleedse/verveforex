@@ -7,6 +7,8 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 
 use App\Http\Controllers\Controller;
+use App\Models\Clientbroker;
+use App\Models\IntroducingBroker;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
@@ -122,7 +124,14 @@ class UserController extends BaseController
             $response = ['status' => 422 , 'message' => $validator->errors()->first(),'errors' => $validator->errors()];
             return $response;
         }
+        $ib = null;
 
+        if($request->refferal){
+            $IntroducingBroker = IntroducingBroker::where("refferal_link" , $request->refferal)->first();
+            if($IntroducingBroker){
+                $ib  = $IntroducingBroker->client_id;
+            }
+        }
         $user = User::create([
             'first_name' => $request->firstName,
             'last_name' => $request->lastName,
@@ -130,6 +139,7 @@ class UserController extends BaseController
             'country' => $request->country,
             'password' => Hash::make($request->password),
             'phone' => $request->phone,
+            'ib' => $ib
         ]);
 
         $user->assignRole('client');
@@ -249,7 +259,7 @@ class UserController extends BaseController
     }
 
     public function getUserById ($id){
-        $user =  User::whereId($id)->with("country")->first();
+        $user =  User::whereId($id)->with("country","introducing_broker")->first();
         return ['data' => $user];
     }
 

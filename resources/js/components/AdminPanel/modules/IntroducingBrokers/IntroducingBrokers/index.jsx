@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import toast from 'react-hot-toast';
-import { getAllClients } from '../../../../services/admin/commonService';
+import { getAllIntroducingBroker } from '../../../../services/admin/commonService';
 import { IMAGE_BASE_URL } from '../../../../config/constants';
 
 const IntroducingBrokers = () => {
     const [clients, setClients] = useState([]);
 
     const getClients = async () => {
-        let res = await getAllClients();
+        let res = await getAllIntroducingBroker();
         setClients(res);
     }
 
@@ -24,7 +24,7 @@ const IntroducingBrokers = () => {
             {/* [ sample-page ] start */}
             <div className="col-sm-12">
                 <div class="page-header-title">
-                    <h2 class="mb-5">Manage Clients</h2>
+                    <h2 class="mb-5">Manage Introducing Brokers</h2>
                 </div>
                 <div className="card table-card">
                     <div className="card-body">
@@ -73,7 +73,7 @@ const IntroducingBrokers = () => {
                                                     <td className="text-center">
                                                         <ul className="list-inline me-auto mb-0">
 
-                                                            <li className="list-inline-item align-bottom" data-bs-toggle="tooltip" title="Edit">
+                                                            <li className="list-inline-item align-bottom" data-bs-toggle="tooltip" title="View">
                                                                 <Link to={`/adminpanel/client-detail/${item.id}`} className="avtar avtar-xs btn-link-success btn-pc-default">
                                                                     <i className="ti ti-eye f-18" />
                                                                 </Link>

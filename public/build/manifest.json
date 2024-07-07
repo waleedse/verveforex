@@ -1,18 +1,12 @@
 {
-  "_Helmet-XOvPAy2h.js": {
-    "file": "assets/Helmet-XOvPAy2h.js",
+  "_Helmet-OOuri0zy.js": {
+    "file": "assets/Helmet-OOuri0zy.js",
     "imports": [
-      "_index-xPHFQXfR.js",
-      "resources/js/app.js"
+      "resources/js/app.js",
+      "_index-XhRVs4Hi.js"
     ]
   },
-  "_index-TVkJZ0N6.js": {
-    "file": "assets/index-TVkJZ0N6.js",
-    "imports": [
-      "resources/js/app.js"
-    ]
-  },
-  "_index-cEiSwB4R.js": {
+  "_index-TA4Bpd65.js": {
     "dynamicImports": [
       "resources/js/components/adminPanel/modules/promotions/addPromotion/index.jsx",
       "resources/js/components/adminPanel/modules/sliders/manageSliders/index.jsx",
@@ -22,14 +16,17 @@
       "resources/js/components/adminPanel/modules/clients/index.jsx",
       "resources/js/components/adminPanel/common/Navbar/index.jsx"
     ],
-    "file": "assets/index-cEiSwB4R.js",
+    "file": "assets/index-TA4Bpd65.js",
     "imports": [
       "resources/js/app.js"
     ],
     "isDynamicEntry": true
   },
-  "_index-xPHFQXfR.js": {
-    "file": "assets/index-xPHFQXfR.js",
+  "_index-XhRVs4Hi.js": {
+    "file": "assets/index-XhRVs4Hi.js"
+  },
+  "_index-fKbbvVFo.js": {
+    "file": "assets/index-fKbbvVFo.js",
     "imports": [
       "resources/js/app.js"
     ]
@@ -52,7 +49,7 @@
   },
   "resources/js/app.js": {
     "css": [
-      "assets/app-0bW7LC8j.css"
+      "assets/app-8LokNh4x.css"
     ],
     "dynamicImports": [
       "resources/js/components/frontend/Pages/Broker/index.jsx",
@@ -65,33 +62,33 @@
       "resources/js/components/frontend/Pages/static/Legal/index.jsx",
       "resources/js/components/frontend/Pages/static/terms/index.jsx",
       "resources/js/components/clientPanel/common/Navbar/index.jsx",
-      "_index-cEiSwB4R.js"
+      "_index-TA4Bpd65.js"
     ],
-    "file": "assets/app-9LSkYXU3.js",
+    "file": "assets/app-UVgB9Xq9.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
   "resources/js/components/adminPanel/common/Navbar/index.jsx": {
-    "file": "assets/index-rdpS84A_.js",
+    "file": "assets/index-gB4qEO7j.js",
     "imports": [
       "resources/js/app.js",
-      "_Helmet-XOvPAy2h.js",
-      "_index-xPHFQXfR.js"
+      "_Helmet-OOuri0zy.js",
+      "_index-XhRVs4Hi.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/adminPanel/common/Navbar/index.jsx"
   },
   "resources/js/components/adminPanel/modules/clients/index.jsx": {
-    "file": "assets/index-yeNV3Zh8.js",
+    "file": "assets/index-2XhTvrZ0.js",
     "imports": [
       "resources/js/app.js",
-      "_index-cEiSwB4R.js"
+      "_index-TA4Bpd65.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/adminPanel/modules/clients/index.jsx"
   },
   "resources/js/components/adminPanel/modules/dasboard/index.jsx": {
-    "file": "assets/index-IWxkUYHg.js",
+    "file": "assets/index-NIeSkmKM.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -99,62 +96,62 @@
     "src": "resources/js/components/adminPanel/modules/dasboard/index.jsx"
   },
   "resources/js/components/adminPanel/modules/promotions/addPromotion/index.jsx": {
-    "file": "assets/index-g0iHuSXk.js",
+    "file": "assets/index-0R7qgrsa.js",
     "imports": [
       "resources/js/app.js",
-      "_index-cEiSwB4R.js"
+      "_index-TA4Bpd65.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/adminPanel/modules/promotions/addPromotion/index.jsx"
   },
   "resources/js/components/adminPanel/modules/promotions/managePromotion/index.jsx": {
-    "file": "assets/index-eNBUR9GO.js",
+    "file": "assets/index-X6Tq1bAH.js",
     "imports": [
       "resources/js/app.js",
-      "_index-cEiSwB4R.js"
+      "_index-TA4Bpd65.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/adminPanel/modules/promotions/managePromotion/index.jsx"
   },
   "resources/js/components/adminPanel/modules/sliders/addSlider/index.jsx": {
-    "file": "assets/index-vLCIBk_-.js",
+    "file": "assets/index-AztKdf__.js",
     "imports": [
       "resources/js/app.js",
-      "_index-cEiSwB4R.js"
+      "_index-TA4Bpd65.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/adminPanel/modules/sliders/addSlider/index.jsx"
   },
   "resources/js/components/adminPanel/modules/sliders/manageSliders/index.jsx": {
-    "file": "assets/index-zXgERa62.js",
+    "file": "assets/index-PA8zJtyb.js",
     "imports": [
       "resources/js/app.js",
-      "_index-cEiSwB4R.js"
+      "_index-TA4Bpd65.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/adminPanel/modules/sliders/manageSliders/index.jsx"
   },
   "resources/js/components/clientPanel/common/Navbar/index.jsx": {
-    "file": "assets/index-uf4oi8xh.js",
+    "file": "assets/index-0ViVS7lt.js",
     "imports": [
       "resources/js/app.js",
-      "_Helmet-XOvPAy2h.js",
-      "_index-xPHFQXfR.js"
+      "_Helmet-OOuri0zy.js",
+      "_index-XhRVs4Hi.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/clientPanel/common/Navbar/index.jsx"
   },
   "resources/js/components/frontend/Pages/Aboutus/index.jsx": {
-    "file": "assets/index-dIowrzzr.js",
+    "file": "assets/index-Y2sVvmpX.js",
     "imports": [
       "resources/js/app.js",
-      "_index-TVkJZ0N6.js"
+      "_index-fKbbvVFo.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/frontend/Pages/Aboutus/index.jsx"
   },
   "resources/js/components/frontend/Pages/Broker/index.jsx": {
-    "file": "assets/index-aoPPUrNQ.js",
+    "file": "assets/index-uLBhQRP3.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -170,17 +167,17 @@
     "css": [
       "assets/index-kUDj7756.css"
     ],
-    "file": "assets/index-bm84uN-h.js",
+    "file": "assets/index-yFfhj_qd.js",
     "imports": [
       "resources/js/app.js",
-      "_index-xPHFQXfR.js",
-      "_index-TVkJZ0N6.js"
+      "_index-XhRVs4Hi.js",
+      "_index-fKbbvVFo.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/frontend/Pages/Homepage/index.jsx"
   },
   "resources/js/components/frontend/Pages/News/index.jsx": {
-    "file": "assets/index-wzZVM7K5.js",
+    "file": "assets/index-DTrO_5gj.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -188,7 +185,7 @@
     "src": "resources/js/components/frontend/Pages/News/index.jsx"
   },
   "resources/js/components/frontend/Pages/Promotions/DubaiPromotion/index.jsx": {
-    "file": "assets/index-nobbTSy6.js",
+    "file": "assets/index-YKsEjL2A.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -196,7 +193,7 @@
     "src": "resources/js/components/frontend/Pages/Promotions/DubaiPromotion/index.jsx"
   },
   "resources/js/components/frontend/Pages/SingleNews/index.jsx": {
-    "file": "assets/index-E3toPHGo.js",
+    "file": "assets/index-MGWQvBeN.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -207,7 +204,7 @@
     "css": [
       "assets/static-3k8Uq2ty.css"
     ],
-    "file": "assets/index-oO-T-qiO.js",
+    "file": "assets/index-MY_QNgfk.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -218,7 +215,7 @@
     "css": [
       "assets/static-3k8Uq2ty.css"
     ],
-    "file": "assets/index-Yh_TjS6Q.js",
+    "file": "assets/index-nwWAFqwv.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -229,7 +226,7 @@
     "css": [
       "assets/static-3k8Uq2ty.css"
     ],
-    "file": "assets/index-QB1M-9rz.js",
+    "file": "assets/index-uwTR73LF.js",
     "imports": [
       "resources/js/app.js"
     ],

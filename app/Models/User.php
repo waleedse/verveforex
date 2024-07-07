@@ -26,6 +26,7 @@ class User extends Authenticatable
         'password',
         'country',
         'phone',
+        'ib'
     ];
 
     /**
@@ -37,6 +38,8 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
+
+    protected $IbUsers = [];
 
     /**
      * The attributes that should be cast.
@@ -54,4 +57,21 @@ class User extends Authenticatable
     public function introducing_broker(){
         return $this->belongsTo(IntroducingBroker::class , "id" , "client_id");
     }
+
+    // User's Ib
+    public function introducingBroker(){
+        return $this->belongsTo(IntroducingBroker::class , "ib" , "client_id");
+    }
+
+    public function referrals()
+    {
+        return $this->hasMany(User::class, 'ib');
+    }
+
+    public function allReferrals()
+    {
+        $refferals = $this->referrals();
+        return $refferals;
+    }
+
 }

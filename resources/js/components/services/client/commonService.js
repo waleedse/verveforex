@@ -38,7 +38,21 @@ export const getClientPromotions = async () => {
 export const getClientBrokers = async () => {
     const axiosInstance = useAxios()
     try {
-        const response = await axiosInstance.get(`get-all-brokers/1`,);
+        const response = await axiosInstance.get(`get-client-brokers`,);
+        return response.data;
+    } catch (error) { return null; }
+};
+export const getClientBrokerLinks = async (id = '') => {
+    const axiosInstance = useAxios()
+    try {
+        const response = await axiosInstance.get(`get-client-broker-links/${id}`,);
+        return response.data;
+    } catch (error) { return null; }
+};
+export const updateClientBrokerLinks = async (payload) => {
+    const axiosInstance = useAxios()
+    try {
+        const response = await axiosInstance.post(`update-client-broker-links`, payload);
         return response.data;
     } catch (error) { return null; }
 };

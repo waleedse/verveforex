@@ -122,9 +122,9 @@ const MyAccount = () => {
                                     </div>
                                 </div>
                                 <div className="col-sm-12">
-                                    <div className="form-group">
-                                        <label className="form-label">Refferal URL (Click to copy)</label>
-                                        <input type="text" disabled className={`form-control ${errors.country && touched.country && 'is-invalid'}`} defaultValue="https://demo.com/" />
+                                    <div className="form-group" onClick={() => { navigator.clipboard.writeText(window.location?.origin + '/signup?refferal=' + user?.introducing_broker?.refferal_link), toast.dismiss(), toast.success("Copied.") }}>
+                                        <label className="form-label" style={{ cursor: 'pointer' }}>Refferal URL (Click to copy)</label>
+                                        <input type="text" onClick={() => { navigator.clipboard.writeText(window.location?.origin + '/signup?refferal=' + user?.introducing_broker?.refferal_link), toast.dismiss(), toast.success("Copied.") }} disabled defaultValue={window.location?.origin + '/signup?refferal=' + user?.introducing_broker?.refferal_link} style={{ cursor: 'pointer' }} className={`form-control cursor-pointer ${errors.country && touched.country && 'is-invalid'}`} />
                                     </div>
                                 </div>
 

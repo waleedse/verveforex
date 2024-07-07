@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-// import { deletePromotionById, getPromotions } from '../../../services/admin/commonService';
 import { Link } from 'react-router-dom';
 import toast from 'react-hot-toast';
 import { IMAGE_BASE_URL } from '../../../config/constants';
@@ -32,7 +31,7 @@ const ManageBrokers = () => {
                         <div className='row p-4'>
                             {
                                 brokers && brokers?.map((item, index) => (
-                                    <a href={item?.link} target='_blank' className='col-md-3 px-2'>
+                                    <div className='col-md-3 px-2'>
                                         <div className='card '>
                                             <div className='card-body p-1'>
                                                 <img className='rounder-broder' style={{ width: '100%', borderRadius: '7px' }} src={IMAGE_BASE_URL + item?.image}></img>
@@ -40,15 +39,15 @@ const ManageBrokers = () => {
                                                 <p className='content-body'>{item?.short_description}</p>
                                                 <div className="row">
                                                     <div className='col-md-6'>
-                                                        <button className="btn btn-light-warning col-md-12" type="button">Details</button>
+                                                        <button onClick={() => { window.open(item?.link) }} className="btn btn-light-warning col-md-12" type="button">Details</button>
                                                     </div>
                                                     <div className='col-md-6 text-right' style={{ textAlign: 'right' }}>
-                                                        <button className="btn btn-light-success col-md-12" type="button">Sign Up</button>
+                                                        <button onClick={() => { window.open(item?.client_broker?.broker_link ?? item?.link) }} className="btn btn-light-success col-md-12" type="button">Sign Up</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </a>
+                                    </div>
                                 ))
                             }
                         </div>
