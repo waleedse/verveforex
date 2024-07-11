@@ -66,9 +66,9 @@ const ManageClientBrokers = () => {
 
 
                                                             <li onClick={() => { approveBroker(item) }} className="list-inline-item align-bottom" data-bs-toggle="tooltip" title="Delete">
-                                                                <button className="btn-sm btn btn-success text-light">
+                                                                <Link to={`/adminpanel/manage-client-commissions/${item?.id}`}> <button className="btn-sm btn btn-success text-light">
                                                                     <i className="ti ti-check f-18" /> Manage Commisions
-                                                                </button>
+                                                                </button></Link>
                                                             </li>
                                                         </ul>
                                                     </td>

@@ -12,6 +12,7 @@ use App\Http\Controllers\Controller;
 use App\Mail\ApproveBroker;
 use App\Mail\DeclineIntroducingBroker;
 use App\Models\Broker;
+use App\Models\ClientCommission;
 use App\Models\IntroducingBroker;
 use App\Models\Note;
 use Illuminate\Support\Facades\Auth;
@@ -195,8 +196,6 @@ class AdminWebsiteController extends Controller
         $broker->status = $request->status;
         $broker->short_description = $request->shortDescription;
 
-
-
         $file = $request->image;
         $filename = $file->getClientOriginalName();
         $image = date('His') . str_replace(' ','-',$filename);
@@ -209,6 +208,7 @@ class AdminWebsiteController extends Controller
         $response = ['status' => 200 ];
         return $response;
     }
+
     public function update_broker(Request $request){
         $validator = Validator::make($request->all(), [
             'title' => 'required',
@@ -426,6 +426,7 @@ class AdminWebsiteController extends Controller
             return ['status' => 403 , 'ib' => $ib];
         }
     }
+
     public function DeclineIntroducingBroker ($id){
         $ib = IntroducingBroker::whereId($id)->with('client')->first();
         if($ib){
@@ -437,5 +438,22 @@ class AdminWebsiteController extends Controller
         }
     }
 
+    public function create_client_commission (Request $request) {
+        $commission = new ClientCommission();
+        // $commission->client_id = $request->clientId;
+        $commission->client_broker_id = $request->clientBrokerId;
+        $commission->commission = $request->commission;
+        $commission->payment_type = $request->paymentType;
+        $commission->notes = $request->notes;
+        $commission->created_by = Auth::user()->id;
+        $commission->save();
+
+        return ['status' => 200 , "commission" => $commission];
+    }
+
+    public function get_client_commissions ($clientBroker) {
+        $commissions = ClientCommission::where("client_broker_id" , $clientBroker)->with("author")->get();
+        return ['status' => 200 , "commissions" => $commissions];
+    }
 
 }

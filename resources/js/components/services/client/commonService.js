@@ -91,6 +91,13 @@ export const getNotes = async (client) => {
         return response.data;
     } catch (error) { return null; }
 };
+export const getClientCommissions = async (client) => {
+    const axiosInstance = useAxios()
+    try {
+        const response = await axiosInstance.get(`get-client-broker-commissions`);
+        return response.data;
+    } catch (error) { return null; }
+};
 export const createIB = async (payload) => {
     const axiosInstance = useAxios()
     try {

@@ -9,6 +9,11 @@ function Nabar(props) {
         let handleTab = tab == activeTab ? '' : tab;
         setActiveTab(handleTab)
     }
+    const logout = () => {
+        localStorage.removeItem("token");
+        navigate("/admin-login")
+    }
+
     return (
         <div>
             <div>
@@ -53,7 +58,7 @@ function Nabar(props) {
                                                 <span>My Account</span>
                                             </a>
 
-                                            <a href="#!">
+                                            <a style={{ cursor: "pointer" }} className='cursor-pointer' onClick={() => { logout() }}>
                                                 <i className="ti ti-power" />
                                                 <span>Logout</span>
                                             </a>

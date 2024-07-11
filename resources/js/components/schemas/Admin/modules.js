@@ -14,6 +14,10 @@ export const addBroker = Yup.object().shape({
     image: Yup.string().required('Image is required'),
     shortDescription: Yup.string().required('Short description is required')
 });
+
+export const addCommission = Yup.object().shape({
+    commission: Yup.string().required('Required'),
+});
 export const sliderSchema = Yup.object().shape({
     title: Yup.string().required('Required'),
     index: Yup.string().required('Required'),

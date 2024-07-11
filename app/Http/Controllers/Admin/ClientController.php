@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Broker;
 use App\Models\Clientbroker;
+use App\Models\ClientCommission;
 use App\Models\IntroducingBroker;
 use App\Models\User;
 use GuzzleHttp\Client;
@@ -66,7 +67,7 @@ class ClientController extends Controller
 
         $brokers = Broker::
         with(['clientBroker' => function ($query) use ($user) {
-            $query->where("introducing_broker_id" , $user->introducingBroker->id);
+            $query->where("introducing_broker_id" , $user?->introducingBroker?->id);
         }])
         ->get();
         return $brokers;
@@ -85,5 +86,16 @@ class ClientController extends Controller
         $clientbroker->broker_link = $request->link;
         $clientbroker->save();
         return ['status' => 200 , "brokers" => $clientbroker];
+    }
+
+    public function get_client_broker_commissions(){
+        $user = Auth()->user();
+
+        $commissions = ClientCommission::
+        with(['clientBroker' => function ($query) use ($user) {
+            $query->where("introducing_broker_id" , $user->introducing_broker->id);
+        }])
+        ->get();
+        return ['status' => 200 , "commissions" => $commissions];
     }
 }

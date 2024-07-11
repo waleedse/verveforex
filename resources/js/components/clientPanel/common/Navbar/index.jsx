@@ -126,6 +126,22 @@ function Nabar(props) {
                                     </Link>
 
                                 </li>
+                                {
+                                    user?.introducing_broker &&
+                                    <li className="pc-item pc-hasmenu">
+                                        <Link to="/client/client-commissions" className="pc-link">
+                                            <span className="pc-micon">
+                                                <svg className="pc-icon">
+                                                    <use xlinkHref="#custom-status-up" />
+                                                </svg>
+                                            </span>
+                                            <span className="pc-mtext">Client Commissions</span>
+                                            {/* <span className="pc-arrow"><i data-feather="chevron-right" /></span> */}
+                                            {/* <span className="pc-badge">2</span> */}
+                                        </Link>
+
+                                    </li>
+                                }
 
 
                                 {/* <li className="pc-item">

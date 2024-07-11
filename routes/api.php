@@ -43,6 +43,9 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/get-client-brokers', [ClientController::class , 'get_client_brokers']);
     Route::get('/get-client-broker-links/{id?}', [ClientController::class , 'get_client_broker_links']);
     Route::post('/update-client-broker-links', [ClientController::class , 'update_client_broker_link']);
+    Route::post('/create-client-commission', [AdminWebsiteController::class , 'create_client_commission']);
+    Route::get('/get-client-commission/{clientBroker}', [AdminWebsiteController::class , 'get_client_commissions']);
+    Route::get('/get-client-broker-commissions', [ClientController::class , 'get_client_broker_commissions']);
 
     Route::get('/get-user/{id}', [UserController::class, 'getUserById']);
     // Pomrotions

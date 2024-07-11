@@ -9,6 +9,7 @@ import ManageBrokers from '../../clientPanel/modules/ManageBrokers';
 import IntroducingBroker from '../../clientPanel/modules/IntroducingBroker';
 import MyAccount from '../../clientPanel/modules/MyAccount';
 import UpdateBrokerLinks from '../../clientPanel/modules/IntroducingBroker/Components/UpdateBrokerLinks';
+import Commissions from '../../clientPanel/modules/commissions';
 
 
 
@@ -21,6 +22,7 @@ function ClientRoutes(props) {
             <Route path="introducing-broker" element={<Suspense fallback={<Spinner></Spinner>}> <IntroducingBroker></IntroducingBroker> </Suspense>}></Route>
             <Route path="my-account" element={<Suspense fallback={<Spinner></Spinner>}> <MyAccount></MyAccount> </Suspense>}></Route>
             <Route path="update-broker-links" element={<Suspense fallback={<Spinner></Spinner>}> <UpdateBrokerLinks></UpdateBrokerLinks> </Suspense>}></Route>
+            <Route path="client-commissions" element={<Suspense fallback={<Spinner></Spinner>}> <Commissions></Commissions> </Suspense>}></Route>
 
 
         </Routes>

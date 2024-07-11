@@ -271,4 +271,19 @@ export const declineIbRequests = async (id) => {
         return response.data;
     } catch (error) { return null; }
 };
+export const getClientommissions = async (id) => {
+    const axiosInstance = useAxios()
+    try {
+        const response = await axiosInstance.get(`get-client-commission/${id}`);
+        return response.data;
+    } catch (error) { return null; }
+};
+
+export const createCommission = async (payload) => {
+    const axiosInstance = useAxios()
+    try {
+        const response = await axiosInstance.post(`create-client-commission/`, payload);
+        return response.data;
+    } catch (error) { return null; }
+};
 
