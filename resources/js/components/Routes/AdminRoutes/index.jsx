@@ -9,6 +9,7 @@ import ManageBrokers from '../../adminPanel/modules/brokers/manageBroker';
 import IntroducingBrokerRequests from '../../adminPanel/modules/IntroducingBrokers/IntroducingBrokerRequests';
 import IntroducingBrokers from '../../adminPanel/modules/IntroducingBrokers/IntroducingBrokers';
 import Commissions from '../../adminPanel/modules/clients/components/clientDetail/components/commissions';
+import ClientBrokerRequests from '../../adminPanel/modules/clients/clientBrokerRequests';
 
 const AddPromotion = lazy(() => import("../../AdminPanel/modules/promotions/AddPromotion"))
 const ManageSlider = lazy(() => import("../../adminPanel/modules/sliders/manageSliders"))
@@ -47,6 +48,7 @@ function ClientRoutes(props) {
             <Route path="manage-clients" element={<Suspense fallback={<Spinner></Spinner>}> <ManageClients></ManageClients> </Suspense>}></Route>
             <Route path="client-detail/:id" element={<Suspense fallback={<Spinner></Spinner>}> <ClientDetail></ClientDetail> </Suspense>}></Route>
             <Route path="manage-client-commissions/:id" element={<Suspense fallback={<Spinner></Spinner>}> <Commissions></Commissions> </Suspense>}></Route>
+            <Route path="client-broker-requests" element={<Suspense fallback={<Spinner></Spinner>}> <ClientBrokerRequests></ClientBrokerRequests> </Suspense>}></Route>
         </Routes>
     );
 }

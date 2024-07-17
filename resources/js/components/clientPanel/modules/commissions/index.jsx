@@ -36,9 +36,11 @@ const Commissions = () => {
                                 <thead>
                                     <tr>
                                         <th>ID.</th>
+                                        <th>Broker</th>
                                         <th>Commission</th>
                                         <th>Payment type</th>
                                         <th>Notes</th>
+                                        <th>Date</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -47,10 +49,12 @@ const Commissions = () => {
                                             return (
                                                 <tr key={index}>
                                                     <td>{item.id}</td>
+                                                    <td>{item.client_broker?.broker?.title}</td>
 
                                                     <td>{item.commission}</td>
                                                     <td>{item.payment_type}</td>
                                                     <td>{item?.notes}</td>
+                                                    <td>{item?.created_at.toLocaleString()}</td>
                                                 </tr>
                                             )
                                         })

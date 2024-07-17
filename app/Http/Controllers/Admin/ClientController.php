@@ -28,8 +28,9 @@ class ClientController extends Controller
         if($request->brokers){
             foreach($request->brokers as $b){
                 $ib_broker = new Clientbroker();
-                $ib_broker->introducing_broker_id = $ib->id;
+                $ib_broker->client_id = Auth()->user()->id;
                 $ib_broker->broker_id = $b['id'];
+                $ib_broker->status = 'active';
                 $ib_broker->save();
             }
         }
@@ -65,18 +66,18 @@ class ClientController extends Controller
     public function get_client_brokers(){
         $user = Auth()->user();
 
-        $brokers = Broker::
-        with(['clientBroker' => function ($query) use ($user) {
-            $query->where("introducing_broker_id" , $user?->introducingBroker?->id);
-        }])
+        $brokers = Broker::where("status" , 1)
+        // with(['clientBroker' => function ($query) use ($user) {
+        //     $query->where("introducing_broker_id" , $user?->introducingBroker?->id);
+        // }])
         ->get();
         return $brokers;
     }
 
-    public function get_client_broker_links($id) {
+    public function get_client_broker_links($id = null) {
         $user = $id ? User::find($id) : Auth()->user();
 
-        $clientbrokers = Clientbroker::with("broker")->where("introducing_broker_id", $user->introducing_broker->id)->get();
+        $clientbrokers = Clientbroker::with("broker")->where("client_id", $user->id)->where("status" , 'active')->get();
         return ['status' => 200 , "brokers" => $clientbrokers];
     }
 
@@ -90,12 +91,47 @@ class ClientController extends Controller
 
     public function get_client_broker_commissions(){
         $user = Auth()->user();
-
         $commissions = ClientCommission::
-        with(['clientBroker' => function ($query) use ($user) {
-            $query->where("introducing_broker_id" , $user->introducing_broker->id);
+        whereHas('clientBroker' , function ($query) use ($user) {
+            $query->where("client_id" , $user->id);
+        })
+        ->with(["clientBroker" => function ($query) use ($user) {
+            $query->with("broker");
         }])
         ->get();
         return ['status' => 200 , "commissions" => $commissions];
     }
+
+    public function createClientBroker(Request $request) {
+        $broker = Clientbroker::where("client_id" , Auth()->user()->id)->where("broker_id" , $request->brokerId)->first();
+        if($broker){
+            return ["status" => 401 ,"message" => "Broker claim request is already requested."];
+        }
+        $ib_broker = new Clientbroker();
+        $ib_broker->client_id = Auth()->user()->id;
+        $ib_broker->broker_id = $request->brokerId;
+        $ib_broker->broker_signup_id = $request->broker_signup_id;
+        $ib_broker->status = 'pending';
+        $ib_broker->save();
+        return ["status" => 200 , "clientbroker" => $ib_broker];
+    }
+
+    public function getClientBrokerRequests() {
+        $clientbrokers = Clientbroker::with(["broker","client"])->where("status", "pending")->get();
+        return ["status" => 200 , "clientbrokers" => $clientbrokers];
+    }
+
+    public function approveBrokerRequests($id) {
+        $clientbroker = Clientbroker::find($id);
+        $clientbroker->status = 'active';
+        $clientbroker->save();
+        return ["status" => 200 , "message" => "Approved"];
+    }
+
+    public function disApproveBrokerRequests($id) {
+        $clientbroker = Clientbroker::find($id);
+        $clientbroker->delete();
+        return ["status" => 200 , "message" => "Deleted"];
+    }
+
 }

@@ -108,6 +108,29 @@ export const getBrokerById = async (id) => {
         return response.data;
     } catch (error) { return null; }
 };
+
+export const getClientBrokerRequests = async () => {
+    const axiosInstance = useAxios()
+    try {
+        const response = await axiosInstance.get(`get-client-broker-requests`);
+        return response.data;
+    } catch (error) { return null; }
+};
+export const disapproveClientBrokerRequest = async (id) => {
+    const axiosInstance = useAxios()
+    try {
+        const response = await axiosInstance.get(`disaprove-broker-request/${id}`);
+        return response.data;
+    } catch (error) { return null; }
+};
+export const approveClientBrokerRequest = async (id) => {
+    const axiosInstance = useAxios()
+    try {
+        const response = await axiosInstance.get(`approve-broker-requests/${id}`);
+        return response.data;
+    } catch (error) { return null; }
+};
+
 export const deleteBrokerById = async (id) => {
     const axiosInstance = useAxios()
     try {

@@ -45,7 +45,7 @@ export const getClientBrokers = async () => {
 export const getClientBrokerLinks = async (id = '') => {
     const axiosInstance = useAxios()
     try {
-        const response = await axiosInstance.get(`get-client-broker-links/${id}`,);
+        const response = await axiosInstance.get(`get-client-broker-links${id != '' ? '/' + id : ''}`,);
         return response.data;
     } catch (error) { return null; }
 };
@@ -98,10 +98,19 @@ export const getClientCommissions = async (client) => {
         return response.data;
     } catch (error) { return null; }
 };
+
 export const createIB = async (payload) => {
     const axiosInstance = useAxios()
     try {
         const response = await axiosInstance.post(`create-ib`, payload);
         return response.data;
     } catch (error) { return null; }
+};
+
+export const createClientBrokerRequest = async (payload) => {
+    const axiosInstance = useAxios()
+    try {
+        const response = await axiosInstance.post(`create-client-broker`, payload);
+        return response.data;
+    } catch (error) { return error; }
 };

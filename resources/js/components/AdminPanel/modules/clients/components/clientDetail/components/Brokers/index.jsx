@@ -38,7 +38,7 @@ const ManageClientBrokers = () => {
                                     <tr>
                                         <th className="text-end">#</th>
                                         <th>Broker</th>
-                                        <th>Client broker link</th>
+                                        <th>Status</th>
                                         <th className="text-center">Actions</th>
                                     </tr>
                                 </thead>
@@ -59,7 +59,7 @@ const ManageClientBrokers = () => {
                                                             </div>
                                                         </div>
                                                     </td>
-                                                    <td>{item.broker_link ?? 'Client did not updated link yet.'}</td>
+                                                    <td>{item?.status?.toUpperCase()}</td>
 
                                                     <td className="text-center">
                                                         <ul className="list-inline me-auto mb-0">

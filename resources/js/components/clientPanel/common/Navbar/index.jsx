@@ -127,7 +127,7 @@ function Nabar(props) {
 
                                 </li>
                                 {
-                                    user?.introducing_broker &&
+                                    // user?.introducing_broker &&
                                     <li className="pc-item pc-hasmenu">
                                         <Link to="/client/client-commissions" className="pc-link">
                                             <span className="pc-micon">

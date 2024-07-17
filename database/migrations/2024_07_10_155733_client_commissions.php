@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::create('client_commissions', function (Blueprint $table) {
             $table->id();
-            $table->integer("client_id");
             $table->integer("client_broker_id");
             $table->float("commission");
             $table->string("payment_type");
