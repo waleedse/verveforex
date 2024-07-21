@@ -13,6 +13,7 @@ use App\Mail\ApproveBroker;
 use App\Mail\DeclineIntroducingBroker;
 use App\Models\Broker;
 use App\Models\ClientCommission;
+use App\Models\ClientPromotion;
 use App\Models\IntroducingBroker;
 use App\Models\Note;
 use Illuminate\Support\Facades\Auth;
@@ -454,6 +455,17 @@ class AdminWebsiteController extends Controller
     public function get_client_commissions ($clientBroker) {
         $commissions = ClientCommission::where("client_broker_id" , $clientBroker)->with("author")->get();
         return ['status' => 200 , "commissions" => $commissions];
+    }
+
+    public function get_admin_dashboard_stats(){
+        $requests = IntroducingBroker::with('client')->whereStatus('pending')->count();
+
+        $brokers = Broker::count();
+        $promotions = ClientPromotion::count();
+        $ibs = IntroducingBroker::count();
+
+        return ["requests" => $requests , "brokers" => $brokers , "promotions" => $promotions, 'ibs' => $ibs];
+
     }
 
 }

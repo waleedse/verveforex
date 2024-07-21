@@ -130,6 +130,20 @@ export const approveClientBrokerRequest = async (id) => {
         return response.data;
     } catch (error) { return null; }
 };
+export const getClientPromotion = async (id) => {
+    const axiosInstance = useAxios()
+    try {
+        const response = await axiosInstance.get(`get-client-promotion/${id}`);
+        return response.data;
+    } catch (error) { return null; }
+};
+export const getAdminDashboardStats = async (id) => {
+    const axiosInstance = useAxios()
+    try {
+        const response = await axiosInstance.get(`get-admin-dashboard-stats`);
+        return response.data;
+    } catch (error) { return null; }
+};
 
 export const deleteBrokerById = async (id) => {
     const axiosInstance = useAxios()

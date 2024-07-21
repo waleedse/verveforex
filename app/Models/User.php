@@ -57,6 +57,9 @@ class User extends Authenticatable
     public function introducing_broker(){
         return $this->belongsTo(IntroducingBroker::class , "id" , "client_id");
     }
+    public function client_promotion(){
+        return $this->belongsTo(ClientPromotion::class , "id" , "client_id")->with("promotion");
+    }
 
     // User's Ib
     public function introducingBroker(){

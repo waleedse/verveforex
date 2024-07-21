@@ -59,11 +59,11 @@ const Brokers = () => {
                                         <div className="news-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
                                             <div className="inner-box">
                                                 <div className="image-box ">
-                                                    <figure style={{ backgroundColor: 'transparent' }} className="image"><Link to={`/broker/${item?.link}`}><img src={`uploads/${item?.image}`} alt /></Link></figure>
+                                                    <figure style={{ backgroundColor: 'transparent' }} className="image"><a href={`${item?.link}`}><img src={`uploads/${item?.image}`} alt /></a></figure>
 
                                                 </div>
                                                 <div className="lower-content">
-                                                    <h4><Link to={`/news/${item?.slug}`}>{item.title}</Link></h4>
+                                                    <h4><a href={`${item?.link}`}>{item.title}</a></h4>
                                                     <p className="content-body" dangerouslySetInnerHTML={{ __html: item.short_description }}></p>
                                                     {/* <div className="author-box">
                                                         <h6>Trade Ideas</h6>

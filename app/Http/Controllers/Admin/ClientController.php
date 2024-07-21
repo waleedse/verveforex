@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Broker;
 use App\Models\Clientbroker;
 use App\Models\ClientCommission;
+use App\Models\ClientPromotion;
 use App\Models\IntroducingBroker;
 use App\Models\User;
 use GuzzleHttp\Client;
@@ -134,4 +135,36 @@ class ClientController extends Controller
         return ["status" => 200 , "message" => "Deleted"];
     }
 
+    public function add_client_promotion(Request $request){
+        $user = Auth()->user();
+        $clientPromotion = new ClientPromotion();
+        $clientPromotion->client_id = $user->id;
+        $clientPromotion->promotion_id = $request->id;
+        $clientPromotion->save();
+        return ["status" => 200 , "clientPromotion" => $clientPromotion];
+    }
+
+    public function get_client_promotion($id){
+        $clientPromotion = ClientPromotion::where("client_id" , $id)->with("promotion")->get();
+        return ["status" => 200 , "clientPromotion" => $clientPromotion];
+    }
+
+    public function deactivatePromotion($id){
+        $clientPromotion = ClientPromotion::find($id);
+        $clientPromotion->delete();
+        return ["status" => 200 , "message" => "Success"];
+    }
+
+    public function get_client_dashboard_stats(){
+        $user = Auth()->user();
+        $commissions = ClientCommission::
+        whereHas('clientBroker' , function ($query) use ($user) {
+            $query->where("client_id" , $user->id);
+        })
+        ->sum("commission");
+        $brokers = Clientbroker::where("client_id" , $user->id)->count();
+        $promotion = ClientPromotion::where("client_id" , $user->id)->with("promotion")->first();
+        return ["commissions" => $commissions , "brokers" => $brokers , "promotion" => $promotion];
+
+    }
 }

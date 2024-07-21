@@ -47,8 +47,8 @@ function Navbar(props) {
                 <ul className="navigation clearfix">
                     <li className={`dropdown`}><Link to="/about-us">About Us</Link>
                     </li>
-                    <li className="dropdown"><a href="/">Promotions</a>
-                        <ul>
+                    <li onClick={() => { handleActiveNavItem('promotions') }} className="dropdown"><a href="#">Promotions</a>
+                        <ul className={activeNavItem == 'promotions' && `active`}>
                             {
                                 promotions?.promotions && promotions.promotions?.map((promotion, index) => (
                                     <li><Link to={promotion?.link}>{promotion?.title}</Link></li>
@@ -67,8 +67,8 @@ function Navbar(props) {
                             {/* <li><a href="account-details-3.html">STP Pro Account</a></li> */}
                         </ul>
                         <div className="dropdown-btn"><span className="fas fa-angle-down" /></div></li>
-                    <li className="current dropdown"><Link to="/brokers">Brokers</Link>
-                        <ul className={activeNavItem == 'home' && `active`}>
+                    <li className=" dropdown"><Link to="/brokers">Brokers</Link>
+                        <ul className={activeNavItem == 'brokers' && `active`}>
                             {
                                 brokers.map(broker => (
                                     <li><Link to={broker.link}>{broker.name}</Link></li>
@@ -76,18 +76,18 @@ function Navbar(props) {
                                 ))
                             }
                         </ul>
-                        <div onClick={() => { handleActiveNavItem('home') }} className="dropdown-btn"><span className="fas fa-angle-down" /></div>
+                        <div onClick={() => { handleActiveNavItem('brokers') }} className="dropdown-btn"><span className="fas fa-angle-down" /></div>
                     </li>
-                    <li className="dropdown"><a href="/broker">Introducing Broker</a>
+                    {/* <li className="dropdown"><a href="">Introducing Broker</a>
                         <ul>
                             <li><a href="education.html">Become an IB</a></li>
                             <li><a href="education-details.html">IB Promotions</a></li>
                         </ul>
-                        <div className="dropdown-btn"><span className="fas fa-angle-down" /></div></li>
-                    <li className="dropdown"><a href="index.html">Market Analysis</a>
-                        <ul>
-                            <li><a href="about.html">News</a></li>
-                            <li><a href="history.html">Technical Analysis</a></li>
+                        <div className="dropdown-btn"><span className="fas fa-angle-down" /></div></li> */}
+                    <li onClick={() => { handleActiveNavItem('news') }} className="dropdown"><a href="#">Market Analysis</a>
+                        <ul className={activeNavItem == 'news' && `active`}>
+                            <li><a href="/news">News</a></li>
+                            {/* <li><a href="history.html">Technical Analysis</a></li> */}
                         </ul>
                         <div className="dropdown-btn"><span className="fas fa-angle-down" /></div></li>
                 </ul>
@@ -199,23 +199,7 @@ function Navbar(props) {
                     <div className="menu-outer">
                         {nav()}
                     </div>
-                    <div className="contact-info">
-                        <h4>Contact Info</h4>
-                        <ul>
-                            <li>Chicago 12, Melborne City, USA</li>
-                            <li><a href="tel:+8801682648101">+88 01682648101</a></li>
-                            <li><a href="mailto:info@example.com">info@example.com</a></li>
-                        </ul>
-                    </div>
-                    <div className="social-links">
-                        <ul className="clearfix">
-                            <li><a href="index.html"><span className="fab fa-twitter" /></a></li>
-                            <li><a href="index.html"><span className="fab fa-facebook-square" /></a></li>
-                            <li><a href="index.html"><span className="fab fa-pinterest-p" /></a></li>
-                            <li><a href="index.html"><span className="fab fa-instagram" /></a></li>
-                            <li><a href="index.html"><span className="fab fa-youtube" /></a></li>
-                        </ul>
-                    </div>
+
                 </nav>
             </div>{/* End Mobile Menu */}
 

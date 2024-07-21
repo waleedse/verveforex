@@ -93,6 +93,7 @@ class UserController extends BaseController
                     [
                         'user' => $user,
                         'introducing_broker' =>  $userRole == 'client' ? $user->introducing_broker : null,
+                        'client_promotion' =>  $userRole == 'client' ? $user->client_promotion : null,
                         'role' => $userRole
                     ]);
             }else{

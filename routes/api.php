@@ -50,6 +50,10 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/get-client-broker-requests', [ClientController::class , 'getClientBrokerRequests']);
     Route::get('/approve-broker-requests/{id}', [ClientController::class , 'approveBrokerRequests']);
     Route::get('/disaprove-broker-request/{id}', [ClientController::class , 'disApproveBrokerRequests']);
+    Route::post('/add-client-promotion', [ClientController::class , 'add_client_promotion']);
+    Route::get('/get-client-promotion/{id}', [ClientController::class , 'get_client_promotion']);
+    Route::get('/deactivate-promotion/{id}', [ClientController::class , 'deactivatePromotion']);
+    Route::get('/get-client-dashboard-stats', [ClientController::class , 'get_client_dashboard_stats']);
 
     Route::get('/get-user/{id}', [UserController::class, 'getUserById']);
     // Pomrotions
@@ -58,6 +62,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/get-promotion-by-id/{id}', [AdminWebsiteController::class , 'get_promotion_by_id']);
     Route::get('/get-all-promotions/{status?}', [AdminWebsiteController::class , 'get_all_promotions']);
     Route::delete('/delete-promotion/{id}', [AdminWebsiteController::class , 'delete_promotion']);
+    Route::get('/get-admin-dashboard-stats', [AdminWebsiteController::class , 'get_admin_dashboard_stats']);
 
     Route::post('/add-note', [AdminWebsiteController::class , 'addNote']);
     Route::get('/get-notes/{client}', [AdminWebsiteController::class , 'getNotes']);

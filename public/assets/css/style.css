@@ -913,10 +913,10 @@ img {
 
 .main-header .menu-area{
   position: relative;
-  /* display: flex; */
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
+  gap: 125px;
 }
 
 .main-header .logo-box{

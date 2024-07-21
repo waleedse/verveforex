@@ -36,7 +36,7 @@ function ChooseUs() {
                                     <div className="icon"><img src="assets/images/icons/icon-40.png" alt /></div>
                                 </div>
                                 <div className="title-text"><h3>24/7 Support<span>02</span></h3></div>
-                                <p>Dedicated customer support team working 24/7 to assist youvia various customer touch points.</p>
+                                <p>Dedicated customer support team working 24/7 to assist you via various customer touch points.</p>
                             </div>
                             <div className="single-item">
                                 <div className="shape" style={{ backgroundImage: 'url(assets/images/shape/shape-19.png)' }} />

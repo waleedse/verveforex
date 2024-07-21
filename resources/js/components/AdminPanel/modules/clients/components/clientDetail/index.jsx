@@ -2,6 +2,7 @@ import React from 'react';
 import ClientProfile from './components/Profile';
 import ClientNotes from './components/ClientNotes';
 import ManageClientBrokers from './components/Brokers';
+import Promotions from './components/Promotions';
 
 const ClientDetail = () => {
     return (
@@ -57,7 +58,7 @@ const ClientDetail = () => {
                             <ManageClientBrokers></ManageClientBrokers>
                         </div>
                         <div className="tab-pane" id="profile-3" role="tabpanel" aria-labelledby="profile-tab-3">
-                            <h1>Promotions will show here</h1>
+                            <Promotions></Promotions>
                         </div>
                         <ClientNotes ></ClientNotes>
 

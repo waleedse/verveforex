@@ -20,7 +20,7 @@ const Terms = lazy(() => import('../../frontend/Pages/static/terms'))
 
 function FrontRoutes(props) {
     return (
-        <div>
+        <div className='marginTopMob'>
             <Routes>
                 <Route path="/" element={<Suspense fallback={<Spinner />}> <Homepage /> </Suspense>}></Route>
                 <Route path="/about-us" element={<Suspense fallback={<Spinner />}> <Aboutus /> </Suspense>}></Route>

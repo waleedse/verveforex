@@ -114,3 +114,25 @@ export const createClientBrokerRequest = async (payload) => {
         return response.data;
     } catch (error) { return error; }
 };
+
+export const addClientPromotion = async (payload) => {
+    const axiosInstance = useAxios()
+    try {
+        const response = await axiosInstance.post(`add-client-promotion`, payload);
+        return response.data;
+    } catch (error) { return error; }
+};
+export const deactivatePromotion = async (id) => {
+    const axiosInstance = useAxios()
+    try {
+        const response = await axiosInstance.get(`deactivate-promotion/${id}`);
+        return response.data;
+    } catch (error) { return error; }
+};
+export const getClientDashboardStats = async () => {
+    const axiosInstance = useAxios()
+    try {
+        const response = await axiosInstance.get(`get-client-dashboard-stats`);
+        return response.data;
+    } catch (error) { return error; }
+};
