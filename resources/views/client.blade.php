@@ -12,8 +12,8 @@
         <!-- Fonts -->
 
  <!-- [Page specific CSS] start -->
- <link href="/admin/assets/css/plugins/animate.min.css" rel="stylesheet" type="text/css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" />
+ <!-- <link href="/admin/assets/css/plugins/animate.min.css" rel="stylesheet" type="text/css" /> -->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" /> -->
   <!-- [Page specific CSS] end -->
   <!-- [Font] Family -->
   <link rel="stylesheet" href="/admin/assets/fonts/inter/inter.css" id="main-font-link" />
@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="/admin/assets/fonts/material.css">
   <!-- [Template CSS Files] -->
   <link rel="stylesheet" href="/admin/assets/css/style.css" id="main-style-link">
-  <link rel="stylesheet" href="/admin/assets/css/style-preset.css">
+  <!-- <link rel="stylesheet" href="/admin/assets/css/style-preset.css"> -->
 
 
   <!-- <script src="/admin/assets/js/tech-stack.js"></script> -->
@@ -47,13 +47,13 @@
 
 
     <!-- [Page Specific JS] start -->
-  <script src="/admin/assets/js/plugins/apexcharts.min.js"></script>
-    <script src="/admin/assets/js/pages/dashboard-default.js"></script>
+  <!-- <script src="/admin/assets/js/plugins/apexcharts.min.js"></script> -->
+    <!-- <script src="/admin/assets/js/pages/dashboard-default.js"></script> -->
     <!-- [Page Specific JS] end -->
     <!-- Required Js -->
-    <script src="/admin/assets/js/plugins/popper.min.js"></script>
-    <script src="/admin/assets/js/plugins/simplebar.min.js"></script>
-    <script src="/admin/assets/js/plugins/bootstrap.min.js"></script>
+    <!-- <script src="/admin/assets/js/plugins/popper.min.js"></script> -->
+    <!-- <script src="/admin/assets/js/plugins/simplebar.min.js"></script> -->
+    <!-- <script src="/admin/assets/js/plugins/bootstrap.min.js"></script> -->
     <script src="/admin/assets/js/fonts/custom-font.js"></script>
     <script src="/admin/assets/js/pcoded.js"></script>
     <script src="/admin/assets/js/plugins/feather.min.js"></script>
