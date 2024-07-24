@@ -1,40 +1,42 @@
-import React, { lazy } from 'react';
+import React, { Suspense, lazy } from 'react';
 import ReactDOM from 'react-dom/client';
-import Frontend from './Frontend';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-// import AdminPanel from './AdminPanel';
+
 import './App.css'
-import AdminLogin from './AdminPanel/modules/Auth/AdminLogin';
 import { Toaster } from 'react-hot-toast';
 import { store } from './redux/store/index'
 import { Provider } from 'react-redux'
 import AccessControl from './utils/Interceptors/AccessControl';
-import Signup from './clientPanel/modules/Auth/Signup';
-import ClientLogin from './clientPanel/modules/Auth/ClientLogin';
 import Spinner from './global/spinner';
-import VerifyEmail from './clientPanel/modules/Auth/VerifyEmail';
-import ClientPanel from './clientPanel';
-import EmailVerification from './clientPanel/modules/Auth/EmailVerification';
-import ResetPassword from './clientPanel/modules/Auth/ResetPassword';
+
 const AdminPanel = lazy(() => import("./AdminPanel"))
+const EmailVerification = lazy(() => import("./clientPanel/modules/Auth/EmailVerification"))
+const ClientPanel = lazy(() => import("./clientPanel"))
+const VerifyEmail = lazy(() => import("./clientPanel/modules/Auth/VerifyEmail"))
+const ClientLogin = lazy(() => import("./clientPanel/modules/Auth/ClientLogin"))
+const Signup = lazy(() => import("./clientPanel/modules/Auth/Signup"))
+const AdminLogin = lazy(() => import("./AdminPanel/modules/Auth/AdminLogin"))
+const ResetPassword = lazy(() => import("./clientPanel/modules/Auth/ResetPassword"))
+const Frontend = lazy(() => import("./Frontend"))
+
 function App() {
     return (
         <div >
             <BrowserRouter>
                 <Routes>
                     <Route element={<AccessControl redirectLink={'/admin-login'}></AccessControl>}>
-                        <Route path="/adminpanel/*" Component={AdminPanel}></Route>
+                        <Route path="/adminpanel/*" element={<Suspense fallback={<Spinner />}> <AdminPanel /> </Suspense>}></Route>
                     </Route>
                     <Route element={<AccessControl redirectLink={'/login'}></AccessControl>}>
-                        <Route path="/client/*" Component={ClientPanel}></Route>
+                        <Route path="/client/*" element={<Suspense fallback={<Spinner />}> <ClientPanel /> </Suspense>} ></Route>
                     </Route>
-                    <Route path="/admin-login" Component={AdminLogin}></Route>
-                    <Route path="/login" Component={ClientLogin}></Route>
-                    <Route path="/verify-email" Component={EmailVerification}></Route>
-                    <Route path="/password/reset/:token" Component={ResetPassword}></Route>
-                    <Route path="/signup" Component={Signup}></Route>
-                    <Route path="/email/verify/:id/:hash" Component={VerifyEmail}></Route>
-                    <Route path="/*" Component={Frontend}></Route>
+                    <Route path="/admin-login" element={<Suspense fallback={<Spinner />}> <AdminLogin /> </Suspense>}></Route>
+                    <Route path="/login" element={<Suspense fallback={<Spinner />}> <ClientLogin /> </Suspense>}></Route>
+                    <Route path="/verify-email" element={<Suspense fallback={<Spinner />}> <EmailVerification /> </Suspense>}></Route>
+                    <Route path="/password/reset/:token" element={<Suspense fallback={<Spinner />}> <ResetPassword /> </Suspense>}></Route>
+                    <Route path="/signup" element={<Suspense fallback={<Spinner />}> <Signup /> </Suspense>}></Route>
+                    <Route path="/email/verify/:id/:hash" element={<Suspense fallback={<Spinner />}> <VerifyEmail /> </Suspense>}></Route>
+                    <Route path="/*" element={<Suspense fallback={<Spinner />}> <Frontend /> </Suspense>}></Route>
                 </Routes>
             </BrowserRouter>
             <Toaster></Toaster>
