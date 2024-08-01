@@ -1,36 +1,36 @@
 {
-  "_Auth-Wl8MvL7a.js": {
-    "file": "assets/Auth-Wl8MvL7a.js",
+  "_Auth-aOQzWEn-.js": {
+    "file": "assets/Auth-aOQzWEn-.js",
     "imports": [
-      "_index.esm-_p65P0Ia.js"
+      "_index.esm-O-gOiDKM.js"
     ]
   },
-  "_Auth-tB_8r9Jk.js": {
-    "file": "assets/Auth-tB_8r9Jk.js",
+  "_Auth-zXhrB7pV.js": {
+    "file": "assets/Auth-zXhrB7pV.js",
     "imports": [
-      "_index.esm-_p65P0Ia.js"
+      "_index.esm-O-gOiDKM.js"
     ]
   },
-  "_Helmet-jWX_Grkf.js": {
-    "file": "assets/Helmet-jWX_Grkf.js",
+  "_Helmet-0d9ZNjcQ.js": {
+    "file": "assets/Helmet-0d9ZNjcQ.js",
     "imports": [
-      "_index-r22JojmA.js",
+      "_index-nUTdgETF.js",
       "resources/js/app.js"
     ]
   },
-  "_commonService-UXNdtCuF.js": {
-    "file": "assets/commonService-UXNdtCuF.js",
+  "_commonService-UHry8wXh.js": {
+    "file": "assets/commonService-UHry8wXh.js",
     "imports": [
-      "_useAxios-QdRskmRr.js"
+      "_useAxios-Lz-iII4a.js"
     ]
   },
-  "_commonService-r8juKblC.js": {
-    "file": "assets/commonService-r8juKblC.js",
+  "_commonService-b-mpQbrN.js": {
+    "file": "assets/commonService-b-mpQbrN.js",
     "imports": [
-      "_useAxios-QdRskmRr.js"
+      "_useAxios-Lz-iII4a.js"
     ]
   },
-  "_index-ODsGlmfj.js": {
+  "_index-OlUGPo4w.js": {
     "dynamicImports": [
       "resources/js/components/adminPanel/modules/promotions/addPromotion/index.jsx",
       "resources/js/components/adminPanel/modules/sliders/manageSliders/index.jsx",
@@ -40,30 +40,30 @@
       "resources/js/components/adminPanel/modules/clients/index.jsx",
       "resources/js/components/adminPanel/common/Navbar/index.jsx"
     ],
-    "file": "assets/index-ODsGlmfj.js",
+    "file": "assets/index-OlUGPo4w.js",
     "imports": [
       "resources/js/app.js",
-      "_index.esm-_p65P0Ia.js",
-      "_quill.snow-VkXlepQZ.js",
-      "_useAxios-QdRskmRr.js",
-      "_commonService-r8juKblC.js"
+      "_index.esm-O-gOiDKM.js",
+      "_quill.snow-CRdhNnzz.js",
+      "_useAxios-Lz-iII4a.js",
+      "_commonService-UHry8wXh.js"
     ],
     "isDynamicEntry": true
   },
-  "_index-RXnuM6BA.js": {
-    "file": "assets/index-RXnuM6BA.js",
+  "_index-nUTdgETF.js": {
+    "file": "assets/index-nUTdgETF.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "_index-r22JojmA.js": {
-    "file": "assets/index-r22JojmA.js",
+  "_index-zC0bh6e0.js": {
+    "file": "assets/index-zC0bh6e0.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "_index.esm-_p65P0Ia.js": {
-    "file": "assets/index.esm-_p65P0Ia.js",
+  "_index.esm-O-gOiDKM.js": {
+    "file": "assets/index.esm-O-gOiDKM.js",
     "imports": [
       "resources/js/app.js"
     ]
@@ -72,13 +72,13 @@
     "file": "assets/quill-_ofskOub.css",
     "src": "_quill.snow-!~{00j}~.js"
   },
-  "_quill.snow-VkXlepQZ.js": {
+  "_quill.snow-CRdhNnzz.js": {
     "css": [
       "assets/quill-_ofskOub.css"
     ],
-    "file": "assets/quill.snow-VkXlepQZ.js",
+    "file": "assets/quill.snow-CRdhNnzz.js",
     "imports": [
-      "_index.esm-_p65P0Ia.js",
+      "_index.esm-O-gOiDKM.js",
       "resources/js/app.js"
     ]
   },
@@ -86,8 +86,8 @@
     "file": "assets/static-3k8Uq2ty.css",
     "src": "_static-!~{00C}~.js"
   },
-  "_useAxios-QdRskmRr.js": {
-    "file": "assets/useAxios-QdRskmRr.js",
+  "_useAxios-Lz-iII4a.js": {
+    "file": "assets/useAxios-Lz-iII4a.js",
     "imports": [
       "resources/js/app.js"
     ]
@@ -109,7 +109,7 @@
       "assets/app-DE5MZvKa.css"
     ],
     "dynamicImports": [
-      "_index-ODsGlmfj.js",
+      "_index-OlUGPo4w.js",
       "resources/js/components/clientPanel/modules/Auth/EmailVerification/index.jsx",
       "resources/js/components/clientPanel/index.jsx",
       "resources/js/components/clientPanel/modules/Auth/VerifyEmail/index.jsx",
@@ -119,114 +119,114 @@
       "resources/js/components/clientPanel/modules/Auth/ResetPassword/index.jsx",
       "resources/js/components/frontend/index.jsx"
     ],
-    "file": "assets/app-9OvGFuvP.js",
+    "file": "assets/app-zisHiWb0.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
   "resources/js/components/adminPanel/common/Navbar/index.jsx": {
-    "file": "assets/index-e9TviHgn.js",
+    "file": "assets/index-KtS7c_Mt.js",
     "imports": [
       "resources/js/app.js",
-      "_Helmet-jWX_Grkf.js",
-      "_index-r22JojmA.js"
+      "_Helmet-0d9ZNjcQ.js",
+      "_index-nUTdgETF.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/adminPanel/common/Navbar/index.jsx"
   },
   "resources/js/components/adminPanel/modules/Auth/AdminLogin/index.jsx": {
-    "file": "assets/index-8ozrAV8N.js",
+    "file": "assets/index-tnzNjlwt.js",
     "imports": [
       "resources/js/app.js",
-      "_index.esm-_p65P0Ia.js",
-      "_Auth-tB_8r9Jk.js"
+      "_index.esm-O-gOiDKM.js",
+      "_Auth-aOQzWEn-.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/adminPanel/modules/Auth/AdminLogin/index.jsx"
   },
   "resources/js/components/adminPanel/modules/clients/index.jsx": {
-    "file": "assets/index-QPU3cHS0.js",
+    "file": "assets/index-42ZOYhnf.js",
     "imports": [
       "resources/js/app.js",
-      "_index-ODsGlmfj.js",
-      "_useAxios-QdRskmRr.js",
-      "_index.esm-_p65P0Ia.js",
-      "_quill.snow-VkXlepQZ.js",
-      "_commonService-r8juKblC.js"
+      "_index-OlUGPo4w.js",
+      "_useAxios-Lz-iII4a.js",
+      "_index.esm-O-gOiDKM.js",
+      "_quill.snow-CRdhNnzz.js",
+      "_commonService-UHry8wXh.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/adminPanel/modules/clients/index.jsx"
   },
   "resources/js/components/adminPanel/modules/dasboard/index.jsx": {
-    "file": "assets/index-d8opEtGw.js",
+    "file": "assets/index-Mg_aqXXE.js",
     "imports": [
       "resources/js/app.js",
-      "_index-ODsGlmfj.js",
-      "_index.esm-_p65P0Ia.js",
-      "_quill.snow-VkXlepQZ.js",
-      "_useAxios-QdRskmRr.js",
-      "_commonService-r8juKblC.js"
+      "_index-OlUGPo4w.js",
+      "_index.esm-O-gOiDKM.js",
+      "_quill.snow-CRdhNnzz.js",
+      "_useAxios-Lz-iII4a.js",
+      "_commonService-UHry8wXh.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/adminPanel/modules/dasboard/index.jsx"
   },
   "resources/js/components/adminPanel/modules/promotions/addPromotion/index.jsx": {
-    "file": "assets/index-ktXKYTzU.js",
+    "file": "assets/index-CruPc7zv.js",
     "imports": [
       "resources/js/app.js",
-      "_index.esm-_p65P0Ia.js",
-      "_quill.snow-VkXlepQZ.js",
-      "_index-ODsGlmfj.js",
-      "_useAxios-QdRskmRr.js",
-      "_commonService-r8juKblC.js"
+      "_index.esm-O-gOiDKM.js",
+      "_quill.snow-CRdhNnzz.js",
+      "_index-OlUGPo4w.js",
+      "_useAxios-Lz-iII4a.js",
+      "_commonService-UHry8wXh.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/adminPanel/modules/promotions/addPromotion/index.jsx"
   },
   "resources/js/components/adminPanel/modules/promotions/managePromotion/index.jsx": {
-    "file": "assets/index-LfNRSCWC.js",
+    "file": "assets/index-FyUKfIQU.js",
     "imports": [
       "resources/js/app.js",
-      "_index-ODsGlmfj.js",
-      "_useAxios-QdRskmRr.js",
-      "_index.esm-_p65P0Ia.js",
-      "_quill.snow-VkXlepQZ.js",
-      "_commonService-r8juKblC.js"
+      "_index-OlUGPo4w.js",
+      "_useAxios-Lz-iII4a.js",
+      "_index.esm-O-gOiDKM.js",
+      "_quill.snow-CRdhNnzz.js",
+      "_commonService-UHry8wXh.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/adminPanel/modules/promotions/managePromotion/index.jsx"
   },
   "resources/js/components/adminPanel/modules/sliders/addSlider/index.jsx": {
-    "file": "assets/index-4fCZG4Zx.js",
+    "file": "assets/index-PxvOH1z0.js",
     "imports": [
       "resources/js/app.js",
-      "_index.esm-_p65P0Ia.js",
-      "_quill.snow-VkXlepQZ.js",
-      "_index-ODsGlmfj.js",
-      "_useAxios-QdRskmRr.js",
-      "_commonService-r8juKblC.js"
+      "_index.esm-O-gOiDKM.js",
+      "_quill.snow-CRdhNnzz.js",
+      "_index-OlUGPo4w.js",
+      "_useAxios-Lz-iII4a.js",
+      "_commonService-UHry8wXh.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/adminPanel/modules/sliders/addSlider/index.jsx"
   },
   "resources/js/components/adminPanel/modules/sliders/manageSliders/index.jsx": {
-    "file": "assets/index-f4umoWJJ.js",
+    "file": "assets/index-iFPChHzF.js",
     "imports": [
       "resources/js/app.js",
-      "_index-ODsGlmfj.js",
-      "_useAxios-QdRskmRr.js",
-      "_index.esm-_p65P0Ia.js",
-      "_quill.snow-VkXlepQZ.js",
-      "_commonService-r8juKblC.js"
+      "_index-OlUGPo4w.js",
+      "_useAxios-Lz-iII4a.js",
+      "_index.esm-O-gOiDKM.js",
+      "_quill.snow-CRdhNnzz.js",
+      "_commonService-UHry8wXh.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/adminPanel/modules/sliders/manageSliders/index.jsx"
   },
   "resources/js/components/clientPanel/common/Navbar/index.jsx": {
-    "file": "assets/index-my7YhTZl.js",
+    "file": "assets/index-2GoPXPqk.js",
     "imports": [
       "resources/js/app.js",
-      "_Helmet-jWX_Grkf.js",
-      "_index-r22JojmA.js"
+      "_Helmet-0d9ZNjcQ.js",
+      "_index-nUTdgETF.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/clientPanel/common/Navbar/index.jsx"
@@ -235,68 +235,68 @@
     "dynamicImports": [
       "resources/js/components/clientPanel/common/Navbar/index.jsx"
     ],
-    "file": "assets/index-u_2PnkbT.js",
+    "file": "assets/index-N_unsSA9.js",
     "imports": [
       "resources/js/app.js",
-      "_quill.snow-VkXlepQZ.js",
-      "_useAxios-QdRskmRr.js",
-      "_commonService-r8juKblC.js",
-      "_commonService-UXNdtCuF.js",
-      "_index.esm-_p65P0Ia.js",
-      "_Auth-Wl8MvL7a.js"
+      "_quill.snow-CRdhNnzz.js",
+      "_useAxios-Lz-iII4a.js",
+      "_commonService-UHry8wXh.js",
+      "_commonService-b-mpQbrN.js",
+      "_index.esm-O-gOiDKM.js",
+      "_Auth-zXhrB7pV.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/clientPanel/index.jsx"
   },
   "resources/js/components/clientPanel/modules/Auth/ClientLogin/index.jsx": {
-    "file": "assets/index-atKOHjh-.js",
+    "file": "assets/index-qpK6aJft.js",
     "imports": [
       "resources/js/app.js",
-      "_index.esm-_p65P0Ia.js",
-      "_Auth-tB_8r9Jk.js",
-      "_commonService-r8juKblC.js",
-      "_useAxios-QdRskmRr.js"
+      "_index.esm-O-gOiDKM.js",
+      "_Auth-aOQzWEn-.js",
+      "_commonService-UHry8wXh.js",
+      "_useAxios-Lz-iII4a.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/clientPanel/modules/Auth/ClientLogin/index.jsx"
   },
   "resources/js/components/clientPanel/modules/Auth/EmailVerification/index.jsx": {
-    "file": "assets/index-EfGHFa5R.js",
+    "file": "assets/index-sigs_aOT.js",
     "imports": [
       "resources/js/app.js",
-      "_commonService-r8juKblC.js",
-      "_useAxios-QdRskmRr.js"
+      "_commonService-UHry8wXh.js",
+      "_useAxios-Lz-iII4a.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/clientPanel/modules/Auth/EmailVerification/index.jsx"
   },
   "resources/js/components/clientPanel/modules/Auth/ResetPassword/index.jsx": {
-    "file": "assets/index-416Li0UA.js",
+    "file": "assets/index-ngmNnseK.js",
     "imports": [
       "resources/js/app.js",
-      "_index.esm-_p65P0Ia.js",
-      "_Auth-tB_8r9Jk.js",
-      "_Auth-Wl8MvL7a.js"
+      "_index.esm-O-gOiDKM.js",
+      "_Auth-aOQzWEn-.js",
+      "_Auth-zXhrB7pV.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/clientPanel/modules/Auth/ResetPassword/index.jsx"
   },
   "resources/js/components/clientPanel/modules/Auth/Signup/index.jsx": {
-    "file": "assets/index-EflqMrKP.js",
+    "file": "assets/index-VwZreMRj.js",
     "imports": [
       "resources/js/app.js",
-      "_index.esm-_p65P0Ia.js",
-      "_Auth-tB_8r9Jk.js",
-      "_commonService-UXNdtCuF.js",
-      "_Auth-Wl8MvL7a.js",
-      "_commonService-r8juKblC.js",
-      "_useAxios-QdRskmRr.js"
+      "_index.esm-O-gOiDKM.js",
+      "_Auth-aOQzWEn-.js",
+      "_commonService-b-mpQbrN.js",
+      "_Auth-zXhrB7pV.js",
+      "_commonService-UHry8wXh.js",
+      "_useAxios-Lz-iII4a.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/clientPanel/modules/Auth/Signup/index.jsx"
   },
   "resources/js/components/clientPanel/modules/Auth/VerifyEmail/index.jsx": {
-    "file": "assets/index-vsh0YK0B.js",
+    "file": "assets/index-_-jHRRE7.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -304,16 +304,16 @@
     "src": "resources/js/components/clientPanel/modules/Auth/VerifyEmail/index.jsx"
   },
   "resources/js/components/frontend/Pages/Aboutus/index.jsx": {
-    "file": "assets/index-cbShGsZv.js",
+    "file": "assets/index-TfUF27H-.js",
     "imports": [
       "resources/js/app.js",
-      "_index-RXnuM6BA.js"
+      "_index-zC0bh6e0.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/frontend/Pages/Aboutus/index.jsx"
   },
   "resources/js/components/frontend/Pages/Broker/index.jsx": {
-    "file": "assets/index-ufs_I3sL.js",
+    "file": "assets/index-ciOaJxzA.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -329,44 +329,44 @@
     "css": [
       "assets/index-kUDj7756.css"
     ],
-    "file": "assets/index-jYbL_mEC.js",
+    "file": "assets/index-n9WyROe0.js",
     "imports": [
       "resources/js/app.js",
-      "_index-r22JojmA.js",
-      "_commonService-UXNdtCuF.js",
-      "_useAxios-QdRskmRr.js",
-      "_index-RXnuM6BA.js"
+      "_index-nUTdgETF.js",
+      "_commonService-b-mpQbrN.js",
+      "_useAxios-Lz-iII4a.js",
+      "_index-zC0bh6e0.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/frontend/Pages/Homepage/index.jsx"
   },
   "resources/js/components/frontend/Pages/News/index.jsx": {
-    "file": "assets/index-rDjIDZ7R.js",
+    "file": "assets/index-05ha2PAW.js",
     "imports": [
       "resources/js/app.js",
-      "_commonService-UXNdtCuF.js",
-      "_useAxios-QdRskmRr.js"
+      "_commonService-b-mpQbrN.js",
+      "_useAxios-Lz-iII4a.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/frontend/Pages/News/index.jsx"
   },
   "resources/js/components/frontend/Pages/Promotions/DubaiPromotion/index.jsx": {
-    "file": "assets/index-ZTEqInOz.js",
+    "file": "assets/index-6_CHP81i.js",
     "imports": [
       "resources/js/app.js",
       "resources/js/components/frontend/index.jsx",
-      "_commonService-UXNdtCuF.js",
-      "_useAxios-QdRskmRr.js"
+      "_commonService-b-mpQbrN.js",
+      "_useAxios-Lz-iII4a.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/frontend/Pages/Promotions/DubaiPromotion/index.jsx"
   },
   "resources/js/components/frontend/Pages/SingleNews/index.jsx": {
-    "file": "assets/index-pJSRuNPs.js",
+    "file": "assets/index-hDSlPO4-.js",
     "imports": [
       "resources/js/app.js",
-      "_commonService-UXNdtCuF.js",
-      "_useAxios-QdRskmRr.js"
+      "_commonService-b-mpQbrN.js",
+      "_useAxios-Lz-iII4a.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/frontend/Pages/SingleNews/index.jsx"
@@ -375,7 +375,7 @@
     "css": [
       "assets/static-3k8Uq2ty.css"
     ],
-    "file": "assets/index-wp4t6OlG.js",
+    "file": "assets/index-0h_u4xNQ.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -386,7 +386,7 @@
     "css": [
       "assets/static-3k8Uq2ty.css"
     ],
-    "file": "assets/index-COiY4TvP.js",
+    "file": "assets/index-X4PRJQsj.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -397,7 +397,7 @@
     "css": [
       "assets/static-3k8Uq2ty.css"
     ],
-    "file": "assets/index-H_onXHZI.js",
+    "file": "assets/index-MFYNrF8z.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -419,11 +419,11 @@
       "resources/js/components/frontend/Pages/static/Legal/index.jsx",
       "resources/js/components/frontend/Pages/static/terms/index.jsx"
     ],
-    "file": "assets/index-Si75p1C8.js",
+    "file": "assets/index-ccDlZFva.js",
     "imports": [
       "resources/js/app.js",
-      "_commonService-UXNdtCuF.js",
-      "_useAxios-QdRskmRr.js"
+      "_commonService-b-mpQbrN.js",
+      "_useAxios-Lz-iII4a.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/frontend/index.jsx"

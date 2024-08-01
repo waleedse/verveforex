@@ -1,1 +1,0 @@
-import{m as t}from"./app-9OvGFuvP.js";const o="https://verve.campusportal.com/api/",s="https://verve.campusportal.com/uploads/",n=()=>t.create({baseURL:o,headers:{"Content-Type":"application/json",Authorization:`Bearer ${localStorage.getItem("token")}`},timeout:1e4});export{s as I,n as u};
