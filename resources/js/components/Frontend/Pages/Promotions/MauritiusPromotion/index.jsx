@@ -45,7 +45,7 @@ function MauritiusPromotion() {
                 <div className='trip-description col-md-6 '>
                     <h4 className='px-3' style={{ fontWeight: '600' }}>Trip Details</h4>
                     <p className='px-3'>By taking part in this exclusive promotion, you have the opportunity to
-                        win a truly luxurious trip to Turkey, featuring:</p>
+                        win a truly luxurious trip to Mauritius, featuring:</p>
 
                     <ul className='px-5'>
 

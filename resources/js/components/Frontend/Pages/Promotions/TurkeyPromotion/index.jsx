@@ -42,7 +42,7 @@ function TurkeyPromotion() {
                     <div className='trip-description col-md-6 px-5  '>
                         <h4>Trip Details</h4>
                         <p>
-                            By taking part in this exclusive promotion, you have the opportunity to win a truly luxurious trip to Thailand, featuring:
+                            By taking part in this exclusive promotion, you have the opportunity to win a truly luxurious trip to Turkey, featuring:
                         </p>
                         <ul>
                             <li>
@@ -112,7 +112,7 @@ function TurkeyPromotion() {
                     </div>
                     <div className='col-md-4 promotion-steps' style={{ display: 'flex', gap: '10px' }}>
                         <h4>3</h4>
-                        <h5>Then select Thailand Luxury Trip Promotion in the offer and click on Sign Up for this offer</h5>
+                        <h5>Then select Turkey Luxury Trip Promotion in the offer and click on Sign Up for this offer</h5>
                     </div>
                 </div>
             </div>
@@ -124,7 +124,7 @@ function TurkeyPromotion() {
                     <h4>Offer Details</h4>
                     <p>
                         By taking part in this exclusive promotion, you have the opportunity to
-                        win a truly luxurioustrip to Dubai, featuring:
+                        win a truly luxurioustrip to Turkey, featuring:
                     </p>
                     <ol>
                         <li className='parent-list'>
@@ -144,11 +144,11 @@ function TurkeyPromotion() {
                             <ul>
                                 <li>
                                     600 Qualified (See Point X below for Qualified Lots) Standard lots to win a trip
-                                    to Dubai for Single Person.
+                                    to Turkey for Single Person.
                                 </li>
                                 <li>
                                     1,000 qualified (See Point X below for Qualified Lots) Standard lots to win a trip
-                                    to Dubai for a Couple.
+                                    to Turkey for a Couple.
                                 </li>
                             </ul>
                         </li>
