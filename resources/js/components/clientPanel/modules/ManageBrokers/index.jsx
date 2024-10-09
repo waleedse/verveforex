@@ -68,7 +68,7 @@ const ManageBrokers = () => {
                                                     <button style={{ width: '100%' }} onClick={() => { window.open(item?.link) }} className="btn btn-light-warning col-md-12" type="button">Details</button>
                                                 </div>
                                                 <div className='mt-2  ' style={{ width: '100%' }}>
-                                                    <button style={{ width: '100%' }} onClick={() => { window.open(item?.link) }} className="btn btn-light-success col-md-12" type="button">Sign Up</button>
+                                                    <button style={{ width: '100%' }} onClick={() => { window.open(item?.signup_link) }} className="btn btn-light-success col-md-12" type="button">Sign Up</button>
                                                 </div>
                                                 {/* </div> */}
                                             </div>

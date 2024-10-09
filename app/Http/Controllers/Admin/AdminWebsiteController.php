@@ -193,7 +193,7 @@ class AdminWebsiteController extends Controller
         $broker = new Broker();
         $broker->title = $request->title;
         $broker->link = $request->link;
-        $broker->signup_link = $request->link;
+        $broker->signup_link = $request->signup_link;
         $broker->status = $request->status;
         $broker->short_description = $request->shortDescription;
 
@@ -215,6 +215,7 @@ class AdminWebsiteController extends Controller
             'title' => 'required',
             'link' => 'required',
             'status' => 'required',
+
         ]);
         if($validator->fails()){
             $response = ['status' => 219 , 'msg' => $validator->errors()->first(),'errors' => $validator->errors()];
@@ -223,6 +224,7 @@ class AdminWebsiteController extends Controller
         $broker = Broker::where('id',$request->id)->first();
         $broker->title = $request->title;
         $broker->link = $request->link;
+        $broker->signup_link = $request->signup_link;
         $broker->status = $request->status;
         $broker->short_description = $request->shortDescription;
 
