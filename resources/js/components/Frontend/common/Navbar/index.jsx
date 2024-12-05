@@ -47,6 +47,8 @@ function Navbar(props) {
                 <ul className="navigation clearfix">
                     <li className={`dropdown`}><Link to="/about-us">About Us</Link>
                     </li>
+                    <li className={`dropdown`}><Link to="/why-us">Why Us</Link>
+                    </li>
                     <li onClick={() => { handleActiveNavItem('promotions') }} className="dropdown"><a href="#">Promotions</a>
                         <ul className={activeNavItem == 'promotions' && `active`}>
                             {

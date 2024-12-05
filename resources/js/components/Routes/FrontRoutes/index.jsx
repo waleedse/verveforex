@@ -17,7 +17,7 @@ const PrivacyPolicy = lazy(() => import('../../frontend/Pages/static/PrivacyPoli
 const DubaiPromotion = lazy(() => import('../../frontend/Pages/Promotions/DubaiPromotion'))
 const Legal = lazy(() => import('../../frontend/Pages/static/Legal'))
 const Terms = lazy(() => import('../../frontend/Pages/static/terms'))
-
+const WhyUs = lazy(() => import('../../frontend/Pages/Aboutus/WhyUs'))
 function FrontRoutes(props) {
     return (
         <div className='marginTopMob'>
@@ -36,6 +36,7 @@ function FrontRoutes(props) {
                 <Route path="/contact-us" element={<Suspense fallback={<Spinner />}> <Contact /> </Suspense>}></Route>
                 <Route path="/brokers" element={<Suspense fallback={<Spinner />}> <Brokers /> </Suspense>}></Route>
                 <Route path="/mauritius-promotion" element={<Suspense fallback={<Spinner />}> <MauritiusPromotion /> </Suspense>}></Route>
+                <Route path="/why-us" element={<Suspense fallback={<Spinner />}> <WhyUs /> </Suspense>}></Route>
             </Routes>
         </div>
     );

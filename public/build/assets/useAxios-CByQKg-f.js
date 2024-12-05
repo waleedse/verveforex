@@ -1,1 +1,0 @@
-import{m as e}from"./app-u1Z2W3ct.js";const o="https://verveforex.com/api/",a="https://verveforex.com/uploads/",n=()=>e.create({baseURL:o,headers:{"Content-Type":"application/json",Authorization:`Bearer ${localStorage.getItem("token")}`},timeout:1e4});export{a as I,n as u};

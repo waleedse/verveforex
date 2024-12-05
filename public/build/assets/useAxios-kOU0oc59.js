@@ -1,0 +1,1 @@
+import{m as t}from"./app-0A2GD7lc.js";const o="http://localhost:8000/api/",e="http://localhost:8000/uploads/",n=()=>t.create({baseURL:o,headers:{"Content-Type":"application/json",Authorization:`Bearer ${localStorage.getItem("token")}`},timeout:1e4});export{e as I,n as u};
