@@ -1,0 +1,1 @@
+import{m as o}from"./app-HpnKGqOy.js";const t="https://qondzo.com/api/",e="https://qondzo.com/uploads/",n=()=>o.create({baseURL:t,headers:{"Content-Type":"application/json",Authorization:`Bearer ${localStorage.getItem("token")}`},timeout:1e4});export{e as I,n as u};
