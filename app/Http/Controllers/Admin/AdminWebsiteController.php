@@ -80,7 +80,7 @@ class AdminWebsiteController extends Controller
                     array_push($promotions,$ac);
                 }
             }
-            $response = ['status' => 200 , 'promotion' => $promotions , 'country' => $position['geoplugin_countryName'] , 'continent' =>
+            $response = ['status' => 200 , 'promotion' => $promotions , 'country' => $position['country'] , 'continent' =>
             // 'Africa'
             $position['geoplugin_continentName']
         ];
@@ -88,7 +88,7 @@ class AdminWebsiteController extends Controller
 
         }else{
             $promotions = Promotion::where('type',1)->where('status',1)->get();
-            $response = ['status' => 200 , 'promotion' => $promotions , 'country' => $position['geoplugin_countryName']];
+            $response = ['status' => 200 , 'promotion' => $promotions , 'country' => $position['country']];
             return $response;
         }
 
