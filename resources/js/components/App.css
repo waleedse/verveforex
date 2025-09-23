@@ -71,6 +71,11 @@ p {
     background-color: rgb(220, 220, 220);
 }
 
+.logo img {
+    height: auto !important;
+    max-width: 150px !important;
+}
+
 @media only screen and (max-width: 600px) {
     .marginTopMob {
       margin-top: 185px !important;
