@@ -11,7 +11,7 @@ const PromotionRules = () => {
                 </li>
                 <li>
                     Notification Process
-                    Participants who fulfil the minimum deposit and trading volume requirements will receive notification from Verve Forex via email within 15 business days following the conclusion of the Promotion Period. In case if you do not receive a reply, please send an email to <a href="mailto:support@verveforex.com">support@verveforex.com</a>.
+                    Participants who fulfil the minimum deposit and trading volume requirements will receive notification from Qondzo via email within 15 business days following the conclusion of the Promotion Period. In case if you do not receive a reply, please send an email to <a href="mailto:support@qondzo.com">support@qondzo.com</a>.
                 </li>
                 <li>
                     Claiming the Dubai Luxury Trip
@@ -19,7 +19,7 @@ const PromotionRules = () => {
                 </li>
                 <li>
                     Eligibility
-                    This promotion is only valid for clients who are directly under Verve Forex. This is not valid for clients who are under any other Introducing Broker with any of the Brokers.
+                    This promotion is only valid for clients who are directly under Qondzo. This is not valid for clients who are under any other Introducing Broker with any of the Brokers.
                 </li>
                 <li>
                     Prohibited Activities
@@ -43,11 +43,11 @@ const PromotionRules = () => {
                 </li>
                 <li>
                     Rewards
-                    The Dubai Luxury Trip cannot be transferred and is not eligible for exchange for cash or alternative promotional offers. In very rare circumstance, Verve Forex may disburse the amount in the client’s trading account however this amount will be limited to $1,000 only.
+                    The Dubai Luxury Trip cannot be transferred and is not eligible for exchange for cash or alternative promotional offers. In very rare circumstance, Qondzo may disburse the amount in the client’s trading account however this amount will be limited to $1,000 only.
                 </li>
                 <li>
                     Visa Application
-                    Verve Forex bears no responsibility for the client's visa application process.
+                    Qondzo bears no responsibility for the client's visa application process.
                 </li>
                 <li>
                     Taxes and Fees
@@ -55,7 +55,7 @@ const PromotionRules = () => {
                 </li>
                 <li>
                     Force Majeure
-                    Verve Forex will not be held responsible for any delays, suspensions, or cancellations of the Promotion arising from circumstances beyond its control.
+                    Qondzo will not be held responsible for any delays, suspensions, or cancellations of the Promotion arising from circumstances beyond its control.
                 </li>
                 <li>
                     Withdrawal Terms
@@ -63,22 +63,22 @@ const PromotionRules = () => {
                 </li>
                 <li>
                     Disqualification
-                    Verve Forex retains the right to disqualify any user suspected of misusing or abusing the rules of the Promotion.
+                    Qondzo retains the right to disqualify any user suspected of misusing or abusing the rules of the Promotion.
                 </li>
                 <li>
                     Cancellation
-                    If the Promotion is cancelled by Verve Forex, it cannot be reinstated.
+                    If the Promotion is cancelled by Qondzo, it cannot be reinstated.
                 </li>
                 <li>
                     Modification and Cancellation
-                    Verve Forex reserves the right to modify, update, or cancel this Promotion at any time without prior notice.
-                    Any changes or cancellations will be solely at the discretion of Verve Forex, and participants will have no entitlement to any compensation or claim in such situations.
+                    Qondzo reserves the right to modify, update, or cancel this Promotion at any time without prior notice.
+                    Any changes or cancellations will be solely at the discretion of Qondzo, and participants will have no entitlement to any compensation or claim in such situations.
                 </li>
                 <li>
                     Use of Information
                     <ul>
                         <li>By taking part in the Promotion, you acknowledge and consent to the utilization of the information provided during the registration process by Cabana Capitals for marketing purposes.</li>
-                        <li>By engaging in the Dubai Luxury Trip Promotion, participants acknowledge that they have read, comprehended, and consented to these Dubai Luxury Trip Terms and Conditions. It is your obligation to review these Terms and any revisions or modifications made by Verve Forex. Failure to comply with these Terms may lead to disqualification from the Promotion and the loss of any rewards or benefits linked with it.</li>
+                        <li>By engaging in the Dubai Luxury Trip Promotion, participants acknowledge that they have read, comprehended, and consented to these Dubai Luxury Trip Terms and Conditions. It is your obligation to review these Terms and any revisions or modifications made by Qondzo. Failure to comply with these Terms may lead to disqualification from the Promotion and the loss of any rewards or benefits linked with it.</li>
                     </ul>
                 </li>
             </ul >

@@ -11,13 +11,13 @@ function Footer(props) {
                             {/* Brand  */}
                             <div className="col-lg-4 col-md-6 col-sm-12 footer-column">
                                 <div className="footer-widget logo-widget">
-                                    <figure className="footer-logo"><a href="/"><img src="/assets/images/logolight.png" alt /></a></figure>
+                                    <figure className="footer-logo"><a href="/"><img src="/assets/images/logowhite.png" alt /></a></figure>
                                     <div className="widget-content">
                                         <div className="year-box">
                                             {/* <h4>Since</h4>
                                             <h2>2012</h2> */}
                                             <div className="link-box">
-                                                <a href="/"><span>Have Queries? Support@verveforex.com</span></a>
+                                                <a href="/"><span>Have Queries? Support@qondzo.com</span></a>
                                             </div>
                                         </div>
                                         <div className="text-box">
@@ -87,7 +87,7 @@ function Footer(props) {
                                 <h5><a href="/"><i className="flaticon-download" />Free <br />Trading Guides</a></h5>
                             </div> */}
                             <div className="copyright-box ">
-                                <p className="text-center"> Copyright Verve Forex 2024. All rights reserved.</p>
+                                <p className="text-center"> Copyright Qondzo 2024. All rights reserved.</p>
                                 {/* <ul className="footer-nav clearfix">
                                     <li><a href="/">Legal Notice</a></li>
                                     <li><a href="/">Privacy Policy</a></li>

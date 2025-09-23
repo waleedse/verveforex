@@ -18,10 +18,10 @@ function CashBackPromotion() {
                 </div>
 
                 <p className='promotion-details'>
-                    Introducing the Verve Forex Cashback Promotion - an exclusive opportunity for forex traders to maximize their earnings while enjoying the benefits of trading with us.
+                    Introducing the Qondzo Cashback Promotion - an exclusive opportunity for forex traders to maximize their earnings while enjoying the benefits of trading with us.
                 </p>
                 <p className='promotion-details'>
-                    With our Cashback Promotion, traders can earn cash rewards simply by engaging in their usual forex trading activities. It's our way of showing appreciation for your loyalty and commitment to Verve Forex.
+                    With our Cashback Promotion, traders can earn cash rewards simply by engaging in their usual forex trading activities. It's our way of showing appreciation for your loyalty and commitment to Qondzo.
                 </p>
 
             </div>
@@ -66,7 +66,7 @@ function CashBackPromotion() {
             </div>
             <div className="promotion-heading px-3">
                 <h3>How to participate in this offer?</h3>
-                <p className='text-center'>This is Exclusive offer for Verve Forex client’s and is valid for clients trading with the following Brokers:</p>
+                <p className='text-center'>This is Exclusive offer for Qondzo client’s and is valid for clients trading with the following Brokers:</p>
                 <div className="promotion-brokers">
                     <figure>
                         <img src="/assets/images/clients/client-7.png" />
@@ -91,11 +91,11 @@ function CashBackPromotion() {
                 <div className='row'>
                     <div className='col-md-4 promotion-steps' style={{ display: 'flex', gap: '10px' }}>
                         <h4>1</h4>
-                        <h5>Register with Verve Forex</h5>
+                        <h5>Register with Qondzo</h5>
                     </div>
                     <div className='col-md-4 promotion-steps' style={{ display: 'flex', gap: '10px' }}>
                         <h4>2</h4>
-                        <h5>Login to your account on www.verveforex.com</h5>
+                        <h5>Login to your account on www.qondzo.com</h5>
                     </div>
                     <div className='col-md-4 promotion-steps' style={{ display: 'flex', gap: '10px' }}>
                         <h4>3</h4>
@@ -104,7 +104,7 @@ function CashBackPromotion() {
                 </div>
                 <div className='mt-4'>
                     <p>If you are a new customer and haven’t already registered with the Brokers listed above, then register with the broker of your choice from the above list using the sign-up link provided on the promotion page. Please note that if you do not sign up with the broker sign up link on the promotion page, you will not be able to avail this offer.</p>
-                    <br /><p>If you are already registered with the Broker listed above, then you need to send an email to the Broker to change your Introducing Broker to “Verve Forex”. Please note that if you do not change your Introducing Broker, you will not be able to avail this offer.</p>
+                    <br /><p>If you are already registered with the Broker listed above, then you need to send an email to the Broker to change your Introducing Broker to “Qondzo”. Please note that if you do not change your Introducing Broker, you will not be able to avail this offer.</p>
                     <br /><p>Please note that this offer can also be availed on multiple Broker’s at the same time. Please see below Offer Conditions section for further clarification on this point.</p>
                 </div>
             </div>
@@ -166,7 +166,7 @@ function CashBackPromotion() {
                                 <li><strong>e.</strong> Exclusive Markets - The trade must be open for a minimum of 3 minutes</li>
                             </ul>
                         </li>
-                        <li className='li-decicaml'> As part of this great offer, Verve Forex also gives you an opportunity to earn this Cash Back offer on multiple different Brokers simultaneously. E.g. if you trade with Cabana Capitals and OctaFx you can earn cash back on your trades in both the Brokers. Please refer to Clause 3 and 4 above to ensure that you have listed Verve Forex as your Introducing Broker before your trading commence.</li>
+                        <li className='li-decicaml'> As part of this great offer, Qondzo also gives you an opportunity to earn this Cash Back offer on multiple different Brokers simultaneously. E.g. if you trade with Cabana Capitals and OctaFx you can earn cash back on your trades in both the Brokers. Please refer to Clause 3 and 4 above to ensure that you have listed Qondzo as your Introducing Broker before your trading commence.</li>
                     </ul>
 
 

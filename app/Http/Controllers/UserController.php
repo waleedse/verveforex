@@ -67,7 +67,7 @@ class UserController extends BaseController
                 $role = $user->getRoleNames()->first(); // Get the first role (assuming user has only one role)
                 return response()->json(['status' => 200 , 'user' => $user , 'token' => $token, 'role' => $role]);
             }else{
-                return response()->json(['status' => 401 , "message" => "Invalid credentials or you have not registered with verveforex"]);
+                return response()->json(['status' => 401 , "message" => "Invalid credentials or you have not registered with qondzo"]);
             }
         }
 

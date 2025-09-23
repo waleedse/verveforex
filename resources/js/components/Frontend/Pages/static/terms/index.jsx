@@ -21,7 +21,7 @@ function Terms() {
 
                 <li><strong>1.</strong> <strong>Acceptance of Terms:</strong>
                     <ul>
-                        <li><strong>1.1.</strong> By accessing or using the Verve Forex website (the "Website"), you agree to be bound by these Terms and Conditions and all applicable laws and regulations. If you do not agree with any part of these terms, you may not access the Website.</li>
+                        <li><strong>1.1.</strong> By accessing or using the Qondzo website (the "Website"), you agree to be bound by these Terms and Conditions and all applicable laws and regulations. If you do not agree with any part of these terms, you may not access the Website.</li>
                     </ul>
                 </li>
                 <li><strong>2.</strong> <strong>Use of Website:</strong>
@@ -32,8 +32,8 @@ function Terms() {
                 </li>
                 <li><strong>3.</strong> <strong>Intellectual Property:</strong>
                     <ul>
-                        <li><strong>3.1.</strong> All content on the Website, including text, graphics, logos, images, and software, is the property of Verve Forex or its licensors and is protected by intellectual property laws.</li>
-                        <li><strong>3.2.</strong> You may not reproduce, distribute, modify, or create derivative works of any content from the Website without prior written consent from Verve Forex.</li>
+                        <li><strong>3.1.</strong> All content on the Website, including text, graphics, logos, images, and software, is the property of Qondzo or its licensors and is protected by intellectual property laws.</li>
+                        <li><strong>3.2.</strong> You may not reproduce, distribute, modify, or create derivative works of any content from the Website without prior written consent from Qondzo.</li>
                     </ul>
                 </li>
                 <li><strong>4.</strong> <strong>User Accounts:</strong>
@@ -50,18 +50,18 @@ function Terms() {
                 <li><strong>6.</strong> <strong>Disclaimer of Warranties:</strong>
                     <ul>
                         <li><strong>6.1.</strong> The Website and its content are provided on an "as is" and "as available" basis, without any warranties of any kind, either express or implied.</li>
-                        <li><strong>6.2.</strong> Verve Forex does not warrant that the Website will be error-free, uninterrupted, or free of viruses or other harmful components.</li>
+                        <li><strong>6.2.</strong> Qondzo does not warrant that the Website will be error-free, uninterrupted, or free of viruses or other harmful components.</li>
                     </ul>
                 </li>
                 <li><strong>7.</strong> <strong>Limitation of Liability:</strong>
                     <ul>
-                        <li><strong>7.1.</strong> In no event shall Verve Forex be liable for any direct, indirect, incidental, special, or consequential damages arising out of or in any way connected with your use of the Website.</li>
-                        <li><strong>7.2.</strong> Verve Forex's total liability under these Terms shall not exceed the amount paid by you, if any, for accessing the Website.</li>
+                        <li><strong>7.1.</strong> In no event shall Qondzo be liable for any direct, indirect, incidental, special, or consequential damages arising out of or in any way connected with your use of the Website.</li>
+                        <li><strong>7.2.</strong> Qondzo's total liability under these Terms shall not exceed the amount paid by you, if any, for accessing the Website.</li>
                     </ul>
                 </li>
                 <li><strong>8.</strong> <strong>Indemnification:</strong>
                     <ul>
-                        <li><strong>8.1.</strong> You agree to indemnify and hold harmless Verve Forex, its affiliates, and their respective officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, or expenses arising out of your use of the Website or violation of these Terms.</li>
+                        <li><strong>8.1.</strong> You agree to indemnify and hold harmless Qondzo, its affiliates, and their respective officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, or expenses arising out of your use of the Website or violation of these Terms.</li>
                     </ul>
                 </li>
                 <li><strong>9.</strong> <strong>Governing Law and Jurisdiction:</strong>
@@ -72,7 +72,7 @@ function Terms() {
                 </li>
                 <li><strong>10.</strong> <strong>Changes to Terms:</strong>
                     <ul>
-                        <li><strong>10.1.</strong> Verve Forex reserves the right to update or modify these Terms and Conditions at any time without prior notice. Changes will be effective immediately upon posting on the Website.</li>
+                        <li><strong>10.1.</strong> Qondzo reserves the right to update or modify these Terms and Conditions at any time without prior notice. Changes will be effective immediately upon posting on the Website.</li>
                         <li><strong>10.2.</strong> Your continued use of the Website after any such changes constitutes acceptance of the modified Terms and Conditions.</li>
                     </ul>
                 </li>
@@ -83,7 +83,7 @@ function Terms() {
                 </li>
                 <li><strong>12.</strong> <strong>Contact Us:</strong>
                     <ul>
-                        <li><strong>12.1.</strong> If you have any questions or concerns about these Terms and Conditions, please email us on <a href="mailto:support@verveforex.com">support@verveforex.com</a>.</li>
+                        <li><strong>12.1.</strong> If you have any questions or concerns about these Terms and Conditions, please email us on <a href="mailto:support@qondzo.com">support@qondzo.com</a>.</li>
                     </ul>
                 </li>
             </ul>

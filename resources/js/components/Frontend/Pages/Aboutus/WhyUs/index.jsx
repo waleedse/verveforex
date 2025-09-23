@@ -14,7 +14,7 @@ const WhyUs = () => {
                         <h3 className='text-center' >Elevate your Forex trading with real-time, expertly crafted signals designed to support smarter trading choices. At VerveForex,
                             we deliver high-quality, timely signals that offer actionable insights into current market trends, empowering you
                             to confidently capitalize on currency movements.</h3>
-                        <h2 className='text-center head-title mt-4'>Why Choose Verveforex<span className="highlight"> Signals?</span></h2>
+                        <h2 className='text-center head-title mt-4'>Why Choose Qondzo<span className="highlight"> Signals?</span></h2>
                         <div className="features mt-5">
                             <div className="feature">
                                 <h4> <span className='bolder'> 1. Expert Analysis:</span> Our signals are crafted by experienced Forex analysts who use both technical and fundamental analysis to pinpoint ideal entry and exit points.</h4>

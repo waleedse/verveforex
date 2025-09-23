@@ -70,7 +70,7 @@ function DubaiPromotion() {
                                 Airport pick up and drop off
                             </li>
                             <li>
-                                Verve Forex will not cover additional expenses such as meals, personal
+                                Qondzo will not cover additional expenses such as meals, personal
                                 expenses, travel insurance, or any other cost not explicitly mentioned above
                             </li>
                         </ul>
@@ -82,7 +82,7 @@ function DubaiPromotion() {
             </div>
             <div className="promotion-heading px-3">
                 <h3>How to participate in this offer?</h3>
-                <p className='text-center'>This is Exclusive offer for Verve Forex client’s and is valid for clients trading with the following Brokers:</p>
+                <p className='text-center'>This is Exclusive offer for Qondzo client’s and is valid for clients trading with the following Brokers:</p>
                 <div className="promotion-brokers">
                     <figure>
                         <img src="/assets/images/clients/client-7.png" />
@@ -104,11 +104,11 @@ function DubaiPromotion() {
                 <div className='row'>
                     <div className='col-md-4 promotion-steps' style={{ display: 'flex', gap: '10px' }}>
                         <h4>1</h4>
-                        <h5>Register with Verve Forex</h5>
+                        <h5>Register with Qondzo</h5>
                     </div>
                     <div className='col-md-4 promotion-steps' style={{ display: 'flex', gap: '10px' }}>
                         <h4>2</h4>
-                        <h5>Login to your account on www.verveforex.com</h5>
+                        <h5>Login to your account on www.qondzo.com</h5>
                     </div>
                     <div className='col-md-4 promotion-steps' style={{ display: 'flex', gap: '10px' }}>
                         <h4>3</h4>
@@ -157,14 +157,14 @@ function DubaiPromotion() {
                             difference between the opening and closing price must be at least 3 pips.
                         </li>
                         <li className='parent-list'>
-                            As part of this great offer, Verve Forex also gives you an opportunity to combine
+                            As part of this great offer, Qondzo also gives you an opportunity to combine
                             the above number of lots over multiple brokers e.g.
                             <ul>
                                 <li>
                                     If you trade 400 lots with Cabana Capitals and 200 lots with OctaFx, you can still
                                     avail this offer. Please note that the accounts you are using for this offer are as
                                     per the account types listed above and also the Introducing Broker on your profile
-                                    must be Verve Forex under all the Broker’s you will be using.
+                                    must be Qondzo under all the Broker’s you will be using.
                                 </li>
                             </ul>
                         </li>

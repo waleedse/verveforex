@@ -10,7 +10,7 @@ export default function OurVission() {
                             <span className="sub-title">Statements</span>
                             <h2>Our Vision</h2>
                         </div>
-                        <p>We believe that every trader deserves a fair chance to thrive in the forex market, and our goal is to empower you with the information and resources needed to make informed decisions. With Verve Forex, you can save time and effort by eliminating the need to search multiple websites or platforms for promotions. We have done the legwork for you, ensuring that all the relevant and up-to-date promotions are readily available for your perusal.</p>
+                        <p>We believe that every trader deserves a fair chance to thrive in the forex market, and our goal is to empower you with the information and resources needed to make informed decisions. With Qondzo, you can save time and effort by eliminating the need to search multiple websites or platforms for promotions. We have done the legwork for you, ensuring that all the relevant and up-to-date promotions are readily available for your perusal.</p>
 
                         {/* <ul className="list-style-one clearfix">
                           <li>Et harum quidem rerum facilis est expedita.</li>

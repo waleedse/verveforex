@@ -16,7 +16,7 @@ class UserSeeder extends Seeder
     {
         // Create admin user
         $admin = User::create( [
-            'email' => 'admin@verveforex.com',
+            'email' => 'admin@qondzo.com',
             'name' => 'Admin User',
             'password' => bcrypt('123456'), // Change 'password' to your desired password
         ]);

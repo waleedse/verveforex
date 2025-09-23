@@ -33,8 +33,9 @@ class AdminWebsiteController extends Controller
     public function get_client_location(Request $request){
         $curl = curl_init();
 
+        $url = 'http://ip-api.com/json/'.$request->ip().'?fields=status,message,continent,continentCode,country,countryCode,region,regionName,city,zip,lat,lon,timezone,offset,currency,isp,org,as,';
         curl_setopt_array($curl, array(
-        CURLOPT_URL => 'http://www.geoplugin.net/php.gp?ip='.$request->ip(),
+        CURLOPT_URL => $url,
         // CURLOPT_URL => 'http://www.geoplugin.net/php.gp?ip=41.66.128.0'.$request->ip(),
 
         CURLOPT_RETURNTRANSFER => true,
@@ -50,15 +51,15 @@ class AdminWebsiteController extends Controller
 
         $res = curl_exec($curl);
 		curl_close($curl);
-        $res = unserialize($res);
+        $res = json_decode($res, true);
         return $res;
     }
 
     public function get_promotions(Request $request){
         $position = $this->get_client_location($request);
-        if($position['geoplugin_countryName']){
+        if(is_array($position) && $position['country'] != null){
             $promotions = [];
-            $country = Country::where('name',$position['geoplugin_countryName'])->first();
+            $country = Country::where('name',$position['country'])->first();
             $all_countries_promotions = Promotion::where('type',1)->where('status',1)->get();
             $specific_promotions = Promotion::where('type',2)->where('status',1)->get();
 
@@ -376,12 +377,12 @@ class AdminWebsiteController extends Controller
                             ->whereNotExists(function ($query) use ($position) {
                                 $query->select(DB::raw(1))
                                     ->from('country')
-                                    ->whereRaw('JSON_SEARCH(sliders.countries, "one", ?)', [$position['geoplugin_countryName']]);
+                                    ->whereRaw('JSON_SEARCH(sliders.countries, "one", ?)', [$position['country']]);
                             })
                             ->orWhereExists(function ($query) use ($position) {
                                 $query->select(DB::raw(1))
                                     ->from('country')
-                                    ->whereRaw('JSON_SEARCH(sliders.countries, "one", ?)', [$position['geoplugin_countryName']]);
+                                    ->whereRaw('JSON_SEARCH(sliders.countries, "one", ?)', [$position['country']]);
                             });
                     });
             });

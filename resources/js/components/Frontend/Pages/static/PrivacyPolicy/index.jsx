@@ -68,7 +68,7 @@ function PrivacyPolicy() {
                 </li>
                 <li><strong>9.</strong> <strong>Contact Us:</strong>
                     <ul>
-                        <li><strong>9.1.</strong> If you have any questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please email us on <a href="mailto:support@verveforex.com">support@verveforex.com</a>.</li>
+                        <li><strong>9.1.</strong> If you have any questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please email us on <a href="mailto:support@qondzo.com">support@qondzo.com</a>.</li>
                     </ul>
                 </li>
             </ul>
