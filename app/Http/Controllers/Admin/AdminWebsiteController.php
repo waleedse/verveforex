@@ -82,7 +82,7 @@ class AdminWebsiteController extends Controller
             }
             $response = ['status' => 200 , 'promotion' => $promotions , 'country' => $position['country'] , 'continent' =>
             // 'Africa'
-            $position['geoplugin_continentName']
+            $position['continent']
         ];
             return $response;
 
