@@ -16,7 +16,6 @@ function OurPartners() {
                         <li><figure className="clients-box"><a href="index-2.html"><img src="/assets/images/clients/client-10.png" alt /></a></figure></li>
                         <li><figure className="clients-box"><a href="index-2.html"><img src="/assets/images/clients/client-11.png" alt /></a></figure></li>
                         <li><figure className="clients-box"><a href="index-2.html"><img src="/assets/images/clients/client-12.png" alt /></a></figure></li>
-                        <li><figure className="clients-box"><a href="index-2.html"><img src="/assets/images/clients/client-13.png" alt /></a></figure></li>
                         <li><figure className="clients-box"><a href="index-2.html"><img src="/assets/images/clients/client-8.png" alt /></a></figure></li>
                     </ul>
                     <div className="link-box centred">

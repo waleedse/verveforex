@@ -1,1 +1,0 @@
-import{m as o}from"./app-XpXvMZZl.js";const t="/api/",s="/uploads/",n=()=>o.create({baseURL:t,headers:{"Content-Type":"application/json",Authorization:`Bearer ${localStorage.getItem("token")}`},timeout:1e4});export{s as I,n as u};
