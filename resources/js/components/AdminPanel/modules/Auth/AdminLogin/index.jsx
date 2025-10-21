@@ -41,7 +41,7 @@ const AdminLogin = () => {
                         <div className="card my-5">
                             <div className="card-body">
                                 <div className="text-center">
-                                    <a href="/"><img src="/assets/images/logo.png" alt="img" /></a>
+                                    <a href="/"><img width={'50%'} src="/assets/images/logoblack.png" alt="img" /></a>
                                 </div>
                                 <div className="saprator my-3">
                                     <span>Admin Login</span>

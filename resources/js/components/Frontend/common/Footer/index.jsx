@@ -87,7 +87,7 @@ function Footer(props) {
                                 <h5><a href="/"><i className="flaticon-download" />Free <br />Trading Guides</a></h5>
                             </div> */}
                             <div className="copyright-box ">
-                                <p className="text-center"> Copyright Qondzo 2024. All rights reserved.</p>
+                                <p className="text-center"> Copyright Qondzo {2025}. All rights reserved.</p>
                                 {/* <ul className="footer-nav clearfix">
                                     <li><a href="/">Legal Notice</a></li>
                                     <li><a href="/">Privacy Policy</a></li>
