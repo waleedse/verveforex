@@ -13,7 +13,7 @@ function CashBackPromotion() {
             </div>
             <div className="container">
                 <div className="promotion-heading">
-                    <h3>VERVE FOREX</h3>
+                    <h3>Qondzo</h3>
                     <h3 className='text-center mt-2'>CASHBACK <span style={{ fontWeight: '400' }} className='text-normal'>PROMOTION</span></h3>
                 </div>
 
@@ -71,7 +71,7 @@ function CashBackPromotion() {
                     <figure>
                         <img src="/assets/images/clients/client-7.png" />
                     </figure>
-                    <figure>
+                    <figure className='mt-3'>
                         <img src="/assets/images/clients/client-14.png" />
                     </figure>
                     <figure>

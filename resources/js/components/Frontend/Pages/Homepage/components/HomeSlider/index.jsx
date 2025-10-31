@@ -35,7 +35,7 @@ function HomeSlider() {
                     sliders ? sliders.map((slide, index) => {
                         return (
                             <div className="slide-item active">
-                                <div className="bg-layer" style={{ backgroundImage: `url('/uploads/${slide?.image}')` }} />
+                                <div className="bg-layer p-2" style={{ backgroundImage: `url('/uploads/${slide?.image}')` }} />
                                 <div dangerouslySetInnerHTML={{ __html: slide.content }} >
 
                                 </div>

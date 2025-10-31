@@ -30,10 +30,8 @@ function Navbar(props) {
 
     const getAllPromotions = async () => {
         let res = await getPromotions();
-        // setPromotions(res)
         dispatch(SET_PROMOTIONS(res?.promotion))
         dispatch(SET_RESPONSE(res))
-        console.log(res)
     }
 
     useEffect(() => {
@@ -132,9 +130,9 @@ function Navbar(props) {
                                     </li>
                                 </ul>
                                 <ul className="social-links clearfix">
-                                    <li><a href="index-3.html"><i className="fa-brands fa-instagram" /></a></li>
-                                    <li><a href="index-3.html"><i className="fa-brands fa-square-twitter" /></a></li>
-                                    <li><a href="index-3.html"><i className="fa-brands fa-facebook" /></a></li>
+                                    <li><a href="https://www.instagram.com/qondzo1/"><i className="fa-brands fa-instagram" /></a></li>
+                                    <li><a href="https://www.tiktok.com/@qondzo?is_from_webapp=1&sender_device=pc"><i className="fa-brands fa-tiktok" /></a></li>
+                                    <li><a href="https://www.facebook.com/profile.php?id=61581452656239"><i className="fa-brands fa-facebook" /></a></li>
                                 </ul>
                             </div>
                         </div>

@@ -14,6 +14,7 @@ const Homepage = lazy(() => import('../../frontend/Pages/Homepage'))
 const SingleNews = lazy(() => import('../../frontend/Pages/SingleNews'))
 const News = lazy(() => import('../../frontend/Pages/News'))
 const PrivacyPolicy = lazy(() => import('../../frontend/Pages/static/PrivacyPolicy'))
+const FAQ = lazy(() => import('../../frontend/Pages/static/FAQ'))
 const DubaiPromotion = lazy(() => import('../../frontend/Pages/Promotions/DubaiPromotion'))
 const Legal = lazy(() => import('../../frontend/Pages/static/Legal'))
 const Terms = lazy(() => import('../../frontend/Pages/static/terms'))
@@ -28,6 +29,7 @@ function FrontRoutes(props) {
                 <Route path="/news/:slug" element={<Suspense fallback={<Spinner />}> <SingleNews /> </Suspense>}></Route>
                 <Route path="/news" element={<Suspense fallback={<Spinner />}> <News /> </Suspense>}></Route>
                 <Route path="/privacy-policy" element={<Suspense fallback={<Spinner />}> <PrivacyPolicy /> </Suspense>}></Route>
+                <Route path="/faqs" element={<Suspense fallback={<Spinner />}> <FAQ /> </Suspense>}></Route>
                 <Route path="/legal-notice" element={<Suspense fallback={<Spinner />}> <Legal /> </Suspense>}></Route>
                 <Route path="/terms-conditions" element={<Suspense fallback={<Spinner />}> <Terms /> </Suspense>}></Route>
                 <Route path="/dubai-promotion" element={<Suspense fallback={<Spinner />}> <DubaiPromotion /> </Suspense>}></Route>

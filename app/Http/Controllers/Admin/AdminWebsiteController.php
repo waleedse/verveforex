@@ -57,7 +57,7 @@ class AdminWebsiteController extends Controller
 
     public function get_promotions(Request $request){
         $position = $this->get_client_location($request);
-        if(is_array($position) && $position['country'] != null){
+        if(is_array($position) && isset($position['country']) && $position['country'] != null){
             $promotions = [];
             $country = Country::where('name',$position['country'])->first();
             $all_countries_promotions = Promotion::where('type',1)->where('status',1)->get();
@@ -80,15 +80,15 @@ class AdminWebsiteController extends Controller
                     array_push($promotions,$ac);
                 }
             }
-            $response = ['status' => 200 , 'promotion' => $promotions , 'country' => $position['country'] , 'continent' =>
+            $response = ['status' => 200 , 'promotion' => $promotions , 'country' => isset($position['country']) ? $position['country'] : '' , 'continent' =>
             // 'Africa'
-            $position['continent']
+            isset($position['continent']) ? $position['continent'] : ''
         ];
             return $response;
 
         }else{
             $promotions = Promotion::where('type',1)->where('status',1)->get();
-            $response = ['status' => 200 , 'promotion' => $promotions , 'country' => $position['country']];
+            $response = ['status' => 200 , 'promotion' => $promotions , 'country' => isset($position['country']) ? $position['country'] : ''];
             return $response;
         }
 
@@ -377,12 +377,12 @@ class AdminWebsiteController extends Controller
                             ->whereNotExists(function ($query) use ($position) {
                                 $query->select(DB::raw(1))
                                     ->from('country')
-                                    ->whereRaw('JSON_SEARCH(sliders.countries, "one", ?)', [$position['country']]);
+                                    ->whereRaw('JSON_SEARCH(sliders.countries, "one", ?)', [isset($position['country']) ? $position['country'] : '']);
                             })
                             ->orWhereExists(function ($query) use ($position) {
                                 $query->select(DB::raw(1))
                                     ->from('country')
-                                    ->whereRaw('JSON_SEARCH(sliders.countries, "one", ?)', [$position['country']]);
+                                    ->whereRaw('JSON_SEARCH(sliders.countries, "one", ?)', [isset($position['country']) ? $position['country'] : '' ]);
                             });
                     });
             });

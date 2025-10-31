@@ -17,7 +17,7 @@ function Footer(props) {
                                             {/* <h4>Since</h4>
                                             <h2>2012</h2> */}
                                             <div className="link-box">
-                                                <a href="/"><span>Have Queries? Support@qondzo.com</span></a>
+                                                <a href="mailto:support@qondzo.com"><span>Have Queries? Support@qondzo.com</span></a>
                                             </div>
                                         </div>
                                         <div className="text-box">
@@ -37,7 +37,7 @@ function Footer(props) {
                                             <li><a href="/">About Us</a></li>
                                             <li><Link to="/contact-us">Contact Us</Link></li>
                                             <li><a href="/">Introducing Brokers</a></li>
-                                            <li><a href="/">FAQs</a></li>
+                                            <li><Link to="/faqs">FAQs</Link></li>
                                         </ul>
                                     </div>
                                 </div>
