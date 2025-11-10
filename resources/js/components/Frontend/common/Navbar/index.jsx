@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { getPromotions } from "../../../services/front/commonService";
 import { SET_PROMOTIONS, SET_RESPONSE } from "../../../redux/reducers/promotions";
 import { useDispatch, useSelector } from "react-redux";
@@ -11,6 +11,7 @@ function Navbar(props) {
     const dispatch = useDispatch();
     const promotions = useSelector((state) => state.promotions)
     const [promtoions, setPromotions] = useState([])
+    const location = useLocation();
 
     const handleActiveNavItem = (item) => {
         setActiveNavItem(item != activeNavItem ? item : '')
@@ -37,6 +38,14 @@ function Navbar(props) {
     useEffect(() => {
         getAllPromotions();
     }, [])
+
+    useEffect(() => {
+        setShowMobileNav(false);
+        setActiveNavItem('');
+    }, [location.pathname]);
+
+
+
     const nav = () => {
 
 

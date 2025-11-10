@@ -12461,6 +12461,33 @@ label.error{
   background-repeat: no-repeat;
 }
 
+/* Custom overrides: remove odd yellow line/overlay on home slider */
+.home-slider.banner-style-two .banner-carousel .slide-item:before{display:none !important;}
+.home-slider.banner-style-two .pattern-layer{display:none !important;}
+.home-slider.banner-style-two hr{display:none !important;}
+/* Neutralize any borders/shadows that may render as a thin line */
+.home-slider.banner-style-two,
+.home-slider.banner-style-two .banner-carousel,
+.home-slider.banner-style-two .banner-carousel .slide-item,
+.home-slider.banner-style-two .carousel,
+.home-slider.banner-style-two .carousel *{
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  box-shadow: none !important;
+}
+/* Mask any residual 1-3px line at the very top of the slide background */
+.home-slider.banner-style-two .banner-carousel .slide-item{position:relative;}
+.home-slider.banner-style-two .banner-carousel .slide-item:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 4px; /* adjust if needed */
+  background: #fff; /* page bg under header */
+  z-index: 2;
+  pointer-events: none;
+}
 
 
 
